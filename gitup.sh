@@ -9,10 +9,10 @@ ORIGIN='https://Chien-pinWang:kaohGithub4512@github.com/Chien-pinWang/MacEnv.git
 
 GIT=`which git`
 
-cd ${REPO}
-${GIT} add . >> ${LOG}
-${GIT} commit -m "${COMMIT_TIMESTAMP}> Maintenance sync to git remote" >> ${LOG}
-${GIT} checkout master >> ${LOG}
-${GIT} merge develop >> ${LOG}
-${GIT} push ${ORIGIN} master >> ${LOG}
-${GIT} checkout develop >> ${LOG}
+cd ${REPO} >> ${LOG} 2>&1
+${GIT} add . >> ${LOG} 2>&1
+${GIT} commit -m "${COMMIT_TIMESTAMP}> Maintenance sync to git remote" >> ${LOG} 2>&1
+${GIT} checkout master >> ${LOG} 2>&1
+${GIT} merge develop >> ${LOG} 2>&1
+${GIT} push ${ORIGIN} master >> ${LOG} 2>&1
+${GIT} checkout develop >> ${LOG} 2>&1
