@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# TODO: Add log to capture any messages spitted from git
+# TODO: 
 
 REPO='/Users/cpw/.env'
 LOG='/Users/cpw/tmp/gitup.log'
