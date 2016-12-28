@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+# TODO: Add log to capture any messages spitted from git
+
 REPO='/Users/cpw/.env'
 COMMIT_TIMESTAMP=`date '+%m/%d/%Y %H:%M:%S'`
 ORIGIN='https://Chien-pinWang:kaohGithub4512@github.com/Chien-pinWang/MacEnv.git'
