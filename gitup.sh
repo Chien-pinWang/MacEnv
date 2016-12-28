@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 cd ~/.env
-git commit -am "Maintenance sync to git remote"
+dt=$(date '+%m/%d/%Y %H:%M:%S')
+git add .
+git commit -m "$dt> Maintenance sync to git remote"
 git checkout master
 git merge develop
 git push origin master

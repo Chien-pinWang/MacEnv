@@ -12,6 +12,7 @@ alias psg="ps aux | grep"
 # alias path="echo -e ${PATH//:/\\n}"
 alias calc="bc -q"
 alias waves="php ~/bin/Buoy/index.php"
+alias schd="crontab -e"
 
 # Aliases to manage various servers on this machine
 alias httpdconf="ll /etc/apache2/httpd.conf"
@@ -50,3 +51,4 @@ export PS1="\h:\w\$ "
 export CLICOLOR="true"
 export LSCOLORS="gxfxcxdxbxegedabagaced"
 export PATH=$HOME/bin:/usr/local/mysql/bin:$PATH
+export EDITOR=/usr/bin/vim
