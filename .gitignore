@@ -1,0 +1,9 @@
+.vim_runtime/temp_dirs/undodir/*
+.vim_runtime/sources_non_forked/ack.vim/.netrwhist
+.vim_runtime/temp_dirs/yankring_history_v2.txt
+.vim_runtime/sources_forked/yankring/doc/tags
+.vim_runtime/sources_non_forked/tlib/doc/tags
+.vim_runtime/sources_non_forked/ctrlp.vim/doc/tags*
+.vim_runtime/my_configs.vim
+.vim_runtime/tags
+.vim_runtime/.DS_Store
