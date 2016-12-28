@@ -6,11 +6,12 @@ alias ls="ls -FGhp"
 alias ll="ls -FGlAhp"
 alias less="less -FSRXc"
 alias cls="clear"
-alias waves="php ~/bin/Buoy/index.php"
+alias src="source ~/.bash_profile"
 alias now="date +'%T'"
 alias psg="ps aux | grep"
 alias path="echo -e ${PATH//:/\\n}"
 alias calc="bc -q"
+alias waves="php ~/bin/Buoy/index.php"
 
 # Aliases to manage various servers on this machine
 alias httpdconf="ll /etc/apache2/httpd.conf"
@@ -33,6 +34,7 @@ alias gdevelop="git checkout develop"
 alias gmerge="git merge develop"
 alias gpush="git push origin master"
 alias gvisual="gitk --all &"
+alias gstatus="git status -sbvv"
 
 # Bash function helpers
 cd() { builtin cd "$@"; ls; }               # cd then ll;
