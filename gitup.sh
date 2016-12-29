@@ -11,7 +11,7 @@ GIT=`which git`
 
 cd ${REPO} >> ${LOG} 2>&1
 ${GIT} add . >> ${LOG} 2>&1
-${GIT} commit -m "${COMMIT_TIMESTAMP}> Maintenance sync to git remote" >> ${LOG} 2>&1
+${GIT} commit -m "${COMMIT_TIMESTAMP}> Maintenance sync" >> ${LOG} 2>&1
 ${GIT} checkout master >> ${LOG} 2>&1
 ${GIT} merge develop >> ${LOG} 2>&1
 ${GIT} push ${ORIGIN} master >> ${LOG} 2>&1
