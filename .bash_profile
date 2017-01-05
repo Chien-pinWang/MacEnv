@@ -13,6 +13,9 @@ alias psg="ps aux | grep"
 alias calc="bc -q"
 alias waves="php ~/bin/Buoy/index.php"
 alias schd="crontab -e"
+alias vsplit="vi -O"
+alias vstack="vi -o"
+alias vtab="vi -p"
 
 # Aliases to manage various servers on this machine
 alias httpdconf="ll /etc/apache2/httpd.conf"
@@ -40,6 +43,7 @@ alias gmerge="git merge develop"
 alias gpush="git push origin master"
 alias gvisual="gitk --all &"
 alias gstatus="git status -sbvv"
+alias gconf="git config --list | more"
 
 # Bash function helpers
 cd() { builtin cd "$@"; ls; }               # cd then ll;
