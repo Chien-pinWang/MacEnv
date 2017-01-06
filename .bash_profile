@@ -17,6 +17,10 @@ alias vsplit="vi -O"
 alias vstack="vi -o"
 alias vtab="vi -p"
 
+# Aliases for PHP programming
+alias class="grep -n --color=auto -e 'private' -e 'protected' -e 'public'"
+alias docsnippet="vi ~/.vim_runtime/sources_non_forked/vim-snippets/snippets/php.snippets"
+
 # Aliases to manage various servers on this machine
 alias httpdconf="ll /etc/apache2/httpd.conf"
 alias httpdvhosts="ll /etc/apache2/extra/httpd-vhosts.conf"
@@ -36,7 +40,7 @@ alias ~="cd ~"
 # Alias to manage git repository
 alias gbranch="git branch -avv"
 alias gtag="git tag -ln1"
-alias glog="git log --decorate=full"
+alias glog="git log --oneline --decorate=short"
 alias gmaster="git checkout master"
 alias gdevelop="git checkout develop"
 alias gmerge="git merge develop"
