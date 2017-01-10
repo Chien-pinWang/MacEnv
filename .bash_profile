@@ -13,12 +13,13 @@ alias psg="ps aux | grep"
 alias calc="bc -q"
 alias waves="php ~/bin/Buoy/index.php"
 alias schd="crontab -e"
+alias tree="tree -d | more"
 alias vsplit="vi -O"
 alias vstack="vi -o"
 alias vtab="vi -p"
 
 # Aliases for PHP programming
-alias class="grep -n --color=auto -e 'private' -e 'protected' -e 'public'"
+alias class="grep -n --color=auto -e 'private' -e 'protected' -e 'public' -e 'const '"
 alias docsnippet="vi ~/.vim_runtime/sources_non_forked/vim-snippets/snippets/php.snippets"
 
 # Aliases to manage various servers on this machine
@@ -58,5 +59,5 @@ ff() { /usr/bin/find . -name "$@" ; }       # find files match name in arg 1
 export PS1="\h:\w\$ "
 export CLICOLOR="true"
 export LSCOLORS="gxfxcxdxbxegedabagaced"
-export PATH=$HOME/bin:/usr/local/mysql/bin:$PATH
+export PATH=/usr/local/go/bin:$HOME/bin:/usr/local/mysql/bin:$PATH
 export EDITOR=/usr/bin/vim
