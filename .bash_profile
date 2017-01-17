@@ -1,4 +1,12 @@
 
+# Setting environment variables
+export PS1="\h:\w\$ "
+export CLICOLOR="true"
+export LSCOLORS="gxfxcxdxbxegedabagaced"
+export PATH=/usr/local/go/bin:$HOME/bin:/usr/local/mysql/bin:$PATH
+export EDITOR=/usr/bin/vim
+export PRJ=~/bin
+
 # Aliases to execute commands
 alias cp="cp -iv"
 alias mv="mv -iv"
@@ -8,7 +16,7 @@ alias less="less -FSRXc"
 alias cls="clear"
 alias src="source ~/.bash_profile"
 alias now="date +'%T'"
-alias psg="ps aux | grep"
+alias psg="ps aux | grep --color=auto"
 # alias path="echo -e ${PATH//:/\\n}"
 alias calc="bc -q"
 alias waves="php ~/bin/Buoy/index.php"
@@ -17,10 +25,12 @@ alias tree="tree -d | more"
 alias vsplit="vi -O"
 alias vstack="vi -o"
 alias vtab="vi -p"
+alias phpweb="php -S 127.0.0.1:8080 &"
 
 # Aliases for PHP programming
-alias class="grep -n --color=auto -e 'private' -e 'protected' -e 'public' -e 'const '"
-alias docsnippet="vi ~/.vim_runtime/sources_non_forked/vim-snippets/snippets/php.snippets"
+alias class="grep -n --color=auto -e 'class' -e 'protected' -e 'public' -e 'const '"
+alias phpSnippets="vi ~/.vim_runtime/sources_non_forked/vim-snippets/snippets/php.snippets"
+alias mySnippets="vi ~/.vim_runtime/snippets/_.snippets"
 
 # Aliases to manage various servers on this machine
 alias httpdconf="ll /etc/apache2/httpd.conf"
@@ -34,6 +44,7 @@ alias mysqlconf="ll /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist"
 
 # Aliases to move around file systems
 alias 2bin="cd ~/bin"
+alias 2prj='cd $PRJ'     # Type "PRJ=<path/to/prj/root>" at command line to reset active project
 alias ..="cd .."
 alias ...="cd ../.."
 alias ~="cd ~"
@@ -51,13 +62,7 @@ alias gstatus="git status -sbvv"
 alias gconf="git config --list | more"
 
 # Bash function helpers
-cd() { builtin cd "$@"; ls; }               # cd then ll;
+cd() { builtin cd "$@"; ls; }               # cd then ls;
 trash() { command mv "$@" ~/.Trash ; }      # move to ~/.Trash folder
 ff() { /usr/bin/find . -name "$@" ; }       # find files match name in arg 1
 
-# Setting environment variables
-export PS1="\h:\w\$ "
-export CLICOLOR="true"
-export LSCOLORS="gxfxcxdxbxegedabagaced"
-export PATH=/usr/local/go/bin:$HOME/bin:/usr/local/mysql/bin:$PATH
-export EDITOR=/usr/bin/vim

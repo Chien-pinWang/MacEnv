@@ -4,3 +4,32 @@ snippet cpw
 	Chien-pin Wang <Wang.ChienPin@gmail.com>
 	${1}
 # PHP Development
+snippet connMySQL
+	$db = new PDO('mysql:host=localhost;dbname=${1:testDB};charset=utf8mb4', '${2:username}', '${3:password}');
+	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+snippet connSQLite
+	$db = new PDO('sqlite:${1:/path/to/file.sqlite}');
+snippet dbQuery
+	$stmt = $db->prepare('SELECT * FROM ${1:table} WHERE ${2:id}=:id AND ${3:name}=:name');
+	$stmt->bindValue(':id', $id, PDO::PARAM_INT);
+	$stmt->bindValue(':name', $name, PDO::PARAM_STR);
+	$stmt->execute();
+	$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+snippet dbInsert
+	$stmt = $db->prepare('INSERT INTO ${1:table} (${2:col1}, ${3:col2}...) VALUES (:val1, :val2...)');
+	$stmt->bindValue(':val1', $val1, PDO::PARAM_<type>);
+	$stmt->bindValue(':val2', $val2, PDO::PARAM_<type>);
+	$stmt->execute();
+	$lastID = $db->lastInsertId();
+snippet dbUpdate
+	$stmt = $db->prepare('UPDATE ${1:table} SET ${2:col1}=:val1 WHERE ${3:id}=:id');
+	$stmt->bindValue(':val1', $val1, PDO::PARAM_<type>);
+	$stmt->bindValue(':id', $id, PDO::PARAM_INT);
+	$stmt->execute();
+	$rows = $stmt->rowCount();
+snippet dbDelete
+	$stmt = $db->prepare('UPDATE ${1:table} SET status='I' WHERE ${2:id}=:id');
+	$stmt->bindValue(':id', $id, PDO::PARAM_INT);
+	$stmt->execute();
+	$rows = $stmt->rowCount();
