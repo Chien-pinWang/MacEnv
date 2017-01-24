@@ -26,9 +26,10 @@ alias vsplit="vi -O"
 alias vstack="vi -o"
 alias vtab="vi -p"
 alias phpweb="php -S 127.0.0.1:8080 &"
+alias notify="vi ~/bin/OSNotification.sh; crontab -e"
 
 # Aliases for PHP programming
-alias class="grep -n --color=auto -e 'class' -e 'protected' -e 'public' -e 'const '"
+alias class="grep -n -w --color=auto -e 'class' -e 'protected' -e 'public' -e 'const ' -e 'namespace' -e 'use'"
 alias phpSnippets="vi ~/.vim_runtime/sources_non_forked/vim-snippets/snippets/php.snippets"
 alias mySnippets="vi ~/.vim_runtime/snippets/_.snippets"
 
@@ -60,6 +61,7 @@ alias gpush="git push origin master"
 alias gvisual="gitk --all &"
 alias gstatus="git status -sbvv"
 alias gconf="git config --list | more"
+alias glastcommitfile="git checkout HEAD"
 
 # Bash function helpers
 cd() { builtin cd "$@"; ls; }               # cd then ls;
