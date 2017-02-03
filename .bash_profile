@@ -26,6 +26,7 @@ alias vsplit="vi -O"
 alias vstack="vi -o"
 alias vtab="vi -p"
 alias phpweb="php -S 127.0.0.1:8080 &"
+alias www="w3m -B"
 alias notify="vi ~/bin/OSNotification.sh; crontab -e"
 
 # Aliases for PHP programming
