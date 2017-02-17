@@ -6,6 +6,7 @@ export LSCOLORS="gxfxcxdxbxegedabagaced"
 export PATH=/usr/local/go/bin:$HOME/bin:/usr/local/mysql/bin:$PATH
 export EDITOR=/usr/bin/vim
 export PRJ=~/bin
+export R_HOME=$(R RHOME)
 
 # Aliases to execute commands
 alias cp="cp -iv"
@@ -43,6 +44,8 @@ alias phpconf="ll /etc/php.ini"
 alias mysqlstop="sudo launchctl unload -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist"
 alias mysqlstart="sudo launchctl load -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist"
 alias mysqlconf="ll /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist"
+alias Rconf="ll $R_HOME/etc/Renviron"
+alias Rinit="vi ~/.Rprofile"
 
 # Aliases to move around file systems
 alias 2bin="cd ~/bin"
