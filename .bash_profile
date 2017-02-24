@@ -7,6 +7,7 @@ export PATH=/usr/local/go/bin:$HOME/bin:/usr/local/mysql/bin:$PATH
 export EDITOR=/usr/bin/vim
 export PRJ=~/bin
 export R_HOME=$(R RHOME)
+export BC_ENV_ARGS="-l $HOME/.bcrc"
 
 # Aliases to execute commands
 alias cp="cp -iv"
@@ -71,4 +72,3 @@ alias glastcommitfile="git checkout HEAD"
 cd() { builtin cd "$@"; ls; }               # cd then ls;
 trash() { command mv "$@" ~/.Trash ; }      # move to ~/.Trash folder
 ff() { /usr/bin/find . -name "$@" ; }       # find files match name in arg 1
-
