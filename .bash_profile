@@ -8,6 +8,10 @@ export EDITOR=/usr/bin/vim
 export PRJ=~/bin
 export R_HOME=$(R RHOME)
 export BC_ENV_ARGS="-l $HOME/.bcrc"
+export BROWSER=w3m
+
+# Source other settings
+source ~/.googler  # aliases for command line google search
 
 # Aliases to execute commands
 alias cp="cp -iv"
@@ -30,6 +34,7 @@ alias vtab="vi -p"
 alias phpweb="php -S 127.0.0.1:8080 &"
 alias www="w3m -B"
 alias notify="vi ~/bin/OSNotification.sh; crontab -e"
+alias g="$(which googler) -n 7"
 
 # Aliases for PHP programming
 alias class="grep -n -w --color=auto -e 'class' -e 'protected' -e 'public' -e 'const ' -e 'namespace' -e 'use'"
@@ -37,8 +42,10 @@ alias phpSnippets="vi ~/.vim_runtime/sources_non_forked/vim-snippets/snippets/ph
 alias mySnippets="vi ~/.vim_runtime/snippets/_.snippets"
 
 # Aliases to manage various servers on this machine
-alias httpdconf="ll /etc/apache2/httpd.conf"
-alias httpdvhosts="ll /etc/apache2/extra/httpd-vhosts.conf"
+# alias httpdconf="ll /etc/apache2/httpd.conf"
+alias httpdconf="ll /usr/local/etc/apache2/2.4/httpd.conf"
+# alias httpdvhosts="ll /etc/apache2/extra/httpd-vhosts.conf"
+alias httpdvhosts="ll /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf"
 alias httpdrestart="sudo apachectl graceful"
 alias httpderror="tail /var/log/apache2/error_log"
 alias phpconf="ll /etc/php.ini"

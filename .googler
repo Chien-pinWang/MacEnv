@@ -1,0 +1,16 @@
+# googler @t alias list
+# Author: Chien-pin Wang
+# email: Wang.ChienPin@gmail.com
+#
+
+# verywed.com
+alias @vw='googler -w verywed.com'
+
+# wikipedia
+alias @wiki='googler -w en.wikipedia.org'
+
+# imdb
+alias @imdb='googler -w imdb.com'
+
+# free dictionary
+alias @whatis='googler -n 5 -w dictionary.com'
