@@ -1,0 +1,73 @@
+Delivered-To: wang.chienpin@gmail.com
+Received: by 10.194.30.161 with SMTP id t1csp2402202wjh;
+        Wed, 8 Feb 2017 01:57:18 -0800 (PST)
+X-Received: by 10.98.76.132 with SMTP id e4mr25447966pfj.24.1486547838568;
+        Wed, 08 Feb 2017 01:57:18 -0800 (PST)
+Return-Path: <apache@chuyu-culture.com>
+Received: from mail.chuyu-culture.com (chuyu-culture.com. [128.199.255.4])
+        by mx.google.com with ESMTPS id f4si6694380plf.93.2017.02.08.01.57.18
+        for <Wang.ChienPin@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Feb 2017 01:57:18 -0800 (PST)
+Received-SPF: pass (google.com: domain of apache@chuyu-culture.com designates 128.199.255.4 as permitted sender) client-ip=128.199.255.4;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of apache@chuyu-culture.com designates 128.199.255.4 as permitted sender) smtp.mailfrom=apache@chuyu-culture.com
+Received: by mail.chuyu-culture.com (Postfix, from userid 48)
+	id D0807413EC; Wed,  8 Feb 2017 17:57:16 +0800 (CST)
+To: Wang.ChienPin@gmail.com
+Subject: =?UTF-8?B?5Y+w5YyX5ZyL6Zqb5pu45bGV77yM5q2h6L+O5oKo5LiA5ZCM5q2h5oW25bGV5Ye6?=
+X-PHP-Originating-Script: 500:mail.php
+MIME-Version: 1.0
+Date: Wed, 08 Feb 2017 17:57:16 +0800
+From: =?UTF-8?B?54+g5Y+L5paH5YyW5LqL5qWt5pyJ6ZmQ5YWs5Y+4IHwg5a6Y5pa557ay6Lev5ZWG5bqXIHwgVW5pY2l0ZS4=?=<service@chuyu-culture.com>
+Reply-To: =?UTF-8?B?54+g5Y+L5paH5YyW5LqL5qWt5pyJ6ZmQ5YWs5Y+4IHwg5a6Y5pa557ay6Lev5ZWG5bqXIHwgVW5pY2l0ZS4=?=<service@chuyu-culture.com>
+X-Mailer: PHP/5.3.3
+Content-Type: multipart/related; boundary="----=_NextPart_687c1a46e1ac5e13a033f1e43e8db2c9"
+Message-Id: <20170208095716.D0807413EC@mail.chuyu-culture.com>
+
+------=_NextPart_687c1a46e1ac5e13a033f1e43e8db2c9
+Content-Type: multipart/alternative; boundary="----=_NextPart_687c1a46e1ac5e13a033f1e43e8db2c9_alt"
+
+------=_NextPart_687c1a46e1ac5e13a033f1e43e8db2c9_alt
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+This is a HTML email and your email client software does not support HTML email!
+------=_NextPart_687c1a46e1ac5e13a033f1e43e8db2c9_alt
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<html dir="ltr" lang="en">
+  <head>
+    <title>台北國際書展，歡迎您一同歡慶展出</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body><style type="text/css">p{font-size:12pt;}
+</style>
+<p><img alt="" src="http://www.chuyu-culture.com/shop/image/data/2017/111.jpg" style="width: 522px; height: 700px;" /></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>寒假已經進入尾聲，就用書展來做個完美的結尾吧！:)</p>
+
+<p>&nbsp;</p>
+
+<p>在外縣市不方便前往的朋友們照過來</p>
+
+<p>珠友直營的網路商店一同歡慶書展</p>
+
+<p>在展出期間全店商品消費滿299元即可享免運費的服務！</p>
+
+<p>(注意：活動僅寄送台灣本島，且不適用貨到付款或是直營門市到店取貨唷！)</p>
+
+<p>&nbsp;</p>
+
+<p><a href="http://www.chuyu-culture.com/shop/image/data/2017/0202TIB.jpg"><img alt="" src="http://www.chuyu-culture.com/shop/image/data/2017/0202TIB.jpg" style="width: 980px; height: 495px;" /></a></p>
+</body>
+</html>
+
+------=_NextPart_687c1a46e1ac5e13a033f1e43e8db2c9_alt--
+------=_NextPart_687c1a46e1ac5e13a033f1e43e8db2c9--
+

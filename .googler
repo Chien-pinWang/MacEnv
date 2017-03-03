@@ -4,13 +4,22 @@
 #
 
 # verywed.com
-alias @vw='googler -w verywed.com'
+alias @vw='googler -n 5 -w verywed.com'
 
 # wikipedia
-alias @wiki='googler -w en.wikipedia.org'
+alias @wiki='googler -n 5 -w en.wikipedia.org'
 
 # imdb
-alias @imdb='googler -w imdb.com'
+alias @imdb='googler -n 5 -w imdb.com'
 
 # free dictionary
-alias @whatis='googler -n 5 -w dictionary.com'
+alias @word='googler -n 5 definition'
+
+# 104
+alias @104='googler -n 5 -w 104.com.tw'
+
+# 880vs
+alias @xxx='googler -n 5 -w 880vs.com'
+
+# pchome
+alias @ec='googler -n 5 -w 24h.pchome.com.tw'

@@ -1,0 +1,359 @@
+Delivered-To: wang.chienpin@gmail.com
+Received: by 10.194.30.161 with SMTP id t1csp1301956wjh;
+        Mon, 23 Jan 2017 12:25:27 -0800 (PST)
+X-Received: by 10.107.25.133 with SMTP id 127mr26058729ioz.54.1485203127430;
+        Mon, 23 Jan 2017 12:25:27 -0800 (PST)
+Return-Path: <bounce@metmuseum.hosted.strongview.com>
+Received: from sv004049.hosted.strongview.com (sv004049.hosted.strongview.com. [23.253.4.49])
+        by mx.google.com with ESMTPS id m194si9723203itc.60.2017.01.23.12.25.27
+        for <wang.chienpin@gmail.com>
+        (version=TLS1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Mon, 23 Jan 2017 12:25:27 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce@metmuseum.hosted.strongview.com designates 23.253.4.49 as permitted sender) client-ip=23.253.4.49;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@e.metmuseum.org;
+       spf=pass (google.com: domain of bounce@metmuseum.hosted.strongview.com designates 23.253.4.49 as permitted sender) smtp.mailfrom=bounce@metmuseum.hosted.strongview.com
+Received: from sv004049.hosted.strongview.com ([172.18.100.136])
+	by sv004049.hosted.strongview.com (-); Mon, 23 Jan 2017 15:25:15 -0500
+X-VirtualServer: Museum, sv004049.hosted.strongview.com, 172.18.100.110
+X-VirtualServerGroup: Museum
+X-MailingID: 16784620::12074::263::867::1_298980::298980_635743_0__298980
+X-SMHeaderMap: mid="X-MailingID"
+X-Destination-ID: wang.chienpin@gmail.com
+X-SMFBL: d2FuZy5jaGllbnBpbkBnbWFpbC5jb20=
+DKIM-Signature: v=1; a=rsa-sha1; c=simple; d=e.metmuseum.org;
+	s=sv; i=@e.metmuseum.org; h=Content-Transfer-Encoding:
+	Content-Type:MIME-Version:Message-ID:X-ReportingKey:Subject:Date:
+	To:Reply-To:From; bh=nJ53Ihg0DT/g/d9/Mltlnowe2Kg=; b=YwlFjJWKMza
+	F0ajPYrTkMNj81m26dwa8wnDXQv2VKcvKrnbnWYFdZB7fopCJJK8VLu+GM1zCFvo
+	maJCxoi/RJqvJYDycplyiGFUlOYrlI3erGn7OIn1QhVxZSoZWhudhsgDwr2wKCEq
+	aYm/YURYdNlUIbg0KNHlsfJDAeBLXLDY=
+Content-Transfer-Encoding: 7bit
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_A45_D49B_6BB40336.584EC36C"
+MIME-Version: 1.0
+Message-ID: <16784620.298980@e.metmuseum.org>
+X-ReportingKey: MJ1E8S27VDZKK119WJJ25B3YJ4GD1M25B3Y::wang.chienpin@gmail.com::1_298980
+Subject: Starts Today! NYC Restaurant Week in the Members Dining Room
+Date: Mon, 23 Jan 2017 15:25:15 -0500
+To: wang.chienpin@gmail.com
+Reply-To: Newsletter_membership@metmuseum.org
+From: "The Metropolitan Museum of Art" <met@e.metmuseum.org>
+
+
+------=_NextPart_A45_D49B_6BB40336.584EC36C
+Content-Type: text/plain;
+	charset="UTF-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+This email was sent as HTML-only. To view it, please visit:
+http://metmuseum.hosted.strongview.com/t/gfhbbLZkQAHHm0dIhaJD4eTM-9aaaaJD4eBMIMZVlaaIhJD4e?n=8@vE1E17&amp;X=3TuZ.japXuipg_nfhbs.Vvf&amp;lX=3TuZ.japXuipg_nfhbs.Vvf&amp;s=79r&amp;4=&amp;k=%23
+
+-------------------------------------------------------
+
+Unsubscribe
+
+http://metmuseum.hosted.strongview.com/t/gchbbLZkQAHHm0dIhaJD4eTM-9aaaaJD4eBMIMZVlaa?n=8@vE1E17&amp;X=3TuZ.japXuipg_nfhbs.Vvf&amp;s=a&amp;4=&amp;k=3TuZ.japXuipg%25~tnfhbs.Vvf
+
+-------------------------------------------------------
+
+The Metropolitan
+Museum of Art
+1000 Fifth Avenue
+New York, NY 10028
+metmuseum.org
+
+------=_NextPart_A45_D49B_6BB40336.584EC36C
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+<!doctype html>
+<html lang="en">
+<head>  
+  
+	<title>The Met</title>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width">
+	<style type="text/css"><!--Members Dining Room: July 2016 -->
+	
+	
+	
+    /*CLIENT SPECIFIC STYLES*/
+    /*PREVENT WEBKIT AND WINDOWS MOBILE CHANGING DEFAULT TEXT SIZE*/
+    body, table, td, a {-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+    
+    /*RESET STYLES*/ 
+    table{border-collapse:collapse !important;}
+    
+    /*iOS BLUE LINKS*/
+    a[x-apple-data-detectors] {color: inherit !important;text-decoration: none !important;font-size: inherit !important;font-family: inherit !important;font-weight: inherit !important;line-height: inherit !important;} 
+    
+/*MOBILE STYLES*/
+@media only screen and (max-width: 500px) {
+    
+    /*iOS BLUE LINKS*/
+    a[x-apple-data-detectors] {color: inherit !important;text-decoration: none !important;font-size: inherit !important;font-family: inherit !important;font-weight: inherit !important;line-height: inherit !important;} 
+    
+    /*GENERAL MOBILE STYLES*/
+    table[class="mobile"],
+    td[class="mobile"], 
+    img[class="mobile"] {
+    width:100% !important;
+    min-width:150px !important;
+    height:auto !important;
+    min-height: auto !important;
+    }
+    
+    /*HIDE ON MOBILE*/
+    td[class="hide"], span[class="hide"] {
+    display:none !important;
+    }
+    
+    /*MOBILE TEXT STYLES*/
+ 	td[class="mobile-text"] {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    }
+    
+    /*IMAGE STYLES*/
+    img[class="logo"] {
+    max-width: 60px !important;
+    }
+    
+    img[class="tag"] {
+    max-height:50px !important;
+    }
+    
+    /*UTILITY CLASSES FOR ADJUSTING PADDING*/
+    td[class="sidebar-copy"] {
+    padding-left:0px !important;
+    }
+     
+    td[class="padding-top"] {
+    padding-top:30px !important;
+    }
+    
+    td[class="padding-bottom"] {
+    padding-bottom:15px !important;
+    }
+    
+    td[class="padding-zero"] {
+    padding: 0px 0px 0px 0px !important;
+    }
+    
+    td[class="mobile-shrink"] {
+     padding-top:15px !important;
+    padding-bottom:15px !important;
+    }
+    
+    /*MOBILE FOOTER STYLES*/
+    td[class="prefs"] {
+    border-top:1px dotted #A0A0A0 !important;
+    text-align:center !important;
+    padding-top:15px !important;
+    width:100% !important;
+    min-width:150px !important;
+}
+
+}
+	</style>
+	<style type="text/css">
+	</style>
+</head>
+<body><IMG SRC="http://metmuseum.hosted.strongview.com/t/gbhbbLZkQAHHm0dIhaJD4eTM-9aaaaJD4eBMIMZVlaa?n=8@vE1E17&amp;X=3TuZ.japXuipg_nfhbs.Vvf&amp;s=" WIDTH="1" HEIGHT="1" STYLE="border:0px hidden transparent !important; display:none !important; overflow:hidden; max-height: 0;" ALT=""/>
+
+
+<!--Members Dining Room: May 2016--><!--BACKGROUND-->
+<table border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed" width="100%">
+	
+		<tr>
+			<td align="center"><!--640 CONTAINER-->
+			<table border="0" cellpadding="0" cellspacing="0" class="mobile" width="640">
+				
+					<tr>
+						<td class="mobile">
+						<div style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Now Through February 10</div>
+						<!--VIEW IN BROWSER-->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="hide" width="100%">
+							
+								<tr>
+									<td align="right" class="hide" style="padding:0px 0px 10px 0px; color:#A0A0A0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:11px"><a href="http://metmuseum.hosted.strongview.com/t/gfhbbLZkQAHHm0dIhaJD4eTM-9aaaaJD4eBMIMZVlaaIhJD4e?n=8@vE1E17&amp;X=3TuZ.japXuipg_nfhbs.Vvf&amp;lX=3TuZ.japXuipg_nfhbs.Vvf&amp;s=6~V&amp;4=&amp;k=%23" style="color:#A0A0A0">View in browser</a><font color="#FFFFFF">.</font></td>
+								</tr>
+							
+						</table>
+						<!--END VIEW IN BROWSER--><!--HEADER-->
+
+						<table border="0" cellpadding="0" cellspacing="0" width="100%"><!--HEADER PADDING-TOP-->
+							
+								<tr>
+									<td align="center" colspan="2" style="padding:0px 0px 0px 0px; border-top:2px dotted #0A4B58; color:#000000; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold; line-height:15px;" valign="top" width="100%">&nbsp;</td>
+								</tr>
+								<!--END HEADER PADDING-TOP--><!--MET LOGO AND MAILING TAG-->
+								<tr>
+									<td align="left" style="padding:0px 0px 0px 0px; color:#000000; font-family:'Times New Roman', Georgia, serif; font-size:24px; font-weight:bold; line-height:28px;" valign="top" width="13%"><a href="http://metmuseum.hosted.strongview.com/t/gchbbLZkQAHHm0dIhaJD4eTM-9aaaaJD4eBMIMZVlaa?n=8@vE1E17&amp;X=3TuZ.japXuipg_nfhbs.Vvf&amp;s=X&amp;4=&amp;k=T8Y&amp;v7uC@t8v-@FKK@YXzmhnyTumdXld@YXnbzmyTumz"><img alt="The Met" class="logo" src="http://metmuseum.hosted.strongview.com/img/global/The_Met_Logotype_DarkTurquoise.png" style="border:none; color:#0A4B58; display:block; font-family:'Times New Roman',Georgia,serif; font-weight:bold; font-size: 36px; line-height:36px" width="80" /></a></td>
+									<td align="right" style="padding:0px 0px 0px 15px; color:#0A4B58; font-family:Arial, Helvetica, sans-serif; font-size:28px; font-weight:normal; line-height:30px;" valign="top" width="75%"><img alt="Members Dining Room" class="tag" src="http://metmuseum.hosted.strongview.com/img/org_1/867/Members-Dining-Room850x160.png" height="79" style="color:#0A4B58; font-family:'Times New Roman',Georgia, serif; font-weight:bold; font-size: 24px; line-height: 30px" /></td>
+								</tr>
+								<!--END MET LOGO AND MAILING TAG--><!--HEADER PADDING-BOTTOM-->
+								<tr>
+									<td align="center" colspan="2" style="padding:0px 0px 0px 0px; color:#000000; font-family:Arial, Helvetica, sans-serif; font-size:30px; font-weight:bold; line-height:30px;" valign="top" width="100%">&nbsp;</td>
+								</tr>
+								<!--END HEADER PADDING-BOTTOM-->
+							
+						</table>
+						<!--END HEADER--><!--HERO MODULE-->
+
+						<table border="0" cellpadding="0" cellspacing="0" class="mobile" width="100%"><!--HERO IMAGE--><!--END HERO IMAGE--><!--HERO COPY-->
+							
+								<tr>
+									<td align="center" class="mobile" style="padding:0 0px 30px 0px; color:#000000; font-family:'Times New Roman', Georgia, serif; font-size:36px;  font-weight:bold; line-height:36px;" width="100%"><a href="http://metmuseum.hosted.strongview.com/t/gchbbLZkQAHHm0dIhaJD4eTM-9aaaaJD4eBMIMZVlaa?n=8@vE1E17&amp;X=3TuZ.japXuipg_nfhbs.Vvf&amp;s=Y&amp;4=&amp;k=T8Y&amp;v7uC@t8v-@FKK@YXzmhnyTumdXld@YXnbzmyTumz"><img alt="" class="mobile" src="http://metmuseum.hosted.strongview.com/img/org_1/867/XB1A4262_MDR_joelilaugh640x427.jpg" style="border:none; display:block" width="640" /></a></td>
+								</tr>
+								<tr>
+									<td align="left" style="padding:0px 0px 15px 0px; color:#000000; font-family:'Times New Roman', Georgia, serif; font-size:30px; font-weight:bold; line-height:30px" width="100%">Join Us for NYC Restaurant Week in the Members Dining Room</td>
+								</tr>
+								<!--END SECTION HEADLINE--><!--SECTION COPY-->
+								<tr>
+									<td align="left" class="mobile-text" style="padding:0px 0px 15px 0px; color:#6E6E6E; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; line-height:24px" width="100%">Weekdays, through February 10<br>
+Three-Course, Prix-Fixe Lunch: $29*
+</td>
+								</tr>
+                                <!--Button 2 here -->
+								<tr>
+									<td style="padding:0px 0px 30px 0px">
+									<table align="left" cellpadding="0" cellspacing="0" class="mobile" width="320">
+										
+											<tr>
+												<td align="center" bgcolor="#0A4B58" class="mobile" width="320">
+												<div><!--[if mso]>
+                                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://metmuseum.hosted.strongview.com/t/gchbbLZkQAHHm0dIhaJD4eTM-9aaaaJD4eBMIMZVlaa?n=8@vE1E17&amp;X=3TuZ.japXuipg_nfhbs.Vvf&amp;s=W&amp;4=&amp;k=T8Y&amp;v7uC@t8v-@FKK@YXzmhnyTumdXld@YXnbzmyTumz" style="height:60px;v-text-anchor:middle;width:320px;" strokecolor="#0A4B58" fillcolor="#0A4B58">
+                                        <w:anchorlock/>
+                                        <center style="color:#FFFFFF;font-family:sans-serif;font-size:18px;font-weight:bold;">Reserve a Table</center>
+                                        </v:rect>
+                                        <![endif]--><a href="http://metmuseum.hosted.strongview.com/t/gchbbLZkQAHHm0dIhaJD4eTM-9aaaaJD4eBMIMZVlaa?n=8@vE1E17&amp;X=3TuZ.japXuipg_nfhbs.Vvf&amp;s=V&amp;4=&amp;k=T8Y&amp;v7uC@t8v-@FKK@YXzmhnyTumdXld@YXnbzmyTumz" style="color:#FFFFFF; display:inline-block; font-family:sans-serif; font-size:18px;font-weight:bold; line-height:60px; text-align:center; text-decoration:none; width:100%; -webkit-text-size-adjust:none; mso-hide:all;">Reserve a Table</a></div>
+												</td>
+											</tr>
+										
+									</table>
+									</td>
+								</tr>
+<!--END BUTTON 2-->
+								<tr>
+									<td align="left" class="mobile" style="padding:0px 0px 30px 0px; color:#000000; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:normal; line-height:22px;" width="100%">During NYC Restaurant Week, all Museum visitors are invited to experience the art of fine dining in the Members Dining Room.<br /><br />
+       								This is the perfect opportunity to sample Chef Fred Sabo's creative, seasonal cuisine at a special price. Treetop views of Central Park from The Met's fourth floor make this one of New York City's most unique dining experiences.<br /><br /> 
+									See the <a href="http://metmuseum.hosted.strongview.com/t/gchbbLZkQAHHm0dIhaJD4eTM-9aaaaJD4eBMIMZVlaa?n=8@vE1E17&amp;X=3TuZ.japXuipg_nfhbs.Vvf&amp;s=Z&amp;4=&amp;k=T8Y&amp;v7uC@t8v-@FKK@YXzmhnyTumdXld@YXnbzmyTumz" style="color:#000000">menu</a> and reserve your table <a href="http://metmuseum.hosted.strongview.com/t/gchbbLZkQAHHm0dIhaJD4eTM-9aaaaJD4eBMIMZVlaa?n=8@vE1E17&amp;X=3TuZ.japXuipg_nfhbs.Vvf&amp;s=U&amp;4=&amp;k=T8Y&amp;v7uC@t8v-@FKK@YXzmhnyTumdXld@YXnbzmyTumz" style="color:#000000">online</a> or by calling 212-570-3975.</td>
+								</tr>
+								<!--END HERO COPY-->
+							
+						</table>
+						<!--END HERO MODULE--><!--SIDEBAR MODULE--><!--END SIDEBAR MODULE--> <!--FOOTER MODULE-->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="left" width="100%" colspan="4" valign="top" style="padding:30px 0px 0px 0px; color:#A0A0A0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:15px">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td align="left" width="100%" colspan="4" valign="top" style="padding:0px 0px 0px 0px; border-top:1px dotted #A0A0A0; color:#A0A0A0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:15px">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td align="left" width="22%" valign="top" style="padding:0px 0px 0px 0px; color:#A0A0A0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:14px">
+                            <span style="color:#6E6E6E; font-size:14px; font-weight:bold; line-height:14px"><a href="http://metmuseum.hosted.strongview.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9NjM1NzQzJm1haWxpbmdpZD0xMjA3NCZtZXNzYWdlaWQ9ODY3JmRhdGFiYXNlaWQ9MjYzJnNlcmlhbD0xNjc4NDYyMCZlbWFpbGlkPXdhbmcuY2hpZW5waW5AZ21haWwuY29tJnVzZXJpZD0xXzI5ODk4MCZ0YXJnZXRpZD0mbW49Mjk4OTgwJmZsPSZtdmlkPSZleHRyYT0mJiY=&&&9204&&&http://www.metmuseum.org/visit/met-fifth-avenue?utm_source=MDR&utm_medium=email&utm_campaign=2017_0123_MDR_RestaurantWeek_Registrants" style="color:#6E6E6E; text-decoration:none">The Met<br>
+                            Fifth Avenue</a></span><br><br>
+                            1000 Fifth Avenue<br>
+                            New York, NY 10028
+                            </td>
+                            <td class="hide" align="left" width="22%" valign="top" style="padding:0px 0px 0px 0px; color:#A0A0A0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:14px">
+                            <span style="color:#6E6E6E; font-size:14px; font-weight:bold; line-height:14px"><a href="http://metmuseum.hosted.strongview.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9NjM1NzQzJm1haWxpbmdpZD0xMjA3NCZtZXNzYWdlaWQ9ODY3JmRhdGFiYXNlaWQ9MjYzJnNlcmlhbD0xNjc4NDYyMCZlbWFpbGlkPXdhbmcuY2hpZW5waW5AZ21haWwuY29tJnVzZXJpZD0xXzI5ODk4MCZ0YXJnZXRpZD0mbW49Mjk4OTgwJmZsPSZtdmlkPSZleHRyYT0mJiY=&&&9205&&&http://www.metmuseum.org/visit/met-cloisters?utm_source=MDR&utm_medium=email&utm_campaign=2017_0123_MDR_RestaurantWeek_Registrants" style="color:#6E6E6E; text-decoration:none">The Met<br>
+                            Cloisters</a></span><br><br>
+                            99 Margaret Corbin Drive<br>
+                            Fort Tryon Park<br>
+                            New York, NY 10040
+                            </td>
+                            <td class="hide" align="left" width="22%" valign="top" style="padding:0px 0px 0px 0px; color:#A0A0A0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:14px">
+                            <span style="color:#6E6E6E; font-size:14px; font-weight:bold; line-height:14px"><a href="http://metmuseum.hosted.strongview.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9NjM1NzQzJm1haWxpbmdpZD0xMjA3NCZtZXNzYWdlaWQ9ODY3JmRhdGFiYXNlaWQ9MjYzJnNlcmlhbD0xNjc4NDYyMCZlbWFpbGlkPXdhbmcuY2hpZW5waW5AZ21haWwuY29tJnVzZXJpZD0xXzI5ODk4MCZ0YXJnZXRpZD0mbW49Mjk4OTgwJmZsPSZtdmlkPSZleHRyYT0mJiY=&&&9206&&&http://www.metmuseum.org/visit/met-breuer?utm_source=MDR&utm_medium=email&utm_campaign=2017_0123_MDR_RestaurantWeek_Registrants" style="color:#6E6E6E; text-decoration:none">The Met<br>
+                            Breuer</a></span><br><br>
+                            945 Madison Avenue<br>
+                            New York, NY 10021
+                            </td>
+                            <td align="left" width="22%" valign="top" style="padding:0px 0px 0px 0px; color:#6E6E6E; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:bold; line-height:14px">
+                            <a href="http://metmuseum.hosted.strongview.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9NjM1NzQzJm1haWxpbmdpZD0xMjA3NCZtZXNzYWdlaWQ9ODY3JmRhdGFiYXNlaWQ9MjYzJnNlcmlhbD0xNjc4NDYyMCZlbWFpbGlkPXdhbmcuY2hpZW5waW5AZ21haWwuY29tJnVzZXJpZD0xXzI5ODk4MCZ0YXJnZXRpZD0mbW49Mjk4OTgwJmZsPSZtdmlkPSZleHRyYT0mJiY=&&&9207&&&http://www.metmuseum.org?utm_source=MDR&utm_medium=email&utm_campaign=2017_0123_MDR_RestaurantWeek_Registrants" style="color:#6E6E6E; text-decoration:none">metmuseum.org</a></td>
+                        </tr>
+                        <tr>
+                            <td align="left" width="100%" colspan="4" valign="top" style="padding:0px 0px 0px 0px; border-bottom:1px dotted #A0A0A0; color:#A0A0A0; font-family:Arial, Helvetica, sans-serif; font-size:30px; font-weight:normal; line-height:30px">&nbsp;</td>
+                        </tr>
+                    </table>
+                    <!--END FOOTER MODULE-->
+                    
+                    <!--BEGIN SOCIAL MODULE-->
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <!--SOCIAL PADDING-TOP-->
+                        <tr>
+                            <td align="left" width="100%" colspan="6" valign="top" style="padding:0px 0px 0px 0px; color:#A0A0A0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:15px">&nbsp;</td>
+                        </tr>
+                        <!--END SOCIAL PADDING-TOP-->
+                        <!--SOCIAL CONTENT-->
+                        <tr>
+                            <td>
+                                <!--SOCIAL ICONS-->
+                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="mobile" width="38%">
+                                  
+                                    <tr>
+                                      <td align="center" class="social-icon" style="padding:0px 0px 0px 0px;" valign="middle" width="15%"><a href="http://metmuseum.hosted.strongview.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9NjM1NzQzJm1haWxpbmdpZD0xMjA3NCZtZXNzYWdlaWQ9ODY3JmRhdGFiYXNlaWQ9MjYzJnNlcmlhbD0xNjc4NDYyMCZlbWFpbGlkPXdhbmcuY2hpZW5waW5AZ21haWwuY29tJnVzZXJpZD0xXzI5ODk4MCZ0YXJnZXRpZD0mbW49Mjk4OTgwJmZsPSZtdmlkPSZleHRyYT0mJiY=&&&9208&&&https://www.facebook.com/metmuseum?utm_source=MDR&utm_medium=email&utm_campaign=2017_0123_MDR_RestaurantWeek_Registrants"><img height="30" src="http://metmuseum.hosted.strongview.com/img/global/Facebook_Black.png" style="border:none; display:block" /></a></td>
+                                      <td align="center" class="social-icon" style="padding:0px 0px 0px 0px;" valign="middle" width="15%"><a href="http://metmuseum.hosted.strongview.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9NjM1NzQzJm1haWxpbmdpZD0xMjA3NCZtZXNzYWdlaWQ9ODY3JmRhdGFiYXNlaWQ9MjYzJnNlcmlhbD0xNjc4NDYyMCZlbWFpbGlkPXdhbmcuY2hpZW5waW5AZ21haWwuY29tJnVzZXJpZD0xXzI5ODk4MCZ0YXJnZXRpZD0mbW49Mjk4OTgwJmZsPSZtdmlkPSZleHRyYT0mJiY=&&&9209&&&https://twitter.com/metmuseum?utm_source=MDR&utm_medium=email&utm_campaign=2017_0123_MDR_RestaurantWeek_Registrants"><img height="30" src="http://metmuseum.hosted.strongview.com/img/global/Twitter_Black.png" style="border:none; display:block" /></a></td>
+                                      <td align="center" class="social-icon" style="padding:0px 0px 0px 0px;" valign="middle" width="15%"><a href="http://metmuseum.hosted.strongview.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9NjM1NzQzJm1haWxpbmdpZD0xMjA3NCZtZXNzYWdlaWQ9ODY3JmRhdGFiYXNlaWQ9MjYzJnNlcmlhbD0xNjc4NDYyMCZlbWFpbGlkPXdhbmcuY2hpZW5waW5AZ21haWwuY29tJnVzZXJpZD0xXzI5ODk4MCZ0YXJnZXRpZD0mbW49Mjk4OTgwJmZsPSZtdmlkPSZleHRyYT0mJiY=&&&9210&&&https://www.pinterest.com/metmuseum?utm_source=MDR&utm_medium=email&utm_campaign=2017_0123_MDR_RestaurantWeek_Registrants"><img height="30" src="http://metmuseum.hosted.strongview.com/img/global/Pinterest_Black.png" style="border:none; display:block" /></a></td>
+                                      <td align="center" class="social-icon" style="padding:0px 0px 0px 0px;" valign="middle" width="15%"><a href="http://metmuseum.hosted.strongview.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9NjM1NzQzJm1haWxpbmdpZD0xMjA3NCZtZXNzYWdlaWQ9ODY3JmRhdGFiYXNlaWQ9MjYzJnNlcmlhbD0xNjc4NDYyMCZlbWFpbGlkPXdhbmcuY2hpZW5waW5AZ21haWwuY29tJnVzZXJpZD0xXzI5ODk4MCZ0YXJnZXRpZD0mbW49Mjk4OTgwJmZsPSZtdmlkPSZleHRyYT0mJiY=&&&9211&&&https://www.instagram.com/metmuseum/?utm_source=MDR&utm_medium=email&utm_campaign=2017_0123_MDR_RestaurantWeek_Registrants"><img height="30" src="http://metmuseum.hosted.strongview.com/img/global/Instagram_Black.png" style="border:none; display:block" /></a></td>
+                                      <td align="center" class="social-icon" style="padding:0px 0px 0px 0px;" valign="middle" width="25%"><a href="http://metmuseum.hosted.strongview.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9NjM1NzQzJm1haWxpbmdpZD0xMjA3NCZtZXNzYWdlaWQ9ODY3JmRhdGFiYXNlaWQ9MjYzJnNlcmlhbD0xNjc4NDYyMCZlbWFpbGlkPXdhbmcuY2hpZW5waW5AZ21haWwuY29tJnVzZXJpZD0xXzI5ODk4MCZ0YXJnZXRpZD0mbW49Mjk4OTgwJmZsPSZtdmlkPSZleHRyYT0mJiY=&&&9212&&&https://www.youtube.com/user/metmuseum?utm_source=MDR&utm_medium=email&utm_campaign=2017_0123_MDR_RestaurantWeek_Registrants"><img height="30" src="http://metmuseum.hosted.strongview.com/img/global/YouTube_Black.png" style="border:none; display:block" /></a></td>
+                                    </tr>
+                                  
+                                </table>                                <!--END SOCIAL ICONS-->
+                                <!--SUBSCRIPTION PREFS-->
+                                <table class="mobile" align="right" border="0" cellpadding="0" cellspacing="0" width="58%">
+                                    <tr>
+                                        <td class="prefs" align="right" valign="top" style="padding:0px 0px 0px 0px; color:#6E6E6E; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; line-height:30px">
+                                        
+                                            
+                                        <a href="http://metmuseum.hosted.strongview.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9NjM1NzQzJm1haWxpbmdpZD0xMjA3NCZtZXNzYWdlaWQ9ODY3JmRhdGFiYXNlaWQ9MjYzJnNlcmlhbD0xNjc4NDYyMCZlbWFpbGlkPXdhbmcuY2hpZW5waW5AZ21haWwuY29tJnVzZXJpZD0xXzI5ODk4MCZ0YXJnZXRpZD0mbW49Mjk4OTgwJmZsPSZtdmlkPSZleHRyYT0mJiY=&&&9213&&&https://app.svwps.com/metropolitanmuseum/themet/preferences-1/mymet_front.html?user_id=wang.chienpin@gmail.com&utm_source=MDR&utm_medium=email&utm_campaign=2017_0123_MDR_RestaurantWeek_Registrants" style="color:#6E6E6E">Manage Your Preferences</a>
+                                        &nbsp;&nbsp;|&nbsp;&nbsp;
+                                        <a href="http://metmuseum.hosted.strongview.com/track?type=click&enid=ZWFzPTEmbXNpZD0xJmF1aWQ9NjM1NzQzJm1haWxpbmdpZD0xMjA3NCZtZXNzYWdlaWQ9ODY3JmRhdGFiYXNlaWQ9MjYzJnNlcmlhbD0xNjc4NDYyMCZlbWFpbGlkPXdhbmcuY2hpZW5waW5AZ21haWwuY29tJnVzZXJpZD0xXzI5ODk4MCZ0YXJnZXRpZD0mbW49Mjk4OTgwJmZsPSZtdmlkPSZleHRyYT0mJiY=&&&9214&&&https://app.svwps.com/metropolitanmuseum/themet/preferences-1/mymet_front.html?user_id=wang.chienpin@gmail.com&utm_source=MDR&utm_medium=email&utm_campaign=2017_0123_MDR_RestaurantWeek_Registrants" style="color:#6E6E6E">Unsubscribe</a></td>
+                                    </tr>
+                                </table>
+                                <!--END SUBSCRIPTION PREFS-->
+                            </td>
+                        </tr>
+                        <!--END SOCIAL CONTENT-->
+                        <!--SOCIAL PADDING-BOTTOM-->
+                        <tr>
+                            <td align="left" width="100%" colspan="6" valign="top" style="padding:0px 0px 0px 0px; border-bottom:1px dotted #A0A0A0; color:#A0A0A0; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; line-height:15px">&nbsp;</td>
+                        </tr>
+                        <!--END SOCIAL PADDING-BOTTOM-->
+                    </table>
+                    <!--END SOCIAL MODULE-->
+                    
+                    <!--BEGIN CREDITS MODULE--><!--END CREDITS MODULE--><!--CREDITS MODULE-->
+
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							
+								<tr>
+									<td align="left" style="padding:30px 0px 15px 0px; color:#A0A0A0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:normal; line-height:14px" valign="top" width="100%">*Beverages, gratuity, and tax not included.<br><br> 
+Photo by Sam Deitch<br><br> 
+Questions? Write to us at <a href="mailto:membership@metmuseum.org" style="color:#A0A0A0">membership@metmuseum.org</a>.</td>
+								</tr>
+							
+						</table>
+						<!--END CREDITS MODULE--><!--END 640 CONTAINER--></td>
+					</tr>
+				
+			</table>
+			<!--END BACKGROUND--></td>
+		</tr>
+	
+</table>
+<!--GMAIL FIX-->
+
+<div style="display:none; white-space:nowrap; font:15px courier; line-height:0;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+<!--END GMAIL FIX--></body>
+</html>
+
+
+------=_NextPart_A45_D49B_6BB40336.584EC36C--
+

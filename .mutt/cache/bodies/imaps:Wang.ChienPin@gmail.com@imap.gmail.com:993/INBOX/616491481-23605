@@ -1,0 +1,630 @@
+Delivered-To: wang.chienpin@gmail.com
+Received: by 10.194.30.161 with SMTP id t1csp1585211wjh;
+        Mon, 30 Jan 2017 18:05:27 -0800 (PST)
+X-Received: by 10.157.7.6 with SMTP id 6mr13390461ote.194.1485828327309;
+        Mon, 30 Jan 2017 18:05:27 -0800 (PST)
+Return-Path: <bounce+8ff4ab.f103c-wang.chienpin=gmail.com@logdown.com>
+Received: from mail-s90.mailgun.info (mail-s90.mailgun.info. [184.173.153.218])
+        by mx.google.com with ESMTPS id w193si6195078oia.132.2017.01.30.18.05.26
+        for <wang.chienpin@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 30 Jan 2017 18:05:27 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce+8ff4ab.f103c-wang.chienpin=gmail.com@logdown.com designates 184.173.153.218 as permitted sender) client-ip=184.173.153.218;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@logdown.com;
+       dkim=pass header.i=@mailgun.org;
+       spf=pass (google.com: domain of bounce+8ff4ab.f103c-wang.chienpin=gmail.com@logdown.com designates 184.173.153.218 as permitted sender) smtp.mailfrom=bounce+8ff4ab.f103c-wang.chienpin=gmail.com@logdown.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=logdown.com; q=dns/txt;
+ s=smtp; t=1485828326; h=Content-Transfer-Encoding: To: Message-Id:
+ Content-Type: Mime-Version: Subject: From: Date: List-Id:
+ List-Unsubscribe: Sender: X-Feedback-Id;
+ bh=9wJVLamJxHpacFwOGFbM4AJh/V39+IemexUlEew3s5w=; b=C05U3EyBTWrh43QeK9Sq/n1XNJB6k4898+STubUcpOEv02V/65ErZz8ZYRG70wUpS5rTKyO4
+ osvEsOtJZ2/QYspVcYHLY+E+feosyyvKHU71ihaEVBgwK8JtSWOZObph6jUuSIoWeJxu8//0
+ 0wH3DM1+l54FSxnqHfSHqxmoW3k=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=logdown.com; s=smtp; q=dns;
+ h=X-Feedback-Id: Sender: List-Unsubscribe: List-Id: Date: From:
+ Subject: Mime-Version: Content-Type: Message-Id: To:
+ Content-Transfer-Encoding;
+ b=QCBDPFBY4XlxHdEfV9UiA2wHOvezXHfI+EwbQSKeWLN804NQlYG4ik/6mSWva5IPG4bpDP
+ pu+IylcfKl8QLQbjCp/xjoyYqYkRL5mMnljKFbCwZVbd1ew2DogNWSbYUl9fGCoxJHo+6xGq
+ Se8xRrJNnsBrt/e/RYLxLA1mgzAcc=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg;
+ t=1485828326; h=Content-Transfer-Encoding: To: Message-Id:
+ Content-Type: Mime-Version: Subject: From: Date: List-Id:
+ List-Unsubscribe: Sender: X-Feedback-Id;
+ bh=9wJVLamJxHpacFwOGFbM4AJh/V39+IemexUlEew3s5w=; b=gkhX3ew34wn5eOBdxDy/9asAcS4xiozoL7wgxsYD5HrcRxVfNvPMM/DxHzwIk9sBjQ/4ReKP
+ yotNJ0sJO5k1vFcGN05CW/jp5jwXQmE59QH15OTk05h/Jcg5u0xHbnPxejXCtRDFfH0WttWK
+ ABup0kH+57HYrX54h9NOzbkXrpA=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=mailgun.org; s=mg; q=dns;
+ h=X-Feedback-Id: Sender: List-Unsubscribe: List-Id: Date: From:
+ Subject: Mime-Version: Content-Type: Message-Id: To:
+ Content-Transfer-Encoding;
+ b=QNWsUKTxfj3golgqDTe1ua5FeQfCjttJqpcKMfdFJQ8lG9E5B+yedqBMHhn6yQJ9xZfILv
+ k1k34T5wz9efEZaikDNY3FHvzWVv1mD3mYgLgdaElFx41I2ZQaML6noRLi3eGbEX+pFwQmXL
+ kkwOjca/heJm2kBK+QPstIoH8KsyA=
+X-Feedback-Id: 525d110afea39804714a9148:mailgun
+Sender: newspaper@logdown.com
+X-Mailgun-Sending-Ip: 184.173.153.218
+X-Mailgun-Sid: WyJjMjNiNSIsICJ3YW5nLmNoaWVucGluQGdtYWlsLmNvbSIsICJmMTAzYyJd
+List-Unsubscribe: <mailto:u+mq6wmmjqgnrsm2j5giydcnzqgeztcmbsga2tenrohezdqnbvfyzdoojqgaxemrrzgbbueqzxeu2da3dpm5sg653ofzrw63jgna6wmzdbha4wmnbsmqztezlbgbrdqndcmmzdcnbsmyydanrvgqzdenrgnu6tc33gmmtheplxmfxgoltdnbuwk3tqnfxcknbqm5wwc2lmfzrw63i@logdown.com>
+Received: by luna.mailgun.net with SMTP X-Mailgun-List-Id=1ofc,
+ 8784387209009; Tue, 31 Jan 2017 02:05:26 +0000
+X-Mailgun-List-Id: 1ofc
+X-Mailgun-List-Address: newspaper@logdown.com
+List-Id: <1ofc.logdown.com>
+Received: by luna.mailgun.net with HTTP; Tue, 31 Jan 2017 02:00:33 +0000
+Date: Tue, 31 Jan 2017 02:00:32 +0000
+From: "Logdown" newspaper@logdown.com
+Subject: [Logdown] What's Hot on Logdown this week - 01/31/2017
+Mime-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Message-Id: <20170131020526.92845.27900.FF90CBC7@logdown.com>
+To: Chien-pin_Wang <wang.chienpin@gmail.com>
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE=20html=20PUBLIC=20"-//W3C//DTD=20HTML=204.0=20Transitional//EN"=
+=20"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html=20xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+
+<meta=20http-equiv=3D"Content-Type"=20content=3D"text/html;=20charset=3DUTF=
+-8">
+</head>
+<body><table=20class=3D"background"=20style=3D"border-collapse:collapse;bor=
+der-spacing:0;width:100%;background:url(https://d1vzm1nztjpyu4.cloudfront.n=
+et/assets/images/white_wall_hash-aa2a2fcbda02d286681361854c4ceb6dbeafa58f43=
+f8a2123d0789e47cc9b422.png)=20repeat">
+=20=20<tr>
+=20=20=20=20<td>
+=20=20=20=20=20=20<table=20class=3D"container"=20style=3D'border-collapse:c=
+ollapse;border-spacing:0;width:640px;font-family:"Helvetica=20Neue",=20Helv=
+etica,=20Arial,=20sans-serif;margin:0=20auto'>
+=20=20=20=20=20=20=20=20<tr=20class=3D"header-top">
+=20=20=20=20=20=20=20=20=20=20<td=20style=3D"background-color:rgba(0,0,0,0.=
+8);color:rgba(255,255,255,0.8);padding:10px=2020px">
+=20=20=20=20=20=20=20=20=20=20=20=20<a=20href=3D"http://email.logdown.com/c=
+/eJxNjUsKxCAQBU8Tl9KtJqYXLmYC3iO2nwiJhiGQ609mN_A2RUG96DKCZlGdArSAGkHBqCZJaj=
+ajVJYApPcEy3uxg4G9l9jvJrkfYnM2p0BR85Q4MIKZbZzXAFkHMpEIxeGwZxa7267rHPRrUP7ZX=
+-Qh8XH32orkraZ21va8lGOt-09_AXwQLsk"=20style=3D"color:#2450a8;text-decoratio=
+n:none">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20<img=20alt=3D"Logdown"=20class=3D=
+"logdown-logo"=20height=3D"30"=20src=3D"http://logdown.com/images/logo-hori=
+zontal-white.png"=20style=3D"opacity:.8">
+</a>=20=20=20=20=20=20=20=20=20=20</td>
+=20=20=20=20=20=20=20=20</tr>
+=20=20=20=20=20=20=20=20<tr=20class=3D"header-mail">
+=20=20=20=20=20=20=20=20=20=20<td=20style=3D"background-color:#e6e6e6;text-=
+align:center">
+=20=20=20=20=20=20=20=20=20=20=20=20<h2=20style=3D'color:#404040;font:norma=
+l=2036px/40px=20"Gill=20Sans",=20Lato,=20sans-serif;margin:40px=200'>Logdow=
+n=20Weekly=20Digest</h2>
+=20=20=20=20=20=20=20=20=20=20</td>
+=20=20=20=20=20=20=20=20</tr>
+=20=20=20=20=20=20=20=20<tr=20class=3D"mail-content">
+=20=20=20=20=20=20=20=20=20=20<td=20style=3D"background-color:#e6e6e6;paddi=
+ng:0=2040px=2040px">
+=20=20=20=20=20=20=20=20=20=20=20=20<div=20class=3D"digest-posts">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20<div=20class=3D"post"=20id=3D"pos=
+t_1361025"=20style=3D"padding:20px=200=2010px">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNjssKhDAUQ7_G7iy=
+3t2p10cWM4H_UPrRMH6IFmb-fuhsIScjiECMdA66JlwhMAOMMEHoc6IRj11MUEwBdlgnm9yyaDk=
+LeTL4T1TmSXWIPyFwPhtthGA2C0mJahe0GZ0a3MhIly06TIPdSjoa_GlyqPiqp09M_Vh2PfJWr5=
+vOjBrCnj9Xit3Xelb29bLRXsWfrU6tzCHaz5JS3ShvVu7fp8Kk-3KLy4WH-AB8fQdo"=20style=
+=3D'color:#2450a8;text-decoration:none;font:18px=20"Gill=20Sans",=20Lato,=
+=20sans-serif;margin-bottom:10px;display:block'>=E5=A4=A7=E4=B8=89=E4=B8=8A=
+=E6=80=BB=E7=BB=93</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">=E8=BD=AC=E7=9C=BC=E9=97=B4=E5=8F=88=E4=B8=80=E4=B8=AA=
+=E5=AD=A6=E6=9C=9F=E8=BF=87=E5=8E=BB=E4=BA=86=E3=80=82=E4=BC=A0=E9=97=BB=E4=
+=B8=AD=E6=9C=80=E5=8F=AF=E6=80=95=E7=9A=84=E4=B8=80=E4=B8=AA=E5=AD=A6=E6=9C=
+=9F=E4=B9=9F=E5=B0=B1=E8=BF=99=E6=A0=B7=E5=B9=B3=E5=AE=89=E6=97=A0=E4=BA=8B=
+=E5=9C=B0=E5=BA=A6=E8=BF=87=E4=BA=86=E3=80=82=E5=A4=A7=E5=AD=A6=E7=9A=84=E7=
+=94=9F=E6=B4=BB=E4=B9=9F=E5=B7=B2=E7=BB=8F=E8=BF=87=E5=8D=8A=E4=BA=86=E3=80=
+=82
+
+=E6=84=9F=E4=BC=A4=E7=9A=84=E4=BA=8B=E8=B6=8A=E6=9D=A5=E8=B6=8A=E5=A4=9A=EF=
+=BC=8C=E5=90=8C=E6=97=B6=E4=B9=9F=E6=97=A5=E6=B8=90=E5=AF=B9=E6=9C=AA=E7=9F=
+=A5=E7=9A=84=E6=9C=AA=E6=9D=A5=E6=84=9F=E5=88=B0=E6=81=90=E6=85=8C=E3=80=82=
+=E4=BB=8E=E5=A4=A7=E4=BA=8C=E6=80=9D=E8=80=83=E5=88=B0=E7=8E=B0=E5=9C=A8=EF=
+=BC=8C=E4=BB=8D=E7=84=B6=E4=B8=8D=E7=9F=A5=E9=81=93=E8=AF=A5=E9=80=89=E6=80=
+=8E=E6=A0=B7=E7=9A=84=E5=87=BA=E8=B7=AF=E3=80=82...</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-28=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20huzecong
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjcsOgyAQAL9GjmTZFZEDh2rif2xBHqmCMSb-fu2tydwmmQk=
+uKiAvikNQBhQpQNA4SItjryUaCyCXxcI8zabrYWsptLtK33aRnRkUUuBIrHtmihRj0B5Wo8N7NN=
+aK3akWvdhcvq6jo1eHy8OHK59F_rdOd3NN0uey1qPU55R2LtvPfQE0lDCd"=20style=3D"text=
+-decoration:underline;color:#666">Kanari's=20Blog</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1363328"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNjkEOgyAURE8ju5L=
+PB_yyYNGaeA_EIjQKpmpMb1-6azLJLOblZSYbBEjPkkUQBEIKQNDYcoOd0hzJAPBhMNA_emoULG=
+WeypW5LyuLltqxQ-NGMioAaPIIhEp6kjoodE-2WlGCZ4uNx7E18t7gUPMprzPu522sNv5nrNNW9=
+mOvLWQrJXbsbS-XZ-5jeuYt5fpgXl1afvQXoG829w"=20style=3D'color:#2450a8;text-de=
+coration:none;font:18px=20"Gill=20Sans",=20Lato,=20sans-serif;margin-bottom=
+:10px;display:block'>01.29=20XDite@=E6=96=B0=E7=94=9F=E5=A4=A7=E5=AD=B8=EF=
+=BC=9A=E5=A6=82=E4=BD=95=E4=BF=9D=E6=8C=81=E7=86=B1=E6=83=85=E7=9A=84=E5=AD=
+=B8=E7=BF=92</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">=E5=89=8D=E8=A8=80=EF=BC=9A=E6=96=B0=E7=94=9F=E5=A4=A7=
+=E5=AD=B8=E6=98=AF=E6=9D=8E=E7=AC=91=E4=BE=86=E4=B8=BB=E6=8C=81=E7=9A=84=E5=
+=AD=B8=E7=BF=92=E7=A4=BE=E7=BE=A4=EF=BC=8C=E5=AD=B8=E7=BF=92=E7=9A=84=E9=83=
+=BD=E6=98=AF=E4=BA=9B=E5=BE=88=E5=9F=BA=E6=9C=AC=E7=9A=84=E8=83=BD=E5=8A=9B=
+=EF=BC=8C=E5=83=8F=E5=AF=AB=E4=BD=9C=E3=80=81=E6=BC=94=E8=AC=9B=E3=80=81=E8=
+=8B=B1=E8=AA=9E=E3=80=81=E5=AD=B8=E7=BF=92=E5=A6=82=E4=BD=95=E5=AD=B8=E7=BF=
+=92=E7=AD=89=E7=AD=89=E3=80=82=E4=BB=A5APP=E7=9A=84=E6=96=B9=E5=BC=8F=E7=B5=
+=84=E7=B9=94=E7=A4=BE=E7=BE=A4=EF=BC=8C=E8=AE=93=E4=BD=A0=E6=9C=89=E5=AD=B8=
+=E4=BC=B4=E3=80=82=E8=A8=BB=E5=86=8A=E5=85=8D=E8=B2=BB=EF=BC=8C=E4=BD=86=E5=
+=A4=A7=E9=83=A8=E5=88=86=E7=9A=84=E8=AA=B2=E7=A8=8B=E9=83=BD=E5=8F=AA=E9=96=
+=8B=E6=94=BE=E7=B5=A6=E4=BB=98=E8=B2=BB=E5=8A=9F=E8=83=BD=E3=80=82=E8=B2=BB=
+=E7=94=A8=E6=98=AF443...</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-29=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20YOJUHSU
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNzUsOgyAUheHVyKzkAsItAwbWxH3wEKFRMK3GdPelsyZn9if=
+fCSYyEJ5kw4EhMMGAg-SKan7vJeWoAeg0aRgfI3Y9rHUJ9SrU140kE9AFh3IWKJxHtDI62TdGh6=
+BQRUc2w2r0ZDXpOPZODB2f2j71eab3eXNNo__iy1y2LNSnPJc9l_a3bDavv_YFcmYzFQ"=20sty=
+le=3D"text-decoration:underline;color:#666">YOJUHSU's=20Blog</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1119445"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNj8FuwyAQRL_G3BY=
+BhhAOHNpI_o8F1jaqDY6NFPXvS9NLpZHmMvNGk_wsxRhZ9kpIK-QohRJG3bhTd224sk4IPk1OPD=
+4fdtBiq0uqr8Jj3dnqLaJVBm82BEkiESUd7yaaOY0yGHJs97LOkW1-be0Yxo9BTV1H_aIz1T2X2=
+ug86Iz4jfwf-p252tVdSum0NnDhigHb8wkRr14EXKjAHwScg4QF3lyoZcuFoJMDXXhCytAbyE7_=
+wrLwuGYqRy79zLJj3n73fgA74FSC"=20style=3D'color:#2450a8;text-decoration:none=
+;font:18px=20"Gill=20Sans",=20Lato,=20sans-serif;margin-bottom:10px;display=
+:block'>sahabatqq.casino=20agen=20domino=2099=20dan=20poker=20online=20terb=
+esar=20di=20asia</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">sahabatqq.casino=20agen=20domino=2099=20dan=20poker=20=
+online=20terbesar=20di=20asia=20merupakan=20tema=20terbaru=20dan=20menj...<=
+/p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-31=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20Kiran=20Banget
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjUsKgzAUAE9jluHlq1lkUQXvEV8SDTUfgiC9fe2uMLuBGW8=
+jA4EkWQ5sBCYYcFBcU8MnqSgfDQBdVwPLvIyDhLPuvt6FYs3ksAhucyJq7j1TU9QYQEkBG0rNcD=
+MTyZbViOS0x3W1QbwGvj60-g7d15xKvUJvoaP7OPqf7vZ2Zad4pFBaKs94zy6dP_cFZSo26Q"=
+=20style=3D"text-decoration:underline;color:#666">Poker=20Domino=20Terperca=
+ya=20Indonesia</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1107951"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNT8tuwyAQ_BpzAy3=
+YDubAoY3k_yCwsbfFi2Woov593PTQSiONNJqHJvm7hj4K8ga0Bd1rMDCai3JmGkZlrANQ8-zg-n=
+613QC5LKk8WMWyidW7OBk32cFiTOaW7Ig2XdIU0PZg9eDE5nW5R5H92tre9W-dmU_s5ROPVDbi0=
+vDY8YjhO6h_1S9PbfVkrcG6UcsPzKG-gvI0yErtq8qwIMtfsXAmRvnXJxNJ4lQYKwVx-EfgRcWV=
+kHfi88myBco_Y0_mGlOU"=20style=3D'color:#2450a8;text-decoration:none;font:18=
+px=20"Gill=20Sans",=20Lato,=20sans-serif;margin-bottom:10px;display:block'>=
+jelaspoker.com=20situs=20agen=20poker=20online=20terpercaya=20di=20indonesi=
+a</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">jelaspoker.com=20situs=20agen=20poker=20online=20terpe=
+rcaya=20di=20indonesia=20adalah=20review=20yang=20ingin=20blog=20http...</p=
+>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-30=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20Kiran=20Banget
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjUsKgzAUAE9jluHlq1lkUQXvEV8SDTUfgiC9fe2uMLuBGW8=
+jA4EkWQ5sBCYYcFBcU8MnqSgfDQBdVwPLvIyDhLPuvt6FYs3ksAhucyJq7j1TU9QYQEkBG0rNcD=
+MTyZbViOS0x3W1QbwGvj60-g7d15xKvUJvoaP7OPqf7vZ2Zad4pFBaKs94zy6dP_cFZSo26Q"=
+=20style=3D"text-decoration:underline;color:#666">Poker=20Domino=20Terperca=
+ya=20Indonesia</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1355904"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNjsGKwyAURb8m7pT=
+3nrHWhYu2kP-wRqPUaOgkk3a-ftJd4cKFe-BwRxsRpGfZEqAGlAgEik7C0LlXgrQBEMNg4Ha96a=
+6H0qax7VX4NrNk0SFGioi99CECGtDqrk5AqMPZ0Z3NFlv0rNi0rksnLx0NR0pY_8SX6Zhq2H-OQ=
+qmUgZ5_SGlu5Om9Pfhvfr145qXwtE383TY-L5I97e7qJHzKoS65Huem2eXyEf4D5udAqQ"=20st=
+yle=3D'color:#2450a8;text-decoration:none;font:18px=20"Gill=20Sans",=20Lato=
+,=20sans-serif;margin-bottom:10px;display:block'>3.41=20MB=20Download=20Hyu=
+k=20VIXX=20=E2=80=93=20=EC=95=88=EC=95=84=EC=A4=84=EA=B2=8C=20(I`ll=20Hug=
+=20You)=20Mp3</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">Download=20Lagu=20Hyuk=20VIXX=20-=20=EC=95=88=EC=95=84=
+=EC=A4=84=EA=B2=8C=20(I`ll=20Hug=20You)=20Mp3=20Terbaru=20
+
+Download=20Lagu=20Hyuk=20VIXX=20-=20=EC=95=88=EC=95=84=EC=A4=84=EA=B2=8C=20=
+(I`ll=20...</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-26=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20letz
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjcsKgzAQAL_GHMPuRt14yKEV_I80b4iJFEHo19feCnMbmPE=
+mIigniiFABlQIBBPNciE9TpJ4AZDbtsD6XHkYofbk-9Wk67vIRk-ztagAfSQf_IzMHEkBa-v1K0=
+SxG-zRiWryeR6Degy03dRwfuR_6W0u25J0uYR2lHZ_0m5L_bkvvqgvsA"=20style=3D"text-d=
+ecoration:underline;color:#666">K-Pop=20Music</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1350980"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNjssKwyAURL8m7ir=
+XV9WFizaQ__AdaaIhEfL7tbvCwCzmcJhgEgHmUTEUiATCCFAQ9Ik1VVxgKjUAXhYN83uWE4et5d=
+Duin3b0Wos145JHq1KPgQReHKWaQ5RKOmCsmg3pCWPNrP2fkzsNdFlJMWaP7bctsfz4YYS_2nHf=
+rSrX6MJE6AVoNPctmbs1xLrUeq4kXdbth_9BV9jOi8"=20style=3D'color:#2450a8;text-d=
+ecoration:none;font:18px=20"Gill=20Sans",=20Lato,=20sans-serif;margin-botto=
+m:10px;display:block'>=E5=90=ACXdite=E8=80=81=E5=B8=88=E8=AE=B2=E9=A1=B9=E7=
+=9B=AE=E7=AE=A1=E7=90=86</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">1.=E5=A6=82=E4=BD=95=E8=B5=A2=E4=B8=80=E5=9C=BA=20Hack=
+athon-=20=E7=89=9B=E9=80=BC=E7=9A=84=E6=8A=95=E5=BD=B1=E7=89=87
+-=20=E7=82=B9=E5=AD=90=E8=A6=81=E5=A5=BD=EF=BC=88=E6=AD=A3=E7=A1=AE=E7=9A=
+=84=E4=BA=A7=E5=93=81=EF=BC=8C=E9=80=82=E5=90=88=E4=B8=BB=E5=8A=9E=E6=96=B9=
+=E5=8F=91=E5=B8=83=E4=BC=9A=EF=BC=89
+-=20=E4=BB=A3=E7=A0=81=E8=BF=98=E8=A1=8C=EF=BC=88=E6=9C=80=E5=B0=8F=E5=8F=
+=AF=E8=A1=8C=E6=80=A7=E4=BA=A7=E5=93=81=EF=BC=89
+
+
+=E5=A5=BD=E4=BA=A7=E5=93=81=E5=85=B7=E6=9C=89=E5=90=8C=E6=A0=B7=E7=9A=84=E7=
+=89=B9=E6=80=A7
+=20=20=20=20-=20=E7=89=9B=E9=80=BC=E6=8A=95=E5=BD=B1=E7=89=87
+=20=20=20=20-=20=E8=A2=AB...</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-24=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20jack
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjUEOgyAQAF8jt5JdQC0HDq0J_1hhQVIFY0z8fu2tydwmmYk=
+uIeggilOAI6BGUNCrQVr1NL1UowWQ3luY3tPYGVhbju2qMrRNLI5IB0yBiSwxqjiQxnmIfTBpZj=
+YsNoctBbG65Tz3Tr865W8S1_yhctHJx2O-k_I_e7iLapZhKVz3Uu9p3qisP_cF1nk19A"=20sty=
+le=3D"text-decoration:underline;color:#666">fengkaiwater's=20Blog</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1361482"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJw9jk2OhCAQhU8jO0g=
+VyKALFj2deA8HCiStYJRp07cf3Ezy8n6St_i8DQjKsWQloAFUCBK0_BKjHHotpBkBxDSN8Px-mq=
+6HtURfrixc2dhiXSAnSQ267xFC8D_kNUgCg4MEQM02iyU4ttql1r1Tj05OTdWXZXYvOkQ5Ytt7O=
+evZ8kZoAXj3sdlF9Fo_PPxmn3Lkma6Tz9lzelOuJ7__HLlUvJb_YdhhrzlH4ZZEeU-5UcdtTuvN=
+_AcOSkW7"=20style=3D'color:#2450a8;text-decoration:none;font:18px=20"Gill=
+=20Sans",=20Lato,=20sans-serif;margin-bottom:10px;display:block'>=E8=B3=87=
+=E5=AE=89=E6=96=B0=E8=81=9E=E5=8F=8A=E4=BA=8B=E4=BB=B6=E9=80=B1=E5=A0=B1=20=
+=202017/1/23=20~=202017/1/27</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">1.=E9=87=8D=E5=A4=A7=E5=BC=B1=E9=BB=9E=E6=BC=8F=E6=B4=
+=9E
+=20=20Tenda=20ADSL2/2+=20Modem=20D840R=20-=20Unauthenticated=20DNS=20Change
+=20=20https://www.exploit-db.com/e...</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-29=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20htwhere
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJwVzUkOhCAQAMDXyJF0s8qBw2jiP7CRJaNgjInfHyepe0WfECS=
+x6gWgBZQIArQw3IlRaS6sA-DL4mCeZjso2HuO_Wmc-sGKj7RaHSitKkGQo0mooxwJN-uikcaxw2=
+NPxHZf7vsc5GcQy-uOvQT6bhfvV2aXf0LLnErd2lnbm-Qj1P1f_ABQSy7B"=20style=3D"text=
+-decoration:underline;color:#666">TDOHacker</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1356107"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNTsGKxCAU-5p6U57=
+a2vbgYXag_2H12cpadasww3z9ureFQAIJSZz2HKQlQQvgM3DJQcAkFFvFMk5MzCsA27YVnl_PeR=
+gh5sPlV2I2X-TUfhTS2dFxvqCySs6Ik8BllaDELtVOLs2ztyTqs7UyyMcgto7vamL9-Zx7pHsvZ=
+P9Ku1tybbUzl5PiMFP0PtiAqdGI5k4hHV3UmhPFd8G7OxZpSLWgbSEnE-mNxvUYufXLpIPZs2dK=
+SP3-cZkQ_3Z-ARjnTyc"=20style=3D'color:#2450a8;text-decoration:none;font:18p=
+x=20"Gill=20Sans",=20Lato,=20sans-serif;margin-bottom:10px;display:block'>=
+=E9=AB=98=E6=95=88=E5=AD=A6=E4=B9=A0=E7=AC=AC=E4=B8=80=E8=AF=BE=E5=BF=83=E5=
+=BE=97=EF=BC=9A=E6=A3=80=E8=A7=86=E9=98=85=E8=AF=BB</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20#=20=E5=AD=A6=
+=E4=BC=9A=E2=80=9D=E5=AD=A6=E4=B9=A0=E2=80=9C=E8=83=8C=E5=90=8E=E7=9A=84=E8=
+=A7=84=E5=88=99
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20**=E9=A6=96=E5=85=88=E5=BF=85...<=
+/p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-27=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20=E9=A6=99=E9=A6=
+=99=E5=B0=8F=E6=82=9F=E7=A9=BA
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNzUEOgyAURdHVyKzk8wGBAQNr4j4QqpAi2Gpi0tWXzpq82U3=
+OC3ZhwD1JFoEpYJwBgsSeGtRCUlQGgE6TgfE-qk5ArmuoV6G-biRa5pzUyiyoTd8UZmavPVeiRw=
+EyBEE2y-riSbbxPPeODx1Obc_D5eP1iXO-zQ2k_-jbXq6s1Mf0KHsq7XLdXMq_9gWzmDNI"=20s=
+tyle=3D"text-decoration:underline;color:#666">ksalsqzhbl's=20Blog</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1356007"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNTs0KwyAYe5p6lM_=
+P-nfwsBX6HupsFayWtaOwp5-9DUISAgl52YUBDyRbBKaAcQYIAiU1qEdBURkAOs8GpuekhhFKW1=
+_tqjS0jSQrfYieea-F8QK1VosDI0ajg8MYEclmWVsCKTad5z7wx4BzR_l8U670b6uHezvOo-v9o=
+wuw28tOjAsJoMjbXq6uNKQc655rP7NuLpe7_gMCNjjW"=20style=3D'color:#2450a8;text-=
+decoration:none;font:18px=20"Gill=20Sans",=20Lato,=20sans-serif;margin-bott=
+om:10px;display:block'>=E5=A6=82=E6=9E=9C</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">=E9=82=A3=E5=9C=BA=E8=BD=A6=E7=A5=B8=E8=BF=98=E5=9C=A8=
+=E6=8C=81=E7=BB=AD=E5=9C=B0=E7=94=9F=E9=95=BF
+=E6=89=80=E6=9C=89=E7=9A=84=E5=85=89=E9=83=BD=E5=83=8F=E4=BB=8E=E6=9C=AA=E5=
+=87=BA=E7=8E=B0=E8=BF=87
+
+=E5=A4=AA=E5=88=9D=E6=98=AF=E9=9A=90=E6=99=A6=E7=9A=84
+=E6=88=91=E5=A4=A7=E6=A6=82=E4=B9=9F=E6=98=AF
+=E5=9C=A8=E4=B8=96=E7=95=8C=E7=9A=84=E8=BE=B9=E7=BC=98=20=E5=A0=86=E7=A7=AF=
+=E5=A6=82=E5=B1=B1=E7=9A=84=E5=B0=8F=E4=BA=8B
+=E8=AE=A9=E7=96=BC=E7=97=9B=E4=BB=8E=E7=9C=BC=E7=9D=91=E4=B8=8B=E6=95=A3=E5=
+=8E=BB
+
+=E6=88=91=E4=B8=8D=E8=83=BD=E8=AF=B4=EF=BC=9A
+=E6=88=91=E4=BB=AC=E4=BA=A4=E6=8D=A2=E8=BF=87=E7=9A=84=E5=87=A0=E5=8D=81=E6=
+=AC=A1=E8=A7=86=E7=BA=BF
+=E4=BB=85=E4=BB=85=E5=87=BA=E4=BA=8E=E6=81=90=E6=83=A7
+
+=E9=82=A3=E4=B8=AA=E4=B8=8A=E5=8D=88=20=20=E4=BB=8E...</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-26=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20ncim
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjUsKwyAUAE8Tl_J8ao0LF20g9wg-f-AnhJRAT990V5jdwAy=
+5KEB6VhyCMCCkAASND25xVpqjsQB8XS0sr8VMCupINK7O_WgsO1JSkxY2UMAglZw1kY8WTFQKwx=
+ZYc2JEz6rL57lP8jnhelPfn1w6_28d7tp64j6X0PfS71NqW6k_9wU5UTDD"=20style=3D"text=
+-decoration:underline;color:#666">=E5=8F=AA=E6=9C=89=E6=98=AF=E8=AF=97=E6=
+=AD=8C</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1350108"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNjsEOgyAQBb9GbpL=
+dFYocOLQm_gcioqmCARt_v_TW5CWTzGHyZrMgdI5thgAVYIdAIOnBNfVCclIagI-jhuE1qEbAns=
+Kc7shdOthq_KKF1FrMMC2oekUWiMALUnaaJ4nsMJgWx3azXtfZdM-GxrrJ21w-_K9V5ZnKVSqxk=
+4DQt-W2IfjchmxP32br3iyb28bA3br5eG6x3gmH3fZf4AuoxjwK"=20style=3D'color:#2450=
+a8;text-decoration:none;font:18px=20"Gill=20Sans",=20Lato,=20sans-serif;mar=
+gin-bottom:10px;display:block'>swagger=20+=20grape=20+=20rack</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">=E5=B8=B8=E5=B8=B8=E8=81=BD=E5=88=B0=20swagger=20=E8=
+=B7=9F=20grape=20=E7=9A=84=E5=90=8D=E5=AD=97
+
+=E6=89=80=E4=BB=A5=E7=94=A8=E4=B8=80=E5=80=8B=E5=BE=88=E9=99=BD=E6=98=A5=E7=
+=9A=84=E5=B0=88=E6=A1=88=E7=B7=B4=E7=BF=92=E4=B8=80=E4=B8=8B=E8=A6=81=E5=A6=
+=82=E4=BD=95=E4=BD=BF=E7=94=A8
+
+
+=E4=BD=BF=E7=94=A8=E5=88=B0=E7=9A=84=20Gem:
+
+
+grape=20API=20=E6=A1=86=E6=9E=B6
+
+grape-swagger=20API=20=E6=96=87=E4=BB=B6=E7=94=A2=E7=94=9F...</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-24=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20=E7=86=8A=E5=A4=
+=A7=E6=9E=B6
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjUEOgyAQAF8jR7K7gJQDh9aEf-gCSqJgrI3fr701mdskM9F=
+nBMWieAK0gAqBwFAvHT20kWQdgAzBwfAabKdhbXNsV5XcNrH4ZFEjK4fMKcMUIWaN2HPG3phETm=
+weW2ax-uU89049Owo3UxqP90f-tw5_jXWWvJRU91Lv07yNZf25LySlMGk"=20style=3D"text-=
+decoration:underline;color:#666">BearSu</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1355809"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNT9FqhTAU-xp9azm=
+tVu1DH-4u-B_ntqfaTVtvrcj-fsoYDAKBhCTEGS-gsXUwEkQPohEgQcmOazm0isteA_Bx1PD8eP=
+ZVC0uaXDojt2mtZ0NdNzjwTpDuWu9eUvSaULW9J-WtkPVqRPK2XsxcylY1j0qOF_Kx4owTxc_DB=
+f6v8vK2tJf9YtEoNYBmf7yHcuxsS1-UT1yosDvP7oJfkaW4hEjMYWQvjA4zc2kNMb3frFDeKFv8=
+xjqbE-PE7RwobiFej6YVw3KP_wAduFVp"=20style=3D'color:#2450a8;text-decoration:=
+none;font:18px=20"Gill=20Sans",=20Lato,=20sans-serif;margin-bottom:10px;dis=
+play:block'>Situs=20Pokerwalet=20Agen=20Judi=20Poker=20Online=20Dan=20Banda=
+r=20DominoQQ=20Terpercaya</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">Situs=20Pokerwalet=20Agen=20Judi=20Poker=20Online=20Da=
+n=20Bandar=20DominoQQ=20Terpercaya
+Referresi=20Pokerwalet=20-=20Mem...</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-26=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20mawar
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjUEOgyAQRU8jSzIzINQFi9bEe0xBgUbAGI3Xr901-buX935=
+wC4LyIjsCtIAKgaAnIwd66F6SHQDkNA0wvkbbaVhbDO2q0rciktOWKeDDzuatPIMxeLu4oDdKIz=
+KJ4rAtXqwuHcfWqWdH0739LJw4zvVzhiz_k7u7uEbpU57rlut9GAvn9ce-Rh0yeQ"=20style=
+=3D"text-decoration:underline;color:#666">Informasi=20Sejuta=20Rumah=20Agen=
+=20Terpercaya</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1353039"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNjssKwyAQRb8m7iq=
+jEx-zcNEG8h_GNEYwGmogv1-7K1w4m8Phrm4TgIElJ0EYEChAgpKak7Sj4tIQAJ9nguk1mWGEXO=
+Na78JDPdjuvCcgY7wmq7RBsWy4WhNCsIsCLUd2OFG3wLLbr-sc8DnIue-uub1zajEJMvRYepT_h=
+btx1na1ToEKAYl93O1L5GFP73Km0o_Ew6f8s78y8Tk4"=20style=3D'color:#2450a8;text-=
+decoration:none;font:18px=20"Gill=20Sans",=20Lato,=20sans-serif;margin-bott=
+om:10px;display:block'>Watch=20stream=20Opava=20v=20Vitkovice</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">Looking=20for=20=20live=20TV=20streaming=20Opava=20-=
+=20Vitkovice?=20=20Nowhere=20couldn=E2=80=99t=20find=20live=20TV=20streamin=
+g=20Opava=20...</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-25=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20wolselisgi1979
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjUEOgyAQAF8jt5LdBaF74NCa-A9BQBIUU038fu2tydwmmZl=
+dQlBBFEeAFlAhEPRkJNNT95IsA8hxZBjeg-001Jbndm0ytFUsDmc2ZH0yEJ8m9Gw9JCajIxqvkl=
+ZiddhSENUt57l36tXReHO1esRajlyQLT_8HZX_4Y-7pi3LsJS47WW7t3mdSv25L33RNFw"=20st=
+yle=3D"text-decoration:underline;color:#666">wolselisgi1979's=20Blog</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1350420"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNjsuOhCAQRb9GdpC=
+iUNQFixkT_wOxQNK8MtrTv9_2rpObnOQsTu5uvATlWDQIcgSpJCAMqMWMUz8IHGcAsa4zLL_L2P=
+WQatjrqwhXMzuM25CANk8TTdKDUl472BE3D1rPemLZyOodS-a4rtapnw7Xe8mGZ25KfMVu-2i13=
+ZBqgB6B8xxL5DZtz8wblcuGWriP_8RPKied7M-8bAnCHZFKi-U-F7KN6VN7A1keQY8"=20style=
+=3D'color:#2450a8;text-decoration:none;font:18px=20"Gill=20Sans",=20Lato,=
+=20sans-serif;margin-bottom:10px;display:block'>[Mini=20Album]=20PENTAGON=
+=20=E2=80=93=20Five=20Senses</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">
+
+Download=20[Mini=20Album]=20PENTAGON=20=E2=80=93=20Five=20Senses
+
+Free=20download=20full=20album=20PENTAGON=20=E2=80=93=20Five=20Senses=20m..=
+.</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-24=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20Viviiy
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjUsOgyAUAE8jS_LeA6QsWLQm3gMRkYRfjI3Xr-6azG6SmdV=
+uCMKzZAlQAwoEAkUjN_SSipM2AHyeDUyfSQ8Scotruyr3rbDdkjIqGKld8AsqTwqkXoUMOG5LeL=
+LFYts8y3Y_zz6I90DzTXbxW7rg_7HDXq5G7vcUak_1XsXiUn7cDzqzMHU"=20style=3D"text-=
+decoration:underline;color:#666">Download=20K-Pop=20Music,=20OST.=20Drama=
+=20Korea</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1360479"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNjs0KwyAQhJ8m3iq=
+7q83qwUMbyHsYNT-QaEgCoW9feysMzOWbj4luRFBBLI4AGVAhEDyplZaMfkpiCyD73kL37rjRsJ=
+YpljvLUDYxO9ItB20I2cZx4ICUKDIZRpMs-SA2h2UMYnXzde2NejXU1xxLyp85rdmjNfAYqlT-i=
+Suxl_M6a6NqQbMVh7t9nmSY63Jfcj0ybX5Zf_QXJR85Hw"=20style=3D'color:#2450a8;tex=
+t-decoration:none;font:18px=20"Gill=20Sans",=20Lato,=20sans-serif;margin-bo=
+ttom:10px;display:block'>Watch=20Alexandre=20Pantoja=20v=20Eric=20Shelton=
+=20Live=2028.01.2017</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">Looking=20for=20=20=20Pantoja=20-=20Shelton?=20=20Nowh=
+ere=20couldn=E2=80=99t=20find=20=20Pantoja=20-=20Shelton?=20=20Do=20You=20b=
+elive=20when=20=20...</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-28=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20rienyhelna1980
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjc0KhCAURp8mdyPXa6YuXDRB72H-pGAaEcS8_Ti7gW93Duf=
+zJjLgjmSDwCQwzgBB4EQ1qlFQlBqArquG5b3IYYTSdt-eSl07SDIeOJdRbWGziruonRBj1JMKYQ=
+IvJZLDsBYdKSbd9znwecC178qhflIo1TKt4LX1KP0PX-axdacude_Mtd_uh83lx761WTTY"=20s=
+tyle=3D"text-decoration:underline;color:#666">rienyhelna1980's=20Blog</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>
+<div=20class=3D"post"=20id=3D"post_1365102"=20style=3D"padding:20px=200=201=
+0px;border-top:1px=20solid=20#cccccc">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<a=20target=3D"_blank"=20cl=
+ass=3D"post-title"=20href=3D"http://email.logdown.com/c/eJxNjssKwyAURL8m7ir=
+3-ohx4aIN5D-M1gdEDY2Q36_dFQYGBs5wvAkI3JFsGKAC5AgMJJupZouQlCkNQLdNw_pa1STgaN=
+G3u1LXCkkGw7zsWruAOwcpRVDCaesFl06gdpwUgy04cpjU-znx58S2kT3ZChIU_Xsb89mufo1GP=
+suh8fC220fJNddIPua2NVKX8rueuQ6TWGw-fuQXRzU5SQ"=20style=3D'color:#2450a8;tex=
+t-decoration:none;font:18px=20"Gill=20Sans",=20Lato,=20sans-serif;margin-bo=
+ttom:10px;display:block'>=E7=B6=9C=E8=97=9D=E5=A4=A7=E7=86=B1=E9=96=80=20-=
+=20=E8=B3=87=E6=96=99=E6=8E=A2=E5=8B=98</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-desc"=20=
+style=3D"color:#666">
+=E6=9C=80=E8=BF=91=E7=9C=8B=E4=BA=86=E3=80=90=E8=AC=9D=E8=AC=9D=E4=BD=A0=E5=
+=80=91=E5=B8=B8=E7=99=BC=E6=88=91=EF=BC=81=E5=B9=B4=E5=BA=A6=E9=80=9A=E5=91=
+=8A=E7=8E=8B=E5=9B=9E=E9=A5=8B=E5=A4=A7=E6=9C=83=EF=BC=81=EF=BC=81=E3=80=91=
+20170124=20=E7=B6=9C=E8=97=9D=E5=A4=A7=E7=86=B1=E9=96=80=E5=85=AC=E5=B8=832=
+016=E5=B9=B4Top10=E9=80=9A=E5=91=8A=E6=AC=A1=E6=95=B8=E7=9A=84=E8=97=9D=E4=
+=BA=BA=EF=BC=8C=E8=BA=AB=E7=82=BA=E5=BF=A0=E5=AF=A6=E7=B2=89=E7=B5=B2=E7=9A=
+=84=E6=88=91=E5=A4=AA=E7=84=A1=E8=81=8A=E5=B0=B1=E5=BE=9E=E7=B6=9C=E8=97=9D=
+=E5=A4=A7=E7=86=B1=E9=96=80Wiki=E4=B8=8A=E9=9D=A2=E7=B5=B1=E8=A8=88=E4=B8=
+=80=E4=B8=8B=E5=88=B0=E5=BA=95=E9=99=A4=E4=BA=86=E5=89=8D10=E5=90=8D=E4=BB=
+=A5...</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p=20class=3D"post-meta"=20=
+style=3D"color:#666">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=202017-01-30=20|
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20by=20Bhan0507
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20on=20<a=20href=3D"htt=
+p://email.logdown.com/c/eJxNjUEKgzAUBU9jluH9n5jURRat4D1-EzUBTaQIXr92V5jdwEw=
+KC8FEVQKDPMgQGD07PfDD9pr9AOhpGjC-Rt9ZbG1N7ao6tl3lEJ13YomBRGm2XkyEwDOJYXHxof=
+ZAbYlqC_k8j848O55u3lkqenj9X_uES-qqYy5zPUq9X-suZfu5LzZbL9Q"=20style=3D"text-=
+decoration:underline;color:#666">Bhan0507's=20Blog</a>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+</div>=20=20=20=20=20=20=20=20=20=20=20=20</div>
+=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20<a=20class=3D"btn=20btn-read-more"=20hr=
+ef=3D"http://email.logdown.com/c/eJxNjcEOgyAQRL9GjmRZ0IUDh9bE_8CVKimCMSb280=
+tvTeYwL5m8WfxLgWaRPIIiUFoBQo-DdGhNL5EcgJwmB-NzpM5ArutS7yK57mLzxsR-phAU02DZk=
+WGabWA9BGRtLIvdq_pikf12XUenHx1OLX-SRvFz5HrG1u4Y3-L0dyir5C3FcqTSPtc9pPwbfwEO=
+zDOr"=20style=3D"text-decoration:none;width:300px;background-color:gray;col=
+or:#fff;text-align:center;line-height:40px;text-shadow:0=20-1px=201px=20rgb=
+a(0,0,0,0.5);display:block;margin:40px=20auto=200;border-radius:5px;box-sha=
+dow:inset=200=20-2px=200=20#666666">More=20stories=20=E2=86=92</a>
+=20=20=20=20=20=20=20=20=20=20</td>
+=20=20=20=20=20=20=20=20</tr>
+=20=20=20=20=20=20=20=20<tr=20class=3D"mail-footer">
+=20=20=20=20=20=20=20=20=20=20<td=20style=3D"color:gray;font-size:13px;padd=
+ing:20px=200">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20<p>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20We=20also=20have=20daily=20=
+digest,=20<a=20href=3D"http://email.logdown.com/c/eJxNjcEOgyAYg59GjqT8oMiBw=
+2bie7BfpiQKZrr4-sPbkh7afE07-beCZpE8QVkorUBoqZOOetNKsg6Q4-gwPAfbGKxlnsqVJZdN=
+LB7BMtCriJaNhtGTBjh2DjZa6l9i86q8Wax-Oc_9aPSjobHqb6WmwFy--awubiGth_j4K-RZ8pJ=
+i3lOut_MN7voPXZY0AQ"=20style=3D"color:#2450a8;text-decoration:none">click=
+=20here=20to=20subscribe</a>.
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20</p>
+
+=20=20=20=20=20=20=20=20=20=20=20=20<p>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20You're=20receiving=20this=20mail=
+=20because=20you=20have=20registered=20as=20a=20Logdown=20user.<br>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20Don't=20want=20this=20digest?=20<=
+a=20href=3D"http://email.logdown.com/u/eJwVzEsOgyAUBdDVlCG5PB-_AZOauA8EQRKB=
+xonbb3sWcHIoCksSLRCUhVoUCJqM9ORYS7IekNvmsb5X-2Jcs-b5DJlmF2coOTpfmPJCR8TueE-=
+kmApgNBMZ0YOaJYk7PHFUmc52jE8bv6f22K7_8gWIVySJ"=20style=3D"color:#2450a8;tex=
+t-decoration:none">Click=20here=20to=20unsubscribe.</a>
+=20=20=20=20=20=20=20=20=20=20=20=20</p>
+=20=20=20=20=20=20=20=20=20=20</td>
+=20=20=20=20=20=20=20=20</tr>
+=20=20=20=20=20=20</table>
+=20=20=20=20</td>
+=20=20</tr>
+</table><center>
+<p=20style=3D"color:gray;font-size:13px;padding:20px=200">Don't=20want=20an=
+y=20mail=20from=20Logdown?=20<a=20href=3D"http://email.logdown.com/u/eJwdzE=
+sKwyAUBdDVxKE8r8bPwEEbyD6szxgh0VAK2X5LF3AOx02RzqJFkHKktCLQDCsDvJklXCCS6xpoe=
+S5uMnSMyuPuMo9T7NHgxV6hwCYYOLZkEbyzpiTestfiHe_Uq8x7K_1q_RfUM7Xjzz9xwuMLVbIj=
+ow">Click=20here=20to=20unsubscribe</a></p>
+</center><img=20width=3D"1px"=20height=3D"1px"=20alt=3D""=20src=3D"http://e=
+mail.logdown.com/o/eJwVzEsOgyAUBdDVlCG5PB-_AZOauA8EQRKBxonbb3sWcHIoCksSLRCU=
+hVoUCJqM9ORYS7IekNvmsb5X-2Jcs-b5DJlmF2coOTpfmPJCR8TueE-kmApgNBMZ0YOaJYk7PHF=
+Umc52jE8bv6f22K7_8gWIVySJ"></body>
+</html>
