@@ -7,3 +7,5 @@
 .vim_runtime/my_configs.vim
 .vim_runtime/tags
 .vim_runtime/.DS_Store
+.mutt/cache/*
+.w3m/cookie
