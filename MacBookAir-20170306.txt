@@ -1,0 +1,897 @@
+.
+├── Applications
+│   ├── ActiveState ActiveTcl
+│   │   └── tclvfse.app
+│   ├── Adobe Acrobat Reader DC.app
+│   │   └── Contents
+│   ├── App Store.app
+│   │   └── Contents
+│   ├── Atom.app
+│   │   └── Contents
+│   ├── Autodesk
+│   │   └── SketchBook
+│   ├── Automator.app
+│   │   └── Contents
+│   ├── Brackets.app
+│   │   └── Contents
+│   ├── Calculator.app
+│   │   └── Contents
+│   ├── Calendar.app
+│   │   └── Contents
+│   ├── Chess.app
+│   │   └── Contents
+│   ├── CollageFactory Free.app
+│   │   └── Contents
+│   ├── Communications
+│   ├── Contacts.app
+│   │   └── Contents
+│   ├── DVD Player.app
+│   │   └── Contents
+│   ├── Dashboard.app
+│   │   └── Contents
+│   ├── Day One Classic.app
+│   │   └── Contents
+│   ├── Day One.localized
+│   │   └── Day One.app
+│   ├── Dictionary.app
+│   │   └── Contents
+│   ├── Dropbox.app
+│   │   └── Contents
+│   ├── FaceTime.app
+│   │   └── Contents
+│   ├── Firefox.app
+│   │   └── Contents
+│   ├── Font Book.app
+│   │   └── Contents
+│   ├── GIMP.app
+│   │   └── Contents
+│   ├── GarageBand.app
+│   │   └── Contents
+│   ├── Google Chrome.app
+│   │   └── Contents
+│   ├── Google Drive.app
+│   │   └── Contents
+│   ├── Google Web Designer.app
+│   │   └── Contents
+│   ├── Image Capture.app
+│   │   └── Contents
+│   ├── Image Editing
+│   ├── Inkscape.app
+│   │   └── Contents
+│   ├── Keynote.app
+│   │   └── Contents
+│   ├── Kindle.app
+│   │   └── Contents
+│   ├── LINE.app
+│   │   └── Contents
+│   ├── Launchpad.app
+│   │   └── Contents
+│   ├── LibreOffice.app
+│   │   └── Contents
+│   ├── MacDown.app
+│   │   └── Contents
+│   ├── Magnet.app
+│   │   └── Contents
+│   ├── Mail.app
+│   │   └── Contents
+│   ├── Maps.app
+│   │   └── Contents
+│   ├── Messages.app
+│   │   └── Contents
+│   ├── Microsoft OneNote.app
+│   │   └── Contents
+│   ├── Mission Control.app
+│   │   └── Contents
+│   ├── Nik Collection
+│   │   ├── Analog Efex Pro 2.app
+│   │   ├── Color Efex Pro 4.app
+│   │   ├── Dfine2.app
+│   │   ├── HDR Efex Pro 2.app
+│   │   ├── Sharpener Pro 3 Output Sharpening.app
+│   │   ├── Sharpener Pro 3 Raw Presharpening.app
+│   │   ├── Silver Efex Pro 2.app
+│   │   ├── Uninstaller.app
+│   │   └── Viveza 2.app
+│   ├── Notes.app
+│   │   └── Contents
+│   ├── Numbers.app
+│   │   └── Contents
+│   ├── OBS.app
+│   │   └── Contents
+│   ├── OneDrive.app
+│   │   └── Contents
+│   ├── Pages.app
+│   │   └── Contents
+│   ├── Pencil.app
+│   │   └── Contents
+│   ├── Photo Booth.app
+│   │   └── Contents
+│   ├── Photos.app
+│   │   └── Contents
+│   ├── Preview.app
+│   │   └── Contents
+│   ├── Pushbullet.app
+│   │   └── Contents
+│   ├── QuickTime Player.app
+│   │   └── Contents
+│   ├── R.app
+│   │   └── Contents
+│   ├── RStudio.app
+│   │   └── Contents
+│   ├── Reminders.app
+│   │   └── Contents
+│   ├── Safari.app
+│   │   └── Contents
+│   ├── Send to Kindle
+│   │   ├── Send to Kindle.app
+│   │   └── Uninstall Send to Kindle.app
+│   ├── Siri.app
+│   │   └── Contents
+│   ├── Slack.app
+│   │   └── Contents
+│   ├── SourceTree.app
+│   │   └── Contents
+│   ├── Stickies.app
+│   │   └── Contents
+│   ├── Sublime Text.app
+│   │   └── Contents
+│   ├── SyphonInject.app
+│   │   └── Contents
+│   ├── System Preferences.app
+│   │   └── Contents
+│   ├── Telegram.app
+│   │   └── Contents
+│   ├── TextEdit.app
+│   │   └── Contents
+│   ├── The Unarchiver.app
+│   │   └── Contents
+│   ├── Things.app
+│   │   └── Contents
+│   ├── Time Machine.app
+│   │   └── Contents
+│   ├── TrueCrypt.app
+│   │   └── Contents
+│   ├── Utilities
+│   │   ├── Activity Monitor.app
+│   │   ├── Adobe Flash Player Install Manager.app
+│   │   ├── AirPort Utility.app
+│   │   ├── Audio MIDI Setup.app
+│   │   ├── Bluetooth File Exchange.app
+│   │   ├── Boot Camp Assistant.app
+│   │   ├── ColorSync Utility.app
+│   │   ├── Console.app
+│   │   ├── Digital Color Meter.app
+│   │   ├── Disk Utility.app
+│   │   ├── Grab.app
+│   │   ├── Grapher.app
+│   │   ├── Keychain Access.app
+│   │   ├── Migration Assistant.app
+│   │   ├── Script Editor.app
+│   │   ├── System Information.app
+│   │   ├── Terminal.app
+│   │   ├── VoiceOver Utility.app
+│   │   ├── Wish 8.6.app -> ../../Library/Frameworks/Tk.framework/Resources/Wish.app
+│   │   └── XQuartz.app
+│   ├── VLC.app
+│   │   └── Contents
+│   ├── Vienna.app
+│   │   └── Contents
+│   ├── Visual Studio Code.app
+│   │   └── Contents
+│   ├── Xcode.app
+│   │   └── Contents
+│   ├── feedly.app
+│   │   └── Contents
+│   ├── iBooks.app
+│   │   └── Contents
+│   ├── iMovie.app
+│   │   └── Contents
+│   ├── iTerm.app
+│   │   └── Contents
+│   └── iTunes.app
+│       └── Contents
+├── Library
+│   ├── Application Support
+│   │   ├── Adobe
+│   │   ├── Aperture
+│   │   ├── App Store
+│   │   ├── Apple
+│   │   ├── ApplePushService
+│   │   ├── CrashReporter
+│   │   ├── GarageBand
+│   │   ├── Logic
+│   │   ├── Macromedia
+│   │   ├── ProApps
+│   │   ├── Script Editor
+│   │   ├── com.apple.TCC
+│   │   └── iLifeMediaBrowser
+│   ├── Audio
+│   │   ├── Apple Loops
+│   │   ├── Apple Loops Index
+│   │   ├── Impulse Responses
+│   │   ├── MIDI Configurations
+│   │   ├── MIDI Devices
+│   │   ├── MIDI Drivers
+│   │   ├── MIDI Patch Names
+│   │   ├── Plug-Ins
+│   │   └── Sounds
+│   ├── Caches
+│   │   ├── com.apple.iconservices.store
+│   │   └── com.google.SoftwareUpdate.0
+│   ├── ColorPickers
+│   ├── ColorSync
+│   │   ├── Profiles
+│   │   └── Scripts -> ../Scripts/ColorSync
+│   ├── Components
+│   ├── Compositions
+│   ├── Contextual Menu Items
+│   ├── CoreMediaIO
+│   │   └── Plug-Ins
+│   ├── Desktop Pictures
+│   │   └── Solid Colors
+│   ├── Developer
+│   │   └── CommandLineTools
+│   ├── DirectoryServices
+│   │   └── PlugIns
+│   ├── Documentation
+│   │   ├── Applications
+│   │   ├── Help
+│   │   ├── License.lpdf
+│   │   ├── Resources
+│   │   └── iPod
+│   ├── DropboxHelperTools
+│   │   └── Dropbox_u501
+│   ├── Extensions
+│   │   ├── ACS6x.kext
+│   │   ├── ATTOCelerityFC8.kext
+│   │   ├── ATTOExpressSASHBA2.kext
+│   │   ├── ATTOExpressSASRAID2.kext
+│   │   ├── ArcMSR.kext
+│   │   ├── CalDigitHDProDrv.kext
+│   │   ├── HighPointIOP.kext
+│   │   ├── HighPointRR.kext
+│   │   ├── PromiseSTEX.kext
+│   │   ├── SoftRAID.kext
+│   │   └── hp_io_enabler_compound.kext
+│   ├── Filesystems
+│   │   ├── NetFSPlugins
+│   │   └── osxfusefs.fs
+│   ├── Fonts
+│   ├── Frameworks
+│   │   ├── MacFUSE.framework
+│   │   ├── NyxAudioAnalysis.framework -> /System/Library/PrivateFrameworks/NyxAudioAnalysis.framework
+│   │   ├── OSXFUSE.framework
+│   │   ├── PluginManager.framework
+│   │   ├── R.framework
+│   │   ├── Tcl.framework
+│   │   ├── Tk.framework
+│   │   └── iTunesLibrary.framework
+│   ├── Google
+│   │   └── GoogleSoftwareUpdate
+│   ├── Graphics
+│   │   └── Quartz Composer Plug-Ins
+│   ├── Image Capture
+│   │   ├── Automatic Tasks
+│   │   ├── Devices
+│   │   ├── Support
+│   │   ├── Supports
+│   │   ├── TWAIN Data Sources
+│   │   └── Tools
+│   ├── Input Methods
+│   ├── Internet Plug-Ins
+│   │   ├── AdobePDFViewer.plugin
+│   │   ├── AdobePDFViewerNPAPI.plugin
+│   │   ├── Disabled Plug-Ins
+│   │   ├── Flash Player.plugin
+│   │   ├── Quartz Composer.webplugin
+│   │   └── npSCSBATM.bundle
+│   ├── Java
+│   │   ├── Extensions
+│   │   └── JavaVirtualMachines
+│   ├── Keyboard Layouts
+│   ├── Keychains
+│   ├── LaunchAgents
+│   ├── LaunchDaemons
+│   ├── Logs
+│   │   ├── CrashReporter
+│   │   ├── DiagnosticReports
+│   │   └── Xsan
+│   ├── Managed Preferences
+│   ├── Messages
+│   │   └── PlugIns
+│   ├── Modem Scripts
+│   │   ├── Bluetooth LAN Access.ccl
+│   │   ├── Farallon LAN:Modem PC Card.ccl
+│   │   ├── Farallon Netopia 56K MLPPP.ccl
+│   │   ├── Farallon Netopia 56K.ccl
+│   │   ├── Farallon Netopia 64K MLPPP.ccl
+│   │   ├── Farallon Netopia 64K.ccl
+│   │   ├── GV flex:V.90.ccl
+│   │   ├── GV x2:V.90.ccl
+│   │   ├── Generic Dialup.ccl
+│   │   ├── Generic GPRS.ccl
+│   │   ├── Hayes Accura 56K.ccl
+│   │   ├── Motorola BitSURFR 56K MLPPP.ccl
+│   │   ├── Motorola BitSURFR 56K.ccl
+│   │   ├── Motorola BitSURFR 64K MLPPP.ccl
+│   │   ├── Motorola BitSURFR 64K.ccl
+│   │   ├── MultiTech MT5600.ccl
+│   │   ├── MultiTech MT5634.ccl
+│   │   ├── MultiTech MTA128NT ML-PPP w:DBA.ccl
+│   │   ├── MultiTech MTA128NT ML-PPP.ccl
+│   │   ├── MultiTech MTA128NT PPP.ccl
+│   │   ├── MultiTech MTA128ST ML-PPP w:DBA.ccl
+│   │   ├── MultiTech MTA128ST ML-PPP.ccl
+│   │   ├── MultiTech MTA128ST PPP.ccl
+│   │   ├── Null Modem 115200.ccl
+│   │   ├── Null Modem 19200.ccl
+│   │   ├── Null Modem 57600.ccl
+│   │   ├── Null Modem 9600.ccl
+│   │   ├── Sprint PCS Vision.ccl
+│   │   ├── Supra V.90.ccl
+│   │   ├── Vodafone VC701SI.ccl
+│   │   ├── WWAN.ccl
+│   │   ├── Zoom Bluetooth Modem (v.34).ccl
+│   │   ├── Zoom Bluetooth Modem (v.90).ccl
+│   │   ├── Zoom Universal (115k).ccl
+│   │   └── Zoom V-Series.ccl
+│   ├── OpenDirectory
+│   │   ├── Mappings
+│   │   ├── Modules
+│   │   └── Templates
+│   ├── OpenSC
+│   │   └── bin
+│   ├── PDF Services
+│   │   ├── Add PDF to iBooks -> /Applications/iBooks.app
+│   │   ├── Mail PDF -> /Applications/Mail.app
+│   │   ├── Save PDF to Web Receipts Folder.pdfworkflow
+│   │   ├── Save PDF to iCloud.pdfworkflow
+│   │   └── Send PDF via Messages -> /Applications/Messages.app
+│   ├── Perl
+│   │   ├── 5.16
+│   │   └── 5.18
+│   ├── PreferencePanes
+│   │   ├── Flash Player.prefPane
+│   │   └── MySQL.prefPane
+│   ├── Preferences
+│   │   ├── Audio
+│   │   ├── DirectoryService
+│   │   ├── Google
+│   │   ├── Logging
+│   │   ├── OpenDirectory
+│   │   ├── SystemConfiguration
+│   │   └── Xsan
+│   ├── Printers
+│   │   ├── Brother
+│   │   ├── Canon
+│   │   ├── EPSON
+│   │   ├── Icons
+│   │   ├── PPDs
+│   │   └── hp
+│   ├── PrivilegedHelperTools
+│   ├── Python
+│   │   ├── 2.6
+│   │   └── 2.7
+│   ├── QuickLook
+│   │   ├── iBooksAuthor.qlgenerator
+│   │   └── iWork.qlgenerator
+│   ├── QuickTime
+│   │   ├── AppleIntermediateCodec.component
+│   │   └── AppleMPEG2Codec.component
+│   ├── Raft
+│   │   └── site-plugins
+│   ├── Receipts
+│   │   └── db
+│   ├── Ruby
+│   │   ├── Gems
+│   │   └── Site
+│   ├── Sandbox
+│   │   └── Profiles
+│   ├── Screen Savers
+│   │   └── Default Collections
+│   ├── ScriptingAdditions
+│   │   └── SASyphonInjector.osax
+│   ├── Scripts
+│   │   ├── ColorSync
+│   │   ├── Folder Action Scripts
+│   │   ├── Folder Actions
+│   │   ├── Font Book
+│   │   ├── Printing Scripts
+│   │   ├── Script Editor Scripts
+│   │   ├── UI Element Scripts
+│   │   └── VoiceOver
+│   ├── Security
+│   │   └── SecurityAgentPlugins
+│   ├── Speech
+│   │   └── Synthesizers
+│   ├── Spotlight
+│   │   ├── Microsoft Office.mdimporter
+│   │   ├── iBooksAuthor.mdimporter
+│   │   └── iWork.mdimporter
+│   ├── StartupItems
+│   ├── SystemMigration
+│   │   ├── History
+│   │   └── Queue
+│   ├── SystemProfiler
+│   ├── Tcl
+│   │   ├── Misc
+│   │   ├── basekits
+│   │   ├── demos
+│   │   ├── itcl4.0.3
+│   │   ├── licenses
+│   │   ├── pkgconfig
+│   │   ├── tap8.6
+│   │   ├── tcl8
+│   │   ├── tdbc1.0.2
+│   │   └── teapot
+│   ├── Updates
+│   ├── User Pictures
+│   │   ├── Animals
+│   │   ├── Flowers
+│   │   ├── Fun
+│   │   ├── Instruments
+│   │   ├── Nature
+│   │   └── Sports
+│   ├── Video
+│   │   ├── Plug-Ins
+│   │   └── Professional Video Workflow Plug-Ins
+│   ├── WebServer
+│   │   ├── CGI-Executables
+│   │   ├── Documents
+│   │   ├── bootstrap-3.3.5-dist
+│   │   └── share
+│   └── Widgets
+│       ├── Calculator.wdgt
+│       ├── Calendar.wdgt
+│       ├── Contacts.wdgt
+│       ├── Dictionary.wdgt
+│       ├── ESPN.wdgt
+│       ├── Flight Tracker.wdgt
+│       ├── Movies.wdgt
+│       ├── Ski Report.wdgt
+│       ├── Stickies.wdgt
+│       ├── Stocks.wdgt
+│       ├── Tile Game.wdgt
+│       ├── Translation.wdgt
+│       ├── Unit Converter.wdgt
+│       ├── Weather.wdgt
+│       ├── Web Clip.wdgt
+│       └── World Clock.wdgt
+├── Network
+├── System
+│   └── Library
+│       ├── AWD
+│       ├── Accessibility
+│       ├── AccessoryUpdaterBundles
+│       ├── Accounts
+│       ├── Address Book Plug-Ins
+│       ├── AssetTypeDescriptors
+│       ├── Assets
+│       ├── Assistant
+│       ├── Automator
+│       ├── Backup
+│       ├── BridgeSupport
+│       ├── CacheDelete
+│       ├── Caches
+│       ├── ColorSync
+│       ├── Colors
+│       ├── Components
+│       ├── Compositions
+│       ├── ConfigurationProfiles
+│       ├── CoreServices
+│       ├── CryptoTokenKit
+│       ├── DTDs
+│       ├── DefaultsConfigurations
+│       ├── DifferentialPrivacy
+│       ├── DirectoryServices
+│       ├── Displays
+│       ├── DuetActivityScheduler
+│       ├── DuetKnowledgeBase
+│       ├── Extensions
+│       ├── Filesystems
+│       ├── Filters
+│       ├── Fonts
+│       ├── Frameworks
+│       ├── Graphics
+│       ├── HIDPlugins
+│       ├── IdentityServices
+│       ├── Image Capture
+│       ├── Input Methods
+│       ├── InternetAccounts
+│       ├── Java
+│       ├── KerberosPlugins
+│       ├── Kernels
+│       ├── Keyboard Layouts
+│       ├── Keychains
+│       ├── LASecureIO
+│       ├── LaunchAgents
+│       ├── LaunchDaemons
+│       ├── LinguisticData
+│       ├── LocationBundles
+│       ├── LoginPlugins
+│       ├── Messages
+│       ├── Metadata
+│       ├── MonitorPanels
+│       ├── NetworkServiceProxy
+│       ├── OpenDirectory
+│       ├── OpenSSL
+│       ├── PairedSyncServices
+│       ├── Password Server Filters
+│       ├── Perl
+│       ├── PreferencePanes
+│       ├── Preferences
+│       ├── PrelinkedKernels
+│       ├── Printers
+│       ├── PrivateFrameworks
+│       ├── QuickLook
+│       ├── QuickTime
+│       ├── Receipts
+│       ├── Recents
+│       ├── SDKSettingsPlist
+│       ├── Sandbox
+│       ├── Screen Savers
+│       ├── ScreenReader
+│       ├── ScriptingAdditions
+│       ├── ScriptingDefinitions
+│       ├── Security
+│       ├── Services
+│       ├── Sounds
+│       ├── Speech
+│       ├── Spotlight
+│       ├── StartupItems
+│       ├── SyncServices
+│       ├── SystemConfiguration
+│       ├── SystemProfiler
+│       ├── Tcl
+│       ├── TextEncodings
+│       ├── TextInput
+│       ├── User Template
+│       ├── UserEventPlugins
+│       ├── Video
+│       └── WidgetResources
+├── Users
+│   ├── Shared
+│   │   ├── Hewlett-Packard
+│   │   ├── SC Info
+│   │   └── adi
+│   ├── cpw
+│   │   ├── Applications
+│   │   ├── Desktop
+│   │   ├── Documents
+│   │   ├── Downloads
+│   │   ├── Dropbox
+│   │   ├── Google 雲端硬碟
+│   │   ├── Library
+│   │   ├── Mail
+│   │   ├── Movies
+│   │   ├── Music
+│   │   ├── Pictures
+│   │   ├── Public
+│   │   ├── R
+│   │   ├── bin
+│   │   ├── dwhelper
+│   │   └── tmp
+│   └── www
+│       ├── alpha
+│       ├── beta
+│       ├── blog
+│       ├── cms
+│       ├── lava
+│       ├── phpLiteAdmin -> phpLiteAdmin_v1-9-7-1
+│       ├── phpLiteAdmin_v1-9-7-1
+│       ├── phpMyAdmin -> phpMyAdmin-4.6.5.2-all-languages
+│       ├── phpMyAdmin-4.4.12-all-languages
+│       └── phpMyAdmin-4.6.5.2-all-languages
+├── Volumes
+│   └── Macintosh HD -> /
+├── bin
+├── cores
+├── dev
+│   └── fd
+│       └── 4
+├── etc -> private/etc
+├── home
+├── net
+├── opt
+│   └── X11
+│       ├── bin
+│       ├── etc
+│       ├── include
+│       ├── lib
+│       ├── libexec
+│       ├── share
+│       └── var
+├── private
+│   ├── etc
+│   │   ├── apache2
+│   │   ├── asl
+│   │   ├── cups
+│   │   ├── defaults
+│   │   ├── emond.d
+│   │   ├── mach_init.d
+│   │   ├── mach_init_per_login_session.d
+│   │   ├── mach_init_per_user.d
+│   │   ├── manpaths.d
+│   │   ├── newsyslog.d
+│   │   ├── openldap
+│   │   ├── pam.d
+│   │   ├── paths.d
+│   │   ├── periodic
+│   │   ├── pf.anchors
+│   │   ├── postfix
+│   │   ├── ppp
+│   │   ├── racoon
+│   │   ├── security
+│   │   ├── snmp
+│   │   ├── ssh
+│   │   ├── ssl
+│   │   └── sudoers.d
+│   ├── tftpboot
+│   ├── tmp
+│   │   ├── com.apple.launchd.Ts7nqTqqAm
+│   │   ├── com.apple.launchd.Z8XKuRaiiJ
+│   │   └── com.apple.launchd.hK3thQHES4
+│   └── var
+│       ├── agentx
+│       ├── at
+│       ├── audit
+│       ├── backups
+│       ├── db
+│       ├── empty
+│       ├── folders
+│       ├── jabberd
+│       ├── lib
+│       ├── log
+│       ├── ma
+│       ├── mail
+│       ├── msgs
+│       ├── mysql
+│       ├── netboot
+│       ├── networkd
+│       ├── root
+│       ├── rpc
+│       ├── run
+│       ├── rwho
+│       ├── spool
+│       ├── tmp
+│       ├── vm
+│       └── yp
+├── sbin
+├── tmp -> private/tmp
+├── usr
+│   ├── X11 -> /opt/X11
+│   ├── X11R6 -> /opt/X11
+│   ├── bin
+│   ├── include
+│   │   ├── CommonCrypto
+│   │   ├── _types
+│   │   ├── apache2
+│   │   ├── apr-1
+│   │   ├── architecture
+│   │   ├── arpa
+│   │   ├── atm
+│   │   ├── bank
+│   │   ├── bsm
+│   │   ├── c++
+│   │   ├── corpses
+│   │   ├── cups
+│   │   ├── curl
+│   │   ├── default_pager
+│   │   ├── device
+│   │   ├── dispatch
+│   │   ├── editline
+│   │   ├── ffi
+│   │   ├── gssapi
+│   │   ├── hfs
+│   │   ├── i386
+│   │   ├── kern
+│   │   ├── krb5
+│   │   ├── libexslt
+│   │   ├── libkern
+│   │   ├── libxml2
+│   │   ├── libxslt
+│   │   ├── mach
+│   │   ├── mach-o
+│   │   ├── mach_debug
+│   │   ├── machine
+│   │   ├── malloc
+│   │   ├── miscfs
+│   │   ├── net
+│   │   ├── net-snmp
+│   │   ├── netinet
+│   │   ├── netinet6
+│   │   ├── netkey
+│   │   ├── nfs
+│   │   ├── objc
+│   │   ├── odmodule
+│   │   ├── os
+│   │   ├── pcap
+│   │   ├── pexpert
+│   │   ├── php
+│   │   ├── protocols
+│   │   ├── pthread
+│   │   ├── python2.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/include/python2.6
+│   │   ├── python2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7
+│   │   ├── readline
+│   │   ├── rpc
+│   │   ├── rpcsvc
+│   │   ├── sasl
+│   │   ├── secure
+│   │   ├── security
+│   │   ├── servers
+│   │   ├── simd
+│   │   ├── sys
+│   │   ├── tidy
+│   │   ├── uuid
+│   │   ├── vfs
+│   │   ├── voucher
+│   │   ├── xar
+│   │   ├── xlocale
+│   │   └── xpc
+│   ├── lib
+│   │   ├── cron -> ../../var/at
+│   │   ├── dtrace
+│   │   ├── groff
+│   │   ├── log
+│   │   ├── pam
+│   │   ├── php
+│   │   ├── pkgconfig
+│   │   ├── python2.6 -> ../../System/Library/Frameworks/Python.framework/Versions/2.6/lib/python2.6
+│   │   ├── python2.7 -> ../../System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7
+│   │   ├── rpcsvc
+│   │   ├── ruby -> ../../System/Library/Frameworks/Ruby.framework/Versions/Current/usr/lib/ruby
+│   │   ├── sasl2
+│   │   ├── sqlite3 -> /System/Library/Tcl/sqlite3
+│   │   ├── system
+│   │   ├── usr
+│   │   ├── xpc
+│   │   └── zsh
+│   ├── libexec
+│   │   ├── AppSandbox
+│   │   ├── ApplicationFirewall
+│   │   ├── DeveloperTools
+│   │   ├── MiniTerm.app
+│   │   ├── SmartCardServices
+│   │   ├── apache2
+│   │   ├── cups
+│   │   ├── dtrace
+│   │   ├── emacs
+│   │   ├── fax
+│   │   ├── feedback
+│   │   └── postfix
+│   ├── local
+│   │   ├── Caskroom
+│   │   ├── Cellar
+│   │   ├── Frameworks
+│   │   ├── Homebrew
+│   │   ├── bin
+│   │   ├── etc
+│   │   ├── git
+│   │   ├── go
+│   │   ├── include
+│   │   ├── lib
+│   │   ├── libexec
+│   │   ├── man
+│   │   ├── mysql -> mysql-5.6.26-osx10.8-x86_64
+│   │   ├── mysql-5.6.26-osx10.8-x86_64
+│   │   ├── opt
+│   │   ├── remotedesktop
+│   │   ├── sbin
+│   │   ├── share
+│   │   └── var
+│   ├── sbin
+│   │   └── authserver
+│   ├── share
+│   │   ├── CSI
+│   │   ├── CoreDuetDaemonConfig.bundle
+│   │   ├── calendar
+│   │   ├── com.apple.languageassetd
+│   │   ├── cracklib
+│   │   ├── cups
+│   │   ├── current-os.sdk
+│   │   ├── dict
+│   │   ├── doc
+│   │   ├── emacs
+│   │   ├── examples
+│   │   ├── file
+│   │   ├── ftpd
+│   │   ├── germantok
+│   │   ├── groff
+│   │   ├── hiutil
+│   │   ├── httpd
+│   │   ├── icu
+│   │   ├── info
+│   │   ├── java
+│   │   ├── kdrl.bundle
+│   │   ├── kpep
+│   │   ├── langid
+│   │   ├── locale
+│   │   ├── man
+│   │   ├── mecabra
+│   │   ├── misc
+│   │   ├── php
+│   │   ├── pmenergy
+│   │   ├── ri -> ../../System/Library/Frameworks/Ruby.framework/Versions/Current/usr/share/ri
+│   │   ├── sandbox
+│   │   ├── screen
+│   │   ├── skel
+│   │   ├── snmp
+│   │   ├── sysdiagnose
+│   │   ├── tabset
+│   │   ├── terminfo
+│   │   ├── texinfo
+│   │   ├── thermald.bundle
+│   │   ├── tokenizer
+│   │   ├── ucupdate
+│   │   ├── uucp
+│   │   ├── vim
+│   │   ├── zoneinfo
+│   │   └── zsh
+│   └── standalone
+│       ├── firmware
+│       └── i386
+└── var -> private/var
+832 directories
+
+System Info::
+ProductName:	Mac OS X
+ProductVersion:	10.12.3
+BuildVersion:	16D32
+
+Homebrew Formula::
+apr
+apr-util
+autoconf
+bdw-gc
+cctools
+dict
+elinks
+faac
+fdk-aac
+freetype
+gdbm
+gettext
+gmp
+gnutls
+googler
+httpd24
+icu4c
+imap-uw
+jpeg
+lame
+libav
+libffi
+libmaa
+libogg
+libpng
+libtasn1
+libunistring
+libvorbis
+libvpx
+libxml2
+libyaml
+mutt
+nettle
+openssl
+opus
+p11-kit
+pcre
+php71
+pkg-config
+python3
+readline
+ruby
+sqlite
+task
+tasksh
+texi2html
+tokyo-cabinet
+tree
+unixodbc
+w3m
+wget
+x264
+xvid
+xz
+yasm
+zlib

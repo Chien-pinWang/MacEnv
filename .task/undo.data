@@ -336,3 +336,93 @@ time 1488780771
 old [annotation_1488780361:"0914-089-599 劉老師" description:"Re-arrange 心路 cleaning schedule" due:"1488816000" entry:"1488780320" modified:"1488780392" project:"Misc." start:"1488780392" status:"pending" tags:"Work" uuid:"5c7815a7-edbd-4bc9-931b-b33b10931799"]
 new [annotation_1488780361:"0914-089-599 劉老師" description:"Re-arrange 心路 Mar. cleaning sched." due:"1488816000" entry:"1488780320" modified:"1488780771" project:"Misc." start:"1488780392" status:"pending" tags:"Work" uuid:"5c7815a7-edbd-4bc9-931b-b33b10931799"]
 ---
+time 1488782032
+new [description:"Get a list of installed Apps" entry:"1488782032" modified:"1488782032" project:"Misc." status:"pending" tags:"Work" uuid:"836ffdf7-e87f-4605-801e-48b663d71fc0"]
+---
+time 1488782072
+new [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0" description:"Un-install non-pre-loaded apps" entry:"1488782072" modified:"1488782072" project:"Misc." status:"pending" tags:"Work" uuid:"6f122bca-94a6-476c-90ac-3df7b2da905c"]
+---
+time 1488782133
+new [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0" description:"Log out of any personal accounts" entry:"1488782133" modified:"1488782133" project:"Misc." status:"pending" tags:"Work" uuid:"e222c105-b4eb-496b-abdf-47986fbdeffc"]
+---
+time 1488782160
+old [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0" description:"Un-install non-pre-loaded apps" entry:"1488782072" modified:"1488782072" project:"Misc." status:"pending" tags:"Work" uuid:"6f122bca-94a6-476c-90ac-3df7b2da905c"]
+new [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0,e222c105-b4eb-496b-abdf-47986fbdeffc" description:"Un-install non-pre-loaded apps" entry:"1488782072" modified:"1488782160" project:"Misc." status:"pending" tags:"Work" uuid:"6f122bca-94a6-476c-90ac-3df7b2da905c"]
+---
+time 1488782278
+new [description:"Un-install local services" entry:"1488782278" modified:"1488782278" project:"Misc." status:"pending" tags:"Work" uuid:"3ace24d3-1404-4783-bd3b-9258e3a3e27b"]
+---
+time 1488782412
+new [description:"Back up settings of local services" entry:"1488782412" modified:"1488782412" project:"Misc." status:"pending" tags:"Work" uuid:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3"]
+---
+time 1488782423
+old [description:"Un-install local services" entry:"1488782278" modified:"1488782278" project:"Misc." status:"pending" tags:"Work" uuid:"3ace24d3-1404-4783-bd3b-9258e3a3e27b"]
+new [depends:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3" description:"Un-install local services" entry:"1488782278" modified:"1488782423" project:"Misc." status:"pending" tags:"Work" uuid:"3ace24d3-1404-4783-bd3b-9258e3a3e27b"]
+---
+time 1488782494
+old [description:"Get a list of installed Apps" entry:"1488782032" modified:"1488782032" project:"Misc." status:"pending" tags:"Work" uuid:"836ffdf7-e87f-4605-801e-48b663d71fc0"]
+new [description:"Get a list of installed Apps" entry:"1488782032" modified:"1488782494" project:"MacBookAir" status:"pending" tags:"Work" uuid:"836ffdf7-e87f-4605-801e-48b663d71fc0"]
+---
+time 1488782494
+old [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0,e222c105-b4eb-496b-abdf-47986fbdeffc" description:"Un-install non-pre-loaded apps" entry:"1488782072" modified:"1488782160" project:"Misc." status:"pending" tags:"Work" uuid:"6f122bca-94a6-476c-90ac-3df7b2da905c"]
+new [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0,e222c105-b4eb-496b-abdf-47986fbdeffc" description:"Un-install non-pre-loaded apps" entry:"1488782072" modified:"1488782494" project:"MacBookAir" status:"pending" tags:"Work" uuid:"6f122bca-94a6-476c-90ac-3df7b2da905c"]
+---
+time 1488782494
+old [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0" description:"Log out of any personal accounts" entry:"1488782133" modified:"1488782133" project:"Misc." status:"pending" tags:"Work" uuid:"e222c105-b4eb-496b-abdf-47986fbdeffc"]
+new [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0" description:"Log out of any personal accounts" entry:"1488782133" modified:"1488782494" project:"MacBookAir" status:"pending" tags:"Work" uuid:"e222c105-b4eb-496b-abdf-47986fbdeffc"]
+---
+time 1488782494
+old [depends:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3" description:"Un-install local services" entry:"1488782278" modified:"1488782423" project:"Misc." status:"pending" tags:"Work" uuid:"3ace24d3-1404-4783-bd3b-9258e3a3e27b"]
+new [depends:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3" description:"Un-install local services" entry:"1488782278" modified:"1488782494" project:"MacBookAir" status:"pending" tags:"Work" uuid:"3ace24d3-1404-4783-bd3b-9258e3a3e27b"]
+---
+time 1488782494
+old [description:"Back up settings of local services" entry:"1488782412" modified:"1488782412" project:"Misc." status:"pending" tags:"Work" uuid:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3"]
+new [description:"Back up settings of local services" entry:"1488782412" modified:"1488782494" project:"MacBookAir" status:"pending" tags:"Work" uuid:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3"]
+---
+time 1488782516
+old [description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488780677" project:"Misc." start:"1488780677" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+new [description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488782516" project:"MacBookAir" start:"1488780677" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+---
+time 1488783344
+old [description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488782516" project:"MacBookAir" start:"1488780677" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+new [description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488783344" project:"MacBookAir" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+---
+time 1488783370
+old [description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488783344" project:"MacBookAir" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+new [depends:"3ace24d3-1404-4783-bd3b-9258e3a3e27b" description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488783370" project:"MacBookAir" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+---
+time 1488783640
+old [annotation_1488780361:"0914-089-599 劉老師" description:"Re-arrange 心路 Mar. cleaning sched." due:"1488816000" entry:"1488780320" modified:"1488780771" project:"Misc." start:"1488780392" status:"pending" tags:"Work" uuid:"5c7815a7-edbd-4bc9-931b-b33b10931799"]
+new [annotation_1488780361:"0914-089-599 劉老師" description:"Re-arrange 心路 Mar. cleaning sched." due:"1488816000" end:"1488783640" entry:"1488780320" modified:"1488783640" project:"Misc." status:"completed" tags:"Work" uuid:"5c7815a7-edbd-4bc9-931b-b33b10931799"]
+---
+time 1488787754
+old [description:"Get a list of installed Apps" entry:"1488782032" modified:"1488782494" project:"MacBookAir" status:"pending" tags:"Work" uuid:"836ffdf7-e87f-4605-801e-48b663d71fc0"]
+new [description:"Get a list of installed Apps" entry:"1488782032" modified:"1488787754" project:"MacBookAir" start:"1488787754" status:"pending" tags:"Work" uuid:"836ffdf7-e87f-4605-801e-48b663d71fc0"]
+---
+time 1488788453
+old [annotation_1488673976:"07-261-6151" description:"Consult HCG about toilet repair" due:"1488772800" entry:"1488636124" modified:"1488780732" project:"E624014F" status:"pending" tags:"Personal" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+new [annotation_1488673976:"07-261-6151" description:"Consult HCG about toilet repair" due:"1488772800" entry:"1488636124" modified:"1488788453" project:"E624014F" start:"1488788453" status:"pending" tags:"Personal" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+---
+time 1488788478
+old [annotation_1488673976:"07-261-6151" description:"Consult HCG about toilet repair" due:"1488772800" entry:"1488636124" modified:"1488788453" project:"E624014F" start:"1488788453" status:"pending" tags:"Personal" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+new [annotation_1488673976:"07-261-6151" annotation_1488788478:"林工程師: 0989-927-753" description:"Consult HCG about toilet repair" due:"1488772800" entry:"1488636124" modified:"1488788478" project:"E624014F" start:"1488788453" status:"pending" tags:"Personal" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+---
+time 1488790480
+old [description:"Get a list of installed Apps" entry:"1488782032" modified:"1488787754" project:"MacBookAir" start:"1488787754" status:"pending" tags:"Work" uuid:"836ffdf7-e87f-4605-801e-48b663d71fc0"]
+new [description:"Get a list of installed Apps" end:"1488790480" entry:"1488782032" modified:"1488790480" project:"MacBookAir" status:"completed" tags:"Work" uuid:"836ffdf7-e87f-4605-801e-48b663d71fc0"]
+---
+time 1488791244
+new [description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1488791244" project:"Misc." scheduled:"1489118400" status:"waiting" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce" wait:"1489118400"]
+---
+time 1488791288
+old [description:"Back up settings of local services" entry:"1488782412" modified:"1488782494" project:"MacBookAir" status:"pending" tags:"Work" uuid:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3"]
+new [description:"Back up settings of local services" entry:"1488782412" modified:"1488791288" project:"MacBookAir" start:"1488791288" status:"pending" tags:"Work" uuid:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3"]
+---
+time 1488792552
+old [description:"Back up settings of local services" entry:"1488782412" modified:"1488791288" project:"MacBookAir" start:"1488791288" status:"pending" tags:"Work" uuid:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3"]
+new [description:"Back up settings of local services" end:"1488792552" entry:"1488782412" modified:"1488792552" project:"MacBookAir" status:"completed" tags:"Work" uuid:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3"]
+---
+time 1488793248
+old [depends:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3" description:"Un-install local services" entry:"1488782278" modified:"1488782494" project:"MacBookAir" status:"pending" tags:"Work" uuid:"3ace24d3-1404-4783-bd3b-9258e3a3e27b"]
+new [depends:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3" description:"Un-install local services" entry:"1488782278" modified:"1488793248" project:"MacBookAir" start:"1488793248" status:"pending" tags:"Work" uuid:"3ace24d3-1404-4783-bd3b-9258e3a3e27b"]
+---
