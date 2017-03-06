@@ -1,0 +1,338 @@
+time 1488635671
+new [description:"Check new job postings weekly" entry:"1488635671" modified:"1488635671" project:"Job" status:"pending" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488635754
+old [description:"Check new job postings weekly" entry:"1488635671" modified:"1488635671" project:"Job" status:"pending" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [description:"recurr:weekly" entry:"1488635671" modified:"1488635754" project:"Job" status:"pending" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488635784
+old [description:"recurr:weekly" entry:"1488635671" modified:"1488635754" project:"Job" status:"pending" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [description:"recurr:weekly" due:"1488729600" entry:"1488635671" modified:"1488635784" project:"Job" status:"pending" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488635888
+old [description:"recurr:weekly" due:"1488729600" entry:"1488635671" modified:"1488635784" project:"Job" status:"pending" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" modified:"1488635888" project:"Job" status:"pending" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488635905
+old [description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" modified:"1488635888" project:"Job" status:"pending" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" modified:"1488635905" project:"Job" recur:"weekly" status:"recurring" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488635909
+new [description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488635905" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488635909
+old [description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" modified:"1488635905" project:"Job" recur:"weekly" status:"recurring" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"-" modified:"1488635909" project:"Job" recur:"weekly" status:"recurring" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488636124
+new [description:"Consult HCG on the toilet repair" due:"1488729600" entry:"1488636124" modified:"1488636124" project:"E624014F" status:"pending" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+---
+time 1488636465
+new [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636465" modified:"1488636465" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5"]
+---
+time 1488636468
+new [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488636465" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5"]
+---
+time 1488636468
+old [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636465" modified:"1488636465" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5"]
+new [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636465" mask:"-" modified:"1488636468" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5"]
+---
+time 1488636671
+new [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636671" modified:"1488636671" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6"]
+---
+time 1488636673
+new [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636673" imask:"0" modified:"1488636671" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"pending" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876"]
+---
+time 1488636673
+old [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636671" modified:"1488636671" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6"]
+new [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636671" mask:"-" modified:"1488636673" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6"]
+---
+time 1488637456
+old [description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488635905" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+new [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488637456" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488637463
+old [description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"-" modified:"1488635909" project:"Job" recur:"weekly" status:"recurring" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"-" modified:"1488637463" project:"Job" recur:"weekly" status:"recurring" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488637907
+old [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488636465" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5"]
+new [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488637907" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5" wait:"1488816000"]
+---
+time 1488637909
+old [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636465" mask:"-" modified:"1488636468" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5"]
+new [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636465" mask:"-" modified:"1488637909" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+---
+time 1488637933
+old [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636673" imask:"0" modified:"1488636671" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"pending" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876"]
+new [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636673" imask:"0" modified:"1488637933" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"waiting" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876" wait:"1490976000"]
+---
+time 1488637935
+old [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636671" mask:"-" modified:"1488636673" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6"]
+new [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636671" mask:"-" modified:"1488637935" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+---
+time 1488638049
+old [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636465" mask:"-" modified:"1488637909" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+new [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488638049" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+---
+time 1488638049
+old [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488637907" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5" wait:"1488816000"]
+new [description:"Pay rent 1,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488638049" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5" wait:"1488816000"]
+---
+time 1488638050
+old [description:"Pay rent, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488638049" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+new [description:"Pay rent 1,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488638050" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+---
+time 1488638081
+old [description:"Pay rent 1,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488638049" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5" wait:"1488816000"]
+new [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488638081" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5" wait:"1488816000"]
+---
+time 1488638084
+old [description:"Pay rent 1,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488638050" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+new [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488638084" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+---
+time 1488639787
+new [description:"Follow up on the meeting at 3\/3" due:"1489334400" entry:"1488639787" modified:"1488639787" project:"Teresacard" scheduled:"1489075200" status:"pending" uuid:"8c0d46f4-2864-4840-bb47-4c87803175db"]
+---
+time 1488640075
+new [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1488640075" project:"Teresacard" scheduled:"1488729600" status:"pending" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1488647899
+new [description:"Some test task" due:"1490976000" entry:"1488647899" modified:"1488647899" status:"pending" uuid:"e1cf5adb-f5b6-4bf4-a78b-92edf5191cd2"]
+---
+time 1488647926
+old [description:"Some test task" due:"1490976000" entry:"1488647899" modified:"1488647899" status:"pending" uuid:"e1cf5adb-f5b6-4bf4-a78b-92edf5191cd2"]
+new [description:"Some test task" due:"1490976000" end:"1488647924" entry:"1488647899" modified:"1488647926" status:"deleted" uuid:"e1cf5adb-f5b6-4bf4-a78b-92edf5191cd2"]
+---
+time 1488649194
+old [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488637456" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+new [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488649194" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Personal.Job" recur:"weekly" status:"pending" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488649196
+old [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"-" modified:"1488637463" project:"Job" recur:"weekly" status:"recurring" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"-" modified:"1488649196" project:"Personal.Job" recur:"weekly" status:"recurring" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488649224
+old [description:"Consult HCG on the toilet repair" due:"1488729600" entry:"1488636124" modified:"1488636124" project:"E624014F" status:"pending" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+new [description:"Consult HCG on the toilet repair" due:"1488729600" entry:"1488636124" modified:"1488649224" project:"Personal.E624014F" status:"pending" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+---
+time 1488649934
+old [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488638081" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5" wait:"1488816000"]
+new [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488649934" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Personal.Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5" wait:"1488816000"]
+---
+time 1488649939
+old [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488638084" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+new [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488649939" project:"Personal.Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+---
+time 1488649964
+old [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636671" mask:"-" modified:"1488637935" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+new [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636671" mask:"W" modified:"1488649964" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+---
+time 1488649964
+old [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636673" imask:"0" modified:"1488637933" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"waiting" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876" wait:"1490976000"]
+new [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636673" imask:"0" modified:"1488649964" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"waiting" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876" wait:"1490976000"]
+---
+time 1488649965
+old [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636671" mask:"W" modified:"1488649964" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+new [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636671" mask:"W" modified:"1488649965" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+---
+time 1488649998
+old [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636673" imask:"0" modified:"1488649964" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"waiting" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876" wait:"1490976000"]
+new [description:"Pay mortgage," due:"1491235200" entry:"1488636673" imask:"0" modified:"1488649998" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"waiting" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876" wait:"1490976000"]
+---
+time 1488650000
+old [description:"Pay mortgage, ( ( uuid = E624014F ) )" due:"1491235200" entry:"1488636671" mask:"W" modified:"1488649965" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+new [description:"Pay mortgage," due:"1491235200" entry:"1488636671" mask:"W" modified:"1488650000" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+---
+time 1488650052
+old [description:"Pay mortgage," due:"1491235200" entry:"1488636673" imask:"0" modified:"1488649998" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"waiting" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876" wait:"1490976000"]
+new [description:"Pay mortgage, E624014F" due:"1491235200" entry:"1488636673" imask:"0" modified:"1488650052" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"waiting" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876" wait:"1490976000"]
+---
+time 1488650055
+old [description:"Pay mortgage," due:"1491235200" entry:"1488636671" mask:"W" modified:"1488650000" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+new [description:"Pay mortgage, E624014F" due:"1491235200" entry:"1488636671" mask:"W" modified:"1488650055" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+---
+time 1488673976
+old [description:"Consult HCG on the toilet repair" due:"1488729600" entry:"1488636124" modified:"1488649224" project:"Personal.E624014F" status:"pending" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+new [annotation_1488673976:"07-261-6151" description:"Consult HCG on the toilet repair" due:"1488729600" entry:"1488636124" modified:"1488673976" project:"Personal.E624014F" status:"pending" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+---
+time 1488674044
+old [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488649194" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Personal.Job" recur:"weekly" status:"pending" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+new [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488674044" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488674045
+old [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"-" modified:"1488649196" project:"Personal.Job" recur:"weekly" status:"recurring" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"-" modified:"1488674045" project:"Job" recur:"weekly" status:"recurring" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488674058
+old [annotation_1488673976:"07-261-6151" description:"Consult HCG on the toilet repair" due:"1488729600" entry:"1488636124" modified:"1488673976" project:"Personal.E624014F" status:"pending" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+new [annotation_1488673976:"07-261-6151" description:"Consult HCG on the toilet repair" due:"1488729600" entry:"1488636124" modified:"1488674058" project:"E624014F" status:"pending" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+---
+time 1488674094
+old [description:"Pay mortgage, E624014F" due:"1491235200" entry:"1488636673" imask:"0" modified:"1488650052" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"waiting" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876" wait:"1490976000"]
+new [description:"Pay mortgage, E624014F" due:"1491235200" entry:"1488636673" imask:"0" modified:"1488674094" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"waiting" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876" wait:"1490976000"]
+---
+time 1488674095
+old [description:"Pay mortgage, E624014F" due:"1491235200" entry:"1488636671" mask:"W" modified:"1488650055" project:"Personal.Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+new [description:"Pay mortgage, E624014F" due:"1491235200" entry:"1488636671" mask:"W" modified:"1488674095" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+---
+time 1488674114
+old [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488649934" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Personal.Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5" wait:"1488816000"]
+new [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488674114" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5" wait:"1488816000"]
+---
+time 1488674113
+old [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488649939" project:"Personal.Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+new [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488674113" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+---
+time 1488728518
+old [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488674044" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+new [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488728518" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488728522
+old [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"-" modified:"1488674045" project:"Job" recur:"weekly" status:"recurring" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"-" modified:"1488728522" project:"Job" recur:"weekly" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488728548
+old [annotation_1488673976:"07-261-6151" description:"Consult HCG on the toilet repair" due:"1488729600" entry:"1488636124" modified:"1488674058" project:"E624014F" status:"pending" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+new [annotation_1488673976:"07-261-6151" description:"Consult HCG on the toilet repair" due:"1488729600" entry:"1488636124" modified:"1488728548" project:"E624014F" status:"pending" tags:"Personal" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+---
+time 1488728569
+old [description:"Follow up on the meeting at 3\/3" due:"1489334400" entry:"1488639787" modified:"1488639787" project:"Teresacard" scheduled:"1489075200" status:"pending" uuid:"8c0d46f4-2864-4840-bb47-4c87803175db"]
+new [description:"Follow up on the meeting at 3\/3" due:"1489334400" entry:"1488639787" modified:"1488728569" project:"Teresacard" scheduled:"1489075200" status:"pending" tags:"Work" uuid:"8c0d46f4-2864-4840-bb47-4c87803175db"]
+---
+time 1488728569
+old [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1488640075" project:"Teresacard" scheduled:"1488729600" status:"pending" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1488728569" project:"Teresacard" scheduled:"1488729600" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1488728633
+old [description:"Pay mortgage, E624014F" due:"1491235200" entry:"1488636673" imask:"0" modified:"1488674094" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"waiting" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876" wait:"1490976000"]
+new [description:"Pay mortgage, E624014F" due:"1491235200" entry:"1488636673" imask:"0" modified:"1488728633" parent:"d908236d-be74-415f-b484-c91d6c1f83f6" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"waiting" tags:"Personal" uuid:"1feed13e-c4d5-4cdb-bf72-9a1e1cc1b876" wait:"1490976000"]
+---
+time 1488728635
+old [description:"Pay mortgage, E624014F" due:"1491235200" entry:"1488636671" mask:"W" modified:"1488674095" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+new [description:"Pay mortgage, E624014F" due:"1491235200" entry:"1488636671" mask:"W" modified:"1488728635" project:"Finance" recur:"monthly" scheduled:"1490976000" status:"recurring" tags:"Personal" uuid:"d908236d-be74-415f-b484-c91d6c1f83f6" wait:"1490976000"]
+---
+time 1488728654
+old [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488674114" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5" wait:"1488816000"]
+new [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488728654" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" tags:"Personal" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5" wait:"1488816000"]
+---
+time 1488728655
+old [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488674113" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+new [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488728655" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+---
+time 1488729437
+new [description:"Repair toilet in the guest restroom" entry:"1488729437" modified:"1488729437" project:"E624014F" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+---
+time 1488729474
+old [description:"Repair toilet in the guest restroom" entry:"1488729437" modified:"1488729437" project:"E624014F" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+new [depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" entry:"1488729437" modified:"1488729474" project:"E624014F" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+---
+time 1488729535
+old [depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" entry:"1488729437" modified:"1488729474" project:"E624014F" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+new [depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1488729535" project:"E624014F" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+---
+time 1488729622
+new [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1489334400" entry:"1488729622" imask:"1" modified:"1488728522" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
+---
+time 1488729622
+old [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"-" modified:"1488728522" project:"Job" recur:"weekly" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"--" modified:"1488729622" project:"Job" recur:"weekly" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488730556
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" modified:"1488730556" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1488730559
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730559" imask:"0" modified:"1488730556" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"pending" tags:"Personal" until:"1490889600" uuid:"b750c1df-54a5-4376-aa7e-77fcf7493709"]
+---
+time 1488730559
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" modified:"1488730556" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"-" modified:"1488730559" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1488736146
+old [annotation_1488673976:"07-261-6151" description:"Consult HCG on the toilet repair" due:"1488729600" entry:"1488636124" modified:"1488728548" project:"E624014F" status:"pending" tags:"Personal" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+new [annotation_1488673976:"07-261-6151" description:"Consult HCG on the toilet repair" due:"1488772800" entry:"1488636124" modified:"1488736146" project:"E624014F" status:"pending" tags:"Personal" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+---
+time 1488776710
+old [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488728518" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+new [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488776710" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" start:"1488776710" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488777506
+old [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488776710" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" start:"1488776710" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+new [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488777506" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488778820
+new [description:"Issue 14790" due:"1489807800" entry:"1488778820" modified:"1488778820" project:"Misc." scheduled:"1489800600" status:"waiting" tags:"Work" uuid:"89dc9f5e-dc9e-4470-9866-25c3828a8e3b" wait:"1489721400"]
+---
+time 1488778973
+new [description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488778973" project:"Misc." status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+---
+time 1488779054
+new [description:"Setup MacBook Pro received from Shufu" due:"1489075200" entry:"1488779054" modified:"1488779054" project:"Misc." status:"pending" tags:"Work" uuid:"f1830eaa-727f-4a2f-9ecf-ee4607a563d3"]
+---
+time 1488779067
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730559" imask:"0" modified:"1488730556" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"pending" tags:"Personal" until:"1490889600" uuid:"b750c1df-54a5-4376-aa7e-77fcf7493709"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730559" imask:"0" modified:"1488779067" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" start:"1488779067" status:"pending" tags:"Personal" until:"1490889600" uuid:"b750c1df-54a5-4376-aa7e-77fcf7493709"]
+---
+time 1488779110
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"-" modified:"1488730559" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+" modified:"1488779110" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1488779110
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730559" imask:"0" modified:"1488779067" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" start:"1488779067" status:"pending" tags:"Personal" until:"1490889600" uuid:"b750c1df-54a5-4376-aa7e-77fcf7493709"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" end:"1488779110" entry:"1488730559" imask:"0" modified:"1488779110" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"completed" tags:"Personal" until:"1490889600" uuid:"b750c1df-54a5-4376-aa7e-77fcf7493709"]
+---
+time 1488779330
+old [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488777506" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+new [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488779330" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" start:"1488779330" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488780095
+old [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488779330" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" start:"1488779330" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+new [annotation_1488637456:"http:\/\/www.104.com.tw" annotation_1488780095:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488780095" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" start:"1488779330" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488780106
+old [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1489334400" entry:"1488729622" imask:"1" modified:"1488728522" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489334400" entry:"1488729622" imask:"1" modified:"1488780106" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
+---
+time 1488780106
+old [annotation_1488637463:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"--" modified:"1488729622" project:"Job" recur:"weekly" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"--" modified:"1488780106" project:"Job" recur:"weekly" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488780156
+old [annotation_1488637456:"http:\/\/www.104.com.tw" annotation_1488780095:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488780095" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" start:"1488779330" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+new [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488780156" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" start:"1488779330" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488780218
+old [annotation_1488637456:"http:\/\/www.104.com.tw" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488780156" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" start:"1488779330" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+new [annotation_1488637456:"http:\/\/www.104.com.tw" annotation_1488780218:"Keywords: Black Belt; Six Sigma" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488780218" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" start:"1488779330" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488780254
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"--" modified:"1488780106" project:"Job" recur:"weekly" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"+-" modified:"1488780254" project:"Job" recur:"weekly" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007"]
+---
+time 1488780254
+old [annotation_1488637456:"http:\/\/www.104.com.tw" annotation_1488780218:"Keywords: Black Belt; Six Sigma" description:"Check new job postings weekly" due:"1488729600" entry:"1488635909" imask:"0" modified:"1488780218" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" start:"1488779330" status:"pending" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+new [annotation_1488637456:"http:\/\/www.104.com.tw" annotation_1488780218:"Keywords: Black Belt; Six Sigma" description:"Check new job postings weekly" due:"1488729600" end:"1488780254" entry:"1488635909" imask:"0" modified:"1488780254" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"completed" tags:"Personal" uuid:"3ccb4a8c-ebbe-4016-a06c-4766584ed0d3"]
+---
+time 1488780320
+new [description:"Re-arrange 心路 cleaning schedule" due:"1488816000" entry:"1488780320" modified:"1488780320" project:"Misc." status:"pending" tags:"Work" uuid:"5c7815a7-edbd-4bc9-931b-b33b10931799"]
+---
+time 1488780361
+old [description:"Re-arrange 心路 cleaning schedule" due:"1488816000" entry:"1488780320" modified:"1488780320" project:"Misc." status:"pending" tags:"Work" uuid:"5c7815a7-edbd-4bc9-931b-b33b10931799"]
+new [annotation_1488780361:"0914-089-599 劉老師" description:"Re-arrange 心路 cleaning schedule" due:"1488816000" entry:"1488780320" modified:"1488780361" project:"Misc." status:"pending" tags:"Work" uuid:"5c7815a7-edbd-4bc9-931b-b33b10931799"]
+---
+time 1488780392
+old [annotation_1488780361:"0914-089-599 劉老師" description:"Re-arrange 心路 cleaning schedule" due:"1488816000" entry:"1488780320" modified:"1488780361" project:"Misc." status:"pending" tags:"Work" uuid:"5c7815a7-edbd-4bc9-931b-b33b10931799"]
+new [annotation_1488780361:"0914-089-599 劉老師" description:"Re-arrange 心路 cleaning schedule" due:"1488816000" entry:"1488780320" modified:"1488780392" project:"Misc." start:"1488780392" status:"pending" tags:"Work" uuid:"5c7815a7-edbd-4bc9-931b-b33b10931799"]
+---
+time 1488780677
+old [description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488778973" project:"Misc." status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+new [description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488780677" project:"Misc." start:"1488780677" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+---
+time 1488780732
+old [annotation_1488673976:"07-261-6151" description:"Consult HCG on the toilet repair" due:"1488772800" entry:"1488636124" modified:"1488736146" project:"E624014F" status:"pending" tags:"Personal" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+new [annotation_1488673976:"07-261-6151" description:"Consult HCG about toilet repair" due:"1488772800" entry:"1488636124" modified:"1488780732" project:"E624014F" status:"pending" tags:"Personal" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+---
+time 1488780771
+old [annotation_1488780361:"0914-089-599 劉老師" description:"Re-arrange 心路 cleaning schedule" due:"1488816000" entry:"1488780320" modified:"1488780392" project:"Misc." start:"1488780392" status:"pending" tags:"Work" uuid:"5c7815a7-edbd-4bc9-931b-b33b10931799"]
+new [annotation_1488780361:"0914-089-599 劉老師" description:"Re-arrange 心路 Mar. cleaning sched." due:"1488816000" entry:"1488780320" modified:"1488780771" project:"Misc." start:"1488780392" status:"pending" tags:"Work" uuid:"5c7815a7-edbd-4bc9-931b-b33b10931799"]
+---

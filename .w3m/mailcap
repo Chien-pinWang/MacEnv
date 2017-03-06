@@ -1,1 +1,1 @@
-image/*;	/usr/bin/open
+image/*;        open -a Preview %s
