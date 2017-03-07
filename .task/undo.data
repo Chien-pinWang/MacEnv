@@ -426,3 +426,44 @@ time 1488793248
 old [depends:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3" description:"Un-install local services" entry:"1488782278" modified:"1488782494" project:"MacBookAir" status:"pending" tags:"Work" uuid:"3ace24d3-1404-4783-bd3b-9258e3a3e27b"]
 new [depends:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3" description:"Un-install local services" entry:"1488782278" modified:"1488793248" project:"MacBookAir" start:"1488793248" status:"pending" tags:"Work" uuid:"3ace24d3-1404-4783-bd3b-9258e3a3e27b"]
 ---
+time 1488795196
+new [depends:"6f122bca-94a6-476c-90ac-3df7b2da905c,3ace24d3-1404-4783-bd3b-9258e3a3e27b" description:"Delete sub-folders at ~" entry:"1488795196" modified:"1488795196" project:"MacBookAir" status:"pending" tags:"Work" uuid:"0b7c8386-5803-472a-8bca-41060d61c960"]
+---
+time 1488795244
+old [depends:"3ace24d3-1404-4783-bd3b-9258e3a3e27b" description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488783370" project:"MacBookAir" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+new [depends:"3ace24d3-1404-4783-bd3b-9258e3a3e27b,0b7c8386-5803-472a-8bca-41060d61c960" description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488795244" project:"MacBookAir" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+---
+time 1488795366
+old [depends:"3ace24d3-1404-4783-bd3b-9258e3a3e27b,0b7c8386-5803-472a-8bca-41060d61c960" description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488795244" project:"MacBookAir" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+new [depends:"0b7c8386-5803-472a-8bca-41060d61c960" description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488795366" project:"MacBookAir" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+---
+time 1488795402
+old [depends:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3" description:"Un-install local services" entry:"1488782278" modified:"1488793248" project:"MacBookAir" start:"1488793248" status:"pending" tags:"Work" uuid:"3ace24d3-1404-4783-bd3b-9258e3a3e27b"]
+new [depends:"2e753625-3ee4-45b8-9a5c-80d1fb9022f3" description:"Un-install local services" end:"1488795402" entry:"1488782278" modified:"1488795402" project:"MacBookAir" status:"completed" tags:"Work" uuid:"3ace24d3-1404-4783-bd3b-9258e3a3e27b"]
+---
+time 1488812581
+old [annotation_1488673976:"07-261-6151" annotation_1488788478:"林工程師: 0989-927-753" description:"Consult HCG about toilet repair" due:"1488772800" entry:"1488636124" modified:"1488788478" project:"E624014F" start:"1488788453" status:"pending" tags:"Personal" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+new [annotation_1488673976:"07-261-6151" annotation_1488788478:"林工程師: 0989-927-753" description:"Consult HCG about toilet repair" due:"1488772800" end:"1488812581" entry:"1488636124" modified:"1488812581" project:"E624014F" status:"completed" tags:"Personal" uuid:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a"]
+---
+time 1488840418
+new [description:"What is Claire's cell phone number?" due:"1488902400" entry:"1488840418" imask:"1" modified:"1488779110" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"pending" tags:"Personal" until:"1490889600" uuid:"43c2473d-2669-4261-a068-75843e4b2830"]
+---
+time 1488840418
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+" modified:"1488779110" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+-" modified:"1488840418" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1488840455
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+-" modified:"1488840418" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++" modified:"1488840455" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1488840455
+old [description:"What is Claire's cell phone number?" due:"1488902400" entry:"1488840418" imask:"1" modified:"1488779110" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"pending" tags:"Personal" until:"1490889600" uuid:"43c2473d-2669-4261-a068-75843e4b2830"]
+new [description:"What is Claire's cell phone number?" due:"1488902400" end:"1488840455" entry:"1488840418" imask:"1" modified:"1488840455" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"completed" tags:"Personal" until:"1490889600" uuid:"43c2473d-2669-4261-a068-75843e4b2830"]
+---
+time 1488851233
+new [description:"Test @Work" entry:"1488851233" modified:"1488851233" status:"pending" uuid:"e58b7ac2-9cba-4ee0-bef2-a13189f50828"]
+---
+time 1488851270
+old [description:"Test @Work" entry:"1488851233" modified:"1488851233" status:"pending" uuid:"e58b7ac2-9cba-4ee0-bef2-a13189f50828"]
+new [description:"Test @Work" end:"1488851269" entry:"1488851233" modified:"1488851270" status:"deleted" uuid:"e58b7ac2-9cba-4ee0-bef2-a13189f50828"]
+---
