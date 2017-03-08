@@ -1,0 +1,6 @@
+2017-03-08 09:33 Ledger: Command-line Accounting Program
+
++cli, +accounting
+http://ledger-cli.org
+
+Ledger is a powerful, double-entry accounting system that is accessed from the UNIX command-line.

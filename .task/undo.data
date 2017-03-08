@@ -479,3 +479,53 @@ time 1488857116
 old [description:"Setup MacBook Pro received from Shufu" due:"1489075200" entry:"1488779054" modified:"1488779054" project:"Misc." status:"pending" tags:"Work" uuid:"f1830eaa-727f-4a2f-9ecf-ee4607a563d3"]
 new [description:"Setup MacBook Pro received from Shufu" due:"1489075200" entry:"1488779054" modified:"1488857116" project:"Misc." status:"waiting" tags:"Work" uuid:"f1830eaa-727f-4a2f-9ecf-ee4607a563d3" wait:"1489075200"]
 ---
+time 1488858726
+old [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488728654" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5"]
+new [annotation_1488858726:"006\/0040765762113" description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488858726" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5"]
+---
+time 1488858727
+old [description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488728655" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+new [annotation_1488858727:"006\/0040765762113" description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488858727" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+---
+time 1488858935
+new [description:"Meeting on credit card processing flow" due:"1488873600" entry:"1488858935" modified:"1488858935" status:"pending" tags:"Work" uuid:"be16972e-58c3-45d2-a5d5-e220daed4fab"]
+---
+time 1488859398
+old [description:"Meeting on credit card processing flow" due:"1488873600" entry:"1488858935" modified:"1488858935" status:"pending" tags:"Work" uuid:"be16972e-58c3-45d2-a5d5-e220daed4fab"]
+new [annotation_1488859398:"Issue #12374" description:"Meeting on credit card processing flow" due:"1488873600" entry:"1488858935" modified:"1488859398" status:"pending" tags:"Work" uuid:"be16972e-58c3-45d2-a5d5-e220daed4fab"]
+---
+time 1488862802
+old [depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1488729535" project:"E624014F" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+new [depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1488862802" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+---
+time 1488862815
+old [annotation_1488859398:"Issue #12374" description:"Meeting on credit card processing flow" due:"1488873600" entry:"1488858935" modified:"1488859398" status:"pending" tags:"Work" uuid:"be16972e-58c3-45d2-a5d5-e220daed4fab"]
+new [annotation_1488859398:"Issue #12374" description:"Meeting on credit card processing flow" due:"1488873600" entry:"1488858935" modified:"1488862815" start:"1488862815" status:"pending" tags:"Work" uuid:"be16972e-58c3-45d2-a5d5-e220daed4fab"]
+---
+time 1488869920
+old [annotation_1488859398:"Issue #12374" description:"Meeting on credit card processing flow" due:"1488873600" entry:"1488858935" modified:"1488862815" start:"1488862815" status:"pending" tags:"Work" uuid:"be16972e-58c3-45d2-a5d5-e220daed4fab"]
+new [annotation_1488859398:"Issue #12374" description:"Meeting on credit card processing flow" due:"1488873600" end:"1488869920" entry:"1488858935" modified:"1488869920" status:"completed" tags:"Work" uuid:"be16972e-58c3-45d2-a5d5-e220daed4fab"]
+---
+time 1488869949
+old [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0" description:"Log out of any personal accounts" entry:"1488782133" modified:"1488782494" project:"MacBookAir" status:"pending" tags:"Work" uuid:"e222c105-b4eb-496b-abdf-47986fbdeffc"]
+new [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0" description:"Log out of any personal accounts" entry:"1488782133" modified:"1488869949" project:"MacBookAir" start:"1488869949" status:"pending" tags:"Work" uuid:"e222c105-b4eb-496b-abdf-47986fbdeffc"]
+---
+time 1488894945
+old [annotation_1488858727:"006\/0040765762113" description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"W" modified:"1488858727" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+new [annotation_1488858727:"006\/0040765762113" description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"+" modified:"1488894945" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+---
+time 1488894945
+old [annotation_1488858726:"006\/0040765762113" description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636468" imask:"0" modified:"1488858726" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5"]
+new [annotation_1488858726:"006\/0040765762113" description:"Pay rent $21,000, MW11828F8" due:"1489075200" end:"1488894945" entry:"1488636468" imask:"0" modified:"1488894945" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"completed" tags:"Personal" uuid:"f2f77449-73f7-401e-af84-0cf0255e8ab5"]
+---
+time 1488936809
+new [description:"What is Claire's cell phone number?" due:"1488988800" entry:"1488936809" imask:"2" modified:"1488840455" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"pending" tags:"Personal" until:"1490889600" uuid:"f8b5b6ce-bbf2-4880-b5ea-316f8e3744b8"]
+---
+time 1488936809
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++" modified:"1488840455" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++-" modified:"1488936809" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1488939498
+old [depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1488862802" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+new [annotation_1488939498:"Called HCG request repair by a different engineer" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1488939498" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+---
