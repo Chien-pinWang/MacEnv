@@ -1,0 +1,23 @@
+
+#   Crontab Syntax:
+#
+#   *   *   *   *   *     /path/to/<command>
+#   |   |   |   |   |  
+#   |   |   |   |   +---- Day of the Week   (range: 1-7, 1 for Monday)
+#   |   |   |   +-------- Month of the Year (range: 1-12)
+#   |   |   +------------ Day of the Month  (range: 1-31)
+#   |   +---------------- Hour              (range: 0-23)
+#   +-------------------- Minute            (range: 0-59)
+#
+#   Time Specifications:
+#   - '*': Whole range
+#   - '2-4': Partial range, in the month field stands for Feb. to Apr.
+#   - '2,4': Partial range, in the month field stands for Feb. and Apr.
+#   - '*/2': Step range, in the month field stands for every 2 months.
+#   - '2-8/2': Step range in partial range.
+
+#   Backup ~/.env to github.com at 11:30am every Tuesday and Friday
+    30  11  *   *   2,5 /Users/cpw/bin/gitup.sh 
+
+#   Send me a Mac OS notification at 1:55pm, March 13th.
+    55  13  13  3   *   /Users/cpw/bin/OSNotification.sh
