@@ -1,0 +1,20 @@
+
+# alias taskReview='alias | grep "^alias %"'
+alias %now='echo "TASKS NOW WORKING..."; task +ACTIVE list'
+alias %review='echo "TASKS SCHEDULED TODAY..."; task schedule.before:now -ACTIVE list'
+alias %today='echo "TASKS DUE TODAY..."; task +TODAY list'
+alias %week='echo "TASKS DUE THIS WEEK..."; task +WEEK list'
+alias %overdue='echo "TASKS OVERDUE..."; task +OVERDUE -TODAY list'
+alias %monthbill='echo "BILLS TO PAY THIS MONTH..."; task rc.report.all.sort:due+ project:Finance -PARENT +MONTH -COMPLETED all'
+alias %summary='task burndown; task ghistory; task projects'
+function taskReview() {
+    while read line
+        do
+            echo -e "$line"
+        done < ~/.task/taskReview.txt
+}
+function check() {
+    echo "$1"
+    task "$1" done
+    %now
+}

@@ -1,6 +1,247 @@
+2017-03-06 11:34 Job Search for 'Black Belt' at 104.com.tw
+
+@Job
+
+Collect leads focus on foreign investment companies.
+
+Found 5 leads and kept in w3m bookmark.
+
+2017-03-07 18:00 Another Bleeding Event
+
+@mom, @cancer, @vgh
+
+Got a call from Catherine at around 3pm saying mom is heavily bleeding like last November. Blood flushed into the ostomy bag and make it full after she took a leak. Her blood pressure dropped and face turned white quickly. She was sent to CT scan and followed by angiography. After about an hour the angiography team found the bleeding came from the same spot as last November. A stent that is longer than the last one was put in place to cover the weak artery. That has effectively
+stopped the bleeding. Mom was sent to ICU as instructed by Dr. Yen.
+
+Mom lost about 750 cc of blood at ward 82, and 400 afterward in the angiography operation and ICU. Several blood was transfused to keep her pumped.
+
 2017-03-08 09:33 Ledger: Command-line Accounting Program
 
-+cli, +accounting
+@MacBookPro
 http://ledger-cli.org
 
 Ledger is a powerful, double-entry accounting system that is accessed from the UNIX command-line.
+
+- Install Ledger (brew install ledger)
+- Example data files at /usr/local/Cellar/ledger/3.1.1_4/share/ledger/examples
+- A soft link was made at ~/tmp/drewr3.dat
+
+2017-03-08 11:00 Visit Mom at VGH ICU
+
+@mom, @cancer, @vgh
+
+Mom seemed has a good sleep last night. Her vitals are all good with blood pressure at 140/70 and blood oxygen near 100. One ICU doctor came in and explained that her bleeding has stopped, and all vitals are good. Dr. Yen may visit her at noon after his operation in the morning. By looking at her eyes I can tell that she is in a much better shape than yesterday.
+
+She complains back pain and I put the oil on her back. Told her to press the button if feels hungry. She may be released from ICU today/tomorrow if Dr. Yen says so.
+
+2017-03-08 14:27 Setup MacBook Pro
+
+@MacBookPro
+
+- Reset password
+- Update Mac OS X (App Store)
+- Install iTerm2
+- git clone MacEnv from github.com
+    - Create links at ~
+- Install Homebrew
+- Instll Taskwarrior (brew install task)
+- Install jrnl (brew install jrnl)
+- Setup multi-desktop (Mac Mission Control)
+- Install googler (brew install googler)
+- Install w3m (brew install w3m)
+- Install VLC (get.videolan.org)
+- Install Chrome (google.com.tw)
+- Install Firefox (www.mozilla.org)
+- Install Ledger (brew install ledger) NEW!!
+- Install Telegram (macos.telegram.org)
+- Install Magnet (App Store)
+- Install Line (App Store)
+- Install 小麥輸入法 (Download zip)
+- Install TrueCrypt (truecrypt.sourceforge.net) FAILED!!
+    - Prompted for Mac OS X 10.4 or later, while I have 10.11.6
+- Install R & RStudio (crane.r-project.org)
+- Install LibreOffice (zh-tw.libreoffice.org)
+
+2017-03-08 20:29 Visit Mom at VGH ICU Again
+
+@mom, @cancer, @vgh
+
+Keep good spirit as more blood transfused to pump up mom's red blood cell count. Dr Yen came to see mom and talked about using artificial artery to strengthen the weak vessel. Dr. Tsai also visited her and she needs to explain how this bleeding is related to the by-pass surgery she performed early this year.
+
+It's likely that mom can be out of ICU and back to regular ward tomorrow. That's a good thing.
+
+2017-03-09 11:54 Setup MacBook Pro Continues
+
+@MacBookPro
+
+- Install tree (brew install tree)
+- Install sc (brew install https://gist.github.com/geoff-codes/d8c16ada1de10e6387b3/raw/sc.rb) NEW!!
+- Install icu4c (brew install icu4c)
+- Install MySQL (brew install mysql)
+- Install MacDown (macdown.uranusjr.com)
+- Install Kindle (App Store)
+- Install Day One (App Store)
+- Install Things (App Store)
+- Install XCode (App Store)
+
+2017-03-09 17:00 Developed SQLite Schema for Job Hunt
+
+@Job
+
+Tried cli spreadsheet sc (spreadsheet calculator) to capture job leads but it seems not as handy. Turned out setting up a SQLite schema works better.
+
+Project Location:
+    ~/prj/job
+
+ER Diagram:
+    company -E job -E contact
+
+SQLite script can be developped for frequently used query and run from command line like:
+    $ sqlite job.sqlite < _allJobs.sql
+
+    where _allJobs.sql holds the SQL statements
+
+2017-03-10 12:00 Meet Up Chialin *
+
+@ChialinChou
+
+- Chialin got a week vacation this week, plus a week of business trip in Taipei
+- He works for Acer Cloud Technologies, a child company of Aceer's
+- His son Ian just determined to switch major from Chemical Engineering to Economics at the sophomore year
+- We lunched together at 秋吉串燒
+- His daughter is so into art design and started up an internet store selling her design on different garment products
+- He grabs chances to come back and visit eldly father
+- We talked about a business idea of providing IoT services/solutions to factories.
+- He has thorough understanding of the system architecture and chips, and is about to develop business plan with one of his friends. But need someone who can make the sales.
+- Will brainstorm more about the idea after he returns to the U.S. the week of March 20th.
+
+2017-03-10 15:32 Setup MacBook Pro Keep Going...
+
+@MacBookPro
+
+- Install php 7.1 (brew install php71)
+- Install composer (https://getcomposer.org/download)
+- Install apache httpd (brew install apache24)
+- Configure httpd + php71 + mysql (https://getgrav.org/blog/macos-sierra-apache-multiple-php-versions)
+- Configure httpd virtual host alpha.com and beta.com
+
+2017-03-10 23:46 Visit Mom at Ward 82 Bed 28, VGH
+
+@mom, @cancer, @VGH
+
+Mom was discharged from ICU today at around 5:30pm. She got a bed at Ward 82. It's more relaxed here with all the monitoring equipments detached.
+
+She is not bleedng any more. Vitals are all good. Doctor prescribed Kalium because she has hypokalemic as a result of bleeding. She took Kalium tablets and IV.
+
+Both Dr. Yen and Dr. Tsai did not show up today. I'm staying at her bed side tonight.
+
+2017-03-11 10:28 Stay Overnight at VGH with Mom
+
+@mom, @cancer, @VGH
+
+Mom complained about itchy head. Her roommate called for hair wash service so I asked the service lady to give her a hair wash as well. It makes her feel much better after the $280 hair wash.
+
+Dr. Yen came visit her and was worried about the bleeding situation as a result of radiation therapy. He asked if we talked to Dr. Tsai, and advised not to move too much before the bleeding completely stops. I believe he is looking for ways to help.
+
+2017-03-11 17:50 Setup MacBook Pro with phpMyAdmin
+
+@MacBookPro
+
+- Install phpMyAdmin (www.phpmyadmin.net)
+
+2017-03-11 23:12 Data News by R
+
+@R
+
+數感x數據: 如何製作一篇資料新聞 (端傳媒記者林佳賢)
+https://imdataman.github.io/how-to-make-data-news.html
+
+- A presentation tells the data engineering behind a data news using R.
+- Basic stpes:
+    - Collect data
+    - Clean data
+    - Summarize data
+    - Visualize data
+- Collect data
+    - Get data from Internet by package "httr"
+        - Make http request
+        - Useful functions: GET, POST, content
+    - Process JSON format content with package "jsonlite"
+        - fromJSON convert json content to R data frame
+    - Process HTML DOM with package "rvest"
+        - Read in HTML code snippet to DOM by read_html
+        - Find node on DOM by css selector with function html_nodes
+        - Get data from the node with function html_attr
+- Clean data
+    - Heavily rely on string process package "stringr"
+        - Useful functions: str_c, str_split, str_replace, str_replace_all
+        - String concatenation by function paste
+- Summarize data
+    - Package "dplyr" summarize data like a pivot table
+        - Useful functions: filter, group_by, summarise, arrange
+        - Select a sub set of data by function filter
+        - Sort data by function arrange
+        - Categorize data by function group_by
+        - Summarize data by function summarise
+- Visualize data
+    - Put data into graph by package "ggplot2"
+        - Bar chart with function geom_bar
+        - Output as a vector graph for final touch up
+
+2017-03-12 05:17 Mac Bash Color and File Input Output
+
+@bash, @color, @read
+
+Lessons learned while trying to write a bash shell script showing content of a file with color code in it....
+
+- Use "echo -e" to show message with color code in it
+- Color code look up: http://misc.flogisoft.com/bash/tip_colors_and_formatting
+- The "\e" prefix in all codes does not work in Mac bash, use "\033" instead
+    - For example: instead of using "\e[0m" to reset, use "\033[0m" instead
+- Simple script to display a text file line by line to terminal:
+    #!/bin/bash
+    while read line
+    do
+        echo -e "$line"
+    done < file.txt
+- Color code can be embeded in file.txt, but need to escape the escape character "\". So in file.txt, for example:
+    \\033[1mMake this line bold\\033[0m
+    This line is normal
+- Different color effects can be combined by putting their codes together seperated by ";"
+    - \033[31;107m
+        - 31: Red Text (Foreground)
+        - 107: White Background
+    - \033[39;49m
+        - 39: Reset to Default Text (Foreground)
+        - 49: Reset to Default Background
+- CAUTION: Use color codes in $PS1 (command prompt) will cause long command line unable to wrap to the next line.
+
+2017-03-12 09:00 Philosophical Joke
+
+@Joke
+
+Watched 新聞挖挖哇: 新聞真相20170308 on YouTube (https://www.youtube.com/watch?v=m5bxWDtiEHM) with mom. This episode is about the fraudery blood fat reduction medicine 冠脂妥. The host '鄭弘儀' shared a joke as follows:
+
+"毛澤東曾說, 世界上最困難的兩件事: 1) 把自己的想法放進別人的腦袋裡; 2) 把別人的錢放進自己的口袋裡. 第一件事做成功了, 叫老師; 第二件事做成功了, 叫老闆; 兩件事都做成功了, 叫老婆. 跟老師鬥是不想學了; 跟老闆鬥是不想混了; 而跟老婆鬥是不想活了."
+
+Happy International Day of Women!
+
+2017-03-13 10:32 Bleeding Stops and Still on Fast
+
+@mom, @cancer, @VGH
+
+Obviously the bleeding from ostomy has stopped. The stent has effectively prevent the vein from bleeding. Saw 140 cc from ostomy yesterday, mostly water. But there are still 60 cc from the pig-tail. The fluid at pig-tail is more like blood. It is still a concern but see if the amount gradually drops.
+
+Dr. Yen came this morning with surgery suit. He is happy that the quantity and quality of fluid from the ostomy is improving. He would like to give it some more time to get conditions more stable. Only water is allowed.
+
+Dr. Tsai is still not showing up. She is supposed to be the person who can exaplain what's going on...
+
+2017-03-13 11:09 Job Search for 'Lean' and '精實' at 104.com.tw
+
+@Job
+
+Job opportunities are either:
+- Not managerial level (Lean Expert of ASML)
+- Expat manager in shoe industry
+
+Found 3 leads to pursuit (kept at w3m bookmark)

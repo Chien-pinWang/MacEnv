@@ -529,3 +529,688 @@ time 1488939498
 old [depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1488862802" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
 new [annotation_1488939498:"Called HCG request repair by a different engineer" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1488939498" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
 ---
+time 1488953433
+old [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0" description:"Log out of any personal accounts" entry:"1488782133" modified:"1488869949" project:"MacBookAir" start:"1488869949" status:"pending" tags:"Work" uuid:"e222c105-b4eb-496b-abdf-47986fbdeffc"]
+new [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0" description:"Log out of any personal accounts" end:"1488953433" entry:"1488782133" modified:"1488953433" project:"MacBookAir" status:"completed" tags:"Work" uuid:"e222c105-b4eb-496b-abdf-47986fbdeffc"]
+---
+time 1488953445
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++-" modified:"1488936809" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++" modified:"1488953445" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1488953445
+old [description:"What is Claire's cell phone number?" due:"1488988800" entry:"1488936809" imask:"2" modified:"1488840455" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"pending" tags:"Personal" until:"1490889600" uuid:"f8b5b6ce-bbf2-4880-b5ea-316f8e3744b8"]
+new [description:"What is Claire's cell phone number?" due:"1488988800" end:"1488953445" entry:"1488936809" imask:"2" modified:"1488953445" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"completed" tags:"Personal" until:"1490889600" uuid:"f8b5b6ce-bbf2-4880-b5ea-316f8e3744b8"]
+---
+time 1488953451
+old [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0,e222c105-b4eb-496b-abdf-47986fbdeffc" description:"Un-install non-pre-loaded apps" entry:"1488782072" modified:"1488782494" project:"MacBookAir" status:"pending" tags:"Work" uuid:"6f122bca-94a6-476c-90ac-3df7b2da905c"]
+new [depends:"836ffdf7-e87f-4605-801e-48b663d71fc0,e222c105-b4eb-496b-abdf-47986fbdeffc" description:"Un-install non-pre-loaded apps" end:"1488953451" entry:"1488782072" modified:"1488953451" project:"MacBookAir" status:"completed" tags:"Work" uuid:"6f122bca-94a6-476c-90ac-3df7b2da905c"]
+---
+time 1488953457
+old [depends:"6f122bca-94a6-476c-90ac-3df7b2da905c,3ace24d3-1404-4783-bd3b-9258e3a3e27b" description:"Delete sub-folders at ~" entry:"1488795196" modified:"1488795196" project:"MacBookAir" status:"pending" tags:"Work" uuid:"0b7c8386-5803-472a-8bca-41060d61c960"]
+new [depends:"6f122bca-94a6-476c-90ac-3df7b2da905c,3ace24d3-1404-4783-bd3b-9258e3a3e27b" description:"Delete sub-folders at ~" end:"1488953457" entry:"1488795196" modified:"1488953457" project:"MacBookAir" status:"completed" tags:"Work" uuid:"0b7c8386-5803-472a-8bca-41060d61c960"]
+---
+time 1488953467
+old [depends:"0b7c8386-5803-472a-8bca-41060d61c960" description:"Transfer MacBook Air to Grace Hu" due:"1488902400" entry:"1488778973" modified:"1488795366" project:"MacBookAir" status:"pending" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+new [depends:"0b7c8386-5803-472a-8bca-41060d61c960" description:"Transfer MacBook Air to Grace Hu" due:"1488902400" end:"1488953467" entry:"1488778973" modified:"1488953467" project:"MacBookAir" status:"completed" tags:"Work" uuid:"f57792fb-70b4-4141-9131-b8a31426e70b"]
+---
+time 1488953492
+old [description:"Setup MacBook Pro received from Shufu" due:"1489075200" entry:"1488779054" modified:"1488857116" project:"Misc." status:"waiting" tags:"Work" uuid:"f1830eaa-727f-4a2f-9ecf-ee4607a563d3" wait:"1489075200"]
+new [description:"Setup MacBook Pro received from Shufu" due:"1489075200" entry:"1488779054" modified:"1488953492" project:"Misc." start:"1488953492" status:"waiting" tags:"Work" uuid:"f1830eaa-727f-4a2f-9ecf-ee4607a563d3" wait:"1489075200"]
+---
+time 1488953526
+old [description:"Setup MacBook Pro received from Shufu" due:"1489075200" entry:"1488779054" modified:"1488953492" project:"Misc." start:"1488953492" status:"waiting" tags:"Work" uuid:"f1830eaa-727f-4a2f-9ecf-ee4607a563d3" wait:"1489075200"]
+new [description:"Setup MacBook Pro received from Shufu" due:"1489075200" entry:"1488779054" modified:"1488953526" project:"Misc." start:"1488953492" status:"waiting" tags:"Work" uuid:"f1830eaa-727f-4a2f-9ecf-ee4607a563d3"]
+---
+time 1488963422
+old [description:"Setup MacBook Pro received from Shufu" due:"1489075200" entry:"1488779054" modified:"1488953526" project:"Misc." start:"1488953492" status:"pending" tags:"Work" uuid:"f1830eaa-727f-4a2f-9ecf-ee4607a563d3"]
+new [description:"Setup MacBook Pro received from Shufu" due:"1489075200" end:"1488963422" entry:"1488779054" modified:"1488963422" project:"Misc." status:"completed" tags:"Work" uuid:"f1830eaa-727f-4a2f-9ecf-ee4607a563d3"]
+---
+time 1488967032
+new [description:"Review leads kept in bookmark since last Monday." due:"1489075200" entry:"1488967032" modified:"1488967032" project:"Job" status:"pending" tags:"Personal" uuid:"66b50ee9-d49c-4045-9377-2994b7a51a06"]
+---
+time 1488976541
+new [description:"Install R" entry:"1488976541" modified:"1488976541" project:"Misc." status:"pending" tags:"Work" uuid:"b25bb27b-8e98-4d5c-892b-df4045ab52c1"]
+---
+time 1488976594
+old [description:"Install R" entry:"1488976541" modified:"1488976541" project:"Misc." status:"pending" tags:"Work" uuid:"b25bb27b-8e98-4d5c-892b-df4045ab52c1"]
+new [description:"Install R & RStudio" entry:"1488976541" modified:"1488976594" project:"Misc." status:"pending" tags:"Work" uuid:"b25bb27b-8e98-4d5c-892b-df4045ab52c1"]
+---
+time 1488983113
+old [description:"Install R & RStudio" entry:"1488976541" modified:"1488976594" project:"Misc." status:"pending" tags:"Work" uuid:"b25bb27b-8e98-4d5c-892b-df4045ab52c1"]
+new [description:"Install R & RStudio" entry:"1488976541" modified:"1488983113" project:"Misc." start:"1488983113" status:"pending" tags:"Work" uuid:"b25bb27b-8e98-4d5c-892b-df4045ab52c1"]
+---
+time 1488983277
+old [description:"Install R & RStudio" entry:"1488976541" modified:"1488983113" project:"Misc." start:"1488983113" status:"pending" tags:"Work" uuid:"b25bb27b-8e98-4d5c-892b-df4045ab52c1"]
+new [description:"Install R & RStudio" end:"1488983277" entry:"1488976541" modified:"1488983277" project:"Misc." status:"completed" tags:"Work" uuid:"b25bb27b-8e98-4d5c-892b-df4045ab52c1"]
+---
+time 1488987300
+new [description:"Install cloud drives" entry:"1488987300" modified:"1488987300" project:"Misc." status:"pending" tags:"Work" uuid:"b227bafa-c3e8-4fd2-9e3e-ed05caf62401"]
+---
+time 1489019464
+new [description:"What is Claire's cell phone number?" due:"1489075200" entry:"1489019464" imask:"3" modified:"1488953445" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"pending" tags:"Personal" until:"1490889600" uuid:"3c6e6a8b-4f0f-4d10-8976-9f433d61dfbc"]
+---
+time 1489019464
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++" modified:"1488953445" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++-" modified:"1489019464" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1489030868
+old [description:"Review leads kept in bookmark since last Monday." due:"1489075200" entry:"1488967032" modified:"1488967032" project:"Job" status:"pending" tags:"Personal" uuid:"66b50ee9-d49c-4045-9377-2994b7a51a06"]
+new [description:"Review leads kept in bookmark since last Monday." due:"1489075200" entry:"1488967032" modified:"1489030868" project:"Job" start:"1489030868" status:"pending" tags:"Personal" uuid:"66b50ee9-d49c-4045-9377-2994b7a51a06"]
+---
+time 1489030923
+old [annotation_1488939498:"Called HCG request repair by a different engineer" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1488939498" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+new [annotation_1488939498:"Called HCG request repair by a different engineer" annotation_1489030923:"Engineer Chen will replace the toilet water box, cost 4,915" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1489030923" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+---
+time 1489030987
+old [description:"Review leads kept in bookmark since last Monday." due:"1489075200" entry:"1488967032" modified:"1489030868" project:"Job" start:"1489030868" status:"pending" tags:"Personal" uuid:"66b50ee9-d49c-4045-9377-2994b7a51a06"]
+new [annotation_1489030987:"Create \/Users\/cpw\/Projects\/Jobs\/jobleads.sc to capture all leads" description:"Review leads kept in bookmark since last Monday." due:"1489075200" entry:"1488967032" modified:"1489030987" project:"Job" start:"1489030868" status:"pending" tags:"Personal" uuid:"66b50ee9-d49c-4045-9377-2994b7a51a06"]
+---
+time 1489031835
+new [description:"Prepare resume for submitting" entry:"1489031835" modified:"1489031835" project:"Job" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+---
+time 1489031861
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++-" modified:"1489019464" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++++" modified:"1489031861" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1489031861
+old [description:"What is Claire's cell phone number?" due:"1489075200" entry:"1489019464" imask:"3" modified:"1488953445" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"pending" tags:"Personal" until:"1490889600" uuid:"3c6e6a8b-4f0f-4d10-8976-9f433d61dfbc"]
+new [description:"What is Claire's cell phone number?" due:"1489075200" end:"1489031861" entry:"1489019464" imask:"3" modified:"1489031861" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"completed" tags:"Personal" until:"1490889600" uuid:"3c6e6a8b-4f0f-4d10-8976-9f433d61dfbc"]
+---
+time 1489036362
+new [description:"Install App Store apps" entry:"1489036362" modified:"1489036362" project:"Misc." status:"pending" tags:"Work" uuid:"19b3b2d1-5752-42a6-b33d-af4c5391e0ad"]
+---
+time 1489036389
+new [description:"Install MySQL" entry:"1489036389" modified:"1489036389" project:"Misc." status:"pending" tags:"Work" uuid:"6c531816-244a-4944-9842-cf40b1ec3a38"]
+---
+time 1489036649
+old [description:"Install cloud drives" entry:"1488987300" modified:"1488987300" project:"Misc." status:"pending" tags:"Work" uuid:"b227bafa-c3e8-4fd2-9e3e-ed05caf62401"]
+new [description:"Install cloud drives" entry:"1488987300" modified:"1489036649" project:"MacBookPro" status:"pending" tags:"Work" uuid:"b227bafa-c3e8-4fd2-9e3e-ed05caf62401"]
+---
+time 1489036657
+old [description:"Install App Store apps" entry:"1489036362" modified:"1489036362" project:"Misc." status:"pending" tags:"Work" uuid:"19b3b2d1-5752-42a6-b33d-af4c5391e0ad"]
+new [description:"Install App Store apps" entry:"1489036362" modified:"1489036657" project:"MacBookPro" status:"pending" tags:"Work" uuid:"19b3b2d1-5752-42a6-b33d-af4c5391e0ad"]
+---
+time 1489036659
+old [description:"Install MySQL" entry:"1489036389" modified:"1489036389" project:"Misc." status:"pending" tags:"Work" uuid:"6c531816-244a-4944-9842-cf40b1ec3a38"]
+new [description:"Install MySQL" entry:"1489036389" modified:"1489036659" project:"MacBookPro" status:"pending" tags:"Work" uuid:"6c531816-244a-4944-9842-cf40b1ec3a38"]
+---
+time 1489045290
+old [description:"Prepare resume for submitting" entry:"1489031835" modified:"1489031835" project:"Job" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+new [description:"Prepare resume for submitting" due:"1489161600" entry:"1489031835" modified:"1489045290" project:"Job" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+---
+time 1489049536
+old [annotation_1489030987:"Create \/Users\/cpw\/Projects\/Jobs\/jobleads.sc to capture all leads" description:"Review leads kept in bookmark since last Monday." due:"1489075200" entry:"1488967032" modified:"1489030987" project:"Job" start:"1489030868" status:"pending" tags:"Personal" uuid:"66b50ee9-d49c-4045-9377-2994b7a51a06"]
+new [annotation_1489030987:"Create \/Users\/cpw\/Projects\/Jobs\/jobleads.sc to capture all leads" annotation_1489049536:"Leads are now in \/Users\/cpw\/prj\/job\/job.sqlite" description:"Review leads kept in bookmark since last Monday." due:"1489075200" entry:"1488967032" modified:"1489049536" project:"Job" start:"1489030868" status:"pending" tags:"Personal" uuid:"66b50ee9-d49c-4045-9377-2994b7a51a06"]
+---
+time 1489049540
+old [annotation_1489030987:"Create \/Users\/cpw\/Projects\/Jobs\/jobleads.sc to capture all leads" annotation_1489049536:"Leads are now in \/Users\/cpw\/prj\/job\/job.sqlite" description:"Review leads kept in bookmark since last Monday." due:"1489075200" entry:"1488967032" modified:"1489049536" project:"Job" start:"1489030868" status:"pending" tags:"Personal" uuid:"66b50ee9-d49c-4045-9377-2994b7a51a06"]
+new [annotation_1489030987:"Create \/Users\/cpw\/Projects\/Jobs\/jobleads.sc to capture all leads" annotation_1489049536:"Leads are now in \/Users\/cpw\/prj\/job\/job.sqlite" description:"Review leads kept in bookmark since last Monday." due:"1489075200" end:"1489049540" entry:"1488967032" modified:"1489049540" project:"Job" status:"completed" tags:"Personal" uuid:"66b50ee9-d49c-4045-9377-2994b7a51a06"]
+---
+time 1489049605
+old [description:"Install MySQL" entry:"1489036389" modified:"1489036659" project:"MacBookPro" status:"pending" tags:"Work" uuid:"6c531816-244a-4944-9842-cf40b1ec3a38"]
+new [description:"Install MySQL" entry:"1489036389" modified:"1489049605" project:"MacBookPro" start:"1489049605" status:"pending" tags:"Work" uuid:"6c531816-244a-4944-9842-cf40b1ec3a38"]
+---
+time 1489050861
+old [description:"Install MySQL" entry:"1489036389" modified:"1489049605" project:"MacBookPro" start:"1489049605" status:"pending" tags:"Work" uuid:"6c531816-244a-4944-9842-cf40b1ec3a38"]
+new [description:"Install MySQL" end:"1489050861" entry:"1489036389" modified:"1489050861" project:"MacBookPro" status:"completed" tags:"Work" uuid:"6c531816-244a-4944-9842-cf40b1ec3a38"]
+---
+time 1489052096
+old [description:"Install App Store apps" entry:"1489036362" modified:"1489036657" project:"MacBookPro" status:"pending" tags:"Work" uuid:"19b3b2d1-5752-42a6-b33d-af4c5391e0ad"]
+new [description:"Install App Store apps" end:"1489052096" entry:"1489036362" modified:"1489052096" project:"MacBookPro" status:"completed" tags:"Work" uuid:"19b3b2d1-5752-42a6-b33d-af4c5391e0ad"]
+---
+time 1489052480
+old [description:"Install cloud drives" entry:"1488987300" modified:"1489036649" project:"MacBookPro" status:"pending" tags:"Work" uuid:"b227bafa-c3e8-4fd2-9e3e-ed05caf62401"]
+new [description:"Install cloud drives" entry:"1488987300" modified:"1489052480" project:"MacBookPro" start:"1489052480" status:"pending" tags:"Work" uuid:"b227bafa-c3e8-4fd2-9e3e-ed05caf62401"]
+---
+time 1489054468
+old [description:"Install cloud drives" entry:"1488987300" modified:"1489052480" project:"MacBookPro" start:"1489052480" status:"pending" tags:"Work" uuid:"b227bafa-c3e8-4fd2-9e3e-ed05caf62401"]
+new [description:"Install cloud drives" end:"1489054468" entry:"1488987300" modified:"1489054468" project:"MacBookPro" status:"completed" tags:"Work" uuid:"b227bafa-c3e8-4fd2-9e3e-ed05caf62401"]
+---
+time 1489064738
+new [description:"Install apache httpd with php7 and libraries" entry:"1489064738" modified:"1489064738" project:"MacBookPro" scheduled:"1488988800" status:"pending" tags:"Work" uuid:"89b5a371-9a66-4475-a485-330b84a3ee25"]
+---
+time 1489064956
+new [description:"Pay $2,450 ( ( uuid = E624014F ) ) common charge" due:"1489075200" entry:"1489064956" modified:"1489064956" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+---
+time 1489064958
+new [description:"Pay $2,450 ( ( uuid = E624014F ) ) common charge" due:"1489075200" entry:"1489064958" imask:"0" modified:"1489064956" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+---
+time 1489064958
+old [description:"Pay $2,450 ( ( uuid = E624014F ) ) common charge" due:"1489075200" entry:"1489064956" modified:"1489064956" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+new [description:"Pay $2,450 ( ( uuid = E624014F ) ) common charge" due:"1489075200" entry:"1489064956" mask:"-" modified:"1489064958" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+---
+time 1489064992
+old [description:"Pay $2,450 ( ( uuid = E624014F ) ) common charge" due:"1489075200" entry:"1489064958" imask:"0" modified:"1489064956" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+new [description:"Pay $2,450 common charge" due:"1489075200" entry:"1489064958" imask:"0" modified:"1489064992" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+---
+time 1489064995
+old [description:"Pay $2,450 ( ( uuid = E624014F ) ) common charge" due:"1489075200" entry:"1489064956" mask:"-" modified:"1489064958" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+new [description:"Pay $2,450 common charge" due:"1489075200" entry:"1489064956" mask:"-" modified:"1489064995" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+---
+time 1489065066
+old [description:"Pay $2,450 common charge" due:"1489075200" entry:"1489064958" imask:"0" modified:"1489064992" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+new [description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064958" imask:"0" modified:"1489065066" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+---
+time 1489065068
+old [description:"Pay $2,450 common charge" due:"1489075200" entry:"1489064956" mask:"-" modified:"1489064995" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+new [description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064956" mask:"-" modified:"1489065068" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+---
+time 1489065114
+old [description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064958" imask:"0" modified:"1489065066" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+new [annotation_1489065114:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064958" imask:"0" modified:"1489065114" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+---
+time 1489065116
+old [description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064956" mask:"-" modified:"1489065068" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+new [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064956" mask:"-" modified:"1489065116" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+---
+time 1489068389
+old [annotation_1488939498:"Called HCG request repair by a different engineer" annotation_1489030923:"Engineer Chen will replace the toilet water box, cost 4,915" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1489030923" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+new [annotation_1488939498:"Called HCG request repair by a different engineer" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1489068389" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+---
+time 1489068433
+old [annotation_1488939498:"Called HCG request repair by a different engineer" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1489068389" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+new [annotation_1488939498:"Called HCG request repair by a different engineer" annotation_1489068433:"Engineer Chen will replace the toilet water box, cost $14,915" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1489068433" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+---
+time 1489070922
+new [description:"Add all recurring payments to Taskwarrior" entry:"1489070922" modified:"1489070922" project:"Finance" scheduled:"1489075200" status:"pending" tags:"Personal" uuid:"54670ac0-2927-4b6e-b08f-6363d1363243"]
+---
+time 1489107391
+new [annotation_1488858727:"006\/0040765762113" description:"Pay rent $21,000, MW11828F8" due:"1491753600" entry:"1489107391" imask:"1" modified:"1488894945" parent:"ebad57b7-fb86-4def-ae5d-253749a02df5" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"waiting" tags:"Personal" uuid:"a8e09fd7-4a99-46a6-a9d6-bb60775fc60b" wait:"1491494400"]
+---
+time 1489107391
+old [annotation_1488858727:"006\/0040765762113" description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"+" modified:"1488894945" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+new [annotation_1488858727:"006\/0040765762113" description:"Pay rent $21,000, MW11828F8" due:"1489075200" entry:"1488636465" mask:"+W" modified:"1489107391" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"ebad57b7-fb86-4def-ae5d-253749a02df5" wait:"1488816000"]
+---
+time 1489107391
+new [description:"What is Claire's cell phone number?" due:"1489161600" entry:"1489107391" imask:"4" modified:"1489031861" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"pending" tags:"Personal" until:"1490889600" uuid:"5a815f43-c1cf-40e8-9db9-70d753d5e83a"]
+---
+time 1489107391
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++++" modified:"1489031861" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++++-" modified:"1489107391" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1489107391
+new [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1491753600" entry:"1489107391" imask:"1" modified:"1489065116" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"0710e302-6856-4862-8530-f5bd066efcd7"]
+---
+time 1489107391
+old [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064956" mask:"-" modified:"1489065116" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+new [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064956" mask:"--" modified:"1489107391" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+---
+time 1489111580
+old [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1491753600" entry:"1489107391" imask:"1" modified:"1489065116" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"0710e302-6856-4862-8530-f5bd066efcd7"]
+new [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1491753600" entry:"1489107391" imask:"1" modified:"1489111580" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1491494400" status:"pending" tags:"Personal" uuid:"0710e302-6856-4862-8530-f5bd066efcd7"]
+---
+time 1489111595
+old [annotation_1489065114:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064958" imask:"0" modified:"1489065114" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+new [annotation_1489065114:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064958" imask:"0" modified:"1489111595" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" start:"1489111595" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+---
+time 1489111650
+old [description:"Install apache httpd with php7 and libraries" entry:"1489064738" modified:"1489064738" project:"MacBookPro" scheduled:"1488988800" status:"pending" tags:"Work" uuid:"89b5a371-9a66-4475-a485-330b84a3ee25"]
+new [description:"Install apache httpd with php7 and libraries" entry:"1489064738" modified:"1489111650" project:"MacBookPro" scheduled:"1488988800" start:"1489111650" status:"pending" tags:"Work" uuid:"89b5a371-9a66-4475-a485-330b84a3ee25"]
+---
+time 1489111665
+old [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1488728569" project:"Teresacard" scheduled:"1488729600" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489111665" project:"Teresacard" scheduled:"1488729600" start:"1489111665" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1489112738
+old [description:"Follow up on the meeting at 3\/3" due:"1489334400" entry:"1488639787" modified:"1488728569" project:"Teresacard" scheduled:"1489075200" status:"pending" tags:"Work" uuid:"8c0d46f4-2864-4840-bb47-4c87803175db"]
+new [description:"Follow up on the meeting at 3\/3" due:"1489334400" entry:"1488639787" modified:"1489112738" project:"Teresacard" scheduled:"1489075200" start:"1489112738" status:"pending" tags:"Work" uuid:"8c0d46f4-2864-4840-bb47-4c87803175db"]
+---
+time 1489112746
+old [description:"Add all recurring payments to Taskwarrior" entry:"1489070922" modified:"1489070922" project:"Finance" scheduled:"1489075200" status:"pending" tags:"Personal" uuid:"54670ac0-2927-4b6e-b08f-6363d1363243"]
+new [description:"Add all recurring payments to Taskwarrior" entry:"1489070922" modified:"1489112746" project:"Finance" scheduled:"1489075200" start:"1489112746" status:"pending" tags:"Personal" uuid:"54670ac0-2927-4b6e-b08f-6363d1363243"]
+---
+time 1489112791
+old [annotation_1489065114:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064958" imask:"0" modified:"1489111595" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" start:"1489111595" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+new [annotation_1489065114:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1489075200" entry:"1489064958" imask:"0" modified:"1489112791" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" start:"1489111595" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+---
+time 1489112801
+old [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1491753600" entry:"1489107391" imask:"1" modified:"1489111580" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1491494400" status:"pending" tags:"Personal" uuid:"0710e302-6856-4862-8530-f5bd066efcd7"]
+new [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1491753600" entry:"1489107391" imask:"1" modified:"1489112801" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1491494400" status:"pending" tags:"Personal" uuid:"0710e302-6856-4862-8530-f5bd066efcd7"]
+---
+time 1489112801
+old [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge," due:"1489075200" entry:"1489064956" mask:"--" modified:"1489107391" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+new [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1489075200" entry:"1489064956" mask:"--" modified:"1489112801" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+---
+time 1489113634
+new [description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" modified:"1489113634" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc"]
+---
+time 1489113698
+old [description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" modified:"1489113634" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc"]
+new [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" modified:"1489113698" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc"]
+---
+time 1489113803
+new [description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489113803" modified:"1489113803" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"recurring" tags:"Personal" uuid:"dfe6edc2-a909-473e-98b7-8969d7cac073"]
+---
+time 1489114054
+old [description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489113803" modified:"1489113803" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"recurring" tags:"Personal" uuid:"dfe6edc2-a909-473e-98b7-8969d7cac073"]
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489113803" modified:"1489114054" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"recurring" tags:"Personal" uuid:"dfe6edc2-a909-473e-98b7-8969d7cac073"]
+---
+time 1489114142
+new [description:"Pay MegaBank credit card bill" due:"1490544000" entry:"1489114142" modified:"1489114142" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"recurring" tags:"Personal" uuid:"a0e06367-7d8b-4965-a19c-60098355e960"]
+---
+time 1489114231
+new [description:"Pay ,533 common charge, MW11828F8" due:"1490975999" entry:"1489114231" modified:"1489114231" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"52610af8-5b3e-4302-8823-e2a647e885e9"]
+---
+time 1489114265
+old [description:"Pay ,533 common charge, MW11828F8" due:"1490975999" entry:"1489114231" modified:"1489114231" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"52610af8-5b3e-4302-8823-e2a647e885e9"]
+new [description:"Pay $1,533 common charge, MW11828F8" due:"1490975999" entry:"1489114231" modified:"1489114265" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"52610af8-5b3e-4302-8823-e2a647e885e9"]
+---
+time 1489114371
+new [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114371" modified:"1489114371" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"a683f8b2-0795-4e14-bacc-7ae0687530e9"]
+---
+time 1489114461
+new [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489113698" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"pending" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+---
+time 1489114461
+old [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" modified:"1489113698" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc"]
+new [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" mask:"-" modified:"1489114461" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc"]
+---
+time 1489114461
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489114054" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"pending" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+---
+time 1489114461
+old [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489113803" modified:"1489114054" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"recurring" tags:"Personal" uuid:"dfe6edc2-a909-473e-98b7-8969d7cac073"]
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489113803" mask:"-" modified:"1489114461" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"recurring" tags:"Personal" uuid:"dfe6edc2-a909-473e-98b7-8969d7cac073"]
+---
+time 1489114461
+new [description:"Pay MegaBank credit card bill" due:"1490544000" entry:"1489114461" imask:"0" modified:"1489114142" parent:"a0e06367-7d8b-4965-a19c-60098355e960" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"pending" tags:"Personal" uuid:"5ef33d89-3429-4407-aafe-f4b278d8c298"]
+---
+time 1489114461
+old [description:"Pay MegaBank credit card bill" due:"1490544000" entry:"1489114142" modified:"1489114142" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"recurring" tags:"Personal" uuid:"a0e06367-7d8b-4965-a19c-60098355e960"]
+new [description:"Pay MegaBank credit card bill" due:"1490544000" entry:"1489114142" mask:"-" modified:"1489114461" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"recurring" tags:"Personal" uuid:"a0e06367-7d8b-4965-a19c-60098355e960"]
+---
+time 1489114461
+new [description:"Pay $1,533 common charge, MW11828F8" due:"1490975999" entry:"1489114461" imask:"0" modified:"1489114265" parent:"52610af8-5b3e-4302-8823-e2a647e885e9" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"pending" tags:"Personal" uuid:"b407862d-4799-47f0-b5f9-a68b4a3eff68"]
+---
+time 1489114461
+old [description:"Pay $1,533 common charge, MW11828F8" due:"1490975999" entry:"1489114231" modified:"1489114265" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"52610af8-5b3e-4302-8823-e2a647e885e9"]
+new [description:"Pay $1,533 common charge, MW11828F8" due:"1490975999" entry:"1489114231" mask:"-" modified:"1489114461" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"52610af8-5b3e-4302-8823-e2a647e885e9"]
+---
+time 1489114461
+new [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114461" imask:"0" modified:"1489114371" parent:"a683f8b2-0795-4e14-bacc-7ae0687530e9" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"pending" tags:"Personal" uuid:"5e61cacd-6cc8-40ca-96a2-4a60e2657f9d"]
+---
+time 1489114461
+old [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114371" modified:"1489114371" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"a683f8b2-0795-4e14-bacc-7ae0687530e9"]
+new [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114371" mask:"-" modified:"1489114461" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"a683f8b2-0795-4e14-bacc-7ae0687530e9"]
+---
+time 1489114674
+new [description:"Pay $11,230 牌照稅, 1610XM" due:"1493481600" entry:"1489114674" modified:"1489114674" project:"Finance" recur:"annual" scheduled:"1492272000" status:"recurring" tags:"Personal" uuid:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da"]
+---
+time 1489115323
+new [description:"Pay $9,216 房屋稅, ( ( uuid = E624014F ) )" due:"1496073600" entry:"1489115323" modified:"1489115323" project:"Finance" recur:"annual" scheduled:"1494864000" status:"recurring" tags:"Personal" uuid:"93befadc-e8f4-42ca-97af-33e010986230"]
+---
+time 1489115380
+old [description:"Pay $9,216 房屋稅, ( ( uuid = E624014F ) )" due:"1496073600" entry:"1489115323" modified:"1489115323" project:"Finance" recur:"annual" scheduled:"1494864000" status:"recurring" tags:"Personal" uuid:"93befadc-e8f4-42ca-97af-33e010986230"]
+new [description:"Pay $9,216 房屋稅, ( ( uuid = E624014F ) )" due:"1496160000" entry:"1489115323" modified:"1489115380" project:"Finance" recur:"annual" scheduled:"1494950400" status:"recurring" tags:"Personal" uuid:"93befadc-e8f4-42ca-97af-33e010986230"]
+---
+time 1489115654
+new [description:"File personal tax" due:"1496160000" entry:"1489115654" modified:"1489115654" project:"Finance" recur:"annual" scheduled:"1494950400" status:"recurring" tags:"Personal" uuid:"f98993fd-83e4-4055-b827-5d4d05a51d64"]
+---
+time 1489115787
+new [description:"Pay $1,176 汽車責任險, 1610XM" due:"1496505600" entry:"1489115787" modified:"1489115787" project:"Finance" recur:"annual" scheduled:"1495296000" status:"recurring" tags:"Personal" uuid:"a1d4666d-499f-4607-a48d-4e22504f34bc"]
+---
+time 1489115978
+new [description:"Pay $6,210 燃料稅, 1610XM" due:"1501430400" entry:"1489115978" modified:"1489115978" project:"Finance" recur:"annual" scheduled:"1500220800" status:"recurring" tags:"Personal" uuid:"1b974cfe-f1fe-4bc4-9ac5-a3f68167f92c"]
+---
+time 1489116080
+new [description:"Pay $589 地價稅, ( ( uuid = E624014F ) )" due:"1511971200" entry:"1489116080" modified:"1489116080" project:"Finance" recur:"annual" scheduled:"1510761600" status:"recurring" tags:"Personal" uuid:"d700eb68-cb25-4e60-bbab-bb6a0865c2d2"]
+---
+time 1489116468
+new [description:"Pay $5,120 國泰人壽保險" due:"1514649600" entry:"1489116468" modified:"1489116468" project:"Finance" recur:"annual" scheduled:"1513440000" status:"recurring" tags:"Personal" uuid:"bd4fedde-87aa-4bc7-9abb-ec9f08b0694d"]
+---
+time 1489116512
+old [description:"Pay $5,120 國泰人壽保險" due:"1514649600" entry:"1489116468" modified:"1489116468" project:"Finance" recur:"annual" scheduled:"1513440000" status:"recurring" tags:"Personal" uuid:"bd4fedde-87aa-4bc7-9abb-ec9f08b0694d"]
+new [annotation_1489116512:"Charge to SCSB credit card" description:"Pay $5,120 國泰人壽保險" due:"1514649600" entry:"1489116468" modified:"1489116512" project:"Finance" recur:"annual" scheduled:"1513440000" status:"recurring" tags:"Personal" uuid:"bd4fedde-87aa-4bc7-9abb-ec9f08b0694d"]
+---
+time 1489116530
+new [description:"Pay $11,230 牌照稅, 1610XM" due:"1493481600" entry:"1489116530" imask:"0" modified:"1489114674" parent:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" project:"Finance" recur:"annual" scheduled:"1492272000" status:"pending" tags:"Personal" uuid:"1e15e650-046d-4e87-a70f-56d8fbeb63b3"]
+---
+time 1489116530
+old [description:"Pay $11,230 牌照稅, 1610XM" due:"1493481600" entry:"1489114674" modified:"1489114674" project:"Finance" recur:"annual" scheduled:"1492272000" status:"recurring" tags:"Personal" uuid:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da"]
+new [description:"Pay $11,230 牌照稅, 1610XM" due:"1493481600" entry:"1489114674" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1492272000" status:"recurring" tags:"Personal" uuid:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da"]
+---
+time 1489116530
+new [description:"Pay $9,216 房屋稅, ( ( uuid = E624014F ) )" due:"1496160000" entry:"1489116530" imask:"0" modified:"1489115380" parent:"93befadc-e8f4-42ca-97af-33e010986230" project:"Finance" recur:"annual" scheduled:"1494950400" status:"pending" tags:"Personal" uuid:"dbcd7de5-6606-45fc-bf32-6cbb061045b9"]
+---
+time 1489116530
+old [description:"Pay $9,216 房屋稅, ( ( uuid = E624014F ) )" due:"1496160000" entry:"1489115323" modified:"1489115380" project:"Finance" recur:"annual" scheduled:"1494950400" status:"recurring" tags:"Personal" uuid:"93befadc-e8f4-42ca-97af-33e010986230"]
+new [description:"Pay $9,216 房屋稅, ( ( uuid = E624014F ) )" due:"1496160000" entry:"1489115323" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1494950400" status:"recurring" tags:"Personal" uuid:"93befadc-e8f4-42ca-97af-33e010986230"]
+---
+time 1489116530
+new [description:"File personal tax" due:"1496160000" entry:"1489116530" imask:"0" modified:"1489115654" parent:"f98993fd-83e4-4055-b827-5d4d05a51d64" project:"Finance" recur:"annual" scheduled:"1494950400" status:"pending" tags:"Personal" uuid:"ee327873-3d18-4abd-839d-ed8114a69a43"]
+---
+time 1489116530
+old [description:"File personal tax" due:"1496160000" entry:"1489115654" modified:"1489115654" project:"Finance" recur:"annual" scheduled:"1494950400" status:"recurring" tags:"Personal" uuid:"f98993fd-83e4-4055-b827-5d4d05a51d64"]
+new [description:"File personal tax" due:"1496160000" entry:"1489115654" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1494950400" status:"recurring" tags:"Personal" uuid:"f98993fd-83e4-4055-b827-5d4d05a51d64"]
+---
+time 1489116530
+new [description:"Pay $1,176 汽車責任險, 1610XM" due:"1496505600" entry:"1489116530" imask:"0" modified:"1489115787" parent:"a1d4666d-499f-4607-a48d-4e22504f34bc" project:"Finance" recur:"annual" scheduled:"1495296000" status:"pending" tags:"Personal" uuid:"a5d5e682-762e-4106-8d0c-40d997d405c8"]
+---
+time 1489116530
+old [description:"Pay $1,176 汽車責任險, 1610XM" due:"1496505600" entry:"1489115787" modified:"1489115787" project:"Finance" recur:"annual" scheduled:"1495296000" status:"recurring" tags:"Personal" uuid:"a1d4666d-499f-4607-a48d-4e22504f34bc"]
+new [description:"Pay $1,176 汽車責任險, 1610XM" due:"1496505600" entry:"1489115787" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1495296000" status:"recurring" tags:"Personal" uuid:"a1d4666d-499f-4607-a48d-4e22504f34bc"]
+---
+time 1489116530
+new [description:"Pay $6,210 燃料稅, 1610XM" due:"1501430400" entry:"1489116530" imask:"0" modified:"1489115978" parent:"1b974cfe-f1fe-4bc4-9ac5-a3f68167f92c" project:"Finance" recur:"annual" scheduled:"1500220800" status:"pending" tags:"Personal" uuid:"e8319ad5-aa67-4099-9cbf-943952f30086"]
+---
+time 1489116530
+old [description:"Pay $6,210 燃料稅, 1610XM" due:"1501430400" entry:"1489115978" modified:"1489115978" project:"Finance" recur:"annual" scheduled:"1500220800" status:"recurring" tags:"Personal" uuid:"1b974cfe-f1fe-4bc4-9ac5-a3f68167f92c"]
+new [description:"Pay $6,210 燃料稅, 1610XM" due:"1501430400" entry:"1489115978" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1500220800" status:"recurring" tags:"Personal" uuid:"1b974cfe-f1fe-4bc4-9ac5-a3f68167f92c"]
+---
+time 1489116530
+new [description:"Pay $589 地價稅, ( ( uuid = E624014F ) )" due:"1511971200" entry:"1489116530" imask:"0" modified:"1489116080" parent:"d700eb68-cb25-4e60-bbab-bb6a0865c2d2" project:"Finance" recur:"annual" scheduled:"1510761600" status:"pending" tags:"Personal" uuid:"f74d9361-9dc4-4590-931b-f09280eb93b4"]
+---
+time 1489116530
+old [description:"Pay $589 地價稅, ( ( uuid = E624014F ) )" due:"1511971200" entry:"1489116080" modified:"1489116080" project:"Finance" recur:"annual" scheduled:"1510761600" status:"recurring" tags:"Personal" uuid:"d700eb68-cb25-4e60-bbab-bb6a0865c2d2"]
+new [description:"Pay $589 地價稅, ( ( uuid = E624014F ) )" due:"1511971200" entry:"1489116080" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1510761600" status:"recurring" tags:"Personal" uuid:"d700eb68-cb25-4e60-bbab-bb6a0865c2d2"]
+---
+time 1489116530
+new [annotation_1489116512:"Charge to SCSB credit card" description:"Pay $5,120 國泰人壽保險" due:"1514649600" entry:"1489116530" imask:"0" modified:"1489116512" parent:"bd4fedde-87aa-4bc7-9abb-ec9f08b0694d" project:"Finance" recur:"annual" scheduled:"1513440000" status:"pending" tags:"Personal" uuid:"d3cabda9-490c-47ee-89c2-078337b72d67"]
+---
+time 1489116530
+old [annotation_1489116512:"Charge to SCSB credit card" description:"Pay $5,120 國泰人壽保險" due:"1514649600" entry:"1489116468" modified:"1489116512" project:"Finance" recur:"annual" scheduled:"1513440000" status:"recurring" tags:"Personal" uuid:"bd4fedde-87aa-4bc7-9abb-ec9f08b0694d"]
+new [annotation_1489116512:"Charge to SCSB credit card" description:"Pay $5,120 國泰人壽保險" due:"1514649600" entry:"1489116468" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1513440000" status:"recurring" tags:"Personal" uuid:"bd4fedde-87aa-4bc7-9abb-ec9f08b0694d"]
+---
+time 1489116651
+new [description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116651" modified:"1489116651" project:"Finance" recur:"annual" scheduled:"1497974400" status:"recurring" tags:"Personal" uuid:"736363d0-2861-4ef8-b68e-1daacf2d6ddf"]
+---
+time 1489116700
+old [description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116651" modified:"1489116651" project:"Finance" recur:"annual" scheduled:"1497974400" status:"recurring" tags:"Personal" uuid:"736363d0-2861-4ef8-b68e-1daacf2d6ddf"]
+new [annotation_1489116700:"Put the bar back to the trunk before going" description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116651" modified:"1489116700" project:"Finance" recur:"annual" scheduled:"1497974400" status:"recurring" tags:"Personal" uuid:"736363d0-2861-4ef8-b68e-1daacf2d6ddf"]
+---
+time 1489116737
+old [annotation_1489116700:"Put the bar back to the trunk before going" description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116651" modified:"1489116700" project:"Finance" recur:"annual" scheduled:"1497974400" status:"recurring" tags:"Personal" uuid:"736363d0-2861-4ef8-b68e-1daacf2d6ddf"]
+new [annotation_1489116700:"Put the bar back to the trunk before going" annotation_1489116737:"Turn off TV before going" description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116651" modified:"1489116737" project:"Finance" recur:"annual" scheduled:"1497974400" status:"recurring" tags:"Personal" uuid:"736363d0-2861-4ef8-b68e-1daacf2d6ddf"]
+---
+time 1489116741
+new [annotation_1489116700:"Put the bar back to the trunk before going" annotation_1489116737:"Turn off TV before going" description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116741" imask:"0" modified:"1489116737" parent:"736363d0-2861-4ef8-b68e-1daacf2d6ddf" project:"Finance" recur:"annual" scheduled:"1497974400" status:"pending" tags:"Personal" uuid:"bc2dcd30-1fe6-41c0-af58-4c689377261d"]
+---
+time 1489116741
+old [annotation_1489116700:"Put the bar back to the trunk before going" annotation_1489116737:"Turn off TV before going" description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116651" modified:"1489116737" project:"Finance" recur:"annual" scheduled:"1497974400" status:"recurring" tags:"Personal" uuid:"736363d0-2861-4ef8-b68e-1daacf2d6ddf"]
+new [annotation_1489116700:"Put the bar back to the trunk before going" annotation_1489116737:"Turn off TV before going" description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116651" mask:"-" modified:"1489116741" project:"Finance" recur:"annual" scheduled:"1497974400" status:"recurring" tags:"Personal" uuid:"736363d0-2861-4ef8-b68e-1daacf2d6ddf"]
+---
+time 1489116754
+old [description:"Add all recurring payments to Taskwarrior" entry:"1489070922" modified:"1489112746" project:"Finance" scheduled:"1489075200" start:"1489112746" status:"pending" tags:"Personal" uuid:"54670ac0-2927-4b6e-b08f-6363d1363243"]
+new [description:"Add all recurring payments to Taskwarrior" end:"1489116754" entry:"1489070922" modified:"1489116754" project:"Finance" scheduled:"1489075200" status:"completed" tags:"Personal" uuid:"54670ac0-2927-4b6e-b08f-6363d1363243"]
+---
+time 1489116899
+old [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489113698" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"pending" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+new [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489116899" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"waiting" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1" wait:"1489420800"]
+---
+time 1489116901
+old [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" mask:"-" modified:"1489114461" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc"]
+new [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" mask:"-" modified:"1489116901" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc" wait:"1489420800"]
+---
+time 1489116911
+old [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489114054" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"pending" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489116911" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"waiting" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e" wait:"1489593600"]
+---
+time 1489116920
+old [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489113803" mask:"-" modified:"1489114461" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"recurring" tags:"Personal" uuid:"dfe6edc2-a909-473e-98b7-8969d7cac073"]
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489113803" mask:"-" modified:"1489116920" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"recurring" tags:"Personal" uuid:"dfe6edc2-a909-473e-98b7-8969d7cac073" wait:"1489593600"]
+---
+time 1489116930
+old [annotation_1489116700:"Put the bar back to the trunk before going" annotation_1489116737:"Turn off TV before going" description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116741" imask:"0" modified:"1489116737" parent:"736363d0-2861-4ef8-b68e-1daacf2d6ddf" project:"Finance" recur:"annual" scheduled:"1497974400" status:"pending" tags:"Personal" uuid:"bc2dcd30-1fe6-41c0-af58-4c689377261d"]
+new [annotation_1489116700:"Put the bar back to the trunk before going" annotation_1489116737:"Turn off TV before going" description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116741" imask:"0" modified:"1489116930" parent:"736363d0-2861-4ef8-b68e-1daacf2d6ddf" project:"Finance" recur:"annual" scheduled:"1497974400" status:"waiting" tags:"Personal" uuid:"bc2dcd30-1fe6-41c0-af58-4c689377261d" wait:"1497974400"]
+---
+time 1489116931
+old [annotation_1489116700:"Put the bar back to the trunk before going" annotation_1489116737:"Turn off TV before going" description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116651" mask:"-" modified:"1489116741" project:"Finance" recur:"annual" scheduled:"1497974400" status:"recurring" tags:"Personal" uuid:"736363d0-2861-4ef8-b68e-1daacf2d6ddf"]
+new [annotation_1489116700:"Put the bar back to the trunk before going" annotation_1489116737:"Turn off TV before going" description:"Pay $450 annual inspection, 1610XM" due:"1499184000" entry:"1489116651" mask:"-" modified:"1489116931" project:"Finance" recur:"annual" scheduled:"1497974400" status:"recurring" tags:"Personal" uuid:"736363d0-2861-4ef8-b68e-1daacf2d6ddf" wait:"1497974400"]
+---
+time 1489116971
+old [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1491753600" entry:"1489107391" imask:"1" modified:"1489112801" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1491494400" status:"pending" tags:"Personal" uuid:"0710e302-6856-4862-8530-f5bd066efcd7"]
+new [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1491753600" entry:"1489107391" imask:"1" modified:"1489116971" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1491494400" status:"waiting" tags:"Personal" uuid:"0710e302-6856-4862-8530-f5bd066efcd7" wait:"1491494400"]
+---
+time 1489116973
+old [annotation_1489065114:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1489075200" entry:"1489064958" imask:"0" modified:"1489112791" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" start:"1489111595" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+new [annotation_1489065114:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1489075200" entry:"1489064958" imask:"0" modified:"1489116973" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" start:"1489111595" status:"waiting" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc" wait:"1488816000"]
+---
+time 1489116973
+old [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1489075200" entry:"1489064956" mask:"--" modified:"1489112801" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f"]
+new [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1489075200" entry:"1489064956" mask:"--" modified:"1489116973" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" wait:"1488816000"]
+---
+time 1489116984
+old [annotation_1489116512:"Charge to SCSB credit card" description:"Pay $5,120 國泰人壽保險" due:"1514649600" entry:"1489116530" imask:"0" modified:"1489116512" parent:"bd4fedde-87aa-4bc7-9abb-ec9f08b0694d" project:"Finance" recur:"annual" scheduled:"1513440000" status:"pending" tags:"Personal" uuid:"d3cabda9-490c-47ee-89c2-078337b72d67"]
+new [annotation_1489116512:"Charge to SCSB credit card" description:"Pay $5,120 國泰人壽保險" due:"1514649600" entry:"1489116530" imask:"0" modified:"1489116984" parent:"bd4fedde-87aa-4bc7-9abb-ec9f08b0694d" project:"Finance" recur:"annual" scheduled:"1513440000" status:"waiting" tags:"Personal" uuid:"d3cabda9-490c-47ee-89c2-078337b72d67" wait:"1513440000"]
+---
+time 1489116986
+old [annotation_1489116512:"Charge to SCSB credit card" description:"Pay $5,120 國泰人壽保險" due:"1514649600" entry:"1489116468" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1513440000" status:"recurring" tags:"Personal" uuid:"bd4fedde-87aa-4bc7-9abb-ec9f08b0694d"]
+new [annotation_1489116512:"Charge to SCSB credit card" description:"Pay $5,120 國泰人壽保險" due:"1514649600" entry:"1489116468" mask:"-" modified:"1489116986" project:"Finance" recur:"annual" scheduled:"1513440000" status:"recurring" tags:"Personal" uuid:"bd4fedde-87aa-4bc7-9abb-ec9f08b0694d" wait:"1513440000"]
+---
+time 1489117001
+old [description:"Pay MegaBank credit card bill" due:"1490544000" entry:"1489114461" imask:"0" modified:"1489114142" parent:"a0e06367-7d8b-4965-a19c-60098355e960" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"pending" tags:"Personal" uuid:"5ef33d89-3429-4407-aafe-f4b278d8c298"]
+new [description:"Pay MegaBank credit card bill" due:"1490544000" entry:"1489114461" imask:"0" modified:"1489117001" parent:"a0e06367-7d8b-4965-a19c-60098355e960" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"waiting" tags:"Personal" uuid:"5ef33d89-3429-4407-aafe-f4b278d8c298" wait:"1490284800"]
+---
+time 1489117002
+old [description:"Pay MegaBank credit card bill" due:"1490544000" entry:"1489114142" mask:"-" modified:"1489114461" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"recurring" tags:"Personal" uuid:"a0e06367-7d8b-4965-a19c-60098355e960"]
+new [description:"Pay MegaBank credit card bill" due:"1490544000" entry:"1489114142" mask:"-" modified:"1489117002" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"recurring" tags:"Personal" uuid:"a0e06367-7d8b-4965-a19c-60098355e960" wait:"1490284800"]
+---
+time 1489117013
+old [description:"Pay $1,533 common charge, MW11828F8" due:"1490975999" entry:"1489114461" imask:"0" modified:"1489114265" parent:"52610af8-5b3e-4302-8823-e2a647e885e9" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"pending" tags:"Personal" uuid:"b407862d-4799-47f0-b5f9-a68b4a3eff68"]
+new [description:"Pay $1,533 common charge, MW11828F8" due:"1490975999" entry:"1489114461" imask:"0" modified:"1489117013" parent:"52610af8-5b3e-4302-8823-e2a647e885e9" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"waiting" tags:"Personal" uuid:"b407862d-4799-47f0-b5f9-a68b4a3eff68" wait:"1490716799"]
+---
+time 1489117014
+old [description:"Pay $1,533 common charge, MW11828F8" due:"1490975999" entry:"1489114231" mask:"-" modified:"1489114461" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"52610af8-5b3e-4302-8823-e2a647e885e9"]
+new [description:"Pay $1,533 common charge, MW11828F8" due:"1490975999" entry:"1489114231" mask:"-" modified:"1489117014" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"52610af8-5b3e-4302-8823-e2a647e885e9" wait:"1490716799"]
+---
+time 1489117027
+old [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114461" imask:"0" modified:"1489114371" parent:"a683f8b2-0795-4e14-bacc-7ae0687530e9" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"pending" tags:"Personal" uuid:"5e61cacd-6cc8-40ca-96a2-4a60e2657f9d"]
+new [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114461" imask:"0" modified:"1489117027" parent:"a683f8b2-0795-4e14-bacc-7ae0687530e9" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"waiting" tags:"Personal" uuid:"5e61cacd-6cc8-40ca-96a2-4a60e2657f9d" wait:"1490716799"]
+---
+time 1489117028
+old [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114371" mask:"-" modified:"1489114461" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"a683f8b2-0795-4e14-bacc-7ae0687530e9"]
+new [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114371" mask:"-" modified:"1489117028" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"a683f8b2-0795-4e14-bacc-7ae0687530e9" wait:"1490716799"]
+---
+time 1489117038
+old [description:"Pay $11,230 牌照稅, 1610XM" due:"1493481600" entry:"1489116530" imask:"0" modified:"1489114674" parent:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" project:"Finance" recur:"annual" scheduled:"1492272000" status:"pending" tags:"Personal" uuid:"1e15e650-046d-4e87-a70f-56d8fbeb63b3"]
+new [description:"Pay $11,230 牌照稅, 1610XM" due:"1493481600" entry:"1489116530" imask:"0" modified:"1489117038" parent:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" project:"Finance" recur:"annual" scheduled:"1492272000" status:"waiting" tags:"Personal" uuid:"1e15e650-046d-4e87-a70f-56d8fbeb63b3" wait:"1492272000"]
+---
+time 1489117039
+old [description:"Pay $11,230 牌照稅, 1610XM" due:"1493481600" entry:"1489114674" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1492272000" status:"recurring" tags:"Personal" uuid:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da"]
+new [description:"Pay $11,230 牌照稅, 1610XM" due:"1493481600" entry:"1489114674" mask:"-" modified:"1489117039" project:"Finance" recur:"annual" scheduled:"1492272000" status:"recurring" tags:"Personal" uuid:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" wait:"1492272000"]
+---
+time 1489117053
+old [description:"Pay $9,216 房屋稅, ( ( uuid = E624014F ) )" due:"1496160000" entry:"1489116530" imask:"0" modified:"1489115380" parent:"93befadc-e8f4-42ca-97af-33e010986230" project:"Finance" recur:"annual" scheduled:"1494950400" status:"pending" tags:"Personal" uuid:"dbcd7de5-6606-45fc-bf32-6cbb061045b9"]
+new [description:"Pay $9,216 房屋稅, ( ( uuid = E624014F ) )" due:"1496160000" entry:"1489116530" imask:"0" modified:"1489117053" parent:"93befadc-e8f4-42ca-97af-33e010986230" project:"Finance" recur:"annual" scheduled:"1494950400" status:"waiting" tags:"Personal" uuid:"dbcd7de5-6606-45fc-bf32-6cbb061045b9" wait:"1494950400"]
+---
+time 1489117054
+old [description:"Pay $9,216 房屋稅, ( ( uuid = E624014F ) )" due:"1496160000" entry:"1489115323" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1494950400" status:"recurring" tags:"Personal" uuid:"93befadc-e8f4-42ca-97af-33e010986230"]
+new [description:"Pay $9,216 房屋稅, ( ( uuid = E624014F ) )" due:"1496160000" entry:"1489115323" mask:"-" modified:"1489117054" project:"Finance" recur:"annual" scheduled:"1494950400" status:"recurring" tags:"Personal" uuid:"93befadc-e8f4-42ca-97af-33e010986230" wait:"1494950400"]
+---
+time 1489117068
+old [description:"File personal tax" due:"1496160000" entry:"1489116530" imask:"0" modified:"1489115654" parent:"f98993fd-83e4-4055-b827-5d4d05a51d64" project:"Finance" recur:"annual" scheduled:"1494950400" status:"pending" tags:"Personal" uuid:"ee327873-3d18-4abd-839d-ed8114a69a43"]
+new [description:"File personal tax" due:"1496160000" entry:"1489116530" imask:"0" modified:"1489117068" parent:"f98993fd-83e4-4055-b827-5d4d05a51d64" project:"Finance" recur:"annual" scheduled:"1494950400" status:"waiting" tags:"Personal" uuid:"ee327873-3d18-4abd-839d-ed8114a69a43" wait:"1494950400"]
+---
+time 1489117070
+old [description:"File personal tax" due:"1496160000" entry:"1489115654" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1494950400" status:"recurring" tags:"Personal" uuid:"f98993fd-83e4-4055-b827-5d4d05a51d64"]
+new [description:"File personal tax" due:"1496160000" entry:"1489115654" mask:"-" modified:"1489117070" project:"Finance" recur:"annual" scheduled:"1494950400" status:"recurring" tags:"Personal" uuid:"f98993fd-83e4-4055-b827-5d4d05a51d64" wait:"1494950400"]
+---
+time 1489117082
+old [description:"Pay $1,176 汽車責任險, 1610XM" due:"1496505600" entry:"1489116530" imask:"0" modified:"1489115787" parent:"a1d4666d-499f-4607-a48d-4e22504f34bc" project:"Finance" recur:"annual" scheduled:"1495296000" status:"pending" tags:"Personal" uuid:"a5d5e682-762e-4106-8d0c-40d997d405c8"]
+new [description:"Pay $1,176 汽車責任險, 1610XM" due:"1496505600" entry:"1489116530" imask:"0" modified:"1489117082" parent:"a1d4666d-499f-4607-a48d-4e22504f34bc" project:"Finance" recur:"annual" scheduled:"1495296000" status:"waiting" tags:"Personal" uuid:"a5d5e682-762e-4106-8d0c-40d997d405c8" wait:"1495296000"]
+---
+time 1489117084
+old [description:"Pay $1,176 汽車責任險, 1610XM" due:"1496505600" entry:"1489115787" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1495296000" status:"recurring" tags:"Personal" uuid:"a1d4666d-499f-4607-a48d-4e22504f34bc"]
+new [description:"Pay $1,176 汽車責任險, 1610XM" due:"1496505600" entry:"1489115787" mask:"-" modified:"1489117084" project:"Finance" recur:"annual" scheduled:"1495296000" status:"recurring" tags:"Personal" uuid:"a1d4666d-499f-4607-a48d-4e22504f34bc" wait:"1495296000"]
+---
+time 1489117091
+old [description:"Pay $6,210 燃料稅, 1610XM" due:"1501430400" entry:"1489116530" imask:"0" modified:"1489115978" parent:"1b974cfe-f1fe-4bc4-9ac5-a3f68167f92c" project:"Finance" recur:"annual" scheduled:"1500220800" status:"pending" tags:"Personal" uuid:"e8319ad5-aa67-4099-9cbf-943952f30086"]
+new [description:"Pay $6,210 燃料稅, 1610XM" due:"1501430400" entry:"1489116530" imask:"0" modified:"1489117091" parent:"1b974cfe-f1fe-4bc4-9ac5-a3f68167f92c" project:"Finance" recur:"annual" scheduled:"1500220800" status:"waiting" tags:"Personal" uuid:"e8319ad5-aa67-4099-9cbf-943952f30086" wait:"1500220800"]
+---
+time 1489117093
+old [description:"Pay $6,210 燃料稅, 1610XM" due:"1501430400" entry:"1489115978" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1500220800" status:"recurring" tags:"Personal" uuid:"1b974cfe-f1fe-4bc4-9ac5-a3f68167f92c"]
+new [description:"Pay $6,210 燃料稅, 1610XM" due:"1501430400" entry:"1489115978" mask:"-" modified:"1489117093" project:"Finance" recur:"annual" scheduled:"1500220800" status:"recurring" tags:"Personal" uuid:"1b974cfe-f1fe-4bc4-9ac5-a3f68167f92c" wait:"1500220800"]
+---
+time 1489117105
+old [description:"Pay $589 地價稅, ( ( uuid = E624014F ) )" due:"1511971200" entry:"1489116530" imask:"0" modified:"1489116080" parent:"d700eb68-cb25-4e60-bbab-bb6a0865c2d2" project:"Finance" recur:"annual" scheduled:"1510761600" status:"pending" tags:"Personal" uuid:"f74d9361-9dc4-4590-931b-f09280eb93b4"]
+new [description:"Pay $589 地價稅, ( ( uuid = E624014F ) )" due:"1511971200" entry:"1489116530" imask:"0" modified:"1489117105" parent:"d700eb68-cb25-4e60-bbab-bb6a0865c2d2" project:"Finance" recur:"annual" scheduled:"1510761600" status:"waiting" tags:"Personal" uuid:"f74d9361-9dc4-4590-931b-f09280eb93b4" wait:"1510761600"]
+---
+time 1489117106
+old [description:"Pay $589 地價稅, ( ( uuid = E624014F ) )" due:"1511971200" entry:"1489116080" mask:"-" modified:"1489116530" project:"Finance" recur:"annual" scheduled:"1510761600" status:"recurring" tags:"Personal" uuid:"d700eb68-cb25-4e60-bbab-bb6a0865c2d2"]
+new [description:"Pay $589 地價稅, ( ( uuid = E624014F ) )" due:"1511971200" entry:"1489116080" mask:"-" modified:"1489117106" project:"Finance" recur:"annual" scheduled:"1510761600" status:"recurring" tags:"Personal" uuid:"d700eb68-cb25-4e60-bbab-bb6a0865c2d2" wait:"1510761600"]
+---
+time 1489126348
+old [description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1488791244" project:"Misc." scheduled:"1489118400" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+new [description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489126348" project:"Misc." scheduled:"1489118400" start:"1489126348" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+---
+time 1489127455
+old [description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489126348" project:"Misc." scheduled:"1489118400" start:"1489126348" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+new [annotation_1489127455:"https:\/\/www.mobile01.com\/topicdetail.php?f=37&t=3315833" description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489127455" project:"Misc." scheduled:"1489118400" start:"1489126348" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+---
+time 1489127565
+old [annotation_1488939498:"Called HCG request repair by a different engineer" annotation_1489068433:"Engineer Chen will replace the toilet water box, cost $14,915" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1489068433" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+new [annotation_1488939498:"Called HCG request repair by a different engineer" annotation_1489068433:"Engineer Chen will replace the toilet water box, cost $14,915" annotation_1489127565:"HCG engineer came to fix the toilet already" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1489127565" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+---
+time 1489127568
+old [annotation_1488939498:"Called HCG request repair by a different engineer" annotation_1489068433:"Engineer Chen will replace the toilet water box, cost $14,915" annotation_1489127565:"HCG engineer came to fix the toilet already" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" entry:"1488729437" modified:"1489127565" project:"E624014F" start:"1488862802" status:"pending" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+new [annotation_1488939498:"Called HCG request repair by a different engineer" annotation_1489068433:"Engineer Chen will replace the toilet water box, cost $14,915" annotation_1489127565:"HCG engineer came to fix the toilet already" depends:"fd7ff5a3-f2a5-43df-aa2f-bc833a9c890a" description:"Repair toilet in the guest restroom" due:"1489075200" end:"1489127568" entry:"1488729437" modified:"1489127568" project:"E624014F" status:"completed" tags:"Personal" uuid:"548c8a65-cbb3-4d6a-a6b2-9fa4f14aab1e"]
+---
+time 1489127717
+old [description:"Prepare resume for submitting" due:"1489161600" entry:"1489031835" modified:"1489045290" project:"Job" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+new [description:"Prepare resume for submitting" due:"1489247999" entry:"1489031835" modified:"1489127717" project:"Job" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+---
+time 1489127877
+old [annotation_1489127455:"https:\/\/www.mobile01.com\/topicdetail.php?f=37&t=3315833" description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489127455" project:"Misc." scheduled:"1489118400" start:"1489126348" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+new [annotation_1489127455:"https:\/\/www.mobile01.com\/topicdetail.php?f=37&t=3315833" annotation_1489127877:"http:\/\/24h.pchome.com.tw\/prod\/DEACEI-A9006PIOS, $599" description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489127877" project:"Misc." scheduled:"1489118400" start:"1489126348" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+---
+time 1489130240
+old [description:"Follow up on the meeting at 3\/3" due:"1489334400" entry:"1488639787" modified:"1489112738" project:"Teresacard" scheduled:"1489075200" start:"1489112738" status:"pending" tags:"Work" uuid:"8c0d46f4-2864-4840-bb47-4c87803175db"]
+new [description:"Follow up on the meeting at 3\/3" due:"1489334400" end:"1489130240" entry:"1488639787" modified:"1489130240" project:"Teresacard" scheduled:"1489075200" status:"completed" tags:"Work" uuid:"8c0d46f4-2864-4840-bb47-4c87803175db"]
+---
+time 1489136023
+old [description:"Install apache httpd with php7 and libraries" entry:"1489064738" modified:"1489111650" project:"MacBookPro" scheduled:"1488988800" start:"1489111650" status:"pending" tags:"Work" uuid:"89b5a371-9a66-4475-a485-330b84a3ee25"]
+new [description:"Install apache httpd with php7 and libraries" end:"1489136023" entry:"1489064738" modified:"1489136023" project:"MacBookPro" scheduled:"1488988800" status:"completed" tags:"Work" uuid:"89b5a371-9a66-4475-a485-330b84a3ee25"]
+---
+time 1489136959
+old [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489111665" project:"Teresacard" scheduled:"1488729600" start:"1489111665" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489136959" project:"Teresacard" scheduled:"1488729600" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1489136979
+old [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489136959" project:"Teresacard" scheduled:"1488729600" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489136979" project:"Teresacard" scheduled:"1489507200" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1489137189
+new [description:"Setup httpd virtual hosts for various local web services" entry:"1489137189" modified:"1489137189" project:"MacBookPro" status:"pending" tags:"Work" uuid:"9e44a4fc-a25f-4b32-b2d3-30bcac87bbd6"]
+---
+time 1489137222
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++++-" modified:"1489107391" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++++" modified:"1489137222" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1489137222
+old [description:"What is Claire's cell phone number?" due:"1489161600" entry:"1489107391" imask:"4" modified:"1489031861" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"pending" tags:"Personal" until:"1490889600" uuid:"5a815f43-c1cf-40e8-9db9-70d753d5e83a"]
+new [description:"What is Claire's cell phone number?" due:"1489161600" end:"1489137222" entry:"1489107391" imask:"4" modified:"1489137222" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"daily" status:"completed" tags:"Personal" until:"1490889600" uuid:"5a815f43-c1cf-40e8-9db9-70d753d5e83a"]
+---
+time 1489140343
+new [description:"Update server info at .bash_profile" entry:"1489140343" modified:"1489140343" project:"MacBookPro" scheduled:"1489161600" status:"pending" tags:"Work" uuid:"3575675c-c8f3-4378-b4f1-6f4c413afc28"]
+---
+time 1489141782
+old [annotation_1489127455:"https:\/\/www.mobile01.com\/topicdetail.php?f=37&t=3315833" annotation_1489127877:"http:\/\/24h.pchome.com.tw\/prod\/DEACEI-A9006PIOS, $599" description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489127877" project:"Misc." scheduled:"1489118400" start:"1489126348" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+new [annotation_1489127455:"https:\/\/www.mobile01.com\/topicdetail.php?f=37&t=3315833" annotation_1489127877:"http:\/\/24h.pchome.com.tw\/prod\/DEACEI-A9006PIOS, $599" description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489141782" project:"Misc." scheduled:"1489118400" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+---
+time 1489141798
+old [annotation_1489127455:"https:\/\/www.mobile01.com\/topicdetail.php?f=37&t=3315833" annotation_1489127877:"http:\/\/24h.pchome.com.tw\/prod\/DEACEI-A9006PIOS, $599" description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489141782" project:"Misc." scheduled:"1489118400" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+new [annotation_1489127455:"https:\/\/www.mobile01.com\/topicdetail.php?f=37&t=3315833" annotation_1489127877:"http:\/\/24h.pchome.com.tw\/prod\/DEACEI-A9006PIOS, $599" description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489141798" project:"Misc." scheduled:"1489420800" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+---
+time 1489146528
+new [description:"Pay $1,966 electronicity bill, MW11828F8" due:"1490544000" entry:"1489146528" modified:"1489146528" project:"Finance" scheduled:"1490284800" status:"waiting" tags:"Personal" uuid:"e78a285f-0513-4e45-b183-0b8e9df38602" wait:"1490284800"]
+---
+time 1489156927
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++++" modified:"1489137222" project:"Memory" recur:"daily" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++++" modified:"1489156927" project:"Memory" recur:"2days" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1489158016
+old [description:"Update server info at .bash_profile" entry:"1489140343" modified:"1489140343" project:"MacBookPro" scheduled:"1489161600" status:"pending" tags:"Work" uuid:"3575675c-c8f3-4378-b4f1-6f4c413afc28"]
+new [description:"Update server info at .bash_profile" entry:"1489140343" modified:"1489158016" project:"MacBookPro" scheduled:"1489161600" start:"1489158016" status:"pending" tags:"Work" uuid:"3575675c-c8f3-4378-b4f1-6f4c413afc28"]
+---
+time 1489160404
+old [description:"Update server info at .bash_profile" entry:"1489140343" modified:"1489158016" project:"MacBookPro" scheduled:"1489161600" start:"1489158016" status:"pending" tags:"Work" uuid:"3575675c-c8f3-4378-b4f1-6f4c413afc28"]
+new [description:"Update server info at .bash_profile" end:"1489160404" entry:"1489140343" modified:"1489160404" project:"MacBookPro" scheduled:"1489161600" status:"completed" tags:"Work" uuid:"3575675c-c8f3-4378-b4f1-6f4c413afc28"]
+---
+time 1489188262
+old [description:"Prepare resume for submitting" due:"1489247999" entry:"1489031835" modified:"1489127717" project:"Job" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+new [description:"Prepare resume for submitting" due:"1489247999" entry:"1489031835" modified:"1489188262" project:"Job" start:"1489188262" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+---
+time 1489193416
+new [description:"Task A" entry:"1489193416" modified:"1489193416" status:"pending" uuid:"91602bc8-6adb-4dae-bd6c-db8ab4a7aab6"]
+---
+time 1489193426
+new [depends:"91602bc8-6adb-4dae-bd6c-db8ab4a7aab6" description:"Task B" entry:"1489193426" modified:"1489193426" status:"pending" uuid:"aa50bfd6-d5a4-4fce-b75a-87099db73b09"]
+---
+time 1489193642
+old [description:"Task A" entry:"1489193416" modified:"1489193416" status:"pending" uuid:"91602bc8-6adb-4dae-bd6c-db8ab4a7aab6"]
+new [description:"Task A" end:"1489193640" entry:"1489193416" modified:"1489193642" status:"deleted" uuid:"91602bc8-6adb-4dae-bd6c-db8ab4a7aab6"]
+---
+time 1489193642
+old [depends:"91602bc8-6adb-4dae-bd6c-db8ab4a7aab6" description:"Task B" entry:"1489193426" modified:"1489193426" status:"pending" uuid:"aa50bfd6-d5a4-4fce-b75a-87099db73b09"]
+new [depends:"91602bc8-6adb-4dae-bd6c-db8ab4a7aab6" description:"Task B" end:"1489193642" entry:"1489193426" modified:"1489193642" status:"deleted" uuid:"aa50bfd6-d5a4-4fce-b75a-87099db73b09"]
+---
+time 1489233598
+old [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1489075200" entry:"1489064956" mask:"--" modified:"1489116973" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" wait:"1488816000"]
+new [annotation_1489065116:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1489075200" entry:"1489064956" mask:"+-" modified:"1489233598" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"recurring" tags:"Personal" uuid:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" wait:"1488816000"]
+---
+time 1489233598
+old [annotation_1489065114:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1489075200" entry:"1489064958" imask:"0" modified:"1489116973" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" start:"1489111595" status:"pending" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+new [annotation_1489065114:"006\/3465871000101" description:"Pay $2,450 common charge, 'E624014F" due:"1489075200" end:"1489233598" entry:"1489064958" imask:"0" modified:"1489233598" parent:"48917d84-a3b5-46bd-9f4d-93b17b1f449f" project:"Finance" recur:"monthly" scheduled:"1488816000" status:"completed" tags:"Personal" uuid:"66f34494-b3ff-4b8c-b4f6-04cd7c3024cc"]
+---
+time 1489284329
+old [description:"Setup httpd virtual hosts for various local web services" entry:"1489137189" modified:"1489137189" project:"MacBookPro" status:"pending" tags:"Work" uuid:"9e44a4fc-a25f-4b32-b2d3-30bcac87bbd6"]
+new [description:"Setup httpd virtual hosts for various local web services" end:"1489284329" entry:"1489137189" modified:"1489284329" project:"MacBookPro" status:"completed" tags:"Work" uuid:"9e44a4fc-a25f-4b32-b2d3-30bcac87bbd6"]
+---
+time 1489293095
+old [description:"Prepare resume for submitting" due:"1489247999" entry:"1489031835" modified:"1489188262" project:"Job" start:"1489188262" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+new [description:"Prepare resume for submitting" due:"1489420800" entry:"1489031835" modified:"1489293095" project:"Job" scheduled:"1489314695" start:"1489188262" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+---
+time 1489293117
+old [description:"Prepare resume for submitting" due:"1489420800" entry:"1489031835" modified:"1489293095" project:"Job" scheduled:"1489314695" start:"1489188262" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+new [description:"Prepare resume for submitting" due:"1489420800" entry:"1489031835" modified:"1489293117" project:"Job" scheduled:"1489314695" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+---
+time 1489316620
+old [description:"Prepare resume for submitting" due:"1489420800" entry:"1489031835" modified:"1489293117" project:"Job" scheduled:"1489314695" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+new [description:"Prepare resume for submitting" due:"1489420800" entry:"1489031835" modified:"1489316620" project:"Job" scheduled:"1489314695" start:"1489316620" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+---
+time 1489362136
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489939200" entry:"1489362136" imask:"2" modified:"1488857045" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"waiting" tags:"Personal" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+---
+time 1489362136
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"+-" modified:"1488857045" project:"Job" recur:"weekly" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"+-W" modified:"1489362136" project:"Job" recur:"weekly" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1489364109
+new [description:"Survey available IoT solutions in Taiwan" due:"1489766400" entry:"1489364109" modified:"1489364109" project:"Job" scheduled:"1489334400" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+---
+time 1489364188
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489334400" entry:"1488729622" imask:"1" modified:"1488857043" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"pending" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489334400" entry:"1488729622" imask:"1" modified:"1489364188" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" scheduled:"1489334400" status:"pending" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
+---
+time 1489364191
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489939200" entry:"1489362136" imask:"2" modified:"1488857045" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" status:"waiting" tags:"Personal" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489364191" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" scheduled:"1489939200" status:"waiting" tags:"Personal" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+---
+time 1489364191
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"+-W" modified:"1489362136" project:"Job" recur:"weekly" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"+-W" modified:"1489364191" project:"Job" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1489364272
+old [description:"Survey available IoT solutions in Taiwan" due:"1489766400" entry:"1489364109" modified:"1489364109" project:"Job" scheduled:"1489334400" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+new [description:"Survey available IoT solutions in Taiwan" due:"1489766400" entry:"1489364109" modified:"1489364272" project:"Job.IoT" scheduled:"1489334400" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+---
+time 1489372839
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489334400" entry:"1488729622" imask:"1" modified:"1489364188" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" scheduled:"1489334400" status:"pending" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489334400" entry:"1488729622" imask:"1" modified:"1489372839" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" scheduled:"1489334400" start:"1489372839" status:"pending" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
+---
+time 1489372846
+old [description:"Survey available IoT solutions in Taiwan" due:"1489766400" entry:"1489364109" modified:"1489364272" project:"Job.IoT" scheduled:"1489334400" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+new [description:"Survey available IoT solutions in Taiwan" due:"1489766400" entry:"1489364109" modified:"1489372846" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+---
+time 1489374629
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489334400" entry:"1488729622" imask:"1" modified:"1489372839" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" scheduled:"1489334400" start:"1489372839" status:"pending" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" annotation_1489374629:"Keywords: lean, 精實" description:"Check new job postings weekly" due:"1489334400" entry:"1488729622" imask:"1" modified:"1489374629" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" scheduled:"1489334400" start:"1489372839" status:"pending" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
+---
+time 1489374652
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"+-W" modified:"1489364191" project:"Job" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489374652" project:"Job" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1489374652
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" annotation_1489374629:"Keywords: lean, 精實" description:"Check new job postings weekly" due:"1489334400" entry:"1488729622" imask:"1" modified:"1489374629" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" scheduled:"1489334400" start:"1489372839" status:"pending" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" annotation_1489374629:"Keywords: lean, 精實" description:"Check new job postings weekly" due:"1489334400" end:"1489374652" entry:"1488729622" imask:"1" modified:"1489374652" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" scheduled:"1489334400" status:"completed" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
+---

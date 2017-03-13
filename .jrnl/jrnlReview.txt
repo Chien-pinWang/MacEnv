@@ -1,0 +1,17 @@
+\\033[1;34mJournal Review\\033[0m
+\\033[1;4mCommand\\033[0m         \\033[1;4mDescription\\033[0m
+\\033[31;107m+new\\033[39;49m            New Journal Entry
+>                   Enter new journal entry to the default journal
+\\033[31;107m+last\\033[39;49m           Last Journal Entry
+>                   Display the last journal entry. 
+>                   Append "| more" to page; "--edit" to edit
+\\033[31;107m+today\\033[39;49m          Today's Journal Entries
+>                   Display all journal entries written today.
+\\033[31;107m+yesterday\\033[39;49m      Yesterday's Journal Entries
+>                   Display all journal entries written yesterday.
+\\033[31;107m+star\\033[39;49m           Starred Journal Entry
+>                   Display all starred journal entries
+\\033[31;107m+all\\033[39;49m            All Journal Entries
+>                   List titles of all journal entries
+\\033[31;107mjrnlSearch <key>\\033[39;49mSearch <key> in journal
+\\033[31;107mjrnlReview\\033[39;49m      Show This Page

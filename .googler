@@ -3,6 +3,8 @@
 # email: Wang.ChienPin@gmail.com
 #
 
+alias googleResource='alias | grep "^alias @"'
+
 # verywed.com
 alias @vw='googler -n 5 -w verywed.com'
 
