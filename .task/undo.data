@@ -1214,3 +1214,52 @@ time 1489374652
 old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" annotation_1489374629:"Keywords: lean, 精實" description:"Check new job postings weekly" due:"1489334400" entry:"1488729622" imask:"1" modified:"1489374629" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" scheduled:"1489334400" start:"1489372839" status:"pending" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
 new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" annotation_1489374629:"Keywords: lean, 精實" description:"Check new job postings weekly" due:"1489334400" end:"1489374652" entry:"1488729622" imask:"1" modified:"1489374652" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" scheduled:"1489334400" status:"completed" tags:"Personal" uuid:"ca708b0d-8639-4009-a3d3-c88ec4ef42cf"]
 ---
+time 1489389262
+new [description:"Re-create aliases of command line apps based on the ~\/tmp\/keymapplan.txt" entry:"1489389262" modified:"1489389262" project:"MacBookPro" status:"pending" tags:"Work" uuid:"872e130d-cf0b-4c96-b41d-f9c7886a2885"]
+---
+time 1489393293
+old [description:"Re-create aliases of command line apps based on the ~\/tmp\/keymapplan.txt" entry:"1489389262" modified:"1489389262" project:"MacBookPro" status:"pending" tags:"Work" uuid:"872e130d-cf0b-4c96-b41d-f9c7886a2885"]
+new [description:"Re-create aliases of command line apps based on the ~\/tmp\/keymapplan.txt" entry:"1489389262" modified:"1489393293" project:"MacBookPro" start:"1489393293" status:"pending" tags:"Work" uuid:"872e130d-cf0b-4c96-b41d-f9c7886a2885"]
+---
+time 1489401073
+new [description:"Move office to the 2nd floor" due:"1489680000" entry:"1489401073" modified:"1489401073" project:"Misc." scheduled:"1489507200" status:"pending" tags:"Work" uuid:"b59e8ffd-a8c1-43db-ae55-0f00381ef793"]
+---
+time 1489418870
+old [description:"Prepare resume for submitting" due:"1489420800" entry:"1489031835" modified:"1489316620" project:"Job" scheduled:"1489314695" start:"1489316620" status:"pending" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+new [description:"Prepare resume for submitting" due:"1489420800" end:"1489418870" entry:"1489031835" modified:"1489418870" project:"Job" scheduled:"1489314695" status:"completed" tags:"Personal" uuid:"5ae61b08-572d-4064-be6c-a0e85bb952be"]
+---
+time 1489457058
+old [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489116899" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"pending" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+new [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489457058" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489543458" status:"pending" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+---
+time 1489457436
+old [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489457058" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489543458" status:"pending" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+new [annotation_1489113698:"812\/90125120073689" annotation_1489457436:"Payble $15,370" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489457436" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489543458" status:"pending" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+---
+time 1489457626
+old [annotation_1489127455:"https:\/\/www.mobile01.com\/topicdetail.php?f=37&t=3315833" annotation_1489127877:"http:\/\/24h.pchome.com.tw\/prod\/DEACEI-A9006PIOS, $599" description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489141798" project:"Misc." scheduled:"1489420800" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+new [annotation_1489127455:"https:\/\/www.mobile01.com\/topicdetail.php?f=37&t=3315833" annotation_1489127877:"http:\/\/24h.pchome.com.tw\/prod\/DEACEI-A9006PIOS, $599" description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489457626" project:"Misc." scheduled:"1489544026" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+---
+time 1489458920
+new [description:"Test Task" entry:"1489458920" modified:"1489458920" scheduled:"1489372520" status:"pending" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
+---
+time 1489458937
+old [description:"Test Task" entry:"1489458920" modified:"1489458920" scheduled:"1489372520" status:"pending" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
+new [description:"Test Task" entry:"1489458920" modified:"1489458937" scheduled:"1489545337" status:"pending" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
+---
+time 1489458960
+old [description:"Test Task" entry:"1489458920" modified:"1489458937" scheduled:"1489545337" status:"pending" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
+new [description:"Test Task" entry:"1489458920" modified:"1489458960" scheduled:"1489545360" status:"pending" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
+---
+time 1489459152
+old [description:"Test Task" entry:"1489458920" modified:"1489458960" scheduled:"1489545360" status:"pending" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
+new [description:"Test Task" entry:"1489458920" modified:"1489459152" scheduled:"1489545552" status:"pending" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
+---
+time 1489459936
+old [description:"Test Task" entry:"1489458920" modified:"1489459152" scheduled:"1489545552" status:"pending" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
+new [description:"Test Task" entry:"1489458920" modified:"1489459936" scheduled:"1489546336" status:"pending" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
+---
+time 1489461677
+old [description:"Test Task" entry:"1489458920" modified:"1489459936" scheduled:"1489546336" status:"pending" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
+new [description:"Test Task" end:"1489461677" entry:"1489458920" modified:"1489461677" scheduled:"1489546336" status:"completed" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
+---

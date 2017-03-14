@@ -17,7 +17,10 @@ source ~/.taskwarrior   # aliases for task routines
 source ~/.jrnl          # aliases for jrnl routines
 
 # Aliases to execute commands
-alias vi="/usr/local/bin/vim"
+alias v="/usr/local/bin/vim"
+alias vSplit="vi -O"
+alias vStack="vi -o"
+alias vTab="vi -p"
 alias cp="cp -iv"
 alias mv="mv -iv"
 alias ls="ls -FGhp"
@@ -37,9 +40,6 @@ alias nll="jrnl -on today"
 alias ne="jrnl -on today --edit"
 alias cron="crontab -e"
 alias tree="tree -d | more"
-alias vsplit="vi -O"
-alias vstack="vi -o"
-alias vtab="vi -p"
 alias phpweb="php -S 127.0.0.1:8080 &"
 alias w="w3m -B"
 alias notify="vi ~/bin/OSNotification.sh; crontab -e"
@@ -97,4 +97,9 @@ alias glastcommitfile="git checkout HEAD"
 cd() { builtin cd "$@"; ls; }               # cd then ls;
 trash() { command mv "$@" ~/.Trash ; }      # move to ~/.Trash folder
 ff() { /usr/bin/find . -name "$@" ; }       # find files match name in arg 1
-# done() { /usr/local/bin/task "$@" completed; /usr/local/bin/task +ACTIVE list; }  # done task
+function v? () {
+    while read line
+    do
+        echo -e "$line"
+    done < ~/.vim_runtime/vHint.txt
+}

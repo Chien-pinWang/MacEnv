@@ -1,0 +1,19 @@
+\\033[1;34mTask Review Workflow\\033[0m
+\\033[1;4mCommand\\033[0m         \\033[1;4mDescription\\033[0m
+\\033[31;107mtReview\\033[39;49m         Daily Review: Tasks scheduled before today and not started
+>                   Either start the task or re-schedule it
+\\033[31;107mtActive\\033[39;49m         Now Working: Tasks already started
+>                   Today's focus. Work on these.
+\\033[31;107mtToday\\033[39;49m          Due Today: Tasks that are due today
+>                   Today's high priority. Must complete.
+\\033[31;107mtWeek\\033[39;49m           Due This Week: Tasks that are due this week
+>                   Weekly heads-up. Pull them in if possible.
+\\033[31;107mtOverdue\\033[39;49m        Over Due: Tasks due before today
+>                   Either complete it today or adjust due date.
+\\033[31;107mtBill\\033[39;49m           Bill of the Month: All payables due this month
+>                   Financial heads-ups. Work hard to meet ends.
+\\033[31;107mtSummary\\033[39;49m        Task Summary: Burndown, project
+>                   See how tasks are completed
+\\033[31;107mtCheck <ID>\\033[39;49m     Check task <ID> as completed
+\\033[31;107mtPush1 <ID>\\033[39;49m     Push task <ID> to tomorrow
+\\033[31;107mt?\\033[39;49m              Display this page

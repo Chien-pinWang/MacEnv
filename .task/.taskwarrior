@@ -1,20 +1,56 @@
 
-# alias taskReview='alias | grep "^alias %"'
-alias %now='echo "TASKS NOW WORKING..."; task +ACTIVE list'
-alias %review='echo "TASKS SCHEDULED TODAY..."; task schedule.before:now -ACTIVE list'
-alias %today='echo "TASKS DUE TODAY..."; task +TODAY list'
-alias %week='echo "TASKS DUE THIS WEEK..."; task +WEEK list'
-alias %overdue='echo "TASKS OVERDUE..."; task +OVERDUE -TODAY list'
-alias %monthbill='echo "BILLS TO PAY THIS MONTH..."; task rc.report.all.sort:due+ project:Finance -PARENT +MONTH -COMPLETED all'
-alias %summary='task burndown; task ghistory; task projects'
-function taskReview() {
+alias tActive='echo "TASKS NOW WORKING..."; task +ACTIVE list'
+alias tReview='echo "TASKS SCHEDULED TODAY..."; task schedule.before:now -ACTIVE list'
+alias tToday='echo "TASKS DUE TODAY..."; task +TODAY list'
+alias tWeek='echo "TASKS DUE THIS WEEK..."; task +WEEK list'
+alias tOverdue='echo "TASKS OVERDUE..."; task +OVERDUE -TODAY list'
+alias tBill='echo "BILLS TO PAY THIS MONTH..."; task rc.report.all.sort:due+ project:Finance -PARENT +MONTH -COMPLETED all'
+alias tSummary='task burndown; task ghistory; task projects'
+function t?() {
     while read line
         do
             echo -e "$line"
-        done < ~/.task/taskReview.txt
+        done < ~/.task/tHint.txt
 }
-function check() {
-    echo "$1"
-    task "$1" done
-    %now
+function tCheck() {                   #Complete task
+    if [ -z "$1" ]
+    then
+        echo "Usage: tCheck <ID> to mark task <ID> as completed"
+    else
+        echo "Complete this task:"
+        task _get "$1".description
+        read -p "Are you sure (Y/n)?" -n 1 confirm
+        echo ""
+        if [ "$confirm" == "" ] || [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]
+        then
+            task "$1" done
+        else
+            echo "No task is affected."
+        fi
+        tActive
+    fi
+}
+
+function tPush1() {                   #Push 1 Day
+    if [ "$1" == "" ]
+    then
+        echo "Usage: tDIT <ID> to push task <ID> to tomorrow"
+    else 
+        echo "Push this task to tomorrow:"
+        taskDescription=$(task _get "$1".description)
+        taskScheduled=$(task _get "$1".scheduled)
+        # task _get "$1".description "$1".scheduled
+        echo "Task $taskDescription originally scheduled for $taskScheduled"
+        read -p "Is this correct (Y/n)? " -n 1 confirm
+        echo ""
+        if [ "$confirm" == "" ] || [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]
+        then
+            task "$1" modify schedule:now+1d
+            taskScheduled=$(task _get "$1".scheduled)
+            echo "Task $taskDescription now scheduled for $taskScheduled"
+        else
+            echo "No task is affected."
+        fi
+        tReview
+    fi
 }

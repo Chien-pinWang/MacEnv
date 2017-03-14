@@ -245,3 +245,55 @@ Job opportunities are either:
 - Expat manager in shoe industry
 
 Found 3 leads to pursuit (kept at w3m bookmark)
+
+2017-03-13 14:19 Crontab Format on Mac OS
+
+@bash, @MacBookPro, @cron
+
+When I tried to setup cron jobs on this new MacBook Pro, I got e-mail saying:
+
+    /bin/sh: Applications: command not found
+
+And I tried a few times with different commands but still got the same result. It turned out that the crontab in Mac OS only has "5" time fields, followed by the command to be executed. These fields are:
+
+    - Minute, 0 ~ 59
+    - Hour, 0 ~ 23
+    - Day in Month, 1 ~ 31
+    - Month, 1 ~ 12
+    - Week Day, 1 ~ 7
+
+I got an additional field for year, and Mac OS took everything after the fifth time field as the command. That's why it was complaining "command not found."
+
+2017-03-13 23:33 A Patient Passed Away
+
+@VGH
+
+There is a patient in Ward 82 passed away tonight. Her families gathered at the room she was in and chanting Buddhism hymns all night. I don't know her, but can feel the smell of death around the ward.
+
+My heart is heavy.
+
+2017-03-14 11:11 Bash Control Logics
+
+@bash
+
+A few things learned while developing the tPush1() script:
+
+- if ... else ... fi
+    if [ condition1 ] || [ condition2 ] && [ condition3 ]
+    then
+        actions here...
+    else
+        actions here...
+    fi
+- Condition Expressions:
+    - Test if file exists: if [ -f filename ]
+    - Test if file readable: if [ -r filename ]
+    - Test if $var greater than or equal: if [ $var -ge 3 ]
+        - -gt: greater than
+        - -lt: less than
+        - -eq: equal
+        - -le: less than or equal
+    - Test string variable: if [ "$var" == "tux" ]
+    - Test if $var an empty string or not exists: if [ -z "$var"]
+
+Reference: Conditions in bash scripting (if statements) https://linuxacademy.com/blog/linux/conditions-in-bash-scripting-if-statements/

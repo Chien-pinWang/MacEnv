@@ -1,18 +1,18 @@
 
-alias +new="jrnl"
-alias +last="jrnl -1"
-alias +last5="jrnl -5"
-alias +today="jrnl -on today"
-alias +yesterday="jrnl -on yesterday"
-alias +star="jrnl -starred"
-alias +all="jrnl -from 2017-03-03 --short"
+alias jNew="jrnl"
+alias jLast="jrnl -1"
+alias jLast5="jrnl -5"
+alias jToday="jrnl -on today"
+alias jYesterday="jrnl -on yesterday"
+alias jStar="jrnl -starred"
+alias jAll="jrnl -from 2017-03-03 --short"
 
-function jrnlReview() {
+function j?() {
     while read line
     do
         echo -e "$line"
-    done < ~/.env/.jrnl/jrnlReview.txt
+    done < ~/.env/.jrnl/jHint.txt
 }
-function jrnlSearch () {
+function jSearch () {
     jrnl -from 2017-01-01 | grep "$1"
 }
