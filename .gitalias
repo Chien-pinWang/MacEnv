@@ -1,0 +1,19 @@
+# Alias to manage git repository
+alias gbranch="git branch -avv"
+alias gtag="git tag -ln1"
+alias glog="git log --oneline --decorate=short"
+alias gmaster="git checkout master"
+alias gdevelop="git checkout develop"
+alias gmerge="git merge develop"
+alias gpush="git push origin master"
+alias gvisual="gitk --all &"
+alias gstatus="git status -sbvv"
+alias gconf="git config --list | more"
+alias glastcommitfile="git checkout HEAD"
+
+function g? () {
+    while read line
+    do
+        echo -e "$line"
+    done < ~/.env/gHint.txt
+}

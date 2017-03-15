@@ -12,45 +12,188 @@ function t?() {
             echo -e "$line"
         done < ~/.task/tHint.txt
 }
+
 function tCheck() {                   #Complete task
     if [ -z "$1" ]
     then
         echo "Usage: tCheck <ID> to mark task <ID> as completed"
     else
-        echo "Complete this task:"
-        task _get "$1".description
-        read -p "Are you sure (Y/n)?" -n 1 confirm
-        echo ""
-        if [ "$confirm" == "" ] || [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]
-        then
-            task "$1" done
-        else
-            echo "No task is affected."
-        fi
+        for tID in $@
+        do
+            taskDescription=$(task _get "$tID".description)
+            read -p "Complete task <$taskDescription> (Y/n)?" -n 1 confirm
+            echo ""
+            if [ "$confirm" == "" ] || [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]
+            then
+                task "$tID" done
+                echo "Task <$taskDescription> is done."
+            else
+                echo "Task <$taskDescription> is not affected."
+            fi
+        done
         tActive
     fi
 }
 
 function tPush1() {                   #Push 1 Day
-    if [ "$1" == "" ]
+    if [ -z "$1" ]
     then
         echo "Usage: tDIT <ID> to push task <ID> to tomorrow"
     else 
-        echo "Push this task to tomorrow:"
-        taskDescription=$(task _get "$1".description)
-        taskScheduled=$(task _get "$1".scheduled)
-        # task _get "$1".description "$1".scheduled
-        echo "Task $taskDescription originally scheduled for $taskScheduled"
-        read -p "Is this correct (Y/n)? " -n 1 confirm
-        echo ""
-        if [ "$confirm" == "" ] || [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]
-        then
-            task "$1" modify schedule:now+1d
-            taskScheduled=$(task _get "$1".scheduled)
-            echo "Task $taskDescription now scheduled for $taskScheduled"
-        else
-            echo "No task is affected."
-        fi
+        for tID in $@
+        do
+            echo "Push this task to tomorrow:"
+            taskDescription=$(task _get "$tID".description)
+            taskScheduled=$(task _get "$tID".scheduled)
+            echo "Task $taskDescription originally scheduled for $taskScheduled"
+            read -p "Is this correct (Y/n)? " -n 1 confirm
+            echo ""
+            if [ "$confirm" == "" ] || [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]
+            then
+                task "$tID" modify schedule:schedule+1d
+                taskScheduled=$(task _get "$tID".scheduled)
+                echo "Task $taskDescription now scheduled for $taskScheduled"
+            else
+                echo "Task <$taskDescription> is not affected."
+            fi
+        done
         tReview
     fi
+}
+
+function tDepends () {
+
+# Check sufficiency of command line argument
+if [[ -z $1 ]]
+then
+    echo "Usage: tDepends.sh <ID>."
+    # exit 1
+fi
+
+# Check if $1 is task ID or UUID
+taskID="$1"
+if [[ ${#taskID} -lt 5 ]]
+then
+    taskID=$(task _get "$taskID".uuid)
+    # echo "Debug Point 1"
+fi
+
+# $level is used to left-pad task description shoing proper indentaton
+# of sub-tasks. This is passed when program is invoked recurrsively.
+if [[ ! -z $2 ]]
+then
+    level="$2"
+else
+    # Called directly from command line. Show report header
+    level="0"
+    printf "\033[1;4m%5s\033[0m \033[1;4m%1s\033[0m \033[1;4m%-50s\033[0m \033[1;4m%10s\033[0m\n" "ID" "S" "Task Description" "Due"
+fi
+
+# Get task attributes from taskwarrior using the _get function
+taskTaskID=$(task _get "$taskID".id)
+taskDescription=$(task _get "$taskID".description)
+taskDepends=$(task _get "$taskID".depends)
+taskStatus=$(task _get "$taskID".status)
+taskBlocking=$(task _get "$taskID".tags.BLOCKING)
+taskDueYear=$(task _get "$taskID".due.year)
+taskDueMonth=$(task _get "$taskID".due.month)
+taskDueDay=$(task _get "$taskID".due.day)
+taskActive=$(task _get "$taskID".tags.ACTIVE)
+
+# Convert status to status indicator
+case $taskStatus in
+    "completed")
+        taskStatus="C"
+        ;;
+    "deleted")
+        taskStatus="D"
+        ;;
+    "pending")
+        taskStatus="P"
+        ;;
+    "recurring")
+        taskStatus="R"
+        ;;
+    "waiting")
+        taskStatus="W"
+        ;;
+esac
+
+# Pad task description based on the $level deep of the sub-task
+pads=""
+count=0
+if [[ $level -ge 1 ]]
+then
+    count=$((level*2))
+    # for i in $(seq 1 $count)
+    # for i in {1..$count}
+    for (( i=0; i<$count; i++ ))
+    do
+        pads=" $pads"
+    done
+fi
+
+# Red the task if it is actively being worked
+local red=""
+local unred=""
+if [[ "$taskActive" == "ACTIVE" ]]
+then
+    red="\033[31m"
+    unred="\033[0m"
+fi
+
+# Dim the task if it is completed
+local dim=""
+local undim=""
+if [[ "$taskStatus" == "C" ]]
+then
+    dim="\033[90m"
+    undim="\033[0m"
+fi
+
+# Gray out the task if it is deleted
+local gray=""
+local ungray=""
+if [[ "$taskStatus" == "D" ]]
+then
+    gray="\033[2;47m"
+    ungray="\033[0m"
+fi
+
+# Bright the task if it is not blocking any other tasks (goal task)
+local bright=""
+local unbright=""
+if [[ "$taskBlocking" == "" ]]
+then
+    bright="\033[1m"
+    unbright="\033[0m"
+fi
+
+if [[ "$taskDueYear" != "1970" ]]
+then
+    taskDueDate="$taskDueYear-$taskDueMonth-$taskDueDay"
+else
+    taskDueDate=""
+fi
+
+printf "$red$gray$bright$dim%5s %1s %-50s %10s$unred$ungray$unbright$undim\n" "$taskTaskID" "$taskStatus" "$pads$taskDescription" "$taskDueDate"
+
+# If this task depends on other tasks...
+if [[ ! -z $taskDepends ]]
+then
+    # Breaks comma-delimmited list $taskDepends to array $UUIDs
+    # Set 'Internal Field Seperator (IFS)' to comma
+    IFS=','
+    read -r -a UUIDs <<< "$taskDepends"
+    level=$((level+1))
+    for UUID in "${UUIDs[@]}"
+    do
+        # Call self to go down one level deep
+        # ~/tmp/tDepends.sh "$UUID" "$level"
+        tDepends "$UUID" "$level"
+    done
+fi
+
+# If this task does not have dependencies, exit 0 to the caller program
+# exit 0
 }

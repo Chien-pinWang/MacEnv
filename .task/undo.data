@@ -1263,3 +1263,132 @@ time 1489461677
 old [description:"Test Task" entry:"1489458920" modified:"1489459936" scheduled:"1489546336" status:"pending" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
 new [description:"Test Task" end:"1489461677" entry:"1489458920" modified:"1489461677" scheduled:"1489546336" status:"completed" uuid:"372ed0ef-0cd7-4d82-878d-42a71b589084"]
 ---
+time 1489470905
+new [description:"Task 1" entry:"1489470905" modified:"1489470905" status:"pending" uuid:"305ca1b9-b544-4aa5-9047-335951d11c5a"]
+---
+time 1489470911
+new [description:"Task 1.1" entry:"1489470911" modified:"1489470911" status:"pending" uuid:"051276c6-8eac-4b2a-b14e-90832b8a1031"]
+---
+time 1489470915
+new [description:"Task 1.2" entry:"1489470915" modified:"1489470915" status:"pending" uuid:"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"]
+---
+time 1489470931
+old [description:"Task 1" entry:"1489470905" modified:"1489470905" status:"pending" uuid:"305ca1b9-b544-4aa5-9047-335951d11c5a"]
+new [depends:"051276c6-8eac-4b2a-b14e-90832b8a1031,3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6" description:"Task 1" entry:"1489470905" modified:"1489470931" status:"pending" uuid:"305ca1b9-b544-4aa5-9047-335951d11c5a"]
+---
+time 1489473643
+old [description:"Survey available IoT solutions in Taiwan" due:"1489766400" entry:"1489364109" modified:"1489372846" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+new [description:"Survey available IoT solutions for factories in Taiwan" due:"1489766400" entry:"1489364109" modified:"1489473643" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+---
+time 1489483239
+old [description:"Re-create aliases of command line apps based on the ~\/tmp\/keymapplan.txt" entry:"1489389262" modified:"1489393293" project:"MacBookPro" start:"1489393293" status:"pending" tags:"Work" uuid:"872e130d-cf0b-4c96-b41d-f9c7886a2885"]
+new [description:"Re-create aliases of command line apps based on the ~\/tmp\/keymapplan.txt" end:"1489483239" entry:"1489389262" modified:"1489483239" project:"MacBookPro" status:"completed" tags:"Work" uuid:"872e130d-cf0b-4c96-b41d-f9c7886a2885"]
+---
+time 1489503369
+new [depends:"051276c6-8eac-4b2a-b14e-90832b8a1031" description:"Task 1.1.1" entry:"1489503369" modified:"1489503369" status:"pending" uuid:"cceba5b8-df01-4d42-831d-40596beb9ed9"]
+---
+time 1489503431
+old [depends:"051276c6-8eac-4b2a-b14e-90832b8a1031" description:"Task 1.1.1" entry:"1489503369" modified:"1489503369" status:"pending" uuid:"cceba5b8-df01-4d42-831d-40596beb9ed9"]
+new [description:"Task 1.1.1" entry:"1489503369" modified:"1489503431" status:"pending" uuid:"cceba5b8-df01-4d42-831d-40596beb9ed9"]
+---
+time 1489503454
+old [description:"Task 1.1" entry:"1489470911" modified:"1489470911" status:"pending" uuid:"051276c6-8eac-4b2a-b14e-90832b8a1031"]
+new [depends:"cceba5b8-df01-4d42-831d-40596beb9ed9" description:"Task 1.1" entry:"1489470911" modified:"1489503454" status:"pending" uuid:"051276c6-8eac-4b2a-b14e-90832b8a1031"]
+---
+time 1489503477
+new [description:"Task 1.1.2" entry:"1489503477" modified:"1489503477" status:"pending" uuid:"5fb332c7-3e89-4b3e-af73-d4ed1212381b"]
+---
+time 1489503488
+old [depends:"cceba5b8-df01-4d42-831d-40596beb9ed9" description:"Task 1.1" entry:"1489470911" modified:"1489503454" status:"pending" uuid:"051276c6-8eac-4b2a-b14e-90832b8a1031"]
+new [depends:"cceba5b8-df01-4d42-831d-40596beb9ed9,5fb332c7-3e89-4b3e-af73-d4ed1212381b" description:"Task 1.1" entry:"1489470911" modified:"1489503488" status:"pending" uuid:"051276c6-8eac-4b2a-b14e-90832b8a1031"]
+---
+time 1489535051
+old [description:"Task 1.2" entry:"1489470915" modified:"1489470915" status:"pending" uuid:"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"]
+new [depends:"5fb332c7-3e89-4b3e-af73-d4ed1212381b" description:"Task 1.2" entry:"1489470915" modified:"1489535051" status:"pending" uuid:"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"]
+---
+time 1489535675
+new [description:"What is Claire's cell phone number?" due:"1489680000" entry:"1489535675" imask:"5" modified:"1489156927" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"2days" status:"pending" tags:"Personal" until:"1490889600" uuid:"76b36e7d-d573-4b5f-a9b3-3399e9a50056"]
+---
+time 1489535675
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++++" modified:"1489156927" project:"Memory" recur:"2days" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++++-" modified:"1489535675" project:"Memory" recur:"2days" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1489536254
+old [depends:"051276c6-8eac-4b2a-b14e-90832b8a1031,3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6" description:"Task 1" entry:"1489470905" modified:"1489470931" status:"pending" uuid:"305ca1b9-b544-4aa5-9047-335951d11c5a"]
+new [depends:"051276c6-8eac-4b2a-b14e-90832b8a1031" description:"Task 1" entry:"1489470905" modified:"1489536254" status:"pending" uuid:"305ca1b9-b544-4aa5-9047-335951d11c5a"]
+---
+time 1489536297
+old [depends:"051276c6-8eac-4b2a-b14e-90832b8a1031" description:"Task 1" entry:"1489470905" modified:"1489536254" status:"pending" uuid:"305ca1b9-b544-4aa5-9047-335951d11c5a"]
+new [depends:"051276c6-8eac-4b2a-b14e-90832b8a1031,3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6" description:"Task 1" entry:"1489470905" modified:"1489536297" status:"pending" uuid:"305ca1b9-b544-4aa5-9047-335951d11c5a"]
+---
+time 1489539955
+old [description:"What is Claire's cell phone number?" due:"1489680000" entry:"1489535675" imask:"5" modified:"1489156927" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"2days" status:"pending" tags:"Personal" until:"1490889600" uuid:"76b36e7d-d573-4b5f-a9b3-3399e9a50056"]
+new [description:"What is Claire's cell phone number?" due:"1489680000" entry:"1489535675" imask:"5" modified:"1489539955" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"2days" scheduled:"1489680000" status:"pending" tags:"Personal" until:"1490889600" uuid:"76b36e7d-d573-4b5f-a9b3-3399e9a50056"]
+---
+time 1489539956
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++++-" modified:"1489535675" project:"Memory" recur:"2days" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++++-" modified:"1489539956" project:"Memory" recur:"2days" scheduled:"1488816000" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1489540034
+new [description:"Task 1.2.1" entry:"1489540034" modified:"1489540034" status:"pending" uuid:"c0136123-f40b-4a67-bb85-a27794635f9e"]
+---
+time 1489540052
+old [depends:"5fb332c7-3e89-4b3e-af73-d4ed1212381b" description:"Task 1.2" entry:"1489470915" modified:"1489535051" status:"pending" uuid:"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"]
+new [depends:"5fb332c7-3e89-4b3e-af73-d4ed1212381b,c0136123-f40b-4a67-bb85-a27794635f9e" description:"Task 1.2" entry:"1489470915" modified:"1489540052" status:"pending" uuid:"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"]
+---
+time 1489557732
+old [annotation_1489127455:"https:\/\/www.mobile01.com\/topicdetail.php?f=37&t=3315833" annotation_1489127877:"http:\/\/24h.pchome.com.tw\/prod\/DEACEI-A9006PIOS, $599" description:"Buy the voice mouse chaser" due:"1489723200" entry:"1488791244" modified:"1489457626" project:"Misc." scheduled:"1489544026" status:"pending" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+new [annotation_1489127455:"https:\/\/www.mobile01.com\/topicdetail.php?f=37&t=3315833" annotation_1489127877:"http:\/\/24h.pchome.com.tw\/prod\/DEACEI-A9006PIOS, $599" description:"Buy the voice mouse chaser" due:"1489723200" end:"1489557729" entry:"1488791244" modified:"1489557732" project:"Misc." scheduled:"1489544026" status:"deleted" tags:"Work" until:"1489809600" uuid:"52ab9693-3e11-447d-afba-b691e58234ce"]
+---
+time 1489557743
+old [description:"Move office to the 2nd floor" due:"1489680000" entry:"1489401073" modified:"1489401073" project:"Misc." scheduled:"1489507200" status:"pending" tags:"Work" uuid:"b59e8ffd-a8c1-43db-ae55-0f00381ef793"]
+new [description:"Move office to the 2nd floor" due:"1489680000" entry:"1489401073" modified:"1489557743" project:"Misc." scheduled:"1489507200" start:"1489557743" status:"pending" tags:"Work" uuid:"b59e8ffd-a8c1-43db-ae55-0f00381ef793"]
+---
+time 1489558205
+old [annotation_1489113698:"812\/90125120073689" annotation_1489457436:"Payble $15,370" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489457436" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489543458" status:"pending" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+new [annotation_1489113698:"812\/90125120073689" annotation_1489457436:"Payble $15,370" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489558205" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489644605" status:"pending" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+---
+time 1489558262
+old [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489136979" project:"Teresacard" scheduled:"1489507200" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489558262" project:"Teresacard" scheduled:"1489593600" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1489559986
+old [description:"Task 1.1.2" entry:"1489503477" modified:"1489503477" status:"pending" uuid:"5fb332c7-3e89-4b3e-af73-d4ed1212381b"]
+new [description:"Task 1.1.2" end:"1489559986" entry:"1489503477" modified:"1489559986" status:"completed" uuid:"5fb332c7-3e89-4b3e-af73-d4ed1212381b"]
+---
+time 1489562077
+old [description:"Task 1.2.1" entry:"1489540034" modified:"1489540034" status:"pending" uuid:"c0136123-f40b-4a67-bb85-a27794635f9e"]
+new [description:"Task 1.2.1" end:"1489562074" entry:"1489540034" modified:"1489562077" status:"deleted" uuid:"c0136123-f40b-4a67-bb85-a27794635f9e"]
+---
+time 1489563108
+old [depends:"051276c6-8eac-4b2a-b14e-90832b8a1031,3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6" description:"Task 1" entry:"1489470905" modified:"1489536297" status:"pending" uuid:"305ca1b9-b544-4aa5-9047-335951d11c5a"]
+new [depends:"051276c6-8eac-4b2a-b14e-90832b8a1031,3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6" description:"Task 1" due:"1489766400" entry:"1489470905" modified:"1489563108" status:"pending" uuid:"305ca1b9-b544-4aa5-9047-335951d11c5a"]
+---
+time 1489564055
+old [description:"Task 1.1.1" entry:"1489503369" modified:"1489503431" status:"pending" uuid:"cceba5b8-df01-4d42-831d-40596beb9ed9"]
+new [description:"Task 1.1.1" entry:"1489503369" modified:"1489564055" start:"1489564055" status:"pending" uuid:"cceba5b8-df01-4d42-831d-40596beb9ed9"]
+---
+time 1489564376
+old [depends:"cceba5b8-df01-4d42-831d-40596beb9ed9,5fb332c7-3e89-4b3e-af73-d4ed1212381b" description:"Task 1.1" entry:"1489470911" modified:"1489503488" status:"pending" uuid:"051276c6-8eac-4b2a-b14e-90832b8a1031"]
+new [depends:"cceba5b8-df01-4d42-831d-40596beb9ed9,5fb332c7-3e89-4b3e-af73-d4ed1212381b" description:"Task 1.1" entry:"1489470911" modified:"1489564376" start:"1489564376" status:"pending" uuid:"051276c6-8eac-4b2a-b14e-90832b8a1031"]
+---
+time 1489564392
+old [depends:"cceba5b8-df01-4d42-831d-40596beb9ed9,5fb332c7-3e89-4b3e-af73-d4ed1212381b" description:"Task 1.1" entry:"1489470911" modified:"1489564376" start:"1489564376" status:"pending" uuid:"051276c6-8eac-4b2a-b14e-90832b8a1031"]
+new [depends:"cceba5b8-df01-4d42-831d-40596beb9ed9,5fb332c7-3e89-4b3e-af73-d4ed1212381b" description:"Task 1.1" entry:"1489470911" modified:"1489564392" status:"pending" uuid:"051276c6-8eac-4b2a-b14e-90832b8a1031"]
+---
+time 1489566317
+old [description:"Task 1.1.1" entry:"1489503369" modified:"1489564055" start:"1489564055" status:"pending" uuid:"cceba5b8-df01-4d42-831d-40596beb9ed9"]
+new [description:"Task 1.1.1" entry:"1489503369" modified:"1489566317" status:"pending" uuid:"cceba5b8-df01-4d42-831d-40596beb9ed9"]
+---
+time 1489566324
+old [depends:"5fb332c7-3e89-4b3e-af73-d4ed1212381b,c0136123-f40b-4a67-bb85-a27794635f9e" description:"Task 1.2" entry:"1489470915" modified:"1489540052" status:"pending" uuid:"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"]
+new [depends:"5fb332c7-3e89-4b3e-af73-d4ed1212381b,c0136123-f40b-4a67-bb85-a27794635f9e" description:"Task 1.2" entry:"1489470915" modified:"1489566324" start:"1489566324" status:"pending" uuid:"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"]
+---
+time 1489566328
+old [description:"Task 1.1.1" entry:"1489503369" modified:"1489566317" status:"pending" uuid:"cceba5b8-df01-4d42-831d-40596beb9ed9"]
+new [description:"Task 1.1.1" entry:"1489503369" modified:"1489566328" start:"1489566328" status:"pending" uuid:"cceba5b8-df01-4d42-831d-40596beb9ed9"]
+---
+time 1489567230
+old [depends:"5fb332c7-3e89-4b3e-af73-d4ed1212381b,c0136123-f40b-4a67-bb85-a27794635f9e" description:"Task 1.2" entry:"1489470915" modified:"1489566324" start:"1489566324" status:"pending" uuid:"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"]
+new [depends:"5fb332c7-3e89-4b3e-af73-d4ed1212381b,c0136123-f40b-4a67-bb85-a27794635f9e" description:"Task 1.2" due:"1489593600" entry:"1489470915" modified:"1489567230" start:"1489566324" status:"pending" uuid:"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"]
+---

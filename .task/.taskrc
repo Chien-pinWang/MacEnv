@@ -25,7 +25,7 @@ data.location=~/.task
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/dark-yellow-green.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/dark-gray-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/dark-gray-blue-256.theme
-#include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-dark-256.theme
+include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-light-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/no-color.theme
 
@@ -41,5 +41,5 @@ report.ls.sort=urgency-
 alias.burndown=burndown.daily
 report.ls.columns=id,start.active,depends.indicator,project,tags,recur.indicator,wait.remaining,scheduled.countdown,due.relative,until.countdown,description
 report.list.sort=urgency-,start-,due+,project+
-report.list.columns=id,project,description.count,due,start.age,entry.age,depends.indicator,priority,tags,recur.indicator,scheduled.countdown,until.remaining,urgency
+report.list.columns=id,project,description.count,due.remaining,start.age,entry.age,depends.indicator,priority,tags,recur.indicator,scheduled.countdown,until.remaining,urgency
 report.list.labels=ID,Project,Description,Due,Active,Age,D,P,Tags,R,Sch,Until,Urg

@@ -15,6 +15,7 @@ export BROWSER=w3m
 source ~/.googler       # aliases for command line google search
 source ~/.taskwarrior   # aliases for task routines
 source ~/.jrnl          # aliases for jrnl routines
+source ~/.gitalias      # aliases for git routines
 
 # Aliases to execute commands
 alias v="/usr/local/bin/vim"
@@ -79,19 +80,6 @@ alias 2prj='cd $PRJ'     # Type "PRJ=<path/to/prj/root>" at command line to rese
 alias ..="cd .."
 alias ...="cd ../.."
 alias ~="cd ~"
-
-# Alias to manage git repository
-alias gbranch="git branch -avv"
-alias gtag="git tag -ln1"
-alias glog="git log --oneline --decorate=short"
-alias gmaster="git checkout master"
-alias gdevelop="git checkout develop"
-alias gmerge="git merge develop"
-alias gpush="git push origin master"
-alias gvisual="gitk --all &"
-alias gstatus="git status -sbvv"
-alias gconf="git config --list | more"
-alias glastcommitfile="git checkout HEAD"
 
 # Bash function helpers
 cd() { builtin cd "$@"; ls; }               # cd then ls;

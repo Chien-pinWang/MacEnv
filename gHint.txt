@@ -1,0 +1,22 @@
+\\033[1;34mGit Workflow\\033[0m
+\\033[1;4mCommand\\033[0m         \\033[1;4mDescription\\033[0m
+\\033[31;107mgbranch\\033[39;49m         Git Branch Status
+>                   List all git branches, current one has *
+\\033[31;107mgtag\\033[39;49m            List All Git Tags
+>                   Shows tags of the milestones
+\\033[31;107mglog\\033[39;49m            Git Log Messages
+>                   List all commit log messages
+\\033[31;107mgmaster\\033[39;49m         Check Out Master Branch
+>                   Switch to the 'master' branch
+\\033[31;107mgdevelop\\033[39;49m        Check Out Develop Branch
+>                   Switch to the 'develop' branch
+\\033[31;107mgmerge\\033[39;49m          Merge Develop to Master
+>                   Merge what ever committed in 'develop' to 'master'
+\\033[31;107mgpush\\033[39;49m           Push Change To Remote
+>                   Push all local changes to its remote repo at github.com
+\\033[31;107mgstatus\\033[39;49m         Show Git Status
+>                   List all changes since the last commit
+\\033[31;107mglastcommitfile\\033[39;49m Roll Back to Previous Commit
+>                   When regret of a commit, do this to go back one version
+\\033[31;107mgconf\\033[39;49m           List Git Configurations
+\\033[31;107mg?\\033[39;49m              Show This Page

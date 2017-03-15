@@ -274,7 +274,7 @@ My heart is heavy.
 
 2017-03-14 11:11 Bash Control Logics
 
-@bash
+@bash, @if, @for
 
 A few things learned while developing the tPush1() script:
 
@@ -295,5 +295,52 @@ A few things learned while developing the tPush1() script:
         - -le: less than or equal
     - Test string variable: if [ "$var" == "tux" ]
     - Test if $var an empty string or not exists: if [ -z "$var"]
+- Looping:
+    - while loop
+        while [ condition ]
+        do
+            actions here
+        done
+    - until loop
+        until [ condition ]
+        do
+            actions here
+        done
+    - for loop
+        for var in <list>
+        do
+            actions here
+        done
+        - loop through command line arguments $@
+            for var in $@
+    - range loop
+        for var in {1..5}
 
-Reference: Conditions in bash scripting (if statements) https://linuxacademy.com/blog/linux/conditions-in-bash-scripting-if-statements/
+Reference:
+    Conditions in bash scripting (if statements) https://linuxacademy.com/blog/linux/conditions-in-bash-scripting-if-statements/
+    Bash Scripting Tutorial - 6. Loops http://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php
+
+2017-03-15 13:12 Bash Data Manipulations
+
++bash
+
+More things learned through the development of the ~/tmp/tDepends.sh script:
+
+- Data Array
+    - Array is 0-index
+    - Simple form: arrayVar=(1 2 3 4 5), elements seperated by ' ' (a space)
+- Numeric Variable Calculation
+    - Data type of a variable depends on the context
+    - To evaluate an expression, use $(( expression )) format
+        - Example var=$(($var+1)) (Or $var++ would work)
+        - Only works for INTEGER
+    - So better pipe the expression to 'bc' instead
+        - Example var=$(echo "scale=2; $var/4" | bc)
+- Function Return Value
+    - Bash function CANNOT return value.
+    - Use echo to print to stdout in the function
+    - Use var=$(func $arg1 $arg2) to capture the output string in the calling function
+- Need to build my own function libraries in ~/.env/.sh
+    - math.sh, for math functions
+    - string.sh, for string functions
+    - array.sh, for array functions
