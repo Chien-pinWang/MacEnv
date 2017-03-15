@@ -368,3 +368,6 @@
 {"depends":"5fb332c7-3e89-4b3e-af73-d4ed1212381b,c0136123-f40b-4a67-bb85-a27794635f9e","description":"Task 1.2","entry":"20170314T055515Z","modified":"20170315T082524Z","start":"20170315T082524Z","status":"pending","uuid":"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"}
 {"description":"Task 1.1.1","entry":"20170314T145609Z","modified":"20170315T082528Z","start":"20170315T082528Z","status":"pending","uuid":"cceba5b8-df01-4d42-831d-40596beb9ed9"}
 {"depends":"5fb332c7-3e89-4b3e-af73-d4ed1212381b,c0136123-f40b-4a67-bb85-a27794635f9e","description":"Task 1.2","due":"20170315T160000Z","entry":"20170314T055515Z","modified":"20170315T084030Z","start":"20170315T082524Z","status":"pending","uuid":"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"}
+{"description":"Task 1.2","entry":"20170315T090319Z","modified":"20170315T090319Z","status":"pending","uuid":"f0fc7269-a93d-49cf-aa56-08f4d1c9f685"}
+{"depends":"051276c6-8eac-4b2a-b14e-90832b8a1031,3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6,f0fc7269-a93d-49cf-aa56-08f4d1c9f685","description":"Task 1","due":"20170317T160000Z","entry":"20170314T055505Z","modified":"20170315T090330Z","status":"pending","uuid":"305ca1b9-b544-4aa5-9047-335951d11c5a"}
+{"description":"Task 1.3","entry":"20170315T090319Z","modified":"20170315T090527Z","status":"pending","uuid":"f0fc7269-a93d-49cf-aa56-08f4d1c9f685"}

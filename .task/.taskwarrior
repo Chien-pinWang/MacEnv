@@ -66,8 +66,8 @@ function tDepends () {
 # Check sufficiency of command line argument
 if [[ -z $1 ]]
 then
-    echo "Usage: tDepends.sh <ID>."
-    # exit 1
+    echo "Usage: tDepends <ID>."
+    return 0
 fi
 
 # Check if $1 is task ID or UUID
@@ -78,6 +78,7 @@ then
     # echo "Debug Point 1"
 fi
 
+local level=0
 # $level is used to left-pad task description shoing proper indentaton
 # of sub-tasks. This is passed when program is invoked recurrsively.
 if [[ ! -z $2 ]]
@@ -86,7 +87,7 @@ then
 else
     # Called directly from command line. Show report header
     level="0"
-    printf "\033[1;4m%5s\033[0m \033[1;4m%1s\033[0m \033[1;4m%-50s\033[0m \033[1;4m%10s\033[0m\n" "ID" "S" "Task Description" "Due"
+    printf "\033[4m%5s\033[0m \033[4m%1s\033[0m \033[4m%-50s\033[0m \033[4m%10s\033[0m\n" "ID" "S" "Task Description" "Due"
 fi
 
 # Get task attributes from taskwarrior using the _get function
@@ -194,6 +195,6 @@ then
     done
 fi
 
-# If this task does not have dependencies, exit 0 to the caller program
-# exit 0
+# If this task does not have dependencies, return 0 to the caller program
+return 0
 }
