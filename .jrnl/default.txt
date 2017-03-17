@@ -322,7 +322,7 @@ Reference:
 
 2017-03-15 13:12 Bash Data Manipulations
 
-+bash
+@bash
 
 More things learned through the development of the ~/tmp/tDepends.sh script:
 
@@ -344,3 +344,97 @@ More things learned through the development of the ~/tmp/tDepends.sh script:
     - math.sh, for math functions
     - string.sh, for string functions
     - array.sh, for array functions
+
+2017-03-15 17:35 Bash Function tDepends Show Task Dependency in TaskWarrior
+
+@bash, @task
+
+Sort of released the first version of tDepends in the ~/.env/.task/.taskwarrior bash script. Script interacts with taskWarrior and list all dependencies of a given task ID in a tree format. Attributes include:
+
+- ID
+- Status
+- Description
+- Due
+
+Bash color escape sequences are also applied to show all active tasks in red, deleted tasks in revers dim, completed tasks in dim, and goal task in bright. Learned quite a bit from this development experience.
+
+2017-03-15 17:44 Goal Oriented Task Workflow
+
+@task
+
+Since function tDepends shows task dependencies properly, the whole task management workflow should now turn to 'Goal Oriented, Review to Adhere' philosophy.
+
+- Planning
+    - Set Quarterly, Monthly, and Weekly goals
+    - Break down the goals into modules and sub-tasks
+    - Relate all tasks pointing to the same goal with task dependency
+    - Set due day and schedule day for all the tasks
+    - Create project home at ~/prj/<project name>
+- Review
+    - Run tReview to start working on tasks scheduled on the day
+    - Run tActive to work on and complete active tasks
+    - Keep project related files at its project home
+    - Run tWeek to see tasks due that week
+    - Run tOverdue to catch up over due tasks
+    - Run tSummary to see achievements
+    - Run jNew to write down lessons learned
+- Celebrate!
+
+2017-03-15 20:56 Met My Flute Teacher 高晟 on Subway to Work
+
+@高晟, @李清光, @李清志, @馮品晶
+
+A lady bumped me right after boarding on the subway train at Taipei Main Station and asked if I were 建斌. She was my flute teach back in 2001. She is on her way to a studio of a radio station recording a program. We traded a lot of concerns to families of each other's. I shared that my parents are all converted to Christianity a few years back. And mom is seriously illed at hospital. She shared that they are all around in the 天母 neightborhood. 清光 still works at home.
+
+She asked if appropriate can they visit mom. We promised to stay in touch and seperated when I got to my stop.
+
+2017-03-16 08:18 What is Claire's cell phone number?
+
+@Memory
+
+Implement the "Memory" tag so I can test my memory easily by command
+
+    jrnl @memory --short -n 5
+
+to get a list of questions trying out my memory.
+
+Of course this answer is "0966-525-708"
+Remember by: Key pad position
+
+2017-03-16 12:01 What is Daddy's Cell Phone Number?
+
+@Memory
+
+The Answer is: 0963-357-909
+Remember by  : Key pad position
+
+2017-03-16 18:31 Establish My Ledger
+
+@ledger
+
+Follow the documentation of ledger 3.0 (http://ledger-cli.org/3.0/doc/ledger3.html), I have successfully established my ledger with opening balances of all major accounts. Lessons learned are:
+
+- Express value as commodity unit instead of money unit
+    - DYA for DingYuApartment
+    - DYP for DingYuParking
+    - "5913" for 安聯綠能基金
+- Setup price table at the beginning of the file
+- Various useful command line options:
+    - "-V" converts commodities to its latest price in price history (Lines start with "P")
+    - "-B" converts commodities to its cost price (expressed as "@ <price>" in the transaction)
+    - "-G" reports net gain or loss of commodities that have price history and cost.
+- Set money in wallet as "Petty Cash" in the "Expenses" category, meaning it is expensed as it was withdrawed
+
+2017-03-17 11:21 肺炎鏈球菌疫苗
+
+@mom, @cancer
+
+It's been almost a year since mom removed her spleen. Dr. Yen advised that patients with spleen removed tend to be less immunable to various infections. And suggested to receive 肺炎鏈球菌疫苗 injection. She got one shot about a year ago.
+
+I am wondering if repeating injection is necessary for that vaccine. Googled and found out that there two types of the vaccine: old, 23 價 and new, 13 價. Human body makes no memory of the old one so need repeating injections every 2 to 4 years. 
+
+Study shows that the effectiveness of the old one is a bit over 40% in the first two years after injection, drop to 20% afterward. The old type covers 11 more virus than the new one, but short of one critical substance. Doctors are moving away from the old type now.
+
+Problem is, I don't know whicht type mom received last year. Need to find out.
+
+Source: http://www.chinatimes.com/newspapers/20131018000754-260113

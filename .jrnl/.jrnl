@@ -6,6 +6,7 @@ alias jToday="jrnl -on today"
 alias jYesterday="jrnl -on yesterday"
 alias jStar="jrnl -starred"
 alias jAll="jrnl -from 2017-03-03 --short"
+alias jMem="jrnl @memory --short -n 10"
 
 function j?() {
     while read line

@@ -6,6 +6,7 @@ alias tWeek='echo "TASKS DUE THIS WEEK..."; task +WEEK list'
 alias tOverdue='echo "TASKS OVERDUE..."; task +OVERDUE -TODAY list'
 alias tBill='echo "BILLS TO PAY THIS MONTH..."; task rc.report.all.sort:due+ project:Finance -PARENT +MONTH -COMPLETED all'
 alias tSummary='task burndown; task ghistory; task projects'
+alias tJob='tDepends 42'
 function t?() {
     while read line
         do
@@ -62,7 +63,6 @@ function tPush1() {                   #Push 1 Day
 }
 
 function tDepends () {
-
 # Check sufficiency of command line argument
 if [[ -z $1 ]]
 then
@@ -87,11 +87,13 @@ then
 else
     # Called directly from command line. Show report header
     level="0"
-    printf "\033[4m%5s\033[0m \033[4m%1s\033[0m \033[4m%-50s\033[0m \033[4m%10s\033[0m\n" "ID" "S" "Task Description" "Due"
+    # Print report header
+    printf "\033[4m%3s\033[0m \033[4m%1s\033[0m \033[4m%-12s\033[0m \033[4m%-50s\033[0m \033[4m%10s\033[0m\n" "ID" "S" "Project" "Task Description" "Due"
 fi
 
 # Get task attributes from taskwarrior using the _get function
 taskTaskID=$(task _get "$taskID".id)
+taskProject=$(task _get "$taskID".project)
 taskDescription=$(task _get "$taskID".description)
 taskDepends=$(task _get "$taskID".depends)
 taskStatus=$(task _get "$taskID".status)
@@ -161,7 +163,7 @@ then
     ungray="\033[0m"
 fi
 
-# Bright the task if it is not blocking any other tasks (goal task)
+# Brighten the task if it is not blocking any other tasks (goal task)
 local bright=""
 local unbright=""
 if [[ "$taskBlocking" == "" ]]
@@ -177,22 +179,26 @@ else
     taskDueDate=""
 fi
 
-printf "$red$gray$bright$dim%5s %1s %-50s %10s$unred$ungray$unbright$undim\n" "$taskTaskID" "$taskStatus" "$pads$taskDescription" "$taskDueDate"
-
-# If this task depends on other tasks...
-if [[ ! -z $taskDepends ]]
+# Print report content if task is not the recurring parent
+if [ "$taskStatus" != "R" ]
 then
-    # Breaks comma-delimmited list $taskDepends to array $UUIDs
-    # Set 'Internal Field Seperator (IFS)' to comma
-    IFS=','
-    read -r -a UUIDs <<< "$taskDepends"
-    level=$((level+1))
-    for UUID in "${UUIDs[@]}"
-    do
-        # Call self to go down one level deep
-        # ~/tmp/tDepends.sh "$UUID" "$level"
-        tDepends "$UUID" "$level"
-    done
+    printf "$red$gray$bright$dim%3s %1s %-12s %-50s %10s$unred$ungray$unbright$undim\n" "$taskTaskID" "$taskStatus" "$taskProject" "$pads$taskDescription" "$taskDueDate"
+
+    # If this task depends on other tasks...
+    if [[ ! -z $taskDepends ]]
+    then
+        # Breaks comma-delimmited list $taskDepends to array $UUIDs
+        # Set 'Internal Field Seperator (IFS)' to comma
+        IFS=','
+        read -r -a UUIDs <<< "$taskDepends"
+        level=$((level+1))
+        for UUID in "${UUIDs[@]}"
+        do
+            # Call self to go down one level deep
+            # ~/tmp/tDepends.sh "$UUID" "$level"
+            tDepends "$UUID" "$level"
+        done
+    fi
 fi
 
 # If this task does not have dependencies, return 0 to the caller program

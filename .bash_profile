@@ -16,6 +16,7 @@ source ~/.googler       # aliases for command line google search
 source ~/.taskwarrior   # aliases for task routines
 source ~/.jrnl          # aliases for jrnl routines
 source ~/.gitalias      # aliases for git routines
+source ~/.ledger        # aliases for ledger routines
 
 # Aliases to execute commands
 alias v="/usr/local/bin/vim"
@@ -91,3 +92,5 @@ function v? () {
         echo -e "$line"
     done < ~/.vim_runtime/vHint.txt
 }
+
+jMem

@@ -1,0 +1,8 @@
+
+alias lBal="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' -V balance ^Assets ^Liabilities"
+alias lSaving="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' register 'SCSB Saving'"
+alias lExp="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' register Expenses"
+alias lCash="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' register Expenses:Cash"
+alias lSCSB="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' register Liabilities:Card:SCSB"
+alias lTSCB="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' register Liabilities:Card:TSCB"
+alias lAdd="vi ~/prj/ledger/Chien-pin\ Wang.ledger"

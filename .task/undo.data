@@ -1403,3 +1403,390 @@ time 1489568727
 old [description:"Task 1.2" entry:"1489568599" modified:"1489568599" status:"pending" uuid:"f0fc7269-a93d-49cf-aa56-08f4d1c9f685"]
 new [description:"Task 1.3" entry:"1489568599" modified:"1489568727" status:"pending" uuid:"f0fc7269-a93d-49cf-aa56-08f4d1c9f685"]
 ---
+time 1489569250
+old [depends:"051276c6-8eac-4b2a-b14e-90832b8a1031,3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6,f0fc7269-a93d-49cf-aa56-08f4d1c9f685" description:"Task 1" due:"1489766400" entry:"1489470905" modified:"1489568610" status:"pending" uuid:"305ca1b9-b544-4aa5-9047-335951d11c5a"]
+new [depends:"051276c6-8eac-4b2a-b14e-90832b8a1031,3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6,f0fc7269-a93d-49cf-aa56-08f4d1c9f685" description:"Task 1" due:"1489766400" end:"1489569244" entry:"1489470905" modified:"1489569250" status:"deleted" uuid:"305ca1b9-b544-4aa5-9047-335951d11c5a"]
+---
+time 1489569250
+old [depends:"cceba5b8-df01-4d42-831d-40596beb9ed9,5fb332c7-3e89-4b3e-af73-d4ed1212381b" description:"Task 1.1" entry:"1489470911" modified:"1489564392" status:"pending" uuid:"051276c6-8eac-4b2a-b14e-90832b8a1031"]
+new [depends:"cceba5b8-df01-4d42-831d-40596beb9ed9,5fb332c7-3e89-4b3e-af73-d4ed1212381b" description:"Task 1.1" end:"1489569250" entry:"1489470911" modified:"1489569250" status:"deleted" uuid:"051276c6-8eac-4b2a-b14e-90832b8a1031"]
+---
+time 1489569250
+old [depends:"5fb332c7-3e89-4b3e-af73-d4ed1212381b,c0136123-f40b-4a67-bb85-a27794635f9e" description:"Task 1.2" due:"1489593600" entry:"1489470915" modified:"1489567230" start:"1489566324" status:"pending" uuid:"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"]
+new [depends:"5fb332c7-3e89-4b3e-af73-d4ed1212381b,c0136123-f40b-4a67-bb85-a27794635f9e" description:"Task 1.2" due:"1489593600" end:"1489569250" entry:"1489470915" modified:"1489569250" start:"1489566324" status:"deleted" uuid:"3fd9e5db-35f4-4ba3-84d6-d8d598fed6f6"]
+---
+time 1489569250
+old [description:"Task 1.1.1" entry:"1489503369" modified:"1489566328" start:"1489566328" status:"pending" uuid:"cceba5b8-df01-4d42-831d-40596beb9ed9"]
+new [description:"Task 1.1.1" end:"1489569250" entry:"1489503369" modified:"1489569250" start:"1489566328" status:"deleted" uuid:"cceba5b8-df01-4d42-831d-40596beb9ed9"]
+---
+time 1489569250
+old [description:"Task 1.3" entry:"1489568599" modified:"1489568727" status:"pending" uuid:"f0fc7269-a93d-49cf-aa56-08f4d1c9f685"]
+new [description:"Task 1.3" end:"1489569250" entry:"1489568599" modified:"1489569250" status:"deleted" uuid:"f0fc7269-a93d-49cf-aa56-08f4d1c9f685"]
+---
+time 1489572019
+new [description:"On Board to a New Job" due:"1506700800" entry:"1489572019" modified:"1489572019" project:"Job" status:"pending" tags:"Personal" uuid:"7b5d1d6a-25b6-400e-9b35-fd84cde69d62"]
+---
+time 1489572132
+new [description:"Prepare to go on board" due:"1506700800" entry:"1489572132" modified:"1489572132" project:"Job" status:"pending" tags:"Personal" uuid:"89445668-6919-436e-b16f-1f3c897d7fd5"]
+---
+time 1489572143
+old [description:"On Board to a New Job" due:"1506700800" entry:"1489572019" modified:"1489572019" project:"Job" status:"pending" tags:"Personal" uuid:"7b5d1d6a-25b6-400e-9b35-fd84cde69d62"]
+new [description:"On Board to a New Job" due:"1506787200" entry:"1489572019" modified:"1489572143" project:"Job" status:"pending" tags:"Personal" uuid:"7b5d1d6a-25b6-400e-9b35-fd84cde69d62"]
+---
+time 1489572160
+old [description:"On Board to a New Job" due:"1506787200" entry:"1489572019" modified:"1489572143" project:"Job" status:"pending" tags:"Personal" uuid:"7b5d1d6a-25b6-400e-9b35-fd84cde69d62"]
+new [depends:"89445668-6919-436e-b16f-1f3c897d7fd5" description:"On Board to a New Job" due:"1506787200" entry:"1489572019" modified:"1489572160" project:"Job" status:"pending" tags:"Personal" uuid:"7b5d1d6a-25b6-400e-9b35-fd84cde69d62"]
+---
+time 1489572608
+old [description:"Prepare to go on board" due:"1506700800" entry:"1489572132" modified:"1489572132" project:"Job" status:"pending" tags:"Personal" uuid:"89445668-6919-436e-b16f-1f3c897d7fd5"]
+new [description:"Prepare to go on board" due:"1506700800" entry:"1489572132" modified:"1489572608" project:"Job.Prep" status:"pending" tags:"Personal" uuid:"89445668-6919-436e-b16f-1f3c897d7fd5"]
+---
+time 1489572834
+new [description:"Sign up the hiring contract" due:"1504195200" entry:"1489572834" modified:"1489572834" project:"Job.Prep" status:"pending" uuid:"d1c9a667-9d02-4bc2-a92a-e5118c52cd5e"]
+---
+time 1489572854
+old [description:"Prepare to go on board" due:"1506700800" entry:"1489572132" modified:"1489572608" project:"Job.Prep" status:"pending" tags:"Personal" uuid:"89445668-6919-436e-b16f-1f3c897d7fd5"]
+new [depends:"d1c9a667-9d02-4bc2-a92a-e5118c52cd5e" description:"Prepare to go on board" due:"1506700800" entry:"1489572132" modified:"1489572854" project:"Job.Prep" status:"pending" tags:"Personal" uuid:"89445668-6919-436e-b16f-1f3c897d7fd5"]
+---
+time 1489572950
+new [description:"Resign from the current job" due:"1504108800" entry:"1489572950" modified:"1489572950" project:"Job.Prep" status:"pending" uuid:"7cb86f62-0f45-4089-b27f-1c673c033f23"]
+---
+time 1489572961
+old [description:"Sign up the hiring contract" due:"1504195200" entry:"1489572834" modified:"1489572834" project:"Job.Prep" status:"pending" uuid:"d1c9a667-9d02-4bc2-a92a-e5118c52cd5e"]
+new [depends:"7cb86f62-0f45-4089-b27f-1c673c033f23" description:"Sign up the hiring contract" due:"1504195200" entry:"1489572834" modified:"1489572961" project:"Job.Prep" status:"pending" uuid:"d1c9a667-9d02-4bc2-a92a-e5118c52cd5e"]
+---
+time 1489573234
+new [description:"Receive the offering letter" due:"1504022400" entry:"1489573234" modified:"1489573234" project:"Job.IoT" status:"pending" uuid:"67b84220-faa6-41bd-929e-df34fe06af4c"]
+---
+time 1489573248
+old [description:"Resign from the current job" due:"1504108800" entry:"1489572950" modified:"1489572950" project:"Job.Prep" status:"pending" uuid:"7cb86f62-0f45-4089-b27f-1c673c033f23"]
+new [depends:"67b84220-faa6-41bd-929e-df34fe06af4c" description:"Resign from the current job" due:"1504108800" entry:"1489572950" modified:"1489573248" project:"Job.Prep" status:"pending" uuid:"7cb86f62-0f45-4089-b27f-1c673c033f23"]
+---
+time 1489573416
+new [description:"Incorporate the company" due:"1502726400" entry:"1489573416" modified:"1489573416" project:"Job.IoT" status:"pending" uuid:"3d7dfed2-7b01-4603-ab60-9002daa4a097"]
+---
+time 1489573427
+old [description:"Receive the offering letter" due:"1504022400" entry:"1489573234" modified:"1489573234" project:"Job.IoT" status:"pending" uuid:"67b84220-faa6-41bd-929e-df34fe06af4c"]
+new [depends:"3d7dfed2-7b01-4603-ab60-9002daa4a097" description:"Receive the offering letter" due:"1504022400" entry:"1489573234" modified:"1489573427" project:"Job.IoT" status:"pending" uuid:"67b84220-faa6-41bd-929e-df34fe06af4c"]
+---
+time 1489573542
+old [description:"Survey available IoT solutions for factories in Taiwan" due:"1489766400" entry:"1489364109" modified:"1489473643" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+new [description:"Survey available IoT solutions" due:"1489766400" entry:"1489364109" modified:"1489573542" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+---
+time 1489573598
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489374652" project:"Job" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489573598" project:"Job.Prep" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1489573598
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489364191" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job" recur:"weekly" scheduled:"1489939200" status:"waiting" tags:"Personal" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489573598" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.Prep" recur:"weekly" scheduled:"1489939200" status:"waiting" tags:"Personal" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+---
+time 1489573796
+old [depends:"3d7dfed2-7b01-4603-ab60-9002daa4a097" description:"Receive the offering letter" due:"1504022400" entry:"1489573234" modified:"1489573427" project:"Job.IoT" status:"pending" uuid:"67b84220-faa6-41bd-929e-df34fe06af4c"]
+new [depends:"3d7dfed2-7b01-4603-ab60-9002daa4a097,24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Receive the offering letter" due:"1504022400" entry:"1489573234" modified:"1489573796" project:"Job.IoT" status:"pending" uuid:"67b84220-faa6-41bd-929e-df34fe06af4c"]
+---
+time 1489573861
+old [depends:"3d7dfed2-7b01-4603-ab60-9002daa4a097,24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Receive the offering letter" due:"1504022400" entry:"1489573234" modified:"1489573796" project:"Job.IoT" status:"pending" uuid:"67b84220-faa6-41bd-929e-df34fe06af4c"]
+new [depends:"3d7dfed2-7b01-4603-ab60-9002daa4a097,24ab35c1-b767-4f43-88c4-58da6157f8a2,f6d5d0ae-ffec-446f-ac37-99d6979c1007" description:"Receive the offering letter" due:"1504022400" entry:"1489573234" modified:"1489573861" project:"Job.IoT" status:"pending" uuid:"67b84220-faa6-41bd-929e-df34fe06af4c"]
+---
+time 1489574132
+new [description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489574132" project:"Misc." scheduled:"1489766400" status:"pending" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+---
+time 1489588588
+new [description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489588588" project:"Job.104" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+---
+time 1489588598
+old [depends:"67b84220-faa6-41bd-929e-df34fe06af4c" description:"Resign from the current job" due:"1504108800" entry:"1489572950" modified:"1489573248" project:"Job.Prep" status:"pending" uuid:"7cb86f62-0f45-4089-b27f-1c673c033f23"]
+new [depends:"67b84220-faa6-41bd-929e-df34fe06af4c" description:"depends 49" due:"1504108800" entry:"1489572950" modified:"1489588598" project:"Job.Prep" status:"pending" uuid:"7cb86f62-0f45-4089-b27f-1c673c033f23"]
+---
+time 1489588630
+old [depends:"67b84220-faa6-41bd-929e-df34fe06af4c" description:"depends 49" due:"1504108800" entry:"1489572950" modified:"1489588598" project:"Job.Prep" status:"pending" uuid:"7cb86f62-0f45-4089-b27f-1c673c033f23"]
+new [depends:"67b84220-faa6-41bd-929e-df34fe06af4c" description:"Resign from the current job" due:"1504108800" entry:"1489572950" modified:"1489588630" project:"Job.Prep" status:"pending" uuid:"7cb86f62-0f45-4089-b27f-1c673c033f23"]
+---
+time 1489588643
+old [depends:"67b84220-faa6-41bd-929e-df34fe06af4c" description:"Resign from the current job" due:"1504108800" entry:"1489572950" modified:"1489588630" project:"Job.Prep" status:"pending" uuid:"7cb86f62-0f45-4089-b27f-1c673c033f23"]
+new [depends:"67b84220-faa6-41bd-929e-df34fe06af4c,5147bee9-3459-413c-a29e-f278d8719167" description:"Resign from the current job" due:"1504108800" entry:"1489572950" modified:"1489588643" project:"Job.Prep" status:"pending" uuid:"7cb86f62-0f45-4089-b27f-1c673c033f23"]
+---
+time 1489588679
+old [description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489588588" project:"Job.104" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+new [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489588679" project:"Job.104" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+---
+time 1489588700
+old [depends:"3d7dfed2-7b01-4603-ab60-9002daa4a097,24ab35c1-b767-4f43-88c4-58da6157f8a2,f6d5d0ae-ffec-446f-ac37-99d6979c1007" description:"Receive the offering letter" due:"1504022400" entry:"1489573234" modified:"1489573861" project:"Job.IoT" status:"pending" uuid:"67b84220-faa6-41bd-929e-df34fe06af4c"]
+new [depends:"3d7dfed2-7b01-4603-ab60-9002daa4a097,f6d5d0ae-ffec-446f-ac37-99d6979c1007" description:"Receive the offering letter" due:"1504022400" entry:"1489573234" modified:"1489588700" project:"Job.IoT" status:"pending" uuid:"67b84220-faa6-41bd-929e-df34fe06af4c"]
+---
+time 1489589226
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489573598" project:"Job.Prep" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489589226" project:"Job.Prep" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1489589226
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489573598" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.Prep" recur:"weekly" scheduled:"1489939200" status:"waiting" tags:"Personal" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489589226" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.Prep" recur:"weekly" scheduled:"1489939200" status:"waiting" tags:"Personal" until:"1490025600" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+---
+time 1489589333
+new [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Identify potential leads" due:"1490112000" entry:"1489589333" modified:"1489589333" project:"job.104" scheduled:"1489939200" status:"pending" uuid:"83bc20b8-7bae-4cbd-9b40-18543dbda73e"]
+---
+time 1489589364
+old [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489588679" project:"Job.104" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+new [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2,83bc20b8-7bae-4cbd-9b40-18543dbda73e" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489589364" project:"Job.104" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+---
+time 1489589392
+old [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2,83bc20b8-7bae-4cbd-9b40-18543dbda73e" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489589364" project:"Job.104" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+new [depends:"83bc20b8-7bae-4cbd-9b40-18543dbda73e" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489589392" project:"Job.104" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+---
+time 1489589539
+new [depends:"83bc20b8-7bae-4cbd-9b40-18543dbda73e" description:"Send resume to request interview" due:"1490889600" entry:"1489589539" modified:"1489589539" project:"Job.104" status:"pending" uuid:"54b51c8b-3265-4b9d-b603-0b6fea6f3401"]
+---
+time 1489589559
+old [depends:"83bc20b8-7bae-4cbd-9b40-18543dbda73e" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489589392" project:"Job.104" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+new [depends:"54b51c8b-3265-4b9d-b603-0b6fea6f3401" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489589559" project:"Job.104" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+---
+time 1489589655
+old [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Identify potential leads" due:"1490112000" entry:"1489589333" modified:"1489589333" project:"job.104" scheduled:"1489939200" status:"pending" uuid:"83bc20b8-7bae-4cbd-9b40-18543dbda73e"]
+new [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Identify potential leads" due:"1490112000" entry:"1489589333" modified:"1489589655" project:"Job.104" scheduled:"1489939200" status:"pending" uuid:"83bc20b8-7bae-4cbd-9b40-18543dbda73e"]
+---
+time 1489589705
+old [depends:"54b51c8b-3265-4b9d-b603-0b6fea6f3401" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489589559" project:"Job.104" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+new [depends:"54b51c8b-3265-4b9d-b603-0b6fea6f3401" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489589705" project:"Job.JobBanks" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+---
+time 1489589705
+old [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Identify potential leads" due:"1490112000" entry:"1489589333" modified:"1489589655" project:"Job.104" scheduled:"1489939200" status:"pending" uuid:"83bc20b8-7bae-4cbd-9b40-18543dbda73e"]
+new [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Identify potential leads" due:"1490112000" entry:"1489589333" modified:"1489589705" project:"Job.JobBanks" scheduled:"1489939200" status:"pending" uuid:"83bc20b8-7bae-4cbd-9b40-18543dbda73e"]
+---
+time 1489589705
+old [depends:"83bc20b8-7bae-4cbd-9b40-18543dbda73e" description:"Send resume to request interview" due:"1490889600" entry:"1489589539" modified:"1489589539" project:"Job.104" status:"pending" uuid:"54b51c8b-3265-4b9d-b603-0b6fea6f3401"]
+new [depends:"83bc20b8-7bae-4cbd-9b40-18543dbda73e" description:"Send resume to request interview" due:"1490889600" entry:"1489589539" modified:"1489589705" project:"Job.JobBanks" status:"pending" uuid:"54b51c8b-3265-4b9d-b603-0b6fea6f3401"]
+---
+time 1489589735
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489589226" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.Prep" recur:"weekly" scheduled:"1489939200" status:"waiting" tags:"Personal" until:"1490025600" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489589735" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1489939200" status:"waiting" tags:"Personal" until:"1490025600" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+---
+time 1489589738
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489589226" project:"Job.Prep" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489589738" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1489589838
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489589735" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1489939200" status:"waiting" tags:"Personal" until:"1490025600" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly , Wave 1" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489589838" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1489939200" status:"waiting" tags:"Personal" until:"1490025600" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+---
+time 1489589847
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489589738" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly , Wave 1" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489589847" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1489589847
+old [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Identify potential leads" due:"1490112000" entry:"1489589333" modified:"1489589705" project:"Job.JobBanks" scheduled:"1489939200" status:"pending" uuid:"83bc20b8-7bae-4cbd-9b40-18543dbda73e"]
+new [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Identify potential leads , Wave 1" due:"1490112000" entry:"1489589333" modified:"1489589847" project:"Job.JobBanks" scheduled:"1489939200" status:"pending" uuid:"83bc20b8-7bae-4cbd-9b40-18543dbda73e"]
+---
+time 1489589847
+old [depends:"83bc20b8-7bae-4cbd-9b40-18543dbda73e" description:"Send resume to request interview" due:"1490889600" entry:"1489589539" modified:"1489589705" project:"Job.JobBanks" status:"pending" uuid:"54b51c8b-3265-4b9d-b603-0b6fea6f3401"]
+new [depends:"83bc20b8-7bae-4cbd-9b40-18543dbda73e" description:"Send resume to request interview , Wave 1" due:"1490889600" entry:"1489589539" modified:"1489589847" project:"Job.JobBanks" status:"pending" uuid:"54b51c8b-3265-4b9d-b603-0b6fea6f3401"]
+---
+time 1489590203
+new [depends:"54b51c8b-3265-4b9d-b603-0b6fea6f3401" description:"&open;Placeholder for the interview process&close;" due:"1503417600" entry:"1489590203" modified:"1489590203" project:"Job.公司名稱" status:"pending" uuid:"9c83eed0-4809-4838-a9ad-e61e8931969e"]
+---
+time 1489590219
+old [depends:"54b51c8b-3265-4b9d-b603-0b6fea6f3401" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489589705" project:"Job.JobBanks" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+new [depends:"9c83eed0-4809-4838-a9ad-e61e8931969e" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489590219" project:"Job.JobBanks" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+---
+time 1489590464
+new [description:"Check new job postings weekly, Wave 2" due:"1490976000" entry:"1489590464" modified:"1489590464" project:"Job.JobBanks" recur:"weekly" status:"recurring" tags:"Personal" until:"1493049600" uuid:"e90d3d9c-7590-4038-bfec-0f0441d7a874"]
+---
+time 1489590508
+old [description:"Check new job postings weekly, Wave 2" due:"1490976000" entry:"1489590464" modified:"1489590464" project:"Job.JobBanks" recur:"weekly" status:"recurring" tags:"Personal" until:"1493049600" uuid:"e90d3d9c-7590-4038-bfec-0f0441d7a874"]
+new [description:"Check new job postings weekly, Wave 2" due:"1491148800" entry:"1489590464" modified:"1489590508" project:"Job.JobBanks" recur:"weekly" status:"recurring" tags:"Personal" until:"1493049600" uuid:"e90d3d9c-7590-4038-bfec-0f0441d7a874"]
+---
+time 1489590598
+new [description:"Identify potential leads, Wave 2" due:"1493136000" entry:"1489590598" modified:"1489590598" project:"Job.JobBanks" status:"pending" tags:"Personal" uuid:"c0f4b732-5826-4bee-927e-e347cd65ceb6"]
+---
+time 1489590645
+new [depends:"c0f4b732-5826-4bee-927e-e347cd65ceb6" description:"Send resume to request interview, Wave 2" due:"1493481600" entry:"1489590645" modified:"1489590645" project:"Job.JobBanks" status:"pending" tags:"Personal" uuid:"07029fe3-1193-4326-b15c-847f5ab50420"]
+---
+time 1489590749
+new [description:"&open;Placeholder for the interview process, Wave 2&close; depends 55" due:"1503417600" entry:"1489590749" modified:"1489590749" project:"Job.公司名稱" status:"pending" tags:"Personal" uuid:"23610407-ccb0-40a5-ac76-f9943f7eb8a1"]
+---
+time 1489590769
+old [depends:"9c83eed0-4809-4838-a9ad-e61e8931969e" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489590219" project:"Job.JobBanks" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+new [depends:"9c83eed0-4809-4838-a9ad-e61e8931969e,23610407-ccb0-40a5-ac76-f9943f7eb8a1" description:"Receive the offering letter" due:"1504022400" entry:"1489588588" modified:"1489590769" project:"Job.JobBanks" status:"pending" uuid:"5147bee9-3459-413c-a29e-f278d8719167"]
+---
+time 1489590799
+old [description:"&open;Placeholder for the interview process, Wave 2&close; depends 55" due:"1503417600" entry:"1489590749" modified:"1489590749" project:"Job.公司名稱" status:"pending" tags:"Personal" uuid:"23610407-ccb0-40a5-ac76-f9943f7eb8a1"]
+new [depends:"07029fe3-1193-4326-b15c-847f5ab50420" description:"&open;Placeholder for the interview process, Wave 2&close; depends 55" due:"1503417600" entry:"1489590749" modified:"1489590799" project:"Job.公司名稱" status:"pending" tags:"Personal" uuid:"23610407-ccb0-40a5-ac76-f9943f7eb8a1"]
+---
+time 1489590829
+old [depends:"07029fe3-1193-4326-b15c-847f5ab50420" description:"&open;Placeholder for the interview process, Wave 2&close; depends 55" due:"1503417600" entry:"1489590749" modified:"1489590799" project:"Job.公司名稱" status:"pending" tags:"Personal" uuid:"23610407-ccb0-40a5-ac76-f9943f7eb8a1"]
+new [depends:"07029fe3-1193-4326-b15c-847f5ab50420" description:"&open;Placeholder for the interview process, Wave 2&close;" due:"1503417600" entry:"1489590749" modified:"1489590829" project:"Job.公司名稱" status:"pending" tags:"Personal" uuid:"23610407-ccb0-40a5-ac76-f9943f7eb8a1"]
+---
+time 1489590873
+old [depends:"54b51c8b-3265-4b9d-b603-0b6fea6f3401" description:"&open;Placeholder for the interview process&close;" due:"1503417600" entry:"1489590203" modified:"1489590203" project:"Job.公司名稱" status:"pending" uuid:"9c83eed0-4809-4838-a9ad-e61e8931969e"]
+new [depends:"54b51c8b-3265-4b9d-b603-0b6fea6f3401" description:"&open;Placeholder, interview process, Wave 1&close;" due:"1503417600" entry:"1489590203" modified:"1489590873" project:"Job.公司名稱" status:"pending" uuid:"9c83eed0-4809-4838-a9ad-e61e8931969e"]
+---
+time 1489590905
+old [depends:"07029fe3-1193-4326-b15c-847f5ab50420" description:"&open;Placeholder for the interview process, Wave 2&close;" due:"1503417600" entry:"1489590749" modified:"1489590829" project:"Job.公司名稱" status:"pending" tags:"Personal" uuid:"23610407-ccb0-40a5-ac76-f9943f7eb8a1"]
+new [depends:"07029fe3-1193-4326-b15c-847f5ab50420" description:"&open;Placeholder, interview process, Wave 2&close;" due:"1503417600" entry:"1489590749" modified:"1489590905" project:"Job.公司名稱" status:"pending" tags:"Personal" uuid:"23610407-ccb0-40a5-ac76-f9943f7eb8a1"]
+---
+time 1489590944
+old [depends:"83bc20b8-7bae-4cbd-9b40-18543dbda73e" description:"Send resume to request interview , Wave 1" due:"1490889600" entry:"1489589539" modified:"1489589847" project:"Job.JobBanks" status:"pending" uuid:"54b51c8b-3265-4b9d-b603-0b6fea6f3401"]
+new [depends:"83bc20b8-7bae-4cbd-9b40-18543dbda73e" description:"Send resume to request interview, Wave 1" due:"1490889600" entry:"1489589539" modified:"1489590944" project:"Job.JobBanks" status:"pending" uuid:"54b51c8b-3265-4b9d-b603-0b6fea6f3401"]
+---
+time 1489590961
+old [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Identify potential leads , Wave 1" due:"1490112000" entry:"1489589333" modified:"1489589847" project:"Job.JobBanks" scheduled:"1489939200" status:"pending" uuid:"83bc20b8-7bae-4cbd-9b40-18543dbda73e"]
+new [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Identify potential leads, Wave 1" due:"1490112000" entry:"1489589333" modified:"1489590961" project:"Job.JobBanks" scheduled:"1489939200" status:"pending" uuid:"83bc20b8-7bae-4cbd-9b40-18543dbda73e"]
+---
+time 1489590978
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly , Wave 1" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489589838" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1489939200" status:"waiting" tags:"Personal" until:"1490025600" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489590978" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1489939200" status:"waiting" tags:"Personal" until:"1490025600" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2" wait:"1489852800"]
+---
+time 1489590979
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly , Wave 1" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489589847" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489590979" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1489591058
+new [description:"Check new job postings weekly, Wave 2" due:"1491148800" entry:"1489591058" imask:"0" modified:"1489590508" parent:"e90d3d9c-7590-4038-bfec-0f0441d7a874" project:"Job.JobBanks" recur:"weekly" status:"pending" tags:"Personal" until:"1493049600" uuid:"dc2405d6-c120-48e3-8ef8-ea8a7756dcee"]
+---
+time 1489591058
+old [description:"Check new job postings weekly, Wave 2" due:"1491148800" entry:"1489590464" modified:"1489590508" project:"Job.JobBanks" recur:"weekly" status:"recurring" tags:"Personal" until:"1493049600" uuid:"e90d3d9c-7590-4038-bfec-0f0441d7a874"]
+new [description:"Check new job postings weekly, Wave 2" due:"1491148800" entry:"1489590464" mask:"-" modified:"1489591058" project:"Job.JobBanks" recur:"weekly" status:"recurring" tags:"Personal" until:"1493049600" uuid:"e90d3d9c-7590-4038-bfec-0f0441d7a874"]
+---
+time 1489591084
+old [description:"Incorporate the company" due:"1502726400" entry:"1489573416" modified:"1489573416" project:"Job.IoT" status:"pending" uuid:"3d7dfed2-7b01-4603-ab60-9002daa4a097"]
+new [depends:"d5dc6057-4179-4a32-946d-d3277c25e6b8" description:"Incorporate the company" due:"1502726400" entry:"1489573416" modified:"1489591084" project:"Job.IoT" status:"pending" uuid:"3d7dfed2-7b01-4603-ab60-9002daa4a097"]
+---
+time 1489591207
+new [depends:"d5dc6057-4179-4a32-946d-d3277c25e6b8" description:"Identify what are available on the market" entry:"1489591207" modified:"1489591207" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"1073da47-051c-4fbb-a928-82cc9df1b9a4"]
+---
+time 1489591259
+new [depends:"1073da47-051c-4fbb-a928-82cc9df1b9a4" description:"Identify our capabilities" entry:"1489591259" modified:"1489591259" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"57759aa3-7e11-47c1-bd70-0d3ff93e0509"]
+---
+time 1489591308
+new [depends:"57759aa3-7e11-47c1-bd70-0d3ff93e0509" description:"Find market nitch" entry:"1489591308" modified:"1489591308" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"5d7ff71a-9315-4735-b611-fd7228cb72f7"]
+---
+time 1489591383
+old [depends:"d5dc6057-4179-4a32-946d-d3277c25e6b8" description:"Incorporate the company" due:"1502726400" entry:"1489573416" modified:"1489591084" project:"Job.IoT" status:"pending" uuid:"3d7dfed2-7b01-4603-ab60-9002daa4a097"]
+new [depends:"d5dc6057-4179-4a32-946d-d3277c25e6b8,5d7ff71a-9315-4735-b611-fd7228cb72f7" description:"Incorporate the company" due:"1502726400" entry:"1489573416" modified:"1489591383" project:"Job.IoT" status:"pending" uuid:"3d7dfed2-7b01-4603-ab60-9002daa4a097"]
+---
+time 1489591463
+old [depends:"d5dc6057-4179-4a32-946d-d3277c25e6b8" description:"Identify what are available on the market" entry:"1489591207" modified:"1489591207" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"1073da47-051c-4fbb-a928-82cc9df1b9a4"]
+new [depends:"d5dc6057-4179-4a32-946d-d3277c25e6b8" description:"Identify availables solutions" entry:"1489591207" modified:"1489591463" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"1073da47-051c-4fbb-a928-82cc9df1b9a4"]
+---
+time 1489591482
+old [depends:"d5dc6057-4179-4a32-946d-d3277c25e6b8,5d7ff71a-9315-4735-b611-fd7228cb72f7" description:"Incorporate the company" due:"1502726400" entry:"1489573416" modified:"1489591383" project:"Job.IoT" status:"pending" uuid:"3d7dfed2-7b01-4603-ab60-9002daa4a097"]
+new [depends:"5d7ff71a-9315-4735-b611-fd7228cb72f7" description:"Incorporate the company" due:"1502726400" entry:"1489573416" modified:"1489591482" project:"Job.IoT" status:"pending" uuid:"3d7dfed2-7b01-4603-ab60-9002daa4a097"]
+---
+time 1489591539
+old [depends:"57759aa3-7e11-47c1-bd70-0d3ff93e0509" description:"Find market nitch" entry:"1489591308" modified:"1489591308" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"5d7ff71a-9315-4735-b611-fd7228cb72f7"]
+new [depends:"57759aa3-7e11-47c1-bd70-0d3ff93e0509,1073da47-051c-4fbb-a928-82cc9df1b9a4,d5dc6057-4179-4a32-946d-d3277c25e6b8" description:"Find market nitch" entry:"1489591308" modified:"1489591539" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"5d7ff71a-9315-4735-b611-fd7228cb72f7"]
+---
+time 1489591562
+old [depends:"1073da47-051c-4fbb-a928-82cc9df1b9a4" description:"Identify our capabilities" entry:"1489591259" modified:"1489591259" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"57759aa3-7e11-47c1-bd70-0d3ff93e0509"]
+new [description:"Identify our capabilities" entry:"1489591259" modified:"1489591562" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"57759aa3-7e11-47c1-bd70-0d3ff93e0509"]
+---
+time 1489591574
+old [depends:"d5dc6057-4179-4a32-946d-d3277c25e6b8" description:"Identify availables solutions" entry:"1489591207" modified:"1489591463" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"1073da47-051c-4fbb-a928-82cc9df1b9a4"]
+new [description:"Identify availables solutions" entry:"1489591207" modified:"1489591574" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"1073da47-051c-4fbb-a928-82cc9df1b9a4"]
+---
+time 1489591689
+old [description:"Identify availables solutions" entry:"1489591207" modified:"1489591574" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"1073da47-051c-4fbb-a928-82cc9df1b9a4"]
+new [description:"Identify available solutions & providers" entry:"1489591207" modified:"1489591689" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"1073da47-051c-4fbb-a928-82cc9df1b9a4"]
+---
+time 1489591789
+old [description:"Identify available solutions & providers" entry:"1489591207" modified:"1489591689" project:"Job.IoT" status:"pending" tags:"Personal" uuid:"1073da47-051c-4fbb-a928-82cc9df1b9a4"]
+new [description:"Identify available solutions & providers" end:"1489591786" entry:"1489591207" modified:"1489591789" project:"Job.IoT" status:"deleted" tags:"Personal" uuid:"1073da47-051c-4fbb-a928-82cc9df1b9a4"]
+---
+time 1489591809
+old [description:"Survey available IoT solutions" due:"1489766400" entry:"1489364109" modified:"1489573542" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+new [description:"Survey avail. solutions & providers" due:"1489766400" entry:"1489364109" modified:"1489591809" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+---
+time 1489622216
+old [description:"Survey avail. solutions & providers" due:"1489766400" entry:"1489364109" modified:"1489591809" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+new [description:"Survey available solutions and providers on the market" due:"1489766400" entry:"1489364109" modified:"1489622216" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+---
+time 1489623155
+old [description:"Survey available solutions and providers on the market" due:"1489766400" entry:"1489364109" modified:"1489622216" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+new [description:"Survey avail. solutions & providers" due:"1489766400" entry:"1489364109" modified:"1489623155" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+---
+time 1489629777
+old [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489558262" project:"Teresacard" scheduled:"1489593600" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489629777" project:"Teresacard" scheduled:"1489680000" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1489629797
+old [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489116911" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"pending" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489629797" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" start:"1489629797" status:"pending" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+---
+time 1489645871
+old [annotation_1489113698:"812\/90125120073689" annotation_1489457436:"Payble $15,370" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489558205" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489644605" status:"pending" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+new [annotation_1489113698:"812\/90125120073689" annotation_1489457436:"Payble $15,370" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489645871" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489644605" start:"1489645871" status:"pending" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+---
+time 1489645992
+old [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489629797" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" start:"1489629797" status:"pending" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" annotation_1489645992:"Payable ,049" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489645992" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" start:"1489629797" status:"pending" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+---
+time 1489646027
+old [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" annotation_1489645992:"Payable ,049" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489645992" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" start:"1489629797" status:"pending" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489646027" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" start:"1489629797" status:"pending" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+---
+time 1489646053
+old [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489646027" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" start:"1489629797" status:"pending" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" annotation_1489646053:"Payable $3,049" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489646053" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" start:"1489629797" status:"pending" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+---
+time 1489646119
+old [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489113803" mask:"-" modified:"1489116920" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"recurring" tags:"Personal" uuid:"dfe6edc2-a909-473e-98b7-8969d7cac073" wait:"1489593600"]
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489113803" mask:"+" modified:"1489646119" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"recurring" tags:"Personal" uuid:"dfe6edc2-a909-473e-98b7-8969d7cac073" wait:"1489593600"]
+---
+time 1489646119
+old [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" annotation_1489646053:"Payable $3,049" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489114461" imask:"0" modified:"1489646053" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" start:"1489629797" status:"pending" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" annotation_1489646053:"Payable $3,049" description:"Pay SCSB credit card bill" due:"1489852800" end:"1489646119" entry:"1489114461" imask:"0" modified:"1489646119" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"completed" tags:"Personal" uuid:"1e489774-98a9-412d-b12c-ee6d41e4980e"]
+---
+time 1489674693
+old [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" mask:"-" modified:"1489116901" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc" wait:"1489420800"]
+new [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" mask:"+" modified:"1489674693" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc" wait:"1489420800"]
+---
+time 1489674693
+old [annotation_1489113698:"812\/90125120073689" annotation_1489457436:"Payble $15,370" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489114461" imask:"0" modified:"1489645871" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489644605" start:"1489645871" status:"pending" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+new [annotation_1489113698:"812\/90125120073689" annotation_1489457436:"Payble $15,370" description:"Pay TSCB credit card bill" due:"1489680000" end:"1489674693" entry:"1489114461" imask:"0" modified:"1489674693" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489644605" status:"completed" tags:"Personal" uuid:"c6e2b998-f28d-4c7b-85c2-c42ab281e0a1"]
+---
+time 1489692862
+new [description:"What is Claire's cell phone number?" due:"1489852800" entry:"1489692862" imask:"6" modified:"1489539956" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"2days" scheduled:"1488816000" status:"pending" tags:"Personal" until:"1490889600" uuid:"869d16e5-1cc2-43c3-bf39-87ad7bfb04eb"]
+---
+time 1489692862
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++++-" modified:"1489539956" project:"Memory" recur:"2days" scheduled:"1488816000" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++++--" modified:"1489692862" project:"Memory" recur:"2days" scheduled:"1488816000" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1489692862
+new [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1492358400" entry:"1489692862" imask:"1" modified:"1489674693" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"waiting" tags:"Personal" uuid:"b10629f8-badf-43c4-9acc-0c58e614fef8" wait:"1492099200"]
+---
+time 1489692862
+old [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" mask:"+" modified:"1489674693" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc" wait:"1489420800"]
+new [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" mask:"+W" modified:"1489692862" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc" wait:"1489420800"]
+---
+time 1489721182
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"+++++--" modified:"1489692862" project:"Memory" recur:"2days" scheduled:"1488816000" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++++++-" modified:"1489721182" project:"Memory" recur:"2days" scheduled:"1488816000" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1489721182
+old [description:"What is Claire's cell phone number?" due:"1489680000" entry:"1489535675" imask:"5" modified:"1489539955" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"2days" scheduled:"1489680000" status:"pending" tags:"Personal" until:"1490889600" uuid:"76b36e7d-d573-4b5f-a9b3-3399e9a50056"]
+new [description:"What is Claire's cell phone number?" due:"1489680000" end:"1489721182" entry:"1489535675" imask:"5" modified:"1489721182" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"2days" scheduled:"1489680000" status:"completed" tags:"Personal" until:"1490889600" uuid:"76b36e7d-d573-4b5f-a9b3-3399e9a50056"]
+---
+time 1489721231
+old [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1492358400" entry:"1489692862" imask:"1" modified:"1489674693" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"waiting" tags:"Personal" uuid:"b10629f8-badf-43c4-9acc-0c58e614fef8" wait:"1492099200"]
+new [annotation_1489113698:"812\/90125120073689" annotation_1489721231:"Use jrnl @memory tag to replace this action" description:"Pay TSCB credit card bill" due:"1492358400" entry:"1489692862" imask:"1" modified:"1489721231" parent:"d238c15e-cedf-4f26-9ead-7917b8217ddc" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"waiting" tags:"Personal" uuid:"b10629f8-badf-43c4-9acc-0c58e614fef8" wait:"1492099200"]
+---
+time 1489721233
+old [annotation_1489113698:"812\/90125120073689" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" mask:"+W" modified:"1489692862" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc" wait:"1489420800"]
+new [annotation_1489113698:"812\/90125120073689" annotation_1489721233:"Use jrnl @memory tag to replace this action" description:"Pay TSCB credit card bill" due:"1489680000" entry:"1489113634" mask:"+W" modified:"1489721233" project:"Finance" recur:"monthly" scheduled:"1489420800" status:"recurring" tags:"Personal" uuid:"d238c15e-cedf-4f26-9ead-7917b8217ddc" wait:"1489420800"]
+---
+time 1489721268
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++++++-" modified:"1489721182" project:"Memory" recur:"2days" scheduled:"1488816000" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++++++X" modified:"1489721268" project:"Memory" recur:"2days" scheduled:"1488816000" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1489721268
+old [description:"What is Claire's cell phone number?" due:"1489852800" entry:"1489692862" imask:"6" modified:"1489539956" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"2days" scheduled:"1488816000" status:"pending" tags:"Personal" until:"1490889600" uuid:"869d16e5-1cc2-43c3-bf39-87ad7bfb04eb"]
+new [description:"What is Claire's cell phone number?" due:"1489852800" end:"1489721265" entry:"1489692862" imask:"6" modified:"1489721268" parent:"23e457a1-3833-461e-9493-225621f6bf36" project:"Memory" recur:"2days" scheduled:"1488816000" status:"deleted" tags:"Personal" until:"1490889600" uuid:"869d16e5-1cc2-43c3-bf39-87ad7bfb04eb"]
+---
+time 1489721273
+old [description:"What is Claire's cell phone number?" due:"1488816000" entry:"1488730556" mask:"++++++X" modified:"1489721268" project:"Memory" recur:"2days" scheduled:"1488816000" status:"recurring" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+new [description:"What is Claire's cell phone number?" due:"1488816000" end:"1489721273" entry:"1488730556" mask:"++++++X" modified:"1489721273" project:"Memory" recur:"2days" scheduled:"1488816000" status:"deleted" tags:"Personal" until:"1490889600" uuid:"23e457a1-3833-461e-9493-225621f6bf36"]
+---
+time 1489721355
+old [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489629777" project:"Teresacard" scheduled:"1489680000" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489721355" project:"Teresacard" scheduled:"1489680000" start:"1489721355" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
