@@ -1,8 +1,78 @@
 
-alias lBal="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' -V balance ^Assets ^Liabilities"
-alias lSaving="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' register 'SCSB Saving'"
-alias lExp="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' register Expenses"
-alias lCash="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' register Expenses:Cash"
-alias lSCSB="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' register Liabilities:Card:SCSB"
-alias lTSCB="ledger -f '~/prj/ledger/Chien-pin Wang.ledger' register Liabilities:Card:TSCB"
-alias lAdd="vi ~/prj/ledger/Chien-pin\ Wang.ledger"
+lFile='~/prj/ledger/Chien-pinWang.ledger'
+
+alias lBal="ledger -f $lFile -V balance ^Assets ^Liabilities"
+alias lNew="vi $lFile"
+
+function getPeriodBeginEnd() {
+    period=$1
+    case $period in
+    "week")             # Last 7 days
+        periodBegin=$(date -v-7d +%Y-%m-%d)
+        periodEnd=$(date -v+1d +%Y-%m-%d)
+        ;;
+    "wtd")              # Week to date
+        periodBegin=$(date -vsunday +%Y-%m-%d)
+        periodEnd=$(date -v+1d +%Y-%m-%d)
+        ;;
+    "lastweek")         # Last week
+        periodBegin=$(date -v-7d -vsunday +%Y-%m-%d)
+        periodEnd=$(date -v-7d -vsaturday +%Y-%m-%d)
+        ;;
+    "month")            # Last 30 days
+        periodBegin=$(date -v-30d +%Y-%m-%d)
+        periodEnd=$(date -v+1d +%Y-%m-%d)
+        ;;
+    "mtd")              # Month to date
+        periodBegin=$(date +%Y-%m-01)
+        periodEnd=$(date -v+1d +%Y-%m-%d)
+        ;;
+    "lastmonth")        # Last month
+        periodBegin=$(date -v-1m -v1d +%Y-%m-%d)
+        periodEnd=$(date -v1d -v-1d +%Y-%m-%d)
+        ;;
+    *)                  # Today
+        periodBegin=$(date +%Y-%m-%d)
+        periodEnd=$(date -v+1d +%Y-%m-%d)
+        ;;
+    esac
+
+    echo "$periodBegin $periodEnd"
+}
+
+function lCash () {
+    periodRange=$(getPeriodBeginEnd "$1")
+    # echo "Debug: $periodRange"
+    periodB=${periodRange:0:10}
+    periodE=${periodRange:11}
+    ledger -f "$lFile" register Expenses:Cash -b "$periodB" -e "$periodE"
+}
+
+function lSCSB () {
+    periodRange=$(getPeriodBeginEnd "$1")
+    periodB=${periodRange:0:10}
+    periodE=${periodRange:11}
+    ledger -f "$lFile" register Liabilities:Card:SCSB -b "$periodB" -e "$periodE"
+}
+
+function lTSCB () {
+    periodRange=$(getPeriodBeginEnd "$1")
+    periodB=${periodRange:0:10}
+    periodE=${periodRange:11}
+    ledger -f "$lFile" register Liabilities:Card:TSCB -b "$periodB" -e "$periodE"
+}
+
+function lSaving () {
+    periodRange=$(getPeriodBeginEnd "$1")
+    periodB=${periodRange:0:10}
+    periodE=${periodRange:11}
+    ledger -f "$lFile" register "SCSB Saving" -b "$periodB" -e "$periodE"
+}
+
+function lExp () {
+    periodRange=$(getPeriodBeginEnd "$1")
+    periodB=${periodRange:0:10}
+    periodE=${periodRange:11}
+    echo "Debug: $periodB"
+    ledger -f "$lFile" register Expenses -b "$periodB" -e "$periodE"
+}

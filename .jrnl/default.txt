@@ -431,10 +431,34 @@ Follow the documentation of ledger 3.0 (http://ledger-cli.org/3.0/doc/ledger3.ht
 
 It's been almost a year since mom removed her spleen. Dr. Yen advised that patients with spleen removed tend to be less immunable to various infections. And suggested to receive 肺炎鏈球菌疫苗 injection. She got one shot about a year ago.
 
-I am wondering if repeating injection is necessary for that vaccine. Googled and found out that there two types of the vaccine: old, 23 價 and new, 13 價. Human body makes no memory of the old one so need repeating injections every 2 to 4 years. 
+I am wondering if repeating injection is necessary for that vaccine. Googled and found out that there two types of the vaccine: old, 23 價 and new, 13 價. Human body makes no memory of the old one so need repeating injections every 2 to 4 years.
 
 Study shows that the effectiveness of the old one is a bit over 40% in the first two years after injection, drop to 20% afterward. The old type covers 11 more virus than the new one, but short of one critical substance. Doctors are moving away from the old type now.
 
 Problem is, I don't know whicht type mom received last year. Need to find out.
 
 Source: http://www.chinatimes.com/newspapers/20131018000754-260113
+
+2017-03-17 18:17 More Use of Ledger
+
+@ledger, @bash
+
+Combining ledger-cli and bash, it looks like I can do so many things about my personal finance on the command line. Here are stuffs I learned today:
+
+- Most of the command line options can be set in ~/.ledgerrc file
+    - "--date-format" specifies the date format string used on the reports
+    - "--strict" let ledger send warnings when accounts, commodities, tags are not pre-defined.
+- Files can be included by the "include <file>" directive in the ledger file
+    - include "accounts.dat" for allowed account names
+        - More granular controls can be specified as directives under "account"
+    - include "commodities.dat" for allowed commodities
+    - include "tags.dat" for allowed tags
+    - include "prices.dat" for price history
+- Developed bash shell script "getPeriodBeginEnd" to get begin and end dates of a date period keyword
+    - Mac bash syntax uses "-v" to adjust date:
+        Tomorrow's date: date -v+1d +%Y-%m-%d
+    - script returns begin date and end date of the corresponding keyword seperated by a space. For example: "2017-03-10 2017-03-17" for the last 7 days period ("week")
+- Developed bash shell scripts to query register of different accounts in ledger by different time period keywords. So we can do, for example:
+    - "lSCSB mtd" for the month-to-date transactions on SCSB credit card
+    - "lCash week" for the last 7 day transactions on petty cash
+    etc...

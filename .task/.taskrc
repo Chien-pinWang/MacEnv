@@ -28,6 +28,7 @@ data.location=~/.task
 include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-light-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/no-color.theme
+include ~/.task/holidays.zh-TW.rc
 
 # dateformat=Y-m-d H:N:S
 dateformat.annotation=Y-m-d
@@ -43,3 +44,4 @@ report.ls.columns=id,start.active,depends.indicator,project,tags,recur.indicator
 report.list.sort=urgency-,start-,due+,project+
 report.list.columns=id,project,description.count,due.remaining,start.age,entry.age,depends.indicator,priority,tags,recur.indicator,scheduled.countdown,until.remaining,urgency
 report.list.labels=ID,Project,Description,Due,Active,Age,D,P,Tags,R,Sch,Until,Urg
+calendar.holidays=full

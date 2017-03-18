@@ -1790,3 +1790,27 @@ time 1489721355
 old [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489629777" project:"Teresacard" scheduled:"1489680000" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
 new [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489721355" project:"Teresacard" scheduled:"1489680000" start:"1489721355" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
 ---
+time 1489721684
+old [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Identify potential leads, Wave 1" due:"1490112000" entry:"1489589333" modified:"1489590961" project:"Job.JobBanks" scheduled:"1489939200" status:"pending" uuid:"83bc20b8-7bae-4cbd-9b40-18543dbda73e"]
+new [depends:"24ab35c1-b767-4f43-88c4-58da6157f8a2" description:"Identify potential leads, Wave 1" due:"1490112000" entry:"1489589333" modified:"1489721684" project:"Job.JobBanks" scheduled:"1489939200" start:"1489721684" status:"pending" uuid:"83bc20b8-7bae-4cbd-9b40-18543dbda73e"]
+---
+time 1489750682
+old [description:"Pay MegaBank credit card bill" due:"1490544000" entry:"1489114142" mask:"-" modified:"1489117002" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"recurring" tags:"Personal" uuid:"a0e06367-7d8b-4965-a19c-60098355e960" wait:"1490284800"]
+new [description:"Pay MegaBank credit card bill" due:"1490544000" entry:"1489114142" mask:"+" modified:"1489750682" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"recurring" tags:"Personal" uuid:"a0e06367-7d8b-4965-a19c-60098355e960" wait:"1490284800"]
+---
+time 1489750682
+old [description:"Pay MegaBank credit card bill" due:"1490544000" entry:"1489114461" imask:"0" modified:"1489117001" parent:"a0e06367-7d8b-4965-a19c-60098355e960" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"waiting" tags:"Personal" uuid:"5ef33d89-3429-4407-aafe-f4b278d8c298" wait:"1490284800"]
+new [description:"Pay MegaBank credit card bill" due:"1490544000" end:"1489750682" entry:"1489114461" imask:"0" modified:"1489750682" parent:"a0e06367-7d8b-4965-a19c-60098355e960" project:"Finance" recur:"monthly" scheduled:"1490284800" status:"completed" tags:"Personal" uuid:"5ef33d89-3429-4407-aafe-f4b278d8c298" wait:"1490284800"]
+---
+time 1489750744
+old [description:"Pay $11,230 牌照稅, 1610XM" due:"1493481600" entry:"1489114674" mask:"-" modified:"1489117039" project:"Finance" recur:"annual" scheduled:"1492272000" status:"recurring" tags:"Personal" uuid:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" wait:"1492272000"]
+new [description:"Pay $1,423 cable & network service fee" due:"1493481600" entry:"1489114674" mask:"-" modified:"1489750744" project:"Finance" recur:"annual" scheduled:"1492272000" status:"recurring" tags:"Personal" uuid:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" wait:"1492272000"]
+---
+time 1489750744
+old [description:"Pay $1,423 cable & network service fee" due:"1493481600" entry:"1489114674" mask:"-" modified:"1489750744" project:"Finance" recur:"annual" scheduled:"1492272000" status:"recurring" tags:"Personal" uuid:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" wait:"1492272000"]
+new [description:"Pay $1,423 cable & network service fee" due:"1493481600" entry:"1489114674" mask:"W" modified:"1489750744" project:"Finance" recur:"annual" scheduled:"1492272000" status:"recurring" tags:"Personal" uuid:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" wait:"1492272000"]
+---
+time 1489750744
+old [description:"Pay $11,230 牌照稅, 1610XM" due:"1493481600" entry:"1489116530" imask:"0" modified:"1489117038" parent:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" project:"Finance" recur:"annual" scheduled:"1492272000" status:"waiting" tags:"Personal" uuid:"1e15e650-046d-4e87-a70f-56d8fbeb63b3" wait:"1492272000"]
+new [description:"Pay $1,423 cable & network service fee" due:"1493481600" entry:"1489116530" imask:"0" modified:"1489750744" parent:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" project:"Finance" recur:"annual" scheduled:"1492272000" status:"waiting" tags:"Personal" uuid:"1e15e650-046d-4e87-a70f-56d8fbeb63b3" wait:"1492272000"]
+---

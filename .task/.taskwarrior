@@ -6,7 +6,7 @@ alias tWeek='echo "TASKS DUE THIS WEEK..."; task +WEEK list'
 alias tOverdue='echo "TASKS OVERDUE..."; task +OVERDUE -TODAY list'
 alias tBill='echo "BILLS TO PAY THIS MONTH..."; task rc.report.all.sort:due+ project:Finance -PARENT +MONTH -COMPLETED all'
 alias tSummary='task burndown; task ghistory; task projects'
-alias tJob='tDepends 42'
+alias tJob='tDepends 89445668-6919-436e-b16f-1f3c897d7fd5'
 function t?() {
     while read line
         do
