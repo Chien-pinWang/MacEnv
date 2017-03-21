@@ -6,7 +6,7 @@ alias jToday="jrnl -on today"
 alias jYesterday="jrnl -on yesterday"
 alias jStar="jrnl -starred"
 alias jAll="jrnl -from 2017-03-03 --short"
-alias jMem="jrnl @memory --short -n 10"
+# alias jMem="jrnl @memory --short -n 10"
 
 function j?() {
     while read line
@@ -14,6 +14,24 @@ function j?() {
         echo -e "$line"
     done < ~/.env/.jrnl/jHint.txt
 }
+
 function jSearch () {
     jrnl -from 2017-01-01 | grep "$1"
+}
+
+function jMem () {
+    # First set Internal Field Seperator (IFS) to new line
+    IFS=$'\r\n'
+
+    # Get the last 10 titles with keyword @memory in jrnl to array $titles
+    titles=($(jrnl @memory --short -n 10))
+
+    # Get the count of arrays
+    count=${#titles[*]}
+
+    for (( i=0; i<3; i++))
+    do
+        # Use residual of division '%' as index to get a random jrnl title
+        echo "${titles[$((RANDOM%count))]}"
+    done
 }

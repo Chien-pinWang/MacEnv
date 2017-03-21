@@ -439,7 +439,7 @@ Problem is, I don't know whicht type mom received last year. Need to find out.
 
 Source: http://www.chinatimes.com/newspapers/20131018000754-260113
 
-2017-03-17 18:17 More Use of Ledger
+2017-03-17 18:17 More Use of Ledger Reporting
 
 @ledger, @bash
 
@@ -457,8 +457,111 @@ Combining ledger-cli and bash, it looks like I can do so many things about my pe
 - Developed bash shell script "getPeriodBeginEnd" to get begin and end dates of a date period keyword
     - Mac bash syntax uses "-v" to adjust date:
         Tomorrow's date: date -v+1d +%Y-%m-%d
+            "-v" +1d move 1 day forward from today
+        First day of the last week: date -v-7d -vsunday +%Y-%m-%d
+            "-v" -7d move 7 days backward from today, then
+            "-v" sunday adjusted to the last sunday of the last adjusted date
     - script returns begin date and end date of the corresponding keyword seperated by a space. For example: "2017-03-10 2017-03-17" for the last 7 days period ("week")
 - Developed bash shell scripts to query register of different accounts in ledger by different time period keywords. So we can do, for example:
     - "lSCSB mtd" for the month-to-date transactions on SCSB credit card
     - "lCash week" for the last 7 day transactions on petty cash
     etc...
+
+2017-03-18 10:04 Trying Out vim Plugin Management vim-plug
+
+@vim
+
+Comparing different vim plugin managements among the followings, it looks like vim-plug is worth to try:
+
+    - Pathogen (https://github.com/tpope/vim-pathogen)
+         More like a run-time loader than a real plug-in manager
+    - Vundle (https://github.com/VundleVim/Vundle.vim)
+         Most popular but development is stall
+    - vim-plug (https://github.com/junegunn/vim-plug)
+         Newest of the three, support on-demand loading
+
+Usage is easy:
+
+    - Create a "Plug" section with names of plug-ins to load in the .vimrc file.    - Re-load .vimrc
+    - Run ":PlugInstall" to start managing the plug-ins listed in the .vimrc
+
+2017-03-18 23:29 Tenant Ms. Lin Request to Transfer Household Registration
+
+@E624014F
+
+I need to give her the original copy of the last year's household tax slip for her to transfer their household registrations. There is no way to refuse it. And my cost will increase (rental income now becomes taxable).
+
+A couple of things need to be reminded (source: http://bbs.591.com.tw/f?action=replay&tid=18767):
+
+- 出租之房子無法享有自用住宅稅率，地價稅、土地增值稅也會提高.
+    - 每年要繳的地價稅稅率會從原來自用0.2%變成1%、增加5倍.
+    - 房屋稅如果房客仍供住家使用者，稅額不變。
+- 承租人每年會開立你個人的房屋租賃所得扣繳憑單，會增加個人的綜合所得額。
+    - 列舉扣除租賃合理而必要的損耗及費用:
+        如折舊、 修理費、 地價稅、 房屋稅及其附加捐、 以該房屋為保險標的物所投保的保險費、 向金融機構貸款購屋而出租所支付利息等之憑證。
+    - 不列舉必要的損耗及費用者： 依財政部頒定之必要損耗及費用標準 (97年度為43％)
+    - 房客將戶籍遷入後，發生卡債欠繳、官司纏身.....等問題.房客逃離卻沒將戶籍遷出.之後所有法院的傳票、甚至"財務管理"公司都會到他的戶籍地址進行一些"必要"的動作，對於房東來說，會是很煩的一件事。
+    - 房客租約到期搬離，但是戶籍卻沒遷出. (Return the deposit only when they transfer theiir household registration away)
+
+I have pay my due by fixing the equipments in the apartment and allowing them to transfer their household registrations. There is no way I will give them any rent reduction next year.
+
+2017-03-19 21:55 Install Php PEAR on MacBook Pro
+
+@MacBookPro, @php
+
+Reference: Install PEAR and PECL on Mac OS X (https://jason.pureconcepts.net/2012/10/install-pear-pecl-mac-os-x/)
+
+- Download PEAR
+    curl -O http://pear.php.net/go-pear.phar
+    sudo php -d detect_unicode=0 go-pear.phar
+- Installation options (choose default)
+- Error: Complain 'autoconf' not found
+- brew install autoconf
+- Re-run 'sudo php -d detect_unicode=0 go-pear.phar'
+- Error: complain configuration error for 'ncursesw'
+
+Cannot figure out how to resolve it yet... Leave it along for now.
+
+2017-03-20 08:29 Installed vim Snippet Engine SirVer/UltiSnips
+
+@vim
+
+I installed honza/vim-snippets (https://github.com/honza/vim-snippets) and thought of it as a snippet engine. vim-snippets turned out to be just a collection of the "snippets" themselves. It requires an engine to use them.
+
+According to the author of vim-snippets, SirVer/UltiSnips (https://github.com/SirVer/ultisnips) is a better engine if vim is compiled with python enabled. It works with two snippets written in VimL (vim without python support) and snipmate-snippets. It has the following advantages:
+
+- Faster
+- Nesting Snippets
+- Expanding Snippets in Snippet
+- Transformations on Text in Snippets
+
+It turned out that "jrnl" has problems invoking vim with UlitSnips' auto detection feature. The editor keeps spitting error messages when key is pressed. I have not found a way to resolve it yet.
+
+2017-03-20 13:38 Ledger: Command line options to group by payee, day, week, respectively?
+
+@memory
+
+The answers are: '-P', '-D', '-W', respectively
+
+2017-03-20 14:48 Ledger: Command line options to report value by its basis, market, and gain?
+
+@memory
+
+The answers are: '-B', '-V', '-G', respectively
+
+2017-03-20 17:25 More MacBook Apps Installed
+
+@MacBookPro
+
+Installed the following apps today:
+
+- Gimp (https://www.gimp.org)
+- Mutt (brew install mutt)
+
+2017-03-21 08:47 Installed and Configured Mutt
+
+@mutt, @email
+
+Installed the cli e-mail client Mutt to access GMail from command line. Dived a little bit into its macro and key binding so I can type "y" to archive an e-mail (move to "[GMail]/All Mail" folder); or type "d" to trash an e-mail (move to "[GMail]/Trash" folder) at the remote IMAP server.
+
+At the "index" page (e-mail listing view) I re-configured the binding of <space> for next page, and "-" for previous page, just to make it consistent with the "pager" view. There should be more can be done with Mutt.

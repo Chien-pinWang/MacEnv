@@ -1814,3 +1814,82 @@ time 1489750744
 old [description:"Pay $11,230 牌照稅, 1610XM" due:"1493481600" entry:"1489116530" imask:"0" modified:"1489117038" parent:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" project:"Finance" recur:"annual" scheduled:"1492272000" status:"waiting" tags:"Personal" uuid:"1e15e650-046d-4e87-a70f-56d8fbeb63b3" wait:"1492272000"]
 new [description:"Pay $1,423 cable & network service fee" due:"1493481600" entry:"1489116530" imask:"0" modified:"1489750744" parent:"fb0cacfd-f504-4bef-bd4f-0f0f61f289da" project:"Finance" recur:"annual" scheduled:"1492272000" status:"waiting" tags:"Personal" uuid:"1e15e650-046d-4e87-a70f-56d8fbeb63b3" wait:"1492272000"]
 ---
+time 1489835141
+old [description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489574132" project:"Misc." scheduled:"1489766400" status:"pending" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+new [description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489835141" project:"Misc." scheduled:"1489766400" start:"1489835141" status:"pending" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+---
+time 1489843990
+new [description:"Reset mobile transfer data count at iPhone SE" due:"1490976000" entry:"1489843990" modified:"1489843990" project:"Misc." recur:"monthly" scheduled:"1490975999" status:"recurring" tags:"Personal" uuid:"ccc7fc2a-e852-4d35-8a9e-3be8dbf8b78a"]
+---
+time 1489849574
+new [description:"Reset mobile transfer data count at iPhone SE" due:"1490976000" entry:"1489849574" imask:"0" modified:"1489843990" parent:"ccc7fc2a-e852-4d35-8a9e-3be8dbf8b78a" project:"Misc." recur:"monthly" scheduled:"1490975999" status:"pending" tags:"Personal" uuid:"4b0d2793-c0b3-413f-a6d3-7a0a19492a96"]
+---
+time 1489849574
+old [description:"Reset mobile transfer data count at iPhone SE" due:"1490976000" entry:"1489843990" modified:"1489843990" project:"Misc." recur:"monthly" scheduled:"1490975999" status:"recurring" tags:"Personal" uuid:"ccc7fc2a-e852-4d35-8a9e-3be8dbf8b78a"]
+new [description:"Reset mobile transfer data count at iPhone SE" due:"1490976000" entry:"1489843990" mask:"-" modified:"1489849574" project:"Misc." recur:"monthly" scheduled:"1490975999" status:"recurring" tags:"Personal" uuid:"ccc7fc2a-e852-4d35-8a9e-3be8dbf8b78a"]
+---
+time 1489849605
+old [description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489835141" project:"Misc." scheduled:"1489766400" start:"1489835141" status:"pending" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+new [annotation_1489849605:"Found tax slip at hand bag" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489849605" project:"Misc." scheduled:"1489766400" start:"1489835141" status:"pending" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+---
+time 1489851149
+old [annotation_1489849605:"Found tax slip at hand bag" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489849605" project:"Misc." scheduled:"1489766400" start:"1489835141" status:"pending" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+new [annotation_1489849605:"Found tax slip at hand bag" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489851149" project:"Misc." scheduled:"1489766400" start:"1489835141" status:"waiting" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242" wait:"1489939200"]
+---
+time 1489851173
+old [annotation_1489849605:"Found tax slip at hand bag" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489851149" project:"Misc." scheduled:"1489766400" start:"1489835141" status:"waiting" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242" wait:"1489939200"]
+new [annotation_1489849605:"Found tax slip at hand bag" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489851173" project:"Misc." scheduled:"1489939200" start:"1489835141" status:"waiting" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242" wait:"1489939200"]
+---
+time 1489851184
+old [annotation_1489849605:"Found tax slip at hand bag" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489851173" project:"Misc." scheduled:"1489939200" start:"1489835141" status:"waiting" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242" wait:"1489939200"]
+new [annotation_1489849605:"Found tax slip at hand bag" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489851184" project:"Misc." scheduled:"1489939200" status:"waiting" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242" wait:"1489939200"]
+---
+time 1489851225
+old [annotation_1489849605:"Found tax slip at hand bag" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489851184" project:"Misc." scheduled:"1489939200" status:"waiting" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242" wait:"1489939200"]
+new [annotation_1489849605:"Found tax slip at hand bag" annotation_1489851225:"Send tax slip to Ms. Lin through postal service" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489851225" project:"Misc." scheduled:"1489939200" status:"waiting" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242" wait:"1489939200"]
+---
+time 1489988986
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" entry:"1489988986" imask:"3" modified:"1489590979" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"waiting" tags:"Personal" until:"1490025600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4" wait:"1490457600"]
+---
+time 1489988986
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" entry:"1488635671" mask:"++W" modified:"1489590979" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" entry:"1488635671" mask:"++WW" modified:"1489988986" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1489988986
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1492531200" entry:"1489988986" imask:"1" modified:"1489646119" parent:"dfe6edc2-a909-473e-98b7-8969d7cac073" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"waiting" tags:"Personal" uuid:"bef65dd2-08a1-43c0-8ee0-32854f72b3bb" wait:"1492272000"]
+---
+time 1489988986
+old [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489113803" mask:"+" modified:"1489646119" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"recurring" tags:"Personal" uuid:"dfe6edc2-a909-473e-98b7-8969d7cac073" wait:"1489593600"]
+new [annotation_1489114054:"https:\/\/ibank.scsb.com.tw" description:"Pay SCSB credit card bill" due:"1489852800" entry:"1489113803" mask:"+W" modified:"1489988986" project:"Finance" recur:"monthly" scheduled:"1489593600" status:"recurring" tags:"Personal" uuid:"dfe6edc2-a909-473e-98b7-8969d7cac073" wait:"1489593600"]
+---
+time 1489989039
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" entry:"1488635671" mask:"++WW" modified:"1489988986" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"recurring" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" end:"1489989039" entry:"1488635671" mask:"++WW" modified:"1489989039" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1489989058
+old [annotation_1489849605:"Found tax slip at hand bag" annotation_1489851225:"Send tax slip to Ms. Lin through postal service" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489851225" project:"Misc." scheduled:"1489939200" status:"pending" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+new [annotation_1489849605:"Found tax slip at hand bag" annotation_1489851225:"Send tax slip to Ms. Lin through postal service" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489989058" project:"Misc." scheduled:"1490025600" status:"pending" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+---
+time 1489989128
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" end:"1489989039" entry:"1488635671" mask:"++WW" modified:"1489989039" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" end:"1489989039" entry:"1488635671" mask:"++-W" modified:"1489989128" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1489989128
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489590978" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1489939200" status:"pending" tags:"Personal" until:"1490025600" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489989128" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1489939200" start:"1489989128" status:"pending" tags:"Personal" until:"1490025600" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2"]
+---
+time 1489989138
+old [description:"Issue 14790" due:"1489807800" entry:"1488778820" modified:"1488778820" project:"Misc." scheduled:"1489800600" status:"pending" tags:"Work" uuid:"89dc9f5e-dc9e-4470-9866-25c3828a8e3b"]
+new [description:"Issue 14790" due:"1489807800" entry:"1488778820" modified:"1489989138" project:"Misc." scheduled:"1489800600" start:"1489989138" status:"pending" tags:"Work" uuid:"89dc9f5e-dc9e-4470-9866-25c3828a8e3b"]
+---
+time 1489993980
+old [description:"Issue 14790" due:"1489807800" entry:"1488778820" modified:"1489989138" project:"Misc." scheduled:"1489800600" start:"1489989138" status:"pending" tags:"Work" uuid:"89dc9f5e-dc9e-4470-9866-25c3828a8e3b"]
+new [annotation_1489993980:"Revoked access of admin privileges from various systems in email atsushi@verywed.com" description:"Issue 14790" due:"1489807800" entry:"1488778820" modified:"1489993980" project:"Misc." scheduled:"1489800600" start:"1489989138" status:"pending" tags:"Work" uuid:"89dc9f5e-dc9e-4470-9866-25c3828a8e3b"]
+---
+time 1489993999
+old [annotation_1489993980:"Revoked access of admin privileges from various systems in email atsushi@verywed.com" description:"Issue 14790" due:"1489807800" entry:"1488778820" modified:"1489993980" project:"Misc." scheduled:"1489800600" start:"1489989138" status:"pending" tags:"Work" uuid:"89dc9f5e-dc9e-4470-9866-25c3828a8e3b"]
+new [annotation_1489993980:"Revoked access of admin privileges from various systems in email atsushi@verywed.com" description:"Issue 14790" due:"1489807800" end:"1489993999" entry:"1488778820" modified:"1489993999" project:"Misc." scheduled:"1489800600" status:"completed" tags:"Work" uuid:"89dc9f5e-dc9e-4470-9866-25c3828a8e3b"]
+---
+time 1489994811
+new [description:"Develop readable bash function libraries in ~\/.env\/.sh" due:"2147356800" entry:"1489994811" modified:"1489994811" status:"pending" tags:"Personal" uuid:"b788b105-a821-43a7-8dc3-d2fff07a5045"]
+---
