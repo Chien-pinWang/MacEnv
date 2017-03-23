@@ -565,3 +565,33 @@ Installed the following apps today:
 Installed the cli e-mail client Mutt to access GMail from command line. Dived a little bit into its macro and key binding so I can type "y" to archive an e-mail (move to "[GMail]/All Mail" folder); or type "d" to trash an e-mail (move to "[GMail]/Trash" folder) at the remote IMAP server.
 
 At the "index" page (e-mail listing view) I re-configured the binding of <space> for next page, and "-" for previous page, just to make it consistent with the "pager" view. There should be more can be done with Mutt.
+
+2017-03-22 10:42 Byzantine General's Problem
+
+@bitcoin, @BFT
+
+Byzantine Fault Tolerance: https://en.wikipedia.org/wiki/Byzantine_fault_tolerance
+
+* Byzantine Fault:
+    Any fault presenting different symptons to different observers
+
+* Byzantine Failure:
+    The loss of a system service due to a Byzantine Fault in systems that requires consensus.
+
+* Byzantine Fault Tolerance (BFT):
+    Being able to defend against Byzantine Failures so that systems can still provide its services despite of the presence of the Byzantine Failures.
+
+* Byzantine General's Problem:
+    Several Byzantine Generals encircled a city from different directions. They have to reach the agreement on the strategy wheather to attact or retreat. Any half-way decisions (partially attact or partially retreat) will be the worst strategy and cost the army.
+    Problem is further complicated by if the generals are seperated and communicating via messengers, or some of them are traitors who vote for sub-optimal strategies purposely.
+    Byzantine Falut Tolerance can be achieved if the loyal generals can reach unanimous agreement on their strategy.
+
+2017-03-22 10:55 What is a Byzantine Fault and Byzantine Fault Tolerance?
+
+@memory
+
+The answer is:
+
+    Byzantine Fault: Any fault presenting different symptoms to different observers.
+
+    Byzantine Fault Tolerance: System that still able to provide its services despite the presence of Byzantine Fault.

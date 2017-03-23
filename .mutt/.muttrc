@@ -18,6 +18,7 @@ set mbox="imaps://imap.gmail.com:993/[Gmail]/All Mail"
 set trash="imaps://imap.gmail.com:993/[Gmail]/Trash"
 
 source "~/.mutt/mutt-colors-solarized-dark-256.muttrc"
+source "~/.mutt/aliases
 
 auto_view text/html
 alternative_order text/plain text/enriched text/html
@@ -31,4 +32,4 @@ macro index gi "<change-folder>=INBOX<enter>" "Go to Inbox"
 macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to Archive"
 macro index gs "<change-folder>=[Gmail]/Starred<enter>" "Go to Starred Messages"
 macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to Drafts"
-macro index <space> "<next-page>" "Next Page"
+macro index gn "<imap-fetch-mail>"

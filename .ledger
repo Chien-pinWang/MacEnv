@@ -3,7 +3,7 @@ ledger='~/prj/ledger/Chien-pinWang.ledger'
 
 alias lBal="ledger -f $ledger -B balance ^Assets ^Liabilities"
 alias lNew="vi $ledger"
-alias lCashBal="ledger -f $ledger balance 'SCSB Saving' Expenses:Cash"
+alias lCashBal="ledger -f $ledger balance -R 'SCSB Saving' Expenses:Cash"
 
 function getPeriodBeginEnd() {
     period=$1
@@ -74,5 +74,14 @@ function lExp () {
     periodRange=$(getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" register Expenses and not Expenses:Cash -b "$periodB" -e "$periodE"
+    ledger -f "$ledger" balance Expenses and not \(Expenses:Cash or ^Expenses:Budget\) -b "$periodB" -e "$periodE"
+    read -p "Press any key to continue..." -n 1
+    ledger -f "$ledger" register Expenses and not \(Expenses:Cash or ^Expenses:Budget\) -b "$periodB" -e "$periodE"
+}
+
+function lBudget () {                       # Budget always run mtd
+    periodRange=$(getPeriodBeginEnd mtd)
+    periodB=${periodRange:0:10}
+    periodE=${periodRange:11}
+    ledger -f "$ledger" balance ^Expenses:Budget -b "$periodB" -e "$periodE"
 }

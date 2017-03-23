@@ -47,7 +47,7 @@ alias tree="tree -d | more"
 alias phpweb="php -S 127.0.0.1:8080 &"
 alias w="w3m -B"
 alias notify="vi ~/bin/OSNotification.sh; crontab -e"
-alias g="$(which googler) -n 5"
+alias g="$(which googler) -n 5 --lang zh-TW"
 # alias truecrypt="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text"
 # alias pwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --password=SY42567F4 --mount ~/Dropbox/TrueCryptVolume /Volumes/TrueCrypt"
 # alias xpwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --dismount /Volumes/TrueCrypt"
@@ -83,6 +83,12 @@ alias 2prj='cd $PRJ'     # Type "PRJ=<path/to/prj/root>" at command line to rese
 alias ..="cd .."
 alias ...="cd ../.."
 alias ~="cd ~"
+
+# Real quick shortcut to frequently used items
+alias cash="lCashBal"
+alias budget="lBudget"
+alias spent="lExp mtd"
+alias trx="lNew"
 
 # Bash function helpers
 cd() { builtin cd "$@"; ls; }               # cd then ls;

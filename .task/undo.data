@@ -1893,3 +1893,89 @@ new [annotation_1489993980:"Revoked access of admin privileges from various syst
 time 1489994811
 new [description:"Develop readable bash function libraries in ~\/.env\/.sh" due:"2147356800" entry:"1489994811" modified:"1489994811" status:"pending" tags:"Personal" uuid:"b788b105-a821-43a7-8dc3-d2fff07a5045"]
 ---
+time 1490067808
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1489939200" entry:"1489362136" imask:"2" modified:"1489989128" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1489939200" start:"1489989128" status:"pending" tags:"Personal" until:"1490025600" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1489939200" end:"1490067808" entry:"1489362136" imask:"2" modified:"1490067808" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1489939200" start:"1489989128" status:"deleted" tags:"Personal" until:"1490025600" uuid:"24ab35c1-b767-4f43-88c4-58da6157f8a2"]
+---
+time 1490067808
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" entry:"1489988986" imask:"3" modified:"1489590979" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"waiting" tags:"Personal" until:"1490025600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4" wait:"1490457600"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" end:"1490067808" entry:"1489988986" imask:"3" modified:"1490067808" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490025600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4" wait:"1490457600"]
+---
+time 1490067907
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" end:"1489989039" entry:"1488635671" mask:"++-W" modified:"1489989128" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" end:"1489989039" entry:"1488635671" mask:"++-X" modified:"1490067907" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1490067907
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" end:"1490067808" entry:"1489988986" imask:"3" modified:"1490067808" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490025600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4" wait:"1490457600"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" end:"1490067808" entry:"1489988986" imask:"3" modified:"1490067907" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490889600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4" wait:"1490457600"]
+---
+time 1490067942
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" end:"1489989039" entry:"1488635671" mask:"++-X" modified:"1490067907" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" end:"1489989039" entry:"1488635671" mask:"++--" modified:"1490067942" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1490067942
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" end:"1490067808" entry:"1489988986" imask:"3" modified:"1490067907" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490889600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4" wait:"1490457600"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" end:"1490067808" entry:"1489988986" imask:"3" modified:"1490067942" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"waiting" tags:"Personal" until:"1490889600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4" wait:"1490457600"]
+---
+time 1490068003
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" end:"1489989039" entry:"1488635671" mask:"++--" modified:"1490067942" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1488729600" end:"1489989039" entry:"1488635671" mask:"++-W" modified:"1490068003" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"deleted" tags:"Personal" until:"1490025600" uuid:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" wait:"1488643200"]
+---
+time 1490068003
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" end:"1490067808" entry:"1489988986" imask:"3" modified:"1490067942" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"waiting" tags:"Personal" until:"1490889600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4" wait:"1490457600"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" entry:"1489988986" imask:"3" modified:"1490068003" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"waiting" tags:"Personal" until:"1490889600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4" wait:"1490457600"]
+---
+time 1490068058
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" entry:"1489988986" imask:"3" modified:"1490068003" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1488729600" status:"waiting" tags:"Personal" until:"1490889600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4" wait:"1490457600"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" entry:"1489988986" imask:"3" modified:"1490068058" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1490457600" status:"waiting" tags:"Personal" until:"1490889600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4" wait:"1490457600"]
+---
+time 1490068072
+old [annotation_1489849605:"Found tax slip at hand bag" annotation_1489851225:"Send tax slip to Ms. Lin through postal service" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1489989058" project:"Misc." scheduled:"1490025600" status:"pending" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+new [annotation_1489849605:"Found tax slip at hand bag" annotation_1489851225:"Send tax slip to Ms. Lin through postal service" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1490068072" project:"Misc." scheduled:"1490025600" start:"1490068072" status:"pending" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+---
+time 1490068106
+old [description:"Move office to the 2nd floor" due:"1489680000" entry:"1489401073" modified:"1489557743" project:"Misc." scheduled:"1489507200" start:"1489557743" status:"pending" tags:"Work" uuid:"b59e8ffd-a8c1-43db-ae55-0f00381ef793"]
+new [description:"Move office to the 2nd floor" due:"1489680000" end:"1490068106" entry:"1489401073" modified:"1490068106" project:"Misc." scheduled:"1489507200" status:"completed" tags:"Work" uuid:"b59e8ffd-a8c1-43db-ae55-0f00381ef793"]
+---
+time 1490068336
+old [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1489721355" project:"Teresacard" scheduled:"1489680000" start:"1489721355" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1490068336" project:"Teresacard" scheduled:"1489680000" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1490068356
+old [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1490068336" project:"Teresacard" scheduled:"1489680000" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1490068356" project:"Teresacard" scheduled:"1490673156" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1490068426
+old [description:"Discuss on Ric's cut" entry:"1488640075" modified:"1490068356" project:"Teresacard" scheduled:"1490673156" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [annotation_1490068426:"Ric is still working on setting up next meeting and will be appropriate to discuss this issue after anything concrete." description:"Discuss on Ric's cut" entry:"1488640075" modified:"1490068426" project:"Teresacard" scheduled:"1490673156" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1490075628
+old [annotation_1489849605:"Found tax slip at hand bag" annotation_1489851225:"Send tax slip to Ms. Lin through postal service" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" entry:"1489574132" modified:"1490068072" project:"Misc." scheduled:"1490025600" start:"1490068072" status:"pending" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+new [annotation_1489849605:"Found tax slip at hand bag" annotation_1489851225:"Send tax slip to Ms. Lin through postal service" description:"Send tax slip of E624014F to tenant Ms. Lin" due:"1489939200" end:"1490075628" entry:"1489574132" modified:"1490075628" project:"Misc." scheduled:"1490025600" status:"completed" tags:"Personal" uuid:"f477330b-412c-4c00-ab63-be31cc791242"]
+---
+time 1490172420
+old [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114371" mask:"-" modified:"1489117028" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"a683f8b2-0795-4e14-bacc-7ae0687530e9" wait:"1490716799"]
+new [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114371" mask:"W" modified:"1490172420" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"a683f8b2-0795-4e14-bacc-7ae0687530e9" wait:"1490716799"]
+---
+time 1490172420
+old [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114461" imask:"0" modified:"1489117027" parent:"a683f8b2-0795-4e14-bacc-7ae0687530e9" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"waiting" tags:"Personal" uuid:"5e61cacd-6cc8-40ca-96a2-4a60e2657f9d" wait:"1490716799"]
+new [description:"Pay $1,423 cable & network service fee" due:"1490975999" entry:"1489114461" imask:"0" modified:"1490172420" parent:"a683f8b2-0795-4e14-bacc-7ae0687530e9" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"waiting" tags:"Personal" uuid:"5e61cacd-6cc8-40ca-96a2-4a60e2657f9d" wait:"1490716799"]
+---
+time 1490172422
+old [description:"Pay $1,374 cable & network service fee" due:"1490975999" entry:"1489114371" mask:"W" modified:"1490172420" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"a683f8b2-0795-4e14-bacc-7ae0687530e9" wait:"1490716799"]
+new [description:"Pay $1,423 cable & network service fee" due:"1490975999" entry:"1489114371" mask:"W" modified:"1490172422" project:"Finance" recur:"monthly" scheduled:"1490716799" status:"recurring" tags:"Personal" uuid:"a683f8b2-0795-4e14-bacc-7ae0687530e9" wait:"1490716799"]
+---
+time 1490176397
+new [description:"Burn accounting documents with Joanna Lai" due:"1490544000" entry:"1490176397" modified:"1490176397" project:"Misc." scheduled:"1490371200" status:"pending" tags:"Work" uuid:"0ac5a9cf-6c3a-4129-8566-811ab72e9b27"]
+---
+time 1490176417
+old [description:"Burn accounting documents with Joanna Lai" due:"1490544000" entry:"1490176397" modified:"1490176397" project:"Misc." scheduled:"1490371200" status:"pending" tags:"Work" uuid:"0ac5a9cf-6c3a-4129-8566-811ab72e9b27"]
+new [annotation_1490176417:"Need 1610-XM" description:"Burn accounting documents with Joanna Lai" due:"1490544000" entry:"1490176397" modified:"1490176417" project:"Misc." scheduled:"1490371200" status:"pending" tags:"Work" uuid:"0ac5a9cf-6c3a-4129-8566-811ab72e9b27"]
+---
+time 1490261910
+new [description:"Meeting with Taishin Bank credit card dept on the potential marketing campaign at veryWed" due:"1490544000" entry:"1490261910" modified:"1490261910" scheduled:"1490544000" status:"pending" tags:"Work" uuid:"9c2dd4e9-7863-4246-8c0c-24cb9334dcd2"]
+---
+time 1490262599
+old [description:"Meeting with Taishin Bank credit card dept on the potential marketing campaign at veryWed" due:"1490544000" entry:"1490261910" modified:"1490261910" scheduled:"1490544000" status:"pending" tags:"Work" uuid:"9c2dd4e9-7863-4246-8c0c-24cb9334dcd2"]
+new [description:"Meeting with Taishin Bank credit card dept on the potential marketing campaign at veryWed" due:"1490544000" entry:"1490261910" modified:"1490262599" project:"Misc." scheduled:"1490544000" status:"pending" tags:"Work" uuid:"9c2dd4e9-7863-4246-8c0c-24cb9334dcd2"]
+---
