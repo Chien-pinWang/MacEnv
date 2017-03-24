@@ -120,7 +120,7 @@ endif
 
 " Add a bit extra margin to the left
 set foldcolumn=1
-set foldlevel=1
+"set foldlevel=1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

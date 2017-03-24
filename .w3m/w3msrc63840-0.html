@@ -1,0 +1,74 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/files/style.css" />
+</head>
+<body>
+<pre>
+Usage:
+
+    $ curl wttr.in          # current location
+    $ curl wttr.in/muc      # weather in the Munic airport
+
+Supported location types:
+
+    /paris                  # city name
+    /~Eiffel+tower          # any location
+    /Москва                 # Unicode name of any location in any language
+    /muc                    # airport code (3 letters)
+    /@stackoverflow.com     # domain name
+    /94107                  # area codes
+    /-78.46,106.79          # GPS coordinates
+
+Special locations:
+
+    /moon                   # Moon phase (add ,+US or ,+France for these cities)
+    /moon@2016-10-25        # Moon phase for the date (@2016-10-25)
+
+Units:
+
+    ?m                      # metric (SI) (used by default everywhere except US)
+    ?u                      # USCS (used by default in US)
+
+View options:
+
+    ?0                      # only current weather
+    ?1                      # current weather + 1 day
+    ?2                      # current weather + 2 days
+    ?n                      # narrow version (only day and night)
+    ?q                      # quiet version (no &#34;Weather report&#34; text)
+    ?Q                      # superquiet version (no &#34;Weather report&#34;, no city name)
+    ?T                      # switch terminal sequences off (no colors)
+
+PNG options:
+
+    /paris.png              # generate a PNG file
+    ?p                      # add frame arond the output
+    ?t                      # transparency 150
+    transparency=...        # transparency from 0 to 255 (255 = not transparent)
+
+Options can be combined:
+
+    /Paris?0pq
+    /Paris_0pq.png          # in PNG the file mode are specified after _
+    /Rome_0pq_lang=it.png   # long options are separated with underscore
+
+Localization:
+
+    $ curl wttr.in/paris?lang=fr
+    $ curl -H &#34;Accept-Language: fr&#34; wttr.in/paris
+
+Supported languages:
+
+    bg cs da de el es fi fr hi hu it ja ko ml nl pt pl ro ru sk sr sv tr uk vi zh (supported)
+    et hy jv ka kk ky lt lv mk sw th uz zu (in progress)
+
+Special URLs:
+
+    /:help                  # show this page
+    /:bash.function         # show recommended bash function wttr()
+    /:translation           # show the information about the translators
+
+
+</pre>
+</body>
+</html>

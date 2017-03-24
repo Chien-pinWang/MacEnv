@@ -36,7 +36,6 @@ alias psg="ps aux | grep --color=auto"
 alias calc="bc -q"
 alias sheet="sc"
 alias slide="mdp"
-alias today="date +'%A, %B%e日, %Y年, %p%l:%M:%S'"
 alias waves="php ~/bin/Buoy/index.php"
 alias t="task ls"
 alias nls="jrnl -on today --short"
@@ -101,4 +100,24 @@ function v? () {
     done < ~/.vim_runtime/vHint.txt
 }
 
+function putBuf () {
+    echo "$1" >> ~/tmp/wip.buf
+}
+
+function getBuf () {
+    if [ -f ~/tmp/wip.buf ]
+    then
+        echo -e "\033[31;107mTHERE ARE WORK-IN-PROGRESS...\033[39;49m"
+        cat ~/tmp/wip.buf
+    else
+        echo -e "\033[31;107mThere is no work-in-progress.\033[39;49m"
+    fi
+}
+
+function today () {
+    date +'%A, %B%e日, %Y年, %p%l:%M:%S'
+    curl -H "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?1n
+}
+
 jMem
+getBuf
