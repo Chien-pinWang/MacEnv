@@ -1,0 +1,12 @@
+\\033[1;34mvim Effective\\033[0m
+\\033[1;4mCommand\\033[0m         \\033[1;4mDescription\\033[0m
+\\033[31;107mvSplit\\033[39;49m          Open Files in Split Windows
+>                   Files are open in vim windows vertically splitted
+>                   Ctrl-h to the left window; Ctrl-l to the right window
+\\033[31;107mvStack\\033[39;49m          Open Files in Stacked Windows
+>                   Files are open in vim windows horizontally splitted
+>                   Ctrl-k to the window above; Ctrl-j to the window below
+\\033[31;107mvTab\\033[39;49m            Open Files in Tabs
+>                   Files are open full window each in its own tab
+>                   Ctrl-t to move to the next tab in the left
+\\033[31;107mv?\\033[39;49m              Show This Page

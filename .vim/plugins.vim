@@ -3,7 +3,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'yegappan/mru'
-Plug 'https://github.com/itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'
 Plug 'ledger/vim-ledger'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -42,10 +42,17 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " Calendar app 'calendar.vim' configurations
 let g:calendar_first_day="sunday"
 let g:calendar_date_month_name=1
+let g:calendar_view='day'
+let g:calendar_views=['week', 'day', 'agenda', 'month', 'clock']
+let g:calendar_cyclic_view=1
+let g:calendar_google_calendar=1
 
 " vimwiki Wiki Document
+let g:vimwiki_folding='list'
 " let g:vimwiki_folding='expr'
-let g:vimwiki_folding='syntax'
+" let g:vimwiki_folding='syntax'
+map >> <Plug>VimwikiIncreaseLvlSingleItem
+map << <Plug>VimwikiDecreaseLvlSingleItem
 
 " w3m.vim Browse Web Page in vim
 " let g:w3m#command='/usr/local/bin/w3m'

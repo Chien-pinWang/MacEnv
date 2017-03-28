@@ -87,7 +87,15 @@ alias ~="cd ~"
 alias cash="lCashBal"
 alias budget="lBudget"
 alias spent="lExp mtd"
+alias debt="lDebt"
 alias trx="lNew"
+alias bill="tBill"
+alias next="tActive"
+alias review="tReview"
+alias due="tWeek"
+alias overdue="tOverdue"
+alias checkoff="tCheck"
+alias mail="mutt"
 
 # Bash function helpers
 cd() { builtin cd "$@"; ls; }               # cd then ls;
@@ -97,7 +105,7 @@ function v? () {
     while read line
     do
         echo -e "$line"
-    done < ~/.vim_runtime/vHint.txt
+    done < ~/.vim/vHint.txt
 }
 
 function putBuf () {
@@ -116,7 +124,16 @@ function getBuf () {
 
 function today () {
     date +'%A, %B%e日, %Y年, %p%l:%M:%S'
-    curl -H "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?1n
+    curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?1n 
+}
+
+function wiki () {
+    if [ -z $1 ]
+    then
+        vi ~/prj/MacBookPro/index.wiki
+    else
+        vi "~/prj/MacBookPro/$1.wiki"
+    fi
 }
 
 jMem

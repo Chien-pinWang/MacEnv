@@ -16,7 +16,7 @@ function j?() {
 }
 
 function jSearch () {
-    jrnl -from 2017-01-01 | grep "$1"
+    jrnl -from 2017-01-01 | ag "$1"
 }
 
 function jMem () {

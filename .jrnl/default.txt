@@ -518,6 +518,7 @@ Reference: Install PEAR and PECL on Mac OS X (https://jason.pureconcepts.net/201
 - Error: Complain 'autoconf' not found
 - brew install autoconf
 - Re-run 'sudo php -d detect_unicode=0 go-pear.phar'
+- Run 'sudo pecl install ncurses'
 - Error: complain configuration error for 'ncursesw'
 
 Cannot figure out how to resolve it yet... Leave it along for now.

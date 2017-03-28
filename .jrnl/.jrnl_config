@@ -3,7 +3,7 @@
   "timeformat": "%Y-%m-%d %H:%M", 
   "linewrap": 79, 
   "encrypt": false, 
-  "editor": "/usr/bin/vim", 
+  "editor": "/usr/local/bin/vim", 
   "default_minute": 0, 
   "highlight": true, 
   "journals": {
