@@ -123,8 +123,21 @@ function getBuf () {
 }
 
 function today () {
-    date +'%A, %B%e日, %Y年, %p%l:%M:%S'
-    curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?1n 
+    datestring=$(date +'\033[31;107m%A, %B%e日, %Y年, %p%l:%M:%S\033[39;49m')
+    echo -e "$datestring"
+    curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?2n | head -n 28
+    read -p "Press any key to continue..." -n 1
+    echo ""
+    echo -e "\033[31;107mMemorables:\033[39;49m"
+    jToday --short
+    echo ""
+    echo -e "\033[31;107mSpent Today:\033[39;49m"
+    ledger -f $ledger register -b today -e tomorrow -R ^Expenses and not Expenses:Cash
+    echo ""
+    echo -e "\033[31;107mCash Balance:\033[39;49m"
+    ledger -f $ledger balance -R Expenses:Cash
+    echo ""
+    next
 }
 
 function wiki () {
@@ -134,6 +147,11 @@ function wiki () {
     else
         vi "~/prj/MacBookPro/$1.wiki"
     fi
+}
+
+function journal () {
+    jrnl < ~/.env/.jrnl/template.txt
+    jrnl -1 --edit
 }
 
 jMem

@@ -596,3 +596,201 @@ The answer is:
     Byzantine Fault: Any fault presenting different symptoms to different observers.
 
     Byzantine Fault Tolerance: System that still able to provide its services despite the presence of Byzantine Fault.
+
+2017-03-28 11:40 How to write a journal?
+
+@howto, @journal
+
+# Summary
+Journal can be of anything worth writing down to be reflected in the future. Here is my 10-step process learned from wikiHow.
+
+# Key Points
+    1. Find something to contain your journal entries
+    2. Keep a simple format that can be applied to different topics
+    3. Choose to write on specific topic or generally everything
+    4. Pick a good entry title
+    5. Write down continuously as the thoughts flow. Stay away from everything that can stop your finger following your thoughts.
+    6. Deep dive into it and really get inspired by the ideas that jumped out.
+    7. Tag the journal entry with key words so it can be accessed by search
+    8. Make it a everyday-habbit that you enjoy of doing.
+    9. Get creative and with personal touch.
+    10. Re-read entries for insights.
+
+# Free Thoughts
+    I will keep my journal entries in text files and search/read them through jrnl (http://jrnl.sh). I'll use a simple 3-block format: Summary, Key Points, and Free Thoughts (~/.env/.jrnl/template.txt). I'm going to write down any thing worth to write in the default journal. And the journal will be in English for most of the parts.
+
+    I wish I can keep this going for long by enjoy doing it. So I'm not writing it under any pressure. Unicode expressions can be very helpful 😂...
+
+    God helps me out.
+
+2017-03-28 14:41 ☀️  vim with Unicode Emoji 😎
+
+@vim, @unicode
+
+# Summary
+    vim is able to render unicode characters that include single-character icons for weather, emoji, and many others.
+
+# Key Points
+    1. Create a text file with frequently used unicode characters for journaling
+    2. Map key combination ',uc' to open this file while journaling
+       (',uc' maps to ':8sp </path/to/unicode.txt>' where 8 is the window height)
+    3. Copy and paste unicode characters for journal expression
+
+# Free Thoughts
+    Unicode adds personal touch to the journal. With key maps in vim, I can call this file to a stacked window any time I need it.
+
+    I think I can use the same technique to map cheatsheets of different tools!
+
+2017-03-28 15:22 Video Chat with Chiallin & Alan on IoT Venture
+
+@ChialinChou, @Alan, @IoT
+
+# Summary
+    Take action to identify at most 5 problem-solution pairs currently available on the market as a market research effort. From there we need to identify potential market segment our capabilities fit.
+
+# Key Points
+    1. Meet Alan (Last name?) face-to-face
+    2. Need to start with finding a market segment where demands exist and we are capable of providing solutions.
+    3. Go search at most 5 IoT solutions (and their corresponding problems) available on the market.
+
+# Free Thoughts
+    Alan seems to be a pretty easy going guy. He supports my suggestion of where to start. Although I don't know too much about him yet.
+
+    We should probably further narrow down our search range to certain industries and certain areas. Will chat again next week.
+
+2017-03-29 07:56 ⛅ My Console "Today"
+
+@MacBookPro, @bash
+
+# Summary
+    "today" command shows a summary of today's status
+
+# Key Points
+    "today" command lists the following information at the moment:
+    1. Current date and time
+    2. Current weather and forecast of tomorrow
+    3. Titles of journal entries made today
+    4. Current cash balance
+    5. Today's spending
+
+# Free Thoughts
+    I find myself constantly checking these information. So I wrote a bash script called "today" in the .bash_profile. Current date and time uses built-in 'date' function. Weather service is provided by http://wttr.in through 'curl' command. Journal entries and spendings are reflecting my activities of the day.
+
+    With these information easily accessible on my finger tips I rest in peace.😎
+
+2017-03-29 16:24 「房市寒冬」又是台北觀點嗎？
+
+@E624014F, @Kaohsiung
+
+# Summary
+    Kaohsiung real-estate was not as bad. 2016 median price of the real transaction record at Gu-shan District was $230,000 per ping, increased 6.6% from 2015.
+
+# Key Points
+    1. Article at http://www.cw.com.tw/article/article.action?id=5081584
+    2. E624014F worth $9,485,200
+
+# Free Thoughts
+    The potential prices of my apartment is not as pessimistic! Data shows that 2016 mid price of transaction at Kaohsiung, compared to previous years, was increasing, given that quantity was decreasing. Gu-shan District 2016 median price of the real transaction records was $230,000 per ping, increased 6.6% from 2015. That was really encouraging!
+
+2017-03-29 19:35 Activated Apple Pay with TSCB Visa
+
+@ApplePay, @TSCB
+
+# Summary
+    First Apple Pay experience of buying banana and chips at Family Mart.
+
+# Key Points
+    1. Apple Pay launched today.
+    2. Taishin International Bank is one of the banks offering the service.
+    3. Activated the service on my iPhone SE with my TSCB Visa Card
+    4. Get close to the sensor then authorize with finger print.
+    5. Safer than giving cards.
+
+
+# Free Thoughts
+    Apple Pay services officially launched today. A few things needs to come together to use this service:
+    1. Got to have an iPhone 6 or better device.
+    2. Got to have a credit card issued by one of the banks offering the service.
+    3. Got to go to one of the stores that accept Apple Pay.
+    4. Got to bind the card to the phone.
+    5. Got to have a valid finger print to authorize the payment.
+
+2017-03-30 10:22 🌥  Almost Done with April's Budget
+
+@Finance, @budget, @ledger
+
+# Summary
+    Budgeted income of April comes to $122,800, against budgeted expenses of $77,888, comes to a monthly surplus of $44,912 before paying the mortgage. We are paying about $21,000 to the mortgage principle. That brings the net surplus of $23,912 for April.
+
+# Key Points
+    Itemized income budgets of April:
+    - Salary            $95,800         veryHuman.com
+    - Rent              $27,000         E624014F
+    ---------------------------
+      Total            $122,800
+
+    Itemized expense budgets of April:
+    - Gift:             $10,000         Claire
+    - Eatery            $12,000         Groceries & stuffs
+    - Outfit            $ 4,250         Haircut & sneakers
+    - Transportation    $ 3,000         MRT & Gas
+    - Household         $27,986         Rent, Common Charges, etc.
+    - Misc.             $13,670         Tax & Mortgage Interests
+    - Health            $ 4,909         Insurance
+    - Information       $ 2,073         Cable, Mobile Phone
+    ---------------------------
+      Total             $77,888
+
+# Free Thoughts
+    This is an optimistic plan that assumes income stays unchange and expenses control tightly. If we look at the plan from the cash flow's perspective, we need to pay out the payables from March. So we don't generate that much free cash as the plan shows.
+    This is the first time we are doing budgets on ledger. We will need to see how it works in terms of the efforts for planning and bookkeeping. Budgeting is done by creating so-call "Budget Envelop" where money puts in at the beginning of the month. March try out works fine.
+
+2017-03-30 11:50 Try Out Google Tag Manager at MacBook Pro
+
+@GTM, @phpmyadmin, @MacBookPro
+
+# Summary
+    Play around with Google Tag Manager at my MacBookPro machine.
+
+# Key Points
+    1. Add GTM snippet to alpha.com that points to phpMyAdmin
+    2. Add a private function _getGTMSnippet() in the Header.php file resides in the [phpMyAdmin]/libraries directory.
+    3. Call _getGTMSnippet from the getDisplay() function in the same file before _getMetaTags() and after _getHtmlStart().
+    4. Now we should have GTM snippet in every phpMyAdmin page
+    5. We can inject tags through GTM snippet now.
+
+# Free Thoughts
+    ag is a pretty powerful tool to do string search in a group of files. We started by searching word "<head>" because GTM suggests to place the snippet at the beginning of the head section. ag returned quite a few matched files. By looking at the results, the file "libraries/Header.php" looks like the one we are after. Go into that file and figured out how it spit out the HTML codes and then got snippet injected.
+
+2017-03-30 17:03 Failed to Activate Google Analytics from Google Tag Manager
+
+@GTM, @GA
+
+# Summary
+    Made several attempts to activate GA from GTM snippet but failed.
+
+# Key Points
+    Installed Google Analytics tag as instructed (Tag name: Google Analytics; Tag Type: Universal Google Analytics; Firing Trigger: All Pages) and clicked on the phpMyAdmin pages. But the real-time traffic in Google Analytics report still did not see a visitor.
+
+    Tried the following remedies after research on the Internet:
+    1. Added a field called 'cookieDomain' with value 'none' (for localhost)
+    2. Added a field called 'storage' with value 'none' (for localhost)
+    3. Removed the filed 'storage'
+
+    None of them work.
+
+# Free Thoughts
+    Installed a Chrome plug-in called "Google Tag Assistance" and reload the phpMyAdmin page. An error says that the GTM account ID is invalid or missing. The help page says the ID after "GTM-" should be less than 6 characters. Mine has 7. But the help also says that this is a "false error" and will be resolved in the future update? 😩
+
+2017-03-31 11:20 🌧  GTM Seems to Start Working from Chrome
+
+@GTM
+
+# Summary
+    GTM fires Google Analytics Tag from a static page GTM.html at alpha.com, but only through the Chrome browser.
+
+# Key Points
+    Put GTM snippet in a static page 'GTM.html' and see the page hit at Google Analytics 'Realtime' report.
+
+# Free Thoughts
+    I guess the cookieDomain works only for Chrome browser? Tag is still not fired from phpMyAdmin pages. Keep digging on this....

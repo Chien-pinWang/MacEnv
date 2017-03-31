@@ -2046,3 +2046,41 @@ time 1490667682
 old [description:"Meeting with Taishin Bank credit card dept on the potential marketing campaign at veryWed" due:"1490544000" entry:"1490261910" modified:"1490585288" project:"Misc." scheduled:"1490544000" start:"1490585288" status:"pending" tags:"Work" uuid:"9c2dd4e9-7863-4246-8c0c-24cb9334dcd2"]
 new [description:"Meeting with Taishin Bank credit card dept on the potential marketing campaign at veryWed" due:"1490544000" end:"1490667682" entry:"1490261910" modified:"1490667682" project:"Misc." scheduled:"1490544000" status:"completed" tags:"Work" uuid:"9c2dd4e9-7863-4246-8c0c-24cb9334dcd2"]
 ---
+time 1490693043
+old [description:"Survey avail. solutions & providers" due:"1489766400" entry:"1489364109" modified:"1489623155" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+new [annotation_1490693043:"Market research at ~\/prj\/Job\/IoT\/index.wiki" description:"Survey avail. solutions & providers" due:"1489766400" entry:"1489364109" modified:"1490693043" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+---
+time 1490753612
+old [annotation_1490068426:"Ric is still working on setting up next meeting and will be appropriate to discuss this issue after anything concrete." description:"Discuss on Ric's cut" entry:"1488640075" modified:"1490068426" project:"Teresacard" scheduled:"1490673156" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [annotation_1490068426:"Ric is still working on setting up next meeting and will be appropriate to discuss this issue after anything concrete." description:"Discuss on Ric's cut" entry:"1488640075" modified:"1490753612" project:"Teresacard" scheduled:"1490759556" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1490754481
+new [description:"Do monthly budget at ledger" due:"1490975999" entry:"1490754481" modified:"1490754481" project:"Finance" recur:"monthly" scheduled:"1490803199" status:"recurring" tags:"Personal" uuid:"4935d87c-4ce4-42b2-b092-64a5bd285b84"]
+---
+time 1490754494
+new [description:"Do monthly budget at ledger" due:"1490975999" entry:"1490754494" imask:"0" modified:"1490754481" parent:"4935d87c-4ce4-42b2-b092-64a5bd285b84" project:"Finance" recur:"monthly" scheduled:"1490803199" status:"pending" tags:"Personal" uuid:"d960ede5-258c-43b2-8b73-7669b575b4d9"]
+---
+time 1490754494
+old [description:"Do monthly budget at ledger" due:"1490975999" entry:"1490754481" modified:"1490754481" project:"Finance" recur:"monthly" scheduled:"1490803199" status:"recurring" tags:"Personal" uuid:"4935d87c-4ce4-42b2-b092-64a5bd285b84"]
+new [description:"Do monthly budget at ledger" due:"1490975999" entry:"1490754481" mask:"-" modified:"1490754494" project:"Finance" recur:"monthly" scheduled:"1490803199" status:"recurring" tags:"Personal" uuid:"4935d87c-4ce4-42b2-b092-64a5bd285b84"]
+---
+time 1490774560
+old [annotation_1490068426:"Ric is still working on setting up next meeting and will be appropriate to discuss this issue after anything concrete." description:"Discuss on Ric's cut" entry:"1488640075" modified:"1490753612" project:"Teresacard" scheduled:"1490759556" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [annotation_1490068426:"Ric is still working on setting up next meeting and will be appropriate to discuss this issue after anything concrete." description:"Discuss on Ric's cut" entry:"1488640075" modified:"1490774560" project:"Teresacard" scheduled:"1490845956" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+---
+time 1490842254
+old [description:"Do monthly budget at ledger" due:"1490975999" entry:"1490754494" imask:"0" modified:"1490754481" parent:"4935d87c-4ce4-42b2-b092-64a5bd285b84" project:"Finance" recur:"monthly" scheduled:"1490803199" status:"pending" tags:"Personal" uuid:"d960ede5-258c-43b2-8b73-7669b575b4d9"]
+new [description:"Do monthly budget at ledger" due:"1490975999" entry:"1490754494" imask:"0" modified:"1490842254" parent:"4935d87c-4ce4-42b2-b092-64a5bd285b84" project:"Finance" recur:"monthly" scheduled:"1490803199" start:"1490842254" status:"pending" tags:"Personal" uuid:"d960ede5-258c-43b2-8b73-7669b575b4d9"]
+---
+time 1490857788
+old [annotation_1490068426:"Ric is still working on setting up next meeting and will be appropriate to discuss this issue after anything concrete." description:"Discuss on Ric's cut" entry:"1488640075" modified:"1490774560" project:"Teresacard" scheduled:"1490845956" status:"pending" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c"]
+new [annotation_1490068426:"Ric is still working on setting up next meeting and will be appropriate to discuss this issue after anything concrete." description:"Discuss on Ric's cut" entry:"1488640075" modified:"1490857788" project:"Teresacard" scheduled:"1491148800" status:"waiting" tags:"Work" uuid:"ce5d7dff-9377-4589-9a02-98067d3a6c7c" wait:"1491148800"]
+---
+time 1490867561
+old [annotation_1490693043:"Market research at ~\/prj\/Job\/IoT\/index.wiki" description:"Survey avail. solutions & providers" due:"1489766400" entry:"1489364109" modified:"1490693043" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+new [annotation_1490693043:"Market research at ~\/prj\/Job\/IoT\/index.wiki" description:"Survey at most 5 IoT problem-solution pairs" due:"1491062400" entry:"1489364109" modified:"1490867561" project:"Job.IoT" scheduled:"1489334400" start:"1489372846" status:"pending" tags:"Personal" uuid:"d5dc6057-4179-4a32-946d-d3277c25e6b8"]
+---
+time 1490924452
+old [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" entry:"1489988986" imask:"3" modified:"1490493186" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1490457600" start:"1490493186" status:"pending" tags:"Personal" until:"1490889600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4"]
+new [annotation_1488637463:"http:\/\/www.104.com.tw" annotation_1488780106:"Keywords: Black Belt" description:"Check new job postings weekly, Wave 1" due:"1490544000" end:"1490924452" entry:"1489988986" imask:"3" modified:"1490924452" parent:"f6d5d0ae-ffec-446f-ac37-99d6979c1007" project:"Job.JobBanks" recur:"weekly" scheduled:"1490457600" start:"1490493186" status:"deleted" tags:"Personal" until:"1490889600" uuid:"91715f75-43b0-4194-9ade-3b876f286ee4"]
+---
