@@ -7,9 +7,9 @@
   "default_minute": 0, 
   "highlight": true, 
   "journals": {
-    "default": "/Users/cpw/.env/.jrnl/default.txt",
+    "default": "/Users/cpw/prj/MacBookPro/.jrnl/default.txt",
     "goofy": {
-        "journal": "/Users/cpw/.env/.jrnl/goofy.txt",
+        "journal": "/Users/cpw/prj/MacBookPro/.jrnl/goofy.txt",
         "encrypt": true
     }
   }, 

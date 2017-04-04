@@ -1,6 +1,5 @@
 
 # Setting environment variables
-# export PS1="[\h:\033[1m\w\033[0m]$ "
 export PS1="[\h:\w]$ "
 export CLICOLOR="true"
 export LSCOLORS="gxfxcxdxbxegedabagaced"
@@ -123,9 +122,27 @@ function getBuf () {
 }
 
 function today () {
+    if [ -z $1 ]
+    then
+        verbose="-v"
+    else
+        verbose="$1"
+    fi
     datestring=$(date +'\033[31;107m%A, %B%e日, %Y年, %p%l:%M:%S\033[39;49m')
     echo -e "$datestring"
-    curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?2n | head -n 28
+    case "$verbose" in
+        "-vvv")
+            wttrConfig="3n"
+            ;;
+        "-vv")
+            wttrConfig="2n"
+            ;;
+        *)
+            wttrConfig="0"
+            ;;
+    esac
+    # curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?2n | head -n 28
+    curl -sH "Accept-Language: ${LANG%_*}" wttr.in/Taipei?"$wttrConfig" | head -n 28
     read -p "Press any key to continue..." -n 1
     echo ""
     echo -e "\033[31;107mMemorables:\033[39;49m"
@@ -150,8 +167,12 @@ function wiki () {
 }
 
 function journal () {
-    jrnl < ~/.env/.jrnl/template.txt
+    jrnl < ~/prj/MacBookPro/.jrnl/template.txt
     jrnl -1 --edit
+}
+
+function budget () {
+    lbudget "$@"
 }
 
 jMem

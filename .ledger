@@ -1,5 +1,5 @@
 
-ledger='~/prj/ledger/Chien-pinWang.ledger'
+ledger='~/prj/MacBookPro/ledger/Chien-pinWang.ledger'
 
 alias lBal="ledger -f $ledger -B balance ^Assets ^Liabilities"
 alias lNew="vi $ledger"
@@ -74,9 +74,9 @@ function lExp () {
     periodRange=$(getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" balance Expenses and not \(Expenses:Cash or ^Expenses:Budget\) --depth 2 -b "$periodB" -e "$periodE"
+    ledger -f "$ledger" balance -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) --depth 2 -b "$periodB" -e "$periodE"
     read -p "Press any key to continue..." -n 1
-    ledger -f "$ledger" register Expenses and not \(Expenses:Cash or ^Expenses:Budget\) -b "$periodB" -e "$periodE"
+    ledger -f "$ledger" register -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) -b "$periodB" -e "$periodE"
 }
 
 function lDebt () {
@@ -90,5 +90,10 @@ function lBudget () {                       # Budget always run mtd
     periodRange=$(getPeriodBeginEnd mtd)
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" balance ^Expenses:Budget -b "$periodB" -e "$periodE"
+    if [ -z $1 ]
+    then
+        ledger -f "$ledger" balance ^Budget:Expenses -b "$periodB" -e "$periodE"
+    else
+        ledger -f "$ledger" register Budget:Expenses:"$1" -b "$periodB" -e "$periodE"
+    fi
 }

@@ -11,7 +11,7 @@
 # Use the command 'task show' to see all defaults and overrides
 
 # Files
-data.location=~/.task
+data.location=~/prj/MacBookPro/.task
 
 # Color theme (uncomment one to use)
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/light-16.theme
@@ -28,7 +28,7 @@ data.location=~/.task
 include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-light-256.theme
 #include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/no-color.theme
-include ~/.task/holidays.zh-TW.rc
+include ~/prj/MacBookPro/.task/holidays.zh-TW.rc
 
 # dateformat=Y-m-d H:N:S
 dateformat.annotation=Y-m-d

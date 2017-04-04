@@ -21,7 +21,7 @@ map <C-n> :NERDTreeToggle<CR>
 " Most Recent Used File Listing 'MRU' Configurations
 let MRU_Max_Entries=1000
 let MRU_Exclude_Files='^jrnl*'
-nmap <leader>uc :8sp ~/.env/.jrnl/unicode.txt<CR>
+nmap <leader>uc :8sp ~/.env/prj/MacBookPro/.jrnl/unicode.txt<CR>
 
 " Ledger's vim Support 'vim-ledger' Configurations
 let g:ledger_detailed_first=1
