@@ -87,7 +87,7 @@ reverse_mouse 0
 use_mouse 0
 ignorecase_search 1
 wrap_search 1
-mark_all_pages 0
+mark_all_pages 1
 vi_prec_num 1
 emacs_like_lineedit 0
 mark 1
@@ -114,7 +114,7 @@ show_srch_str 1
 show_lnum 0
 fold_line 0
 pseudo_inlines 1
-display_image 1
+display_image 0
 view_unseenobject 1
 ignore_null_img_alt 1
 display_ins_del 1

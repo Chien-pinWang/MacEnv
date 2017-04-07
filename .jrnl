@@ -12,7 +12,7 @@ function j?() {
     while read line
     do
         echo -e "$line"
-    done < ~/.env/.jrnl/jHint.txt
+    done < ~/prj/MacBookPro/.jrnl/jHint.txt
 }
 
 function jSearch () {

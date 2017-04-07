@@ -46,6 +46,7 @@ alias phpweb="php -S 127.0.0.1:8080 &"
 alias w="w3m -B"
 alias notify="vi ~/bin/OSNotification.sh; crontab -e"
 alias g="$(which googler) -n 5 --lang zh-TW"
+alias cal="task calendar"
 # alias truecrypt="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text"
 # alias pwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --password=SY42567F4 --mount ~/Dropbox/TrueCryptVolume /Volumes/TrueCrypt"
 # alias xpwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --dismount /Volumes/TrueCrypt"
@@ -88,6 +89,7 @@ alias budget="lBudget"
 alias spent="lExp mtd"
 alias debt="lDebt"
 alias trx="lNew"
+alias unbudget="lUnbudgeted"
 alias bill="tBill"
 alias next="tActive"
 alias review="tReview"
@@ -122,27 +124,9 @@ function getBuf () {
 }
 
 function today () {
-    if [ -z $1 ]
-    then
-        verbose="-v"
-    else
-        verbose="$1"
-    fi
     datestring=$(date +'\033[31;107m%A, %B%e日, %Y年, %p%l:%M:%S\033[39;49m')
     echo -e "$datestring"
-    case "$verbose" in
-        "-vvv")
-            wttrConfig="3n"
-            ;;
-        "-vv")
-            wttrConfig="2n"
-            ;;
-        *)
-            wttrConfig="0"
-            ;;
-    esac
-    # curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?2n | head -n 28
-    curl -sH "Accept-Language: ${LANG%_*}" wttr.in/Taipei?"$wttrConfig" | head -n 28
+    curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?2n | head -n 28
     read -p "Press any key to continue..." -n 1
     echo ""
     echo -e "\033[31;107mMemorables:\033[39;49m"
@@ -173,6 +157,17 @@ function journal () {
 
 function budget () {
     lbudget "$@"
+}
+
+function text2voice () {
+    textfile="$1"
+    if [ -z $2 ]
+    then
+        voicefile=$textfile
+    else
+        voicefile="$2"
+    fi
+    say -f "$textfile".txt --file-format=mp4f -o "$voicefile".mp4
 }
 
 jMem

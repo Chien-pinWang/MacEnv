@@ -11,7 +11,7 @@ function t?() {
     while read line
         do
             echo -e "$line"
-        done < ~/.task/tHint.txt
+        done < ~/prj/MacBookPro/.task/tHint.txt
 }
 
 function tCheck() {                   #Complete task
