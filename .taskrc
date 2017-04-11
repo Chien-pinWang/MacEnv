@@ -32,6 +32,8 @@ include ~/prj/MacBookPro/.task/holidays.zh-TW.rc
 
 # dateformat=Y-m-d H:N:S
 dateformat.annotation=Y-m-d
+calendar.holidays=full
+
 uda.reviewed.type=date
 uda.reviewed.label=Reviewed
 report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
@@ -41,7 +43,21 @@ report._reviewed.filter=( reviewed.none: or reviewed.before:now-1week ) and ( +P
 report.ls.sort=urgency-
 alias.burndown=burndown.daily
 report.ls.columns=id,start.active,depends.indicator,project,tags,recur.indicator,wait.remaining,scheduled.countdown,due.relative,until.countdown,description
-report.list.sort=urgency-,start-,due+,project+
-report.list.columns=id,project,description.count,due.remaining,start.age,entry.age,depends.indicator,priority,tags,recur.indicator,scheduled.countdown,until.remaining,urgency
-report.list.labels=ID,Project,Description,Due,Active,Age,D,P,Tags,R,Sch,Until,Urg
-calendar.holidays=full
+
+# Custom Report: mylist
+report.mylist.filter=status:pending
+report.mylist.sort=urgency-,start-,due+,project+
+report.mylist.columns=id,project,description.count,due.remaining,start.age,entry.age,depends.indicator,priority,tags,recur.indicator,scheduled.countdown,until.remaining,urgency
+report.mylist.labels=ID,Project,Description,Due,Active,Age,D,P,Tags,R,Sch,Until,Urg
+
+# Custom Report: mynext
+report.mynext.filter=status:pending limit:page -ACTIVE
+report.mynext.sort=urgency-
+report.mynext.columns=id,project,description.count,due.remaining,start.age,entry.age,depends.indicator,priority,tags,recur.indicator,scheduled.countdown,until.remaining,urgency
+report.mynext.labels=ID,Project,Description,Due,Active,Age,D,P,Tags,R,Sch,Until,Urg
+
+# Custom Report: mybill
+report.mybill.filter=project:Finance -PARENT +MONTH -COMPLETE
+report.mybill.sort=due+
+report.mybill.columns=id,project,description.count,due.remaining,start.age,entry.age,depends.indicator,priority,tags,recur.indicator,scheduled.countdown,until.remaining,urgency
+report.mybill.labels=ID,Project,Description,Due,Active,Age,D,P,Tags,R,Sch,Until,Urg

@@ -1,10 +1,11 @@
 
-alias tActive='echo -e "\033[31;107mActive Tasks:\033[39;49m"; task +ACTIVE list'
-alias tReview='echo "TASKS SCHEDULED TODAY..."; task schedule.before:now -ACTIVE list'
-alias tToday='echo "TASKS DUE TODAY..."; task +TODAY list'
-alias tWeek='echo "TASKS DUE THIS WEEK..."; task +WEEK list'
-alias tOverdue='echo "TASKS OVERDUE..."; task +OVERDUE -TODAY list'
-alias tBill='echo "BILLS TO PAY THIS MONTH..."; task rc.report.all.sort:due+ project:Finance -PARENT +MONTH -COMPLETED all'
+alias tActive='echo -e "\033[31;107mActive Tasks:\033[39;49m"; task +ACTIVE mylist'
+alias tReview='echo -e "\033[31;107mTASKS SCHEDULED TODAY:\033[39;49m"; task schedule.before:now -ACTIVE mylist'
+alias tToday='echo "TASKS DUE TODAY..."; task +TODAY mylist'
+alias tWeek='echo "TASKS DUE THIS WEEK..."; task +WEEK mylist'
+alias tOverdue='echo "TASKS OVERDUE..."; task +OVERDUE -TODAY mylist'
+# alias tBill='echo "BILLS TO PAY THIS MONTH..."; task rc.report.all.sort:due+ project:Finance -PARENT +MONTH -COMPLETED all'
+alias tBill='echo "BILLS TO PAY THIS MONTH..."; task mybill'
 alias tSummary='task burndown; task ghistory; task projects'
 alias tJob='tDepends 89445668-6919-436e-b16f-1f3c897d7fd5'
 function t?() {
@@ -63,144 +64,193 @@ function tPush1() {                   #Push 1 Day
 }
 
 function tDepends () {
-# Check sufficiency of command line argument
-if [[ -z $1 ]]
-then
-    echo "Usage: tDepends <ID>."
-    return 0
-fi
-
-# Check if $1 is task ID or UUID
-taskID="$1"
-if [[ ${#taskID} -lt 5 ]]
-then
-    taskID=$(task _get "$taskID".uuid)
-    # echo "Debug Point 1"
-fi
-
-local level=0
-# $level is used to left-pad task description shoing proper indentaton
-# of sub-tasks. This is passed when program is invoked recurrsively.
-if [[ ! -z $2 ]]
-then
-    level="$2"
-else
-    # Called directly from command line. Show report header
-    level="0"
-    # Print report header
-    printf "\033[4m%3s\033[0m \033[4m%1s\033[0m \033[4m%-12s\033[0m \033[4m%-50s\033[0m \033[4m%10s\033[0m\n" "ID" "S" "Project" "Task Description" "Due"
-fi
-
-# Get task attributes from taskwarrior using the _get function
-taskTaskID=$(task _get "$taskID".id)
-taskProject=$(task _get "$taskID".project)
-taskDescription=$(task _get "$taskID".description)
-taskDepends=$(task _get "$taskID".depends)
-taskStatus=$(task _get "$taskID".status)
-taskBlocking=$(task _get "$taskID".tags.BLOCKING)
-taskDueYear=$(task _get "$taskID".due.year)
-taskDueMonth=$(task _get "$taskID".due.month)
-taskDueDay=$(task _get "$taskID".due.day)
-taskActive=$(task _get "$taskID".tags.ACTIVE)
-
-# Convert status to status indicator
-case $taskStatus in
-    "completed")
-        taskStatus="C"
-        ;;
-    "deleted")
-        taskStatus="D"
-        ;;
-    "pending")
-        taskStatus="P"
-        ;;
-    "recurring")
-        taskStatus="R"
-        ;;
-    "waiting")
-        taskStatus="W"
-        ;;
-esac
-
-# Pad task description based on the $level deep of the sub-task
-pads=""
-count=0
-if [[ $level -ge 1 ]]
-then
-    count=$((level*2))
-    # for i in $(seq 1 $count)
-    # for i in {1..$count}
-    for (( i=0; i<$count; i++ ))
-    do
-        pads=" $pads"
-    done
-fi
-
-# Red the task if it is actively being worked
-local red=""
-local unred=""
-if [[ "$taskActive" == "ACTIVE" ]]
-then
-    red="\033[31m"
-    unred="\033[0m"
-fi
-
-# Dim the task if it is completed
-local dim=""
-local undim=""
-if [[ "$taskStatus" == "C" ]]
-then
-    dim="\033[90m"
-    undim="\033[0m"
-fi
-
-# Gray out the task if it is deleted
-local gray=""
-local ungray=""
-if [[ "$taskStatus" == "D" ]]
-then
-    gray="\033[2;47m"
-    ungray="\033[0m"
-fi
-
-# Brighten the task if it is not blocking any other tasks (goal task)
-local bright=""
-local unbright=""
-if [[ "$taskBlocking" == "" ]]
-then
-    bright="\033[1m"
-    unbright="\033[0m"
-fi
-
-if [[ "$taskDueYear" != "1970" ]]
-then
-    taskDueDate="$taskDueYear-$taskDueMonth-$taskDueDay"
-else
-    taskDueDate=""
-fi
-
-# Print report content if task is not the recurring parent
-if [ "$taskStatus" != "R" ]
-then
-    printf "$red$gray$bright$dim%3s %1s %-12s %-50s %10s$unred$ungray$unbright$undim\n" "$taskTaskID" "$taskStatus" "$taskProject" "$pads$taskDescription" "$taskDueDate"
-
-    # If this task depends on other tasks...
-    if [[ ! -z $taskDepends ]]
+    # Check sufficiency of command line argument
+    if [[ -z $1 ]]
     then
-        # Breaks comma-delimmited list $taskDepends to array $UUIDs
-        # Set 'Internal Field Seperator (IFS)' to comma
-        IFS=','
-        read -r -a UUIDs <<< "$taskDepends"
-        level=$((level+1))
-        for UUID in "${UUIDs[@]}"
+        echo "Usage: tDepends <ID>."
+        return 0
+    fi
+
+    # Check if $1 is task ID or UUID
+    taskID="$1"
+    if [[ ${#taskID} -lt 5 ]]
+    then
+        taskID=$(task _get "$taskID".uuid)
+        # echo "Debug Point 1"
+    fi
+
+    local level=0
+    # $level is used to left-pad task description shoing proper indentaton
+    # of sub-tasks. This is passed when program is invoked recurrsively.
+    if [[ ! -z $2 ]]
+    then
+        level="$2"
+    else
+        # Called directly from command line. Show report header
+        level="0"
+        # Print report header
+        printf "\033[4m%3s\033[0m \033[4m%1s\033[0m \033[4m%-12s\033[0m \033[4m%-50s\033[0m \033[4m%10s\033[0m\n" "ID" "S" "Project" "Task Description" "Due"
+    fi
+
+    # Get task attributes from taskwarrior using the _get function
+    taskTaskID=$(task _get "$taskID".id)
+    taskProject=$(task _get "$taskID".project)
+    taskDescription=$(task _get "$taskID".description)
+    taskDepends=$(task _get "$taskID".depends)
+    taskStatus=$(task _get "$taskID".status)
+    taskBlocking=$(task _get "$taskID".tags.BLOCKING)
+    taskDueYear=$(task _get "$taskID".due.year)
+    taskDueMonth=$(task _get "$taskID".due.month)
+    taskDueDay=$(task _get "$taskID".due.day)
+    taskActive=$(task _get "$taskID".tags.ACTIVE)
+
+    # Convert status to status indicator
+    case $taskStatus in
+        "completed")
+            taskStatus="C"
+            ;;
+        "deleted")
+            taskStatus="D"
+            ;;
+        "pending")
+            taskStatus="P"
+            ;;
+        "recurring")
+            taskStatus="R"
+            ;;
+        "waiting")
+            taskStatus="W"
+            ;;
+    esac
+
+    # Pad task description based on the $level deep of the sub-task
+    pads=""
+    count=0
+    if [[ $level -ge 1 ]]
+    then
+        count=$((level*2))
+        # for i in $(seq 1 $count)
+        # for i in {1..$count}
+        for (( i=0; i<$count; i++ ))
         do
-            # Call self to go down one level deep
-            # ~/tmp/tDepends.sh "$UUID" "$level"
-            tDepends "$UUID" "$level"
+            pads=" $pads"
         done
     fi
-fi
 
-# If this task does not have dependencies, return 0 to the caller program
-return 0
+    # Red the task if it is actively being worked
+    local red=""
+    local unred=""
+    if [[ "$taskActive" == "ACTIVE" ]]
+    then
+        red="\033[31m"
+        unred="\033[0m"
+    fi
+
+    # Dim the task if it is completed
+    local dim=""
+    local undim=""
+    if [[ "$taskStatus" == "C" ]]
+    then
+        dim="\033[90m"
+        undim="\033[0m"
+    fi
+
+    # Gray out the task if it is deleted
+    local gray=""
+    local ungray=""
+    if [[ "$taskStatus" == "D" ]]
+    then
+        gray="\033[2;47m"
+        ungray="\033[0m"
+    fi
+
+    # Brighten the task if it is not blocking any other tasks (goal task)
+    local bright=""
+    local unbright=""
+    if [[ "$taskBlocking" == "" ]]
+    then
+        bright="\033[1m"
+        unbright="\033[0m"
+    fi
+
+    if [[ "$taskDueYear" != "1970" ]]
+    then
+        taskDueDate="$taskDueYear-$taskDueMonth-$taskDueDay"
+    else
+        taskDueDate=""
+    fi
+
+    # Fix lengthy taskDescription with ...
+    taskDescription="$pads$taskDescription"
+    tDlength=${#taskDescription}
+    if [ tDlength > 50 ]
+    then
+        taskDescription="${taskDescription:0:47}..."
+    fi
+
+    # Print report content if task is not the recurring parent
+    if [ "$taskStatus" != "R" ]
+    then
+        printf "$red$gray$bright$dim%3s %1s %-12s %-50s %10s$unred$ungray$unbright$undim\n" "$taskTaskID" "$taskStatus" "$taskProject" "$taskDescription" "$taskDueDate"
+
+        # If this task depends on other tasks...
+        if [[ ! -z $taskDepends ]]
+        then
+            # Breaks comma-delimmited list $taskDepends to array $UUIDs
+            # Set 'Internal Field Seperator (IFS)' to comma
+            IFS=','
+            read -r -a UUIDs <<< "$taskDepends"
+            level=$((level+1))
+            for UUID in "${UUIDs[@]}"
+            do
+                # Call self to go down one level deep
+                # ~/tmp/tDepends.sh "$UUID" "$level"
+                tDepends "$UUID" "$level"
+            done
+        fi
+    fi
+
+    # If this task does not have dependencies, return 0 to the caller program
+    return 0
+}
+
+function newtask () {
+    local taskname
+    local taskdue
+    local taskstart
+    local taskproject
+
+    task calendar
+
+    while [ -z $taskname ]
+    do
+        read -p "Task to complete*: " taskname
+    done
+    read -p "Task due (YYYY-MM-DD): " taskdue
+    read -p "Schedule to start (YYYY-MM-DD, or relative to due): " taskstart
+    read -p "Project of the task: " taskproject
+    read -p "Tag the task with +tag: " tasktags
+
+    if [ -z $taskproject ]
+    then
+        projectclause=""
+    else
+        projectclause="project:$taskproject"
+    fi
+
+    if [ -z $taskdue ]
+    then
+        dueclause=""
+    else
+        dueclause="due:$taskdue"
+    fi
+
+    if [ -z $taskstart ]
+    then
+        scheduleclause=""
+    else
+        scheduleclause="schedule:$taskstart"
+    fi
+
+    task add "$projectclause" "$tasktags" "$taskname" "$dueclause" "$scheduleclause"
 }
