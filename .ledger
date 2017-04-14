@@ -60,7 +60,7 @@ function lTSCB () {
     periodRange=$(getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" register Liabilities:Card:TSCB -b "$periodB" -e "$periodE"
+    ledger -f "$ledger" register "Liabilities:Card:TSCB Visa" -b "$periodB" -e "$periodE"
 }
 
 function lSaving () {

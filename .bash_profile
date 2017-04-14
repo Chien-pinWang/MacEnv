@@ -9,6 +9,7 @@ export PRJ=~/bin
 export R_HOME=$(R RHOME)
 export BC_ENV_ARGS="-l $HOME/.bcrc"
 export BROWSER=w3m
+export PHPRC=/usr/local/etc/php/7.1/php.ini
 
 # Source other settings
 source ~/.googler       # aliases for command line google search
@@ -129,6 +130,7 @@ function today () {
     datestring=$(date +'\033[31;107m%A, %B%e日, %Y年, %p%l:%M:%S\033[39;49m')
     echo -e "$datestring"
     ampm=$(date "+%p")
+    ampm="上午"
     if [ "$ampm" == "上午" ]
     then
         curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?1n | head -n 18

@@ -1,7 +1,8 @@
 
 " vim-plug Section, List of Installed Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+" Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
 Plug 'yegappan/mru'
 Plug 'itchyny/lightline.vim'
 Plug 'ledger/vim-ledger'
