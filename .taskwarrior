@@ -8,6 +8,22 @@ alias tOverdue='echo "TASKS OVERDUE..."; task +OVERDUE -TODAY mylist'
 alias tBill='echo "BILLS TO PAY THIS MONTH..."; task mybill'
 alias tSummary='task burndown; task ghistory; task projects'
 alias tJob='tDepends 89445668-6919-436e-b16f-1f3c897d7fd5'
+
+function _getTaskInfo () {
+    echo "Debug: $@"
+    arr=("$@")
+    for elem in "${arr[@]}"
+    do 
+        echo "Debug: $elem"
+    done
+    if [[ $arr[0] == *[^[:digit:]]* ]]
+    then
+        echo "First argument needs to be a number!"
+    else
+        echo "${arr[3]} ${arr[2]} ${arr[1]} ${arr[0]}"
+    fi
+}
+
 function t?() {
     while read line
         do
@@ -37,30 +53,37 @@ function tCheck() {                   #Complete task
     fi
 }
 
-function tPush1() {                   #Push 1 Day
+function tPush() {                   #Push 1 Day
     if [ -z "$1" ]
     then
-        echo "Usage: tDIT <ID> to push task <ID> to tomorrow"
+        echo "Usage: tPush <ID> <days> to push task <ID> to <days> days from today"
+        return 1
     else 
-        for tID in $@
-        do
-            echo "Push this task to tomorrow:"
-            taskDescription=$(task _get "$tID".description)
-            taskScheduled=$(task _get "$tID".scheduled)
-            echo "Task $taskDescription originally scheduled for $taskScheduled"
-            read -p "Is this correct (Y/n)? " -n 1 confirm
-            echo ""
-            if [ "$confirm" == "" ] || [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]
-            then
-                task "$tID" modify schedule:schedule+1d
-                taskScheduled=$(task _get "$tID".scheduled)
-                echo "Task $taskDescription now scheduled for $taskScheduled"
-            else
-                echo "Task <$taskDescription> is not affected."
-            fi
-        done
-        tReview
+        tID="$1"
     fi
+
+    if [ -z "$2" ]
+    then
+        pushDays=1
+    else
+        pushDays="$2"
+    fi
+
+    echo "Push this task to $pushDays from today:"
+    taskDescription=$(task _get "$tID".description)
+    taskScheduled=$(task _get "$tID".scheduled)
+    echo "Task $taskDescription originally scheduled for $taskScheduled"
+    read -p "Is this correct (Y/n)? " -n 1 confirm
+    echo ""
+    if [ "$confirm" == "" ] || [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]
+    then
+        task "$tID" modify schedule:today+"$pushDays"d
+        taskScheduled=$(task _get "$tID".scheduled)
+        echo "Task $taskDescription now scheduled for $taskScheduled"
+    else
+        echo "Task <$taskDescription> is not affected."
+    fi
+    review
 }
 
 function tDepends () {
@@ -253,4 +276,22 @@ function newtask () {
     fi
 
     task add "$projectclause" "$tasktags" "$taskname" "$dueclause" "$scheduleclause"
+}
+
+function tStart () {
+    if [ -z $1 ]
+    then
+        echo "Usage: tStart <taskID>"
+        exit 1
+    fi
+
+
+}
+
+function tHalt () {
+    if [ -z $1 ]
+    then
+        echo "Usage: tHalt <taskID>"
+        exit 1
+    fi
 }

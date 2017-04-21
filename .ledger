@@ -3,7 +3,7 @@ ledger='~/prj/MacBookPro/ledger/Chien-pinWang.ledger'
 
 alias lBal="ledger -f $ledger -B balance ^Assets ^Liabilities"
 alias lNew="vi $ledger"
-alias lCashBal="ledger -f $ledger balance -R 'SCSB Saving' Expenses:Cash"
+alias lCashBal="ledger -f $ledger balance -R 'SCSB Saving' Expenses:Cash -e $(date -v+1d +%Y-%m-%d)"
 
 function getPeriodBeginEnd() {
     period=$1
@@ -144,3 +144,9 @@ EOF
     rm ledgeroutput*.tmp
 }
 
+function lTag () {
+    periodRange=$(getPeriodBeginEnd "$1")
+    periodB=${periodRange:0:10}
+    periodE=${periodRange:11}
+    ledger -f "$ledger" register tag\("$2"\) -b "$periodB" -e "$periodE"
+}

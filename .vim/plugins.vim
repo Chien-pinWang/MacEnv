@@ -21,8 +21,14 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Most Recent Used File Listing 'MRU' Configurations
 let MRU_Max_Entries=1000
-let MRU_Exclude_Files='^jrnl*'
-nmap <leader>uc :8sp ~/.env/prj/MacBookPro/.jrnl/unicode.txt<CR>
+let MRU_Exclude_Files='jrnl*'
+nmap <leader>uc :8sp ~/prj/MacBookPro/.jrnl/unicode.txt<CR>
+
+" Status line lightline configurations
+" Available schemes: wombat, solarized, powerline, jellybeans, Tomorrow, Tomorrow_Night, Tomorrow_Night_Blue, Tomorrow_Night_Eighties, PowerColor, seoul256, landscape, one, Dracula, darcula, Molokai, 16color, default (=powerline)
+let g:lightline = {
+    \ 'colorscheme': 'seoul256',
+    \ }
 
 " Ledger's vim Support 'vim-ledger' Configurations
 let g:ledger_detailed_first=1
@@ -44,6 +50,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " Calendar app 'calendar.vim' configurations
 let g:calendar_first_day="sunday"
 let g:calendar_date_month_name=1
+let g:calendar_date_full_month_name=1
 let g:calendar_view='day'
 let g:calendar_views=['week', 'day', 'agenda', 'month', 'clock']
 let g:calendar_cyclic_view=1

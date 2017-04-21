@@ -47,8 +47,8 @@ report.ls.columns=id,start.active,depends.indicator,project,tags,recur.indicator
 # Custom Report: mylist
 report.mylist.filter=status:pending
 report.mylist.sort=urgency-,start-,due+,project+
-report.mylist.columns=id,project,description.count,due.remaining,start.age,entry.age,depends.indicator,priority,tags,recur.indicator,scheduled.countdown,until.remaining,urgency
-report.mylist.labels=ID,Project,Description,Due,Active,Age,D,P,Tags,R,Sch,Until,Urg
+report.mylist.columns=id,project,description.count,due.remaining,due,recur.indicator,scheduled.countdown,until.remaining,urgency
+report.mylist.labels=ID,Project,Description,Due,Due Date,R,Sch,Until,Urg
 
 # Custom Report: mynext
 report.mynext.filter=status:pending limit:page -ACTIVE
@@ -59,5 +59,5 @@ report.mynext.labels=ID,Project,Description,Due,Active,Age,D,P,Tags,R,Sch,Until,
 # Custom Report: mybill
 report.mybill.filter=project:Finance -PARENT +MONTH -COMPLETE
 report.mybill.sort=due+
-report.mybill.columns=id,project,description.count,due.remaining,start.age,entry.age,depends.indicator,priority,tags,recur.indicator,scheduled.countdown,until.remaining,urgency
-report.mybill.labels=ID,Project,Description,Due,Active,Age,D,P,Tags,R,Sch,Until,Urg
+report.mybill.columns=id,project,description.count,due.remaining,due,recur.indicator,scheduled.countdown,until.remaining,urgency
+report.mybill.labels=ID,Project,Description,Due,Due Date,R,Sch,Until,Urg

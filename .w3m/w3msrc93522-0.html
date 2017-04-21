@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-tw" lang="zh-tw">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta http-equiv="content-language" content="zh-tw" />
+      <meta name="robots" content="index,follow" />
+      <meta name="keywords" content="茫茫網海中的冷日, 發生過的事，不可能遺忘，只是想不起來而已！, 站長日誌, 資訊中心, 電子相簿, 檔案下載, 網站連結, 即時新聞, 招換冷日, 系統公佈欄, 系統上的公佈事項, 臭蟲回報, 灌水測試, 群魔亂舞, 測試專用版面, 聊天哈拉, 程設PARTY, 程式設計, 軟工藝術, 軟體工程, 網頁設計, 網頁設計程式, PHP特區, PHP討論區, 爪哇咖啡屋, Java程式討論區, DB研討會, 資料庫系統討論區, 屹立不倒的C, C語言討論區, Dot Net?, .Net討論區, 技術交流區, 小企鵝開談, Linux交流區, 微軟帝國, MS系統交流區, 一網情深, 各式網路技能交流區, 軟體應用, 各式軟體交流區, 硬體園地, 資訊硬體交流區, 忙裡偷閒, 一車一世界, 汽車討論與交流, MLEC, Mitsubishi Lancer Evolution Club, 數位影像, 數位攝影經驗與技巧分享, 生活速報, 食衣住行育樂報報, 瘋狂搞笑, 笑話集錦, 電玩攻略, 各式電動玩具秘笈攻略, 心情點滴, 心情記事共享區, 小說天地, CarLog, 關於車部落格, GameLog, 關於電動部落格, MindLog ,冷日胡言亂語, SystemLog ,站務（系統）公告, TechLog ,技術部落格, TourLog, 旅遊紀錄部落格, news, xoops, xoop, linux, community, forum, forums, board, boards, bbs, php, portal, mysql, web site, wordpress, blog, weblog, cms, content management" />
+      <meta name="description" content="茫茫網海中的冷日就是冷日在茫茫網海中想要替自己留下一點紀錄的地方, 因為發生過的事，不可能遺忘，只是想不起來而已！" />
+      <meta name="rating" content="general" />
+      <meta name="author" content="冷日" />
+      <meta name="copyright" content="Copyright © 2001-2008" />
+      <meta name="generator" content="XOOPS" />
+      <title>茫茫網海中的冷日 - [轉貼]Bash For Loop Array: Iterate Through Array Values</title>
+      <link href="http://www.coolsun.idv.tw/favicon.ico" rel="SHORTCUT ICON" />
+      <link rel="stylesheet" type="text/css" media="screen" href="http://www.coolsun.idv.tw/xoops.css" />
+      <link rel="stylesheet" type="text/css" media="screen" href="http://www.coolsun.idv.tw/themes/phpbbstyle/styleNN.css" />
+      <!-- RMV: added module header -->
+      <link rel="stylesheet" type="text/css" media="all" href="index.css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<script type="text/javascript" src="http://www.coolsun.idv.tw/include/xoops.js">
+</script>
+
+<script type="text/javascript">
+<!--
+
+//-->
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8708784-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+    </head>
+    <body>
+      <table border="0" cellpadding="0" cellspacing="0" id="maintable"  style="border-top: 1px solid #98aab1; border-left: 1px solid #98aab1; border-right: 1px solid #98aab1;">
+        <tr>
+          <td rowspan="2" valign="top" class="toppannel" style="border-top: 1px solid #ffffff; border-left: 1px solid #ffffff;">
+            <a href="http://www.coolsun.idv.tw/">
+			  <img src="/images/My_Logo/LogoForCoolsun_New_Small.jpg" alt="茫茫網海中的冷日" width="180" height="160" border="0" />			</a>		  </td>
+          <td width="100%" align="right" height="70" valign="top" class="toppannel" style="vertical-align: middle; border-right: 1px solid #ffffff; border-top: 1px solid #ffffff;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="80">&nbsp;</td>
+              <td width="80">&nbsp;</td>
+              <td width="80">&nbsp;</td>
+			  <td width="80">&nbsp;</td>
+              <td width="100">&nbsp;</td>
+              <td><div align="right">
+                <table border="0" align="right" cellpadding="0" cellspacing="0">
+                  <tr align="center" valign="bottom">
+                    <td>                      <div class="TableTop">
+                      <div valign="bottom" align="center"> <a href="/" target="_top"><span valign="bottom" align="center"> 返回首頁 </span> </a></div>
+                    </div></td>
+                    <td>                      <div class="TableTop">
+                      <div valign="bottom" align="center"> <a href="/modules/weblog/" target="_top"><span valign="bottom" align="center"> 站長日誌 </span> </a></div>
+                    </div></td>
+                    <td>                      <div class="TableTop">
+                      <div valign="bottom" align="center"> <a href="/modules/xhnewbb/" target="_top"><span valign="bottom" align="center"> 資訊中心 </span> </a></div>
+                    </div></td>
+                    <td>                      <div class="TableTop">
+                      <div valign="bottom" align="center"> <a href="/modules/xcgal/" target="_top"><span valign="bottom" align="center"> 電子相簿 </span> </a></div>
+                    </div></td>
+                    <td>                      <div class="TableTop">
+                      <div valign="bottom" align="center"> <a href="/modules/wfdownloads/" target="_top"><span valign="bottom" align="center"> 檔案下載 </span> </a></div>
+                    </div></td>
+                    <td>                      <div class="TableTop">
+                      <div valign="bottom" align="center"> <a href="/modules/mylinks/" target="_top"><span valign="bottom" align="center"> 網站連結 </span> </a></div>
+                    </div></td>
+                    <td>                      <div class="TableTop">
+                      <div valign="bottom" align="center"> <a href="/modules/xmline/" target="_top"><span valign="bottom" align="center"> 即時新聞 </span> </a></div>
+                    </div></td>
+                    <td>                      <div class="TableTop">
+                      <div valign="bottom" align="center"> <a href="/modules/contact/" target="_top"><span valign="bottom" align="center"> 招喚冷日 </span> </a></div>
+                    </div></td>
+                  </tr>
+                              </table>
+              </div></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="50" align="center" valign="top">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr align="left" valign="top">
+			    <td colspan="3">
+					<span class="maintitle">
+					茫茫網海中的冷日					</span><br />
+					<span class="slogan">
+					發生過的事，不可能遺忘，只是想不起來而已！					</span>				</td>
+		      </tr>
+			  <tr valign="bottom">
+				<td width="30%" align="center" valign="bottom">
+				  <form style="margin-top: 1px; margin-bottom: 0px" action="http://www.coolsun.idv.tw/search.php" method="post">
+					  <input type="text" name="query" size="20" />
+					  <input type="hidden" name="action" value="results" />
+					  <input name="submit" type="submit" class="gumb" value="全站檢索" />
+			    </form></td>
+				<td width="40%" align="center" valign="bottom">
+					 
+					&nbsp;恭喜您是本站第 674354 
+										位訪客!
+					&nbsp;<a href="http://www.coolsun.idv.tw/user.php">登入</a> &nbsp;|&nbsp;<a href="http://www.coolsun.idv.tw/register.php">註冊</a> 
+					 
+				</div></td>
+				<td width="30%" align="right" valign="bottom">
+				  <span id="clock">
+					<script language="JavaScript" type="text/javascript" src="http://www.coolsun.idv.tw/themes/phpbbstyle/images/clock.js"></script>
+			      </span>			    </td>
+			  </tr>
+			</table>
+		  </td>
+        </tr>
+      </table>
+      <table cellpadding="0" cellspacing="10" id="maintable" style=" border-left: 1px solid #98aab1; border-right: 1px solid #98aab1;">
+        <tr>
+                      <td id="leftcolumn">
+              <!-- Start left blocks loop -->
+                                      <table cellspacing="1" style=" border: 1px solid #98aab1;">
+          <tr>
+		   <td class="blockTitle" > 主選單</td>
+		  </tr>
+		  <tr>
+		   <td class="blockContent"><table cellspacing="0">
+  <tr>
+    <td id="mainmenu">
+      <a class="menuTop" href="http://www.coolsun.idv.tw/">首頁</a>
+      <!-- start module menu loop -->
+            <a class="menuMain" href="http://www.coolsun.idv.tw/modules/weblog/">站長日誌</a>
+                    <a class="menuMain" href="http://www.coolsun.idv.tw/modules/xhnewbb/">資訊中心</a>
+                    <a class="menuMain" href="http://www.coolsun.idv.tw/modules/xcgal/">電子相簿</a>
+                    <a class="menuMain" href="http://www.coolsun.idv.tw/modules/wfdownloads/">檔案下載</a>
+                    <a class="menuMain" href="http://www.coolsun.idv.tw/modules/mylinks/">網站連結</a>
+                    <a class="menuMain" href="http://www.coolsun.idv.tw/modules/xmline/">即時新聞</a>
+                    <a class="menuMain" href="http://www.coolsun.idv.tw/modules/contact/">招喚冷日</a>
+                    <!-- end module menu loop -->
+    </td>
+  </tr>
+</table></td>
+		  </tr>
+        </table>
+		<br />                                      <table cellspacing="1" style=" border: 1px solid #98aab1;">
+          <tr>
+		   <td class="blockTitle" > Google 自訂搜尋</td>
+		  </tr>
+		  <tr>
+		   <td class="blockContent"><!-- SiteSearch Google -->
+<DIV align="center">
+<form action="http://www.google.com.tw" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-6704319438248853:7437959895" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="12" />
+    <input type="submit" name="sa" value="搜尋" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com.tw/coop/cse/brand?form=cse-search-box&lang=zh-TW"></script>
+</DIV>
+<!-- SiteSearch Google -->
+<DIV align="center">
+<script type="text/javascript">
+<!--
+google_ad_client = "ca-pub-6704319438248853";
+/* 120x240, 已建立 2008/4/28 */
+google_ad_slot = "6290127977";
+google_ad_width = 120;
+google_ad_height = 240;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</DIV></td>
+		  </tr>
+        </table>
+		<br />                                      <table cellspacing="1" style=" border: 1px solid #98aab1;">
+          <tr>
+		   <td class="blockTitle" > Goole 廣告</td>
+		  </tr>
+		  <tr>
+		   <td class="blockContent"><div align="center">
+<script type="text/javascript">
+<!--
+google_ad_client = "ca-pub-6704319438248853";
+/* 120x90, 已建立 2008/4/28：文字連結版本 */
+google_ad_slot = "7539697552";
+google_ad_width = 120;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div></td>
+		  </tr>
+        </table>
+		<br />                                      <table cellspacing="1" style=" border: 1px solid #98aab1;">
+          <tr>
+		   <td class="blockTitle" > 隨機相片</td>
+		  </tr>
+		  <tr>
+		   <td class="blockContent"><table width="100%" cellspacing="1" align="center">
+      <tr>
+    <td align="center" style="padding: 10px;vertical-align: middle;">
+                <a href="http://www.coolsun.idv.tw/modules/xcgal/displayimage.php?pid=11265&amp;album=random&amp;pos=-11265&amp;cat=" target="_blank"><img src="http://www.coolsun.idv.tw/modules/xcgal/albums/20130727_FF22/20130727_FF22_Day1/thumb_IMG_0117.jpg" class="image" border="0" alt="IMG_0117.jpg" /></a> <br />
+                
+        </td>
+  </tr>
+    </table></td>
+		  </tr>
+        </table>
+		<br />                                      <table cellspacing="1" style=" border: 1px solid #98aab1;">
+          <tr>
+		   <td class="blockTitle" > 授權條款</td>
+		  </tr>
+		  <tr>
+		   <td class="blockContent"><DIV align="center"><TABLE border="0" width="98%" id="table1"><TR> <TD align="center"> <A target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/tw/"> <IMG alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.5/tw/88x31.png" /></A></TD></TR><TR> <TD align="left"><BR />本 <SPAN xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">著作</SPAN>由 <A target="_blank" xmlns:cc="http://creativecommons.org/ns#" href="http://www.coolsun.idv.tw/" property="cc:attributionName" rel="cc:attributionURL">冷日</A>製作，以 <A target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/">創用CC 姓名標示-非商業性-相同方式分享 3.0 台灣 授權條款</A>釋出。</TD></TR><TR> <TD align="center"> <A target="_top" href="http://www.coolsun.idv.tw/modules/weblog/details.php?blog_id=13"> 本站發文說明與規範</A></TD></TR></TABLE></DIV></td>
+		  </tr>
+        </table>
+		<br />                                      <table cellspacing="1" style=" border: 1px solid #98aab1;">
+          <tr>
+		   <td class="blockTitle" > 使用者登入</td>
+		  </tr>
+		  <tr>
+		   <td class="blockContent"><form style="margin-top: 0px;" action="http://www.coolsun.idv.tw/user.php" method="post">
+    使用者名稱: <br />
+    <input type="text" name="uname" size="12" value="" maxlength="25" /><br />
+    密碼: <br />
+    <input type="password" name="pass" size="12" maxlength="32" /><br />
+    <!-- <input type="checkbox" name="rememberme" value="On" class ="formButton" /><br /> //-->
+    <input type="hidden" name="xoops_redirect" value="/modules/xhnewbb/viewtopic.php?topic_id=1608" />
+    <input type="hidden" name="op" value="login" />
+    <input type="submit" value="使用者登入" /><br />
+    
+</form>
+<a href="http://www.coolsun.idv.tw/user.php#lost">忘了密碼?</a>
+<br /><br />
+<a href="http://www.coolsun.idv.tw/register.php">現在就註冊!</a></td>
+		  </tr>
+        </table>
+		<br />                            <!-- End left blocks loop -->
+			</td>
+                          <td id="centercolumn">
+                <!-- Display center blocks if any -->
+                                    <!-- End display center blocks -->
+                    <div id="content">
+                      <!-- start module contents -->
+<div class="xhnewbb">
+<h1>小企鵝開談&nbsp;:&nbsp;<a href="http://www.coolsun.idv.tw/modules/xhnewbb/viewtopic.php?topic_id=1608&amp;viewmode=flat">[轉貼]Bash For Loop Array: Iterate Through Array Values</a></h1>
+
+<div class="breadcrumbs"><a href='http://www.coolsun.idv.tw/modules/xhnewbb/index.php'>討論區主頁</a>&nbsp;-&nbsp;<a href="http://www.coolsun.idv.tw/modules/xhnewbb/viewallforum.php">主題一覽</a>&nbsp;&gt;&nbsp;<a href='http://www.coolsun.idv.tw/modules/xhnewbb/viewforum.php?forum=11'>小企鵝開談</a>&nbsp;&gt;&nbsp;<a href="http://www.coolsun.idv.tw/modules/xhnewbb/viewtopic.php?topic_id=1608&amp;viewmode=flat">[轉貼]Bash For Loop Array: Iterate Through Array Values</a></div>
+
+<ul class="post">
+	<li><a href="newtopic.php?forum=11">發表新主題</a></li>
+</ul>
+
+<!-- start topic thread -->
+
+<div class="topicviewctrl">
+	<div class="topicorderctrl">	<a href="http://www.coolsun.idv.tw/modules/xhnewbb/viewtopic.php?topic_id=1608&amp;viewmode=thread">討論串</a> | <a href="http://www.coolsun.idv.tw/modules/xhnewbb/viewtopic.php?topic_id=1608&amp;viewmode=flat&amp;order=DESC">最新的先</a></div>
+
+	<div class="topicctrl">
+				<a href="http://www.coolsun.idv.tw/modules/xhnewbb/viewtopic.php?topic_id=1607&amp;viewmode=flat&amp;order=ASC">前一個主題</a> |
+						<a href="http://www.coolsun.idv.tw/modules/xhnewbb/viewtopic.php?topic_id=1611&amp;viewmode=flat&amp;order=ASC">下一個主題</a> |
+				<a href="#threadbottom">頁尾</a>
+	</div>
+</div>
+
+<div class="hd"><a name="threadtop" id="threadtop">主題一覽的上方</a></div>
+
+<table class="outer">
+<thead>
+<tr>
+	<th class="poster">發表者</th>
+	<th>討論內容</th>
+</tr>
+</thead>
+<!-- start comment post -->
+<tr>
+	<td class="head"><a id="forumpost15206"></a> <a href="http://www.coolsun.idv.tw/userinfo.php?uid=1">冷日</a><BR />(冷日)</td>
+	<td class="head postdate">發表時間：2016/4/29 9:31</td>
+</tr>
+<tr>
+	<td class="odd posterinfo">
+	<dl>
+	<dt>Webmaster</dt>
+		<dd><img src="http://www.coolsun.idv.tw/uploads/rank3dbf8ee8681cd.gif" alt="" /></dd>
+	</dl>
+	<img class="comUserImg" src="http://www.coolsun.idv.tw/uploads/cavt47d5503298d70.jpg" alt="" />
+	<ul class="userstatus">
+		<li>註冊日: 2008/2/19</li>
+		<li>來自: </li>
+		<li>發表數: 15313</li>
+			</ul>
+	</td>
+
+	<td class="odd combody">
+	<dl>
+	<dt class="comTitle">[轉貼]Bash For Loop Array: Iterate Through Array Values</dt>
+		<dd class="comText">Bash For Loop Array: Iterate Through Array Values<br />by Vivek Gite on April 13, 2008 last updated October 27, 2009<br /><br />in BASH Shell, CentOS, Debian / Ubuntu, FreeBSD, Linux, RedHat and Friends, Suse, Ubuntu Linux, UNIX<br /><br />How do I use bash for loop to iterate thought array values under UNIX / Linux operating systems?<br /><br />The Bash provides one-dimensional array variables. Any variable may be used as an array; the declare builtin will explicitly declare an array. There is no maximum limit on the size of an array, nor any requirement that members be indexed or assigned contiguously. Arrays are indexed using integers and are zero-based.<br /><br />To declare an array in bash<br /><br />Declare and an array called array and assign three values:<br /><div class="xoopsCode"><code><pre>
+array=( one two three )
+</pre></code></div><br />More examples:<br /><div class="xoopsCode"><code><pre>
+files=( &quot;/etc/passwd&quot; &quot;/etc/group&quot; &quot;/etc/hosts&quot; )
+limits=( 10, 20, 26, 39, 48)
+</pre></code></div><br />To print an array use:<br /><div class="xoopsCode"><code><pre>
+printf &quot;%s\n&quot; &quot;${array[@]}&quot;
+printf &quot;%s\n&quot; &quot;${files[@]}&quot;
+printf &quot;%s\n&quot; &quot;${limits[@]}&quot;
+</pre></code></div><br />To Iterate Through Array Values<br /><br />Use for loop syntax as follows:<br /><div class="xoopsCode"><code><pre>
+for i in &quot;${arrayName[@]}&quot;
+do
+   :
+   # do whatever on $i
+done
+</pre></code></div><br />$i will hold each item in an array. Here is a sample working script:<br /><div class="xoopsCode"><code><pre>
+#!/bin/bash
+# declare an array called array and define 3 vales
+array=( one two three )
+for i in &quot;${array[@]}&quot;
+do
+	echo $i
+done
+</pre></code></div><br /><HR>原文出處：<a target="_blank" href="http://www.cyberciti.biz/faq/bash-for-loop-array/">Bash For Loop Array: Iterate Through Array Values</a></dd>
+	</dl>
+	</td>
+</tr>
+
+<tr>
+	<td class="even" colspan="2">
+	<div class="editctrl">
+
+	
+	
+		<a href='http://www.coolsun.idv.tw/modules/xhnewbb/reply.php?post_id=15206&amp;viewmode=flat&amp;order=ASC' class='reply'>回覆</a>
+		</div>
+
+	
+	</td>
+</tr>
+
+
+<!-- end comment post --><!-- start comment post -->
+<tr>
+	<td class="head"><a id="forumpost15207"></a> <a href="http://www.coolsun.idv.tw/userinfo.php?uid=1">冷日</a><BR />(冷日)</td>
+	<td class="head postdate">發表時間：2016/4/29 9:33</td>
+</tr>
+<tr>
+	<td class="odd posterinfo">
+	<dl>
+	<dt>Webmaster</dt>
+		<dd><img src="http://www.coolsun.idv.tw/uploads/rank3dbf8ee8681cd.gif" alt="" /></dd>
+	</dl>
+	<img class="comUserImg" src="http://www.coolsun.idv.tw/uploads/cavt47d5503298d70.jpg" alt="" />
+	<ul class="userstatus">
+		<li>註冊日: 2008/2/19</li>
+		<li>來自: </li>
+		<li>發表數: 15313</li>
+			</ul>
+	</td>
+
+	<td class="odd combody">
+	<dl>
+	<dt class="comTitle">[轉貼]Bash Shell Script Iterate Through Array Values</dt>
+		<dd class="comText">Bash Shell Script Iterate Through Array Values<br /><br />Posted August 30, 2004 by Quinn McHenry in Bourne shell scripting<br /><br />Having an array of variables is of no use unless you can use those values somehow. This tech-recipe shows a few methods for looping through the values of an array in the bash shell.<br /><br />Take, for example, the array definition below:<br /><div class="xoopsCode"><code><pre>
+names=( Jennifer Tonya Anna Sadie )
+</pre></code></div><br />The following expression evaluates into all values of the array:<br /><div class="xoopsCode"><code><pre>
+${names[@]}
+</pre></code></div><br />It also can be used anywhere a variable or string can be used.<br /><br />A simple for loop can iterate through this array one value at a time:<br /><div class="xoopsCode"><code><pre>
+for name in ${names[@]} do
+echo $name
+# other stuff on $name
+done
+</pre></code></div><br />This script will loop through the array values and print them out, one per line. Additional statements can be placed within the loop body to take further action, such as modifying each file in an array of filenames.<br /><br />Sometimes it is useful to loop through an array and know the numeric index of the array you are using (for example, so that you can reference another array with the same index). The same loop in the example above can be achieved this way, too:<br /><div class="xoopsCode"><code><pre>
+for (( i = 0 ; i &lt; ${#names[@]} ; i++ )) do echo ${names[$i]} # yadda yadda done
+</pre></code></div><br />In this example, the value ${#names[@]} evaluates into the number of elements in the array (4 in this case). The individual elements of the array are accessed, one at a time, using the index integer $i as ${names[$i]}<br /><HR>原文出處：<a target="_blank" href="http://www.tech-recipes.com/rx/636/bash-shell-script-iterate-through-array-values/">Bash Shell Script Iterate Through Array Values</a></dd>
+	</dl>
+	</td>
+</tr>
+
+<tr>
+	<td class="even" colspan="2">
+	<div class="editctrl">
+
+	
+	
+		<a href='http://www.coolsun.idv.tw/modules/xhnewbb/reply.php?post_id=15207&amp;viewmode=flat&amp;order=ASC' class='reply'>回覆</a>
+		</div>
+
+	
+	</td>
+</tr>
+
+
+<!-- end comment post --></table>
+
+<div class="hd"><a name="threadbottom" id="threadbottom">主題一覽的下方</a></div>
+
+<div class="topicviewctrl">
+	<div class="topicorderctrl">
+		<a href="http://www.coolsun.idv.tw/modules/xhnewbb/viewtopic.php?topic_id=1608&amp;viewmode=thread">討論串</a>
+	</div>
+	<div class="topicctrl">
+				<a href="http://www.coolsun.idv.tw/modules/xhnewbb/viewtopic.php?topic_id=1607&amp;viewmode=flat&amp;order=ASC">前一個主題</a> |
+						<a href="http://www.coolsun.idv.tw/modules/xhnewbb/viewtopic.php?topic_id=1611&amp;viewmode=flat&amp;order=ASC">下一個主題</a> |
+				<a href="#threadtop">頁首</a>
+
+	 | <a target="_blank" href="http://zh-tw.facebook.com/sharer/sharer.php?u=http://www.coolsun.idv.tw/modules/xhnewbb/viewtopic.php?topic_id=1608&amp;post_id=15207&amp;viewmode=flat&amp;order=ASC">
+	<img src="images/facebook_35.jpg" border="0" /></a> | 
+	<script src="http://connect.facebook.net/zh_TW/all.js#appId=223688184322037&amp;xfbml=1"></script>
+	<fb:like href="http://www.coolsun.idv.tw/modules/xhnewbb/viewtopic.php?topic_id=1608&amp;post_id=15207&amp;viewmode=flat&amp;order=ASC" send="true" width="35" show_faces="true" font=""></fb:like>
+ 	|
+	<!-- Place this tag where you want the +1 button to render. -->
+	<div class="g-plusone" data-annotation="inline" data-width="300"></div>
+	<!-- Place this tag after the last +1 button tag. -->
+	<script type="text/javascript">
+  		window.___gcfg = {lang: 'zh-TW'};
+
+  		(function() {
+    			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    			po.src = 'https://apis.google.com/js/plusone.js';
+    			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  		})();
+	</script>
+
+	</div>
+</div>
+
+<hr class="threadview" />
+<!-- end topic thread -->
+
+<div class="outer even footctrl">
+	<div class="bbsjumpctrl"><form action="viewforum.php" method="get">
+	<select name="forum">
+	<option value="-1">________________</option><option value="-1">系統管理區</option><option value='1'>&nbsp;&nbsp;- 臭蟲回報</option>
+<option value='23'>&nbsp;&nbsp;- 系統公佈欄</option>
+<option value="-1">________________</option><option value="-1">灌水測試區</option><option value='2'>&nbsp;&nbsp;- 群魔亂舞</option>
+<option value='3'>&nbsp;&nbsp;- 聊天哈拉</option>
+<option value="-1">________________</option><option value="-1">程設PARTY</option><option value='4'>&nbsp;&nbsp;- 網頁設計</option>
+<option value='5'>&nbsp;&nbsp;- 爪哇咖啡屋</option>
+<option value='6'>&nbsp;&nbsp;- 屹立不倒的C</option>
+<option value='7'>&nbsp;&nbsp;- PHP特區</option>
+<option value='8'>&nbsp;&nbsp;- DB研討會</option>
+<option value='9'>&nbsp;&nbsp;- Dot Net?</option>
+<option value='10'>&nbsp;&nbsp;- 軟工藝術</option>
+<option value='25'>&nbsp;&nbsp;- Game Play Maker</option>
+<option value="-1">________________</option><option value="-1">技術交流區</option><option value='11' selected="selected">&nbsp;&nbsp;- 小企鵝開談</option>
+<option value='12'>&nbsp;&nbsp;- 微軟帝國</option>
+<option value='13'>&nbsp;&nbsp;- 一網情深</option>
+<option value='14'>&nbsp;&nbsp;- 軟體應用</option>
+<option value='15'>&nbsp;&nbsp;- 硬體園地</option>
+<option value="-1">________________</option><option value="-1">忙裡偷閒</option><option value='16'>&nbsp;&nbsp;- 一車一世界</option>
+<option value='17'>&nbsp;&nbsp;- MLEC</option>
+<option value='18'>&nbsp;&nbsp;- 數位影像</option>
+<option value='19'>&nbsp;&nbsp;- 生活速報</option>
+<option value='20'>&nbsp;&nbsp;- 心情點滴</option>
+<option value='21'>&nbsp;&nbsp;- 小說天地</option>
+<option value='22'>&nbsp;&nbsp;- 瘋狂搞笑</option>
+<option value='24'>&nbsp;&nbsp;- 宅字這條路</option>
+</select>
+<input type="submit" class="formButton" value="送出" />
+</form></div>
+	<ul class="footpost">
+		<li><a href="newtopic.php?forum=11">發表新主題</a></li>
+	</ul>
+	</div>
+
+<hr class="notification" />
+</div>
+<!-- end module contents -->﻿﻿
+                    </div></td>
+                      </tr>
+      </table></td>
+      </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" id="maintable"  style="border-bottom: 1px solid #98aab1; border-left: 1px solid #98aab1; border-right: 1px solid #98aab1;">
+        <tr valign="bottom">
+          <td height="40" class="bottompannel" style="border-bottom: 1px solid #ffffff; border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">
+			<table width="100%" border="0" cellpadding="3" cellspacing="1">
+			  <tr>
+				<td class="row1" align="center">
+				  |&nbsp;<span class="gensmall">Powered by XOOPS 2.0 © 2001-2008 <a href="http://xoops.sourceforge.net/" target="_blank">The XOOPS Project</a>|</span>
+				</td>
+			  </tr>
+			</table>
+          </td>
+        </tr>
+    </table>
+    </body>
+</html>
+<script type="text/Javascript">
+<!--
+	istat = new Image(1,1);
+	istat.src = "http://www.coolsun.idv.tw/modules/istats/include/counter.php?sw="+screen.width+"&sc="+screen.colorDepth+"&refer="+escape(document.referrer)+"&page="+location.href;
+//-->
+</script>

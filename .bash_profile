@@ -47,8 +47,11 @@ alias tree="tree -d | more"
 alias phpweb="php -S 127.0.0.1:8080 &"
 alias w="w3m -B"
 alias notify="vi ~/bin/OSNotification.sh; crontab -e"
-alias g="$(which googler) -n 5 --lang zh-TW"
+alias g="$(which googler) -n 5 --lang zh-TW -t y1"
 alias cal="task calendar"
+alias _cloudmap="curl http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-$(date -v-30M +%Y-%m-%d-%H-00).jpg > ~/tmp/cloudmap.jpg; open -W ~/tmp/cloudmap.jpg; rm ~/tmp/cloudmap.jpg"
+alias _rainmap="curl http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_$(date -v-30M +%Y%m%d%H00).png > ~/tmp/rainmap.png; open -W ~/tmp/rainmap.png; rm ~/tmp/rainmap.png"
+alias weather='curl -sH "Accept-Language: zh" wttr.in/Taipei?2n | head -n 28'
 # alias truecrypt="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text"
 # alias pwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --password=SY42567F4 --mount ~/Dropbox/TrueCryptVolume /Volumes/TrueCrypt"
 # alias xpwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --dismount /Volumes/TrueCrypt"
@@ -93,12 +96,13 @@ alias debt="lDebt"
 alias trx="lNew"
 alias unbudget="lUnbudgeted"
 alias bill="tBill"
-alias current="tActive"
+alias tasks="tActive"
 alias next="task mynext"
 alias review="tReview"
 alias due="tWeek"
 alias overdue="tOverdue"
 alias checkoff="tCheck"
+alias pushback="tPush"
 alias mail="mutt"
 
 # Bash function helpers
@@ -130,12 +134,14 @@ function today () {
     datestring=$(date +'\033[31;107m%A, %B%e日, %Y年, %p%l:%M:%S\033[39;49m')
     echo -e "$datestring"
     ampm=$(date "+%p")
-    ampm="上午"
     if [ "$ampm" == "上午" ]
     then
         curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?1n | head -n 18
         echo -e "\033[31;107mCash Balance:\033[39;49m"
-        ledger -f $ledger balance -R Expenses:Cash
+        ledger -f $ledger balance -R Expenses:Cash -e $(date -v+1d "+%Y-%m-%d")
+        echo ""
+        echo -e "\033[31;107mUS Stocks:\033[39;49m"
+        stock us
         echo ""
         review
     else
@@ -148,7 +154,10 @@ function today () {
         echo -e "\033[31;107mSpent Today:\033[39;49m"
         ledger -f $ledger register -b today -e tomorrow -R ^Expenses and not Expenses:Cash
         echo ""
-        current
+        echo -e "\033[31;107mTaiwan Stocks:\033[39;49m"
+        stock tw
+        echo ""
+        tasks
     fi
 }
 
@@ -179,6 +188,74 @@ function text2voice () {
         voicefile="$2"
     fi
     say -f "$textfile".txt --file-format=mp4f -o "$voicefile".mp4
+}
+
+# Get stock quotes from Yahoo! Finance
+function stock () {
+    market="$1"
+    case "$market" in
+    "tw")
+        stocks="^twii,5434.tw,2330.tw"
+        ;;
+    "us")
+        stocks="^dji,^ixic,aapl,goog,fb,amzn,msft,cr"
+        ;;
+    "index")
+        stocks="^dji,^ixic,^twii,^bsesn"
+        ;;
+    "commod")
+        stocks=""
+        ;;
+    *)
+        stocks="^dji,^ixic,^twii,^bse"
+        ;;
+    esac
+
+    url="http://download.finance.yahoo.com/d/quotes.csv?s=$stocks&f=nl1c1p2x"
+    quotes=$(curl -s "${url}")
+
+    # echo "$quotes"
+
+    OLDIFS="$IFS"
+    IFS=$'\n'
+
+    read -r -a quotesA <<< "$quotes"
+    i=0
+    for quote in "${quotesA[@]}"
+    do
+        echo "Debug$i: $quote"
+        i=$i+1
+        # IFS=","
+        # read -r -a elements <<< "$quote"
+        # company="${elements[0]}"
+        # price="${elements[1]}"
+        # price_change="${elements[2]}"
+        # price_change_percent="${elements[3]}"
+        # market="${elements[4]}"
+        # printf "%30s %8s %8s %8s\n" "$company" "$price" "$price_change" "$price_change_percent"
+        # IFS=$'\n'
+    done
+
+    IFS="$OLDIFS"
+
+}
+
+function cloudmap () {
+
+mapTime=$(date -v-30M "+%Y-%m-%d-%H-00")
+curl http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$mapTime".jpg > ~/tmp/cloudmap.jpg
+open -W ~/tmp/cloudmap.jpg 
+rm ~/tmp/cloudmap.jpg
+
+}
+
+function rainmap () {
+
+mapTime=$(date -v-30M "+%Y%m%d%H00")
+curl http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$mapTime".png > ~/tmp/rainmap.png
+open -W ~/tmp/rainmap.png
+rm ~/tmp/rainmap.png
+
 }
 
 jMem
