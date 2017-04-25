@@ -5,7 +5,7 @@ alias lBal="ledger -f $ledger -B balance ^Assets ^Liabilities"
 alias lNew="vi $ledger"
 alias lCashBal="ledger -f $ledger balance -R 'SCSB Saving' Expenses:Cash -e $(date -v+1d +%Y-%m-%d)"
 
-function getPeriodBeginEnd() {
+function _getPeriodBeginEnd() {
     period=$1
     case $period in
     "week")             # Last 7 days
@@ -38,40 +38,43 @@ function getPeriodBeginEnd() {
         ;;
     esac
 
+    # echo "-b $periodBegin -e $periodEnd"
     echo "$periodBegin $periodEnd"
 }
 
 function lCash () {
-    periodRange=$(getPeriodBeginEnd "$1")
-    # echo "Debug: $periodRange"
+    periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
     ledger -f "$ledger" register Expenses:Cash -b "$periodB" -e "$periodE" -R
+    # ledger -f "$ledger" register Expenses:Cash "$periodRange" -R
 }
 
 function lSCSB () {
-    periodRange=$(getPeriodBeginEnd "$1")
+    periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" register Liabilities:Card:SCSB -b "$periodB" -e "$periodE"
+    # ledger -f "$ledger" register Liabilities:Card:SCSB -b "$periodB" -e "$periodE"
+    ledger -f "$ledger" register Liabilities:Card:SCSB -U
 }
 
 function lTSCB () {
-    periodRange=$(getPeriodBeginEnd "$1")
+    periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" register "Liabilities:Card:TSCB Visa" -b "$periodB" -e "$periodE"
+    # ledger -f "$ledger" register "Liabilities:Card:TSCB Visa" -b "$periodB" -e "$periodE"
+    ledger -f "$ledger" register "Liabilities:Card:TSCB Visa" -U
 }
 
 function lSaving () {
-    periodRange=$(getPeriodBeginEnd "$1")
+    periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
     ledger -f "$ledger" register "SCSB Saving" -b "$periodB" -e "$periodE"
 }
 
 function lExp () {
-    periodRange=$(getPeriodBeginEnd "$1")
+    periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
     ledger -f "$ledger" balance -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) --depth 2 -b "$periodB" -e "$periodE"
@@ -80,19 +83,25 @@ function lExp () {
 }
 
 function lDebt () {
-    periodRange=$(getPeriodBeginEnd "$1")
+    periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
     ledger -f "$ledger" balance ^Liabilities -b 2017/03/01 -e "$periodE"
 }
 
-function lBudget () {                       # Budget always run mtd
-    periodRange=$(getPeriodBeginEnd mtd)
+function lBudget () {                       # Budget always run current mtd
+    periodRange=$(_getPeriodBeginEnd mtd)
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
+
+    OLDLANG=$LANG
+    LANG="en_US.UTF-8"
+    monthname=$(date +"%B")
+    LANG=$OLDLANG
+
     if [ -z $1 ]
     then
-        ledger -f "$ledger" register "expr" "payee =~ /April Expense Budget/" --no-pager
+        ledger -f "$ledger" register "expr" "payee =~ /$monthname Expense Budget/" --no-pager
         ledger -f "$ledger" balance ^Budget:Expenses -b "$periodB" -e "$periodE"
     else
         ledger -f "$ledger" register Budget:Expenses:"$1" -b "$periodB" -e "$periodE"
@@ -100,7 +109,7 @@ function lBudget () {                       # Budget always run mtd
 }
 
 function lUnbudgeted () {
-    periodRange=$(getPeriodBeginEnd mtd)
+    periodRange=$(_getPeriodBeginEnd mtd)
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
     ledger -f "$ledger" register tag\(unbudgeted\) -b "$periodB" -e "$periodE"
@@ -121,7 +130,7 @@ function dailyplot () {
         LEDGER_TERM="x11 size 640,360 persist"
     fi
 
-    periodRange=$(getPeriodBeginEnd mtd)
+    periodRange=$(_getPeriodBeginEnd mtd)
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
 
@@ -145,7 +154,7 @@ EOF
 }
 
 function lTag () {
-    periodRange=$(getPeriodBeginEnd "$1")
+    periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
     ledger -f "$ledger" register tag\("$2"\) -b "$periodB" -e "$periodE"

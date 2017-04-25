@@ -51,7 +51,7 @@ alias g="$(which googler) -n 5 --lang zh-TW -t y1"
 alias cal="task calendar"
 alias _cloudmap="curl http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-$(date -v-30M +%Y-%m-%d-%H-00).jpg > ~/tmp/cloudmap.jpg; open -W ~/tmp/cloudmap.jpg; rm ~/tmp/cloudmap.jpg"
 alias _rainmap="curl http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_$(date -v-30M +%Y%m%d%H00).png > ~/tmp/rainmap.png; open -W ~/tmp/rainmap.png; rm ~/tmp/rainmap.png"
-alias weather='curl -sH "Accept-Language: zh" wttr.in/Taipei?2n | head -n 28'
+alias weather='curl -sH "Accept-Language: zh" wttr.in/Taipei?2n | head -n 28; w3m -dump -no-cookie http://cwb.gov.tw/V7/observe/24real/Data/46692.htm | head -n 10'
 # alias truecrypt="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text"
 # alias pwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --password=SY42567F4 --mount ~/Dropbox/TrueCryptVolume /Volumes/TrueCrypt"
 # alias xpwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --dismount /Volumes/TrueCrypt"
@@ -191,70 +191,98 @@ function text2voice () {
 }
 
 # Get stock quotes from Yahoo! Finance
+# API specs reference to: http://www.jarloo.com/yahoo_finance/
+# csvfix is called to handle csv file. 
+#     http://csvfix.byethost5.com/csvfix15/csvfix.html?i=1
 function stock () {
+
+    # Dow Jones Index (^dji) and SENSEX (^bsesn) currently return N/A
     market="$1"
     case "$market" in
     "tw")
-        stocks="^twii,5434.tw,2330.tw"
+        stocks="^twii,5434.tw,2330.tw,3008.tw"
         ;;
     "us")
-        stocks="^dji,^ixic,aapl,goog,fb,amzn,msft,cr"
+        stocks="^ixic,aapl,goog,fb,amzn,msft,cr"
         ;;
     "index")
-        stocks="^dji,^ixic,^twii,^bsesn"
+        stocks="^ixic,^vix,^twii"
         ;;
     "commod")
-        stocks=""
+        stocks="^hui,gc=f,cl=f"
+        ;;
+    "currency")
+        stocks="usdtwd=x,usdcny=x,usdjpy=x,usdeur=x"
         ;;
     *)
-        stocks="^dji,^ixic,^twii,^bse"
+        stocks="^ixic,^vix,^twii,aapl,goog,fb,usdtwd=x"
         ;;
     esac
 
-    url="http://download.finance.yahoo.com/d/quotes.csv?s=$stocks&f=nl1c1p2x"
-    quotes=$(curl -s "${url}")
+    url="http://download.finance.yahoo.com/d/quotes.csv?s=$stocks&f=nl1c1p2xm3m4"
+    curl -s "${url}" > ~/tmp/stockquote.txt
 
-    # echo "$quotes"
-
-    OLDIFS="$IFS"
-    IFS=$'\n'
-
-    read -r -a quotesA <<< "$quotes"
-    i=0
-    for quote in "${quotesA[@]}"
-    do
-        echo "Debug$i: $quote"
-        i=$i+1
-        # IFS=","
-        # read -r -a elements <<< "$quote"
-        # company="${elements[0]}"
-        # price="${elements[1]}"
-        # price_change="${elements[2]}"
-        # price_change_percent="${elements[3]}"
-        # market="${elements[4]}"
-        # printf "%30s %8s %8s %8s\n" "$company" "$price" "$price_change" "$price_change_percent"
-        # IFS=$'\n'
-    done
-
-    IFS="$OLDIFS"
+    echo "                         Quote    Price    Delta  Delta %    50 MA   200 MA"
+    echo "============================== ======== ======== ======== ======== ========"
+    csvfix printf -fmt "%30s %8s %8s %8s %8s %8s" -f 1,2,3,4,6,7 ~/tmp/stockquote.txt
+    
+    rm ~/tmp/stockquote.txt
 
 }
 
 function cloudmap () {
 
-mapTime=$(date -v-30M "+%Y-%m-%d-%H-00")
-curl http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$mapTime".jpg > ~/tmp/cloudmap.jpg
-open -W ~/tmp/cloudmap.jpg 
-rm ~/tmp/cloudmap.jpg
+mapTime=$(date -v-30M "+%Y-%m-%d-%H-")
+goodTime=""
+
+for min in 00 10 20 30 40 50
+do
+    checkMapTime="$mapTime$min"
+    header=$(curl -sI http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$checkMapTime".jpg)
+    if [ ${header:9:3} == "200" ]
+    then
+        goodTime=$checkMapTime
+    else
+        break
+    fi
+done
+
+if [ -z $goodTime ]
+then
+    echo "The sattlelite image for cloudmap is not available!"
+else
+    curl -s http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$goodTime".jpg > ~/tmp/cloudmap.jpg
+    open -W ~/tmp/cloudmap.jpg 
+    rm ~/tmp/cloudmap.jpg
+fi
 
 }
 
 function rainmap () {
 
-mapTime=$(date -v-30M "+%Y%m%d%H00")
-curl http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$mapTime".png > ~/tmp/rainmap.png
-open -W ~/tmp/rainmap.png
-rm ~/tmp/rainmap.png
+mapTime=$(date -v-30M "+%Y%m%d%H")
+goodTime=""
+
+for min in 00 10 20 30 40 50
+do
+    checkMapTime="$mapTime$min"
+    header=$(curl -sI http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$checkMapTime".png)
+    if [ ${header:9:3} == "200" ]
+    then
+        goodTime=$checkMapTime
+    else
+        break
+    fi
+done
+
+if [ -z $goodTime ]
+then
+    echo "The sattlelite image for rainmap is not available!"
+else
+    curl -s http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$goodTime".png > ~/tmp/rainmap.png
+    open -W ~/tmp/rainmap.png
+    rm ~/tmp/rainmap.png
+fi
 
 }
 

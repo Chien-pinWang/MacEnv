@@ -41,6 +41,7 @@ let g:ledger_commodity_before = 1
 let g:ledger_commodity_sep = ' '
 let g:ledger_winpos = 'B'
 map <C-a> :LedgerAlign<CR>
+" map <C-s> :call ledger#transaction_state_toggle(line('.'), ' *?!')
 
 " Snippet Engine 'ultisnips' Configurations
 let g:UltiSnipsExpandTrigger="<tab>"
