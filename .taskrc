@@ -61,3 +61,10 @@ report.mybill.filter=project:Finance -PARENT +MONTH -COMPLETE
 report.mybill.sort=due+
 report.mybill.columns=id,project,description.count,due.remaining,due,recur.indicator,scheduled.countdown,until.remaining,urgency
 report.mybill.labels=ID,Project,Description,Due,Due Date,R,Sch,Until,Urg
+
+# Custom Report: weekload
+report.weekload.filter=scheduled.before:today+7d scheduled.after:yesterday -PARENT -COMPLETE
+report.weekload.sort=scheduled+,due+,urgency-
+report.weekload.columns=id,scheduled,due,description.count,project,urgency
+report.weekload.labels=ID,Scheduled,Due Date,Description,Project,Urg
+

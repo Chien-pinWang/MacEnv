@@ -8,6 +8,7 @@
   "highlight": true, 
   "journals": {
     "default": "/Users/cpw/prj/MacBookPro/.jrnl/default.txt",
+    "blockchain": "/Users/cpw/prj/blockchain/blockchain.txt",
     "goofy": {
         "journal": "/Users/cpw/prj/MacBookPro/.jrnl/goofy.txt",
         "encrypt": true

@@ -16,7 +16,7 @@ source ~/.googler       # aliases for command line google search
 source ~/.taskwarrior   # aliases for task routines
 source ~/.jrnl          # aliases for jrnl routines
 source ~/.gitalias      # aliases for git routines
-source ~/.ledger        # aliases for ledger routines
+source ~/.ledger.sh     # aliases for ledger routines
 
 # Aliases to execute commands
 alias agrep="alias | grep "
@@ -48,6 +48,8 @@ alias phpweb="php -S 127.0.0.1:8080 &"
 alias w="w3m -B"
 alias notify="vi ~/bin/OSNotification.sh; crontab -e"
 alias g="$(which googler) -n 5 --lang zh-TW -t y1"
+# alias blockchain="$(which googler) -n 5 -N blockchain"
+alias blockchain="vi ~/prj/blockchain/blockchain.txt +:tabedit +':W3m https://www.google.com.tw/search?q=blockchain&tbm=nws'"
 alias cal="task calendar"
 alias _cloudmap="curl http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-$(date -v-30M +%Y-%m-%d-%H-00).jpg > ~/tmp/cloudmap.jpg; open -W ~/tmp/cloudmap.jpg; rm ~/tmp/cloudmap.jpg"
 alias _rainmap="curl http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_$(date -v-30M +%Y%m%d%H00).png > ~/tmp/rainmap.png; open -W ~/tmp/rainmap.png; rm ~/tmp/rainmap.png"
@@ -98,6 +100,8 @@ alias unbudget="lUnbudgeted"
 alias bill="tBill"
 alias tasks="tActive"
 alias next="task mynext"
+alias later="task schedule.after:today+1y mylist"
+alias weekload="task weekload"
 alias review="tReview"
 alias due="tWeek"
 alias overdue="tOverdue"
@@ -138,7 +142,7 @@ function today () {
     then
         curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?1n | head -n 18
         echo -e "\033[31;107mCash Balance:\033[39;49m"
-        ledger -f $ledger balance -R Expenses:Cash -e $(date -v+1d "+%Y-%m-%d")
+        ledger -f $LEDGER balance -R Expenses:Cash -e $(date -v+1d "+%Y-%m-%d")
         echo ""
         echo -e "\033[31;107mUS Stocks:\033[39;49m"
         stock us
@@ -152,7 +156,7 @@ function today () {
         jToday --short
         echo ""
         echo -e "\033[31;107mSpent Today:\033[39;49m"
-        ledger -f $ledger register -b today -e tomorrow -R ^Expenses and not Expenses:Cash
+        ledger -f $LEDGER register -b today -e tomorrow -R ^Expenses and not Expenses:Cash
         echo ""
         echo -e "\033[31;107mTaiwan Stocks:\033[39;49m"
         stock tw

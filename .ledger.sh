@@ -1,9 +1,30 @@
 
-ledger='~/prj/MacBookPro/ledger/Chien-pinWang.ledger'
+LEDGERPATH='~/prj/MacBookPro/ledger'
+LEDGER=$LEDGERPATH"/Chien-pinWang.ledger"
+ACCOUNTS=$LEDGERPATH"/accounts.dat"
 
-alias lBal="ledger -f $ledger -B balance ^Assets ^Liabilities"
-alias lNew="vi $ledger"
-alias lCashBal="ledger -f $ledger balance -R 'SCSB Saving' Expenses:Cash -e $(date -v+1d +%Y-%m-%d)"
+# balancesheet displays the balance of Assets and Liabilities accounts at
+# a given date, default to today. The cost of commodities (-B) is used in the
+# report.
+# Command syntax:
+#   balancesheet [as_of_date]
+function balancesheet () {
+    if [ -z "$1" ]
+    then
+        periodRange=$(_getPeriodBeginEnd today)
+        periodB=${periodRange:0:10}
+        periodE=${periodRange:11}
+    else
+        periodE=$(date -j -f %Y-%m-%d -v+1d "$1" +%Y-%m-%d)
+    fi
+    echo "BALANCE SHEET (as of $periodE)"
+    ledger -f "$LEDGER" balance -B ^Assets ^Liabilities --depth 3 -e "$periodE"
+    
+}
+
+alias lBal="ledger -f $LEDGER -B balance ^Assets ^Liabilities"
+alias lNew="vTab $LEDGER $ACCOUNTS ~/.ledger.sh ~/prj/MacBookPro/ledger.wiki"
+alias lCashBal="ledger -f $LEDGER balance -R 'SCSB Saving' Expenses:Cash -e $(date -v+1d +%Y-%m-%d)"
 
 function _getPeriodBeginEnd() {
     period=$1
@@ -38,7 +59,6 @@ function _getPeriodBeginEnd() {
         ;;
     esac
 
-    # echo "-b $periodBegin -e $periodEnd"
     echo "$periodBegin $periodEnd"
 }
 
@@ -46,47 +66,44 @@ function lCash () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" register Expenses:Cash -b "$periodB" -e "$periodE" -R
-    # ledger -f "$ledger" register Expenses:Cash "$periodRange" -R
+    ledger -f "$LEDGER" register Expenses:Cash -b "$periodB" -e "$periodE" -R
 }
 
 function lSCSB () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    # ledger -f "$ledger" register Liabilities:Card:SCSB -b "$periodB" -e "$periodE"
-    ledger -f "$ledger" register Liabilities:Card:SCSB -U
+    ledger -f "$LEDGER" register Liabilities:Card:SCSB -U
 }
 
 function lTSCB () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    # ledger -f "$ledger" register "Liabilities:Card:TSCB Visa" -b "$periodB" -e "$periodE"
-    ledger -f "$ledger" register "Liabilities:Card:TSCB Visa" -U
+    ledger -f "$LEDGER" register "Liabilities:Card:TSCB Visa" -U
 }
 
 function lSaving () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" register "SCSB Saving" -b "$periodB" -e "$periodE"
+    ledger -f "$LEDGER" register "SCSB Saving" -b "$periodB" -e "$periodE"
 }
 
 function lExp () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" balance -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) --depth 2 -b "$periodB" -e "$periodE"
+    ledger -f "$LEDGER" balance -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) --depth 2 -b "$periodB" -e "$periodE"
     read -p "Press any key to continue..." -n 1
-    ledger -f "$ledger" register -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) -b "$periodB" -e "$periodE"
+    ledger -f "$LEDGER" register -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) -b "$periodB" -e "$periodE"
 }
 
 function lDebt () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" balance ^Liabilities -b 2017/03/01 -e "$periodE"
+    ledger -f "$LEDGER" balance ^Liabilities -b 2017-03-01 -e "$periodE"
 }
 
 function lBudget () {                       # Budget always run current mtd
@@ -101,10 +118,10 @@ function lBudget () {                       # Budget always run current mtd
 
     if [ -z $1 ]
     then
-        ledger -f "$ledger" register "expr" "payee =~ /$monthname Expense Budget/" --no-pager
-        ledger -f "$ledger" balance ^Budget:Expenses -b "$periodB" -e "$periodE"
+        ledger -f "$LEDGER" register "expr" "payee =~ /$monthname Expense Budget/" --no-pager
+        ledger -f "$LEDGER" balance ^Budget:Expenses -b "$periodB" -e "$periodE"
     else
-        ledger -f "$ledger" register Budget:Expenses:"$1" -b "$periodB" -e "$periodE"
+        ledger -f "$LEDGER" register Budget:Expenses:"$1" -b "$periodB" -e "$periodE"
     fi
 }
 
@@ -112,7 +129,7 @@ function lUnbudgeted () {
     periodRange=$(_getPeriodBeginEnd mtd)
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" register tag\(unbudgeted\) -b "$periodB" -e "$periodE"
+    ledger -f "$LEDGER" register tag\(unbudgeted\) -b "$periodB" -e "$periodE"
 }
 
 # The script is an adopted version from https://www.sundialdreams.com/report-scripts-for-ledger-cli-with-gnuplot/
@@ -157,5 +174,5 @@ function lTag () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$ledger" register tag\("$2"\) -b "$periodB" -e "$periodE"
+    ledger -f "$LEDGER" register tag\("$2"\) -b "$periodB" -e "$periodE"
 }
