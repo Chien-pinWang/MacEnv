@@ -114,11 +114,12 @@ function lBudget () {                       # Budget always run current mtd
     OLDLANG=$LANG
     LANG="en_US.UTF-8"
     monthname=$(date +"%B")
+    echo "DEBUG: $monthname"
     LANG=$OLDLANG
 
     if [ -z $1 ]
     then
-        ledger -f "$LEDGER" register "expr" "payee =~ /$monthname Expense Budget/" --no-pager
+        ledger -f "$LEDGER" register "expr" "payee =~ /$monthname Expenses Budget/" --no-pager
         ledger -f "$LEDGER" balance ^Budget:Expenses -b "$periodB" -e "$periodE"
     else
         ledger -f "$LEDGER" register Budget:Expenses:"$1" -b "$periodB" -e "$periodE"
