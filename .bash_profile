@@ -10,6 +10,7 @@ export R_HOME=$(R RHOME)
 export BC_ENV_ARGS="-l $HOME/.bcrc"
 export BROWSER=w3m
 export PHPRC=/usr/local/etc/php/7.1/php.ini
+export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)
 
 # Source other settings
 source ~/.googler       # aliases for command line google search
@@ -39,20 +40,15 @@ alias sheet="sc"
 alias slide="mdp"
 alias waves="php ~/bin/Buoy/index.php"
 alias t="task ls"
-alias nls="jrnl -on today --short"
-alias nll="jrnl -on today"
-alias ne="jrnl -on today --edit"
 alias cron="crontab -e"
 alias tree="tree -d | more"
 alias phpweb="php -S 127.0.0.1:8080 &"
-alias w="w3m -B"
+alias w="pushd ~/tmp; w3m -B; popd"
 alias notify="vi ~/bin/OSNotification.sh; crontab -e"
 alias g="$(which googler) -n 5 --lang zh-TW -t y1"
 # alias blockchain="$(which googler) -n 5 -N blockchain"
 alias blockchain="vi ~/prj/blockchain/blockchain.txt +:tabedit +':W3m https://www.google.com.tw/search?q=blockchain&tbm=nws'"
 alias cal="task calendar"
-alias _cloudmap="curl http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-$(date -v-30M +%Y-%m-%d-%H-00).jpg > ~/tmp/cloudmap.jpg; open -W ~/tmp/cloudmap.jpg; rm ~/tmp/cloudmap.jpg"
-alias _rainmap="curl http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_$(date -v-30M +%Y%m%d%H00).png > ~/tmp/rainmap.png; open -W ~/tmp/rainmap.png; rm ~/tmp/rainmap.png"
 alias weather='curl -sH "Accept-Language: zh" wttr.in/Taipei?2n | head -n 28; w3m -dump -no-cookie http://cwb.gov.tw/V7/observe/24real/Data/46692.htm | head -n 10'
 # alias truecrypt="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text"
 # alias pwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --password=SY42567F4 --mount ~/Dropbox/TrueCryptVolume /Volumes/TrueCrypt"
@@ -86,17 +82,13 @@ alias Rinit="more ~/.Rprofile"
 # Aliases to move around file systems
 alias 2bin="cd ~/bin"
 alias 2prj='cd $PRJ'     # Type "PRJ=<path/to/prj/root>" at command line to reset active project
+alias tmp="pushd ~/tmp"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ~="cd ~"
 
 # Real quick shortcut to frequently used items
-alias cash="lCashBal"
-alias budget="lBudget"
-alias spent="lExp mtd"
-alias debt="lDebt"
-alias trx="lNew"
-alias unbudget="lUnbudgeted"
+alias budget="budget"
 alias bill="tBill"
 alias tasks="tActive"
 alias next="task mynext"
@@ -121,14 +113,24 @@ function v? () {
 }
 
 function putBuf () {
-    echo "$1" >> ~/tmp/wip.buf
+    echo "$@" >> ~/tmp/wip.buf
 }
 
 function getBuf () {
     if [ -f ~/tmp/wip.buf ]
     then
         echo -e "\033[31;107mTHERE ARE WORK-IN-PROGRESS...\033[39;49m"
-        cat ~/tmp/wip.buf
+        # cat ~/tmp/wip.buf
+        lineno=1
+        while read line
+        do
+            area=$(cut -d ' ' -f 1 <<< "$line")
+            if [ "$area" != "HOME" -o "$SSID" != "VW4Fstaff" ]
+            then
+                echo "$lineno $line"
+                lineno=$(bc <<< "$lineno+1")
+            fi
+        done < ~/tmp/wip.buf
     else
         echo -e "\033[31;107mThere is no work-in-progress.\033[39;49m"
     fi
@@ -177,10 +179,6 @@ function wiki () {
 function journal () {
     jrnl < ~/prj/MacBookPro/.jrnl/template.txt
     jrnl -1 --edit
-}
-
-function budget () {
-    lbudget "$@"
 }
 
 function text2voice () {
@@ -256,6 +254,7 @@ then
     echo "The sattlelite image for cloudmap is not available!"
 else
     curl -s http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$goodTime".jpg > ~/tmp/cloudmap.jpg
+    sips -Z 640 ~/tmp/cloudmap.jpg > /dev/null
     open -W ~/tmp/cloudmap.jpg 
     rm ~/tmp/cloudmap.jpg
 fi
@@ -284,6 +283,7 @@ then
     echo "The sattlelite image for rainmap is not available!"
 else
     curl -s http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$goodTime".png > ~/tmp/rainmap.png
+    sips -Z 800 ~/tmp/rainmap.png > /dev/null
     open -W ~/tmp/rainmap.png
     rm ~/tmp/rainmap.png
 fi

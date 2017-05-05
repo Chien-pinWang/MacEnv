@@ -3,6 +3,8 @@ LEDGERPATH='~/prj/MacBookPro/ledger'
 LEDGER=$LEDGERPATH"/Chien-pinWang.ledger"
 ACCOUNTS=$LEDGERPATH"/accounts.dat"
 
+alias trx="vTab $LEDGER $ACCOUNTS ~/.ledger.sh ~/prj/MacBookPro/ledger.wiki"
+
 # balancesheet displays the balance of Assets and Liabilities accounts at
 # a given date, default to today. The cost of commodities (-B) is used in the
 # report.
@@ -22,10 +24,47 @@ function balancesheet () {
     
 }
 
-alias lBal="ledger -f $LEDGER -B balance ^Assets ^Liabilities"
-alias lNew="vTab $LEDGER $ACCOUNTS ~/.ledger.sh ~/prj/MacBookPro/ledger.wiki"
-alias lCashBal="ledger -f $LEDGER balance -R 'SCSB Saving' Expenses:Cash -e $(date -v+1d +%Y-%m-%d)"
+# incomestatement displays the income and expenses of a given date range,
+# default to the last month. The cost of commodities (-B) is used in the
+# report.
+# Command syntax:
+#   incomestatement [begin_date] [end_date]
+function incomestatement () {
+    if [ -z "$1" ]
+    then
+        periodRange=$(_getPeriodBeginEnd lastmonth)
+        periodB=${periodRange:0:10}
+        periodE=${periodRange:11}
+    else
+        periodB="$1"
+        periodE="$2"
+    fi
 
+    echo "INCOME STATEMENT ($periodB to $periodE)"
+    ledger -f "$LEDGER" balance ^Income ^Expenses and not Expenses:Cash -b "$periodB" -e "$periodE" --depth 2
+}
+
+# cash displays the current balance of two cash accounts:
+#   Assets:Bank:SCSB Saving
+#   Expenses:Cash
+# Command Syntax:
+#   cash
+function cash () {
+    periodE=$(date -v+1d +"%Y-%m-%d")
+
+    echo "CASH BALANCE"
+    ledger -f "$LEDGER" balance -R "SCSB Saving" Expenses:Cash -e $periodE
+}
+
+# _getPeriodBeginEnd returns a pair of space seperated dates representing the
+# beginning and ending dates of a request period symbol. Symbols can be the
+# following:
+#       week, wtd, lastweek, month, mtd, lastmonth, today (default)
+#
+# The calling function should use the $(_getPeriodBeginEnd [symbol]) to obtain
+# the dates and sub-string to seperate them into variables.
+#
+# This is a private function not intended to be called directly by users.
 function _getPeriodBeginEnd() {
     period=$1
     case $period in
@@ -62,36 +101,29 @@ function _getPeriodBeginEnd() {
     echo "$periodBegin $periodEnd"
 }
 
-function lCash () {
+function scsb () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$LEDGER" register Expenses:Cash -b "$periodB" -e "$periodE" -R
+    ledger -f "$LEDGER" register "Liabilities:Card:SCSB One Card" -U
 }
 
-function lSCSB () {
-    periodRange=$(_getPeriodBeginEnd "$1")
-    periodB=${periodRange:0:10}
-    periodE=${periodRange:11}
-    ledger -f "$LEDGER" register Liabilities:Card:SCSB -U
-}
-
-function lTSCB () {
+function tscb () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
     ledger -f "$LEDGER" register "Liabilities:Card:TSCB Visa" -U
 }
 
-function lSaving () {
-    periodRange=$(_getPeriodBeginEnd "$1")
-    periodB=${periodRange:0:10}
-    periodE=${periodRange:11}
-    ledger -f "$LEDGER" register "SCSB Saving" -b "$periodB" -e "$periodE"
-}
+function spent () {
+    if [ -z "$1" ]
+    then
+        period="mtd"
+    else
+        period="$1"
+    fi
 
-function lExp () {
-    periodRange=$(_getPeriodBeginEnd "$1")
+    periodRange=$(_getPeriodBeginEnd "$period")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
     ledger -f "$LEDGER" balance -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) --depth 2 -b "$periodB" -e "$periodE"
@@ -99,14 +131,14 @@ function lExp () {
     ledger -f "$LEDGER" register -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) -b "$periodB" -e "$periodE"
 }
 
-function lDebt () {
+function debt () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
     ledger -f "$LEDGER" balance ^Liabilities -b 2017-03-01 -e "$periodE"
 }
 
-function lBudget () {                       # Budget always run current mtd
+function budget () {                       # Budget always run current mtd
     periodRange=$(_getPeriodBeginEnd mtd)
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
@@ -114,7 +146,6 @@ function lBudget () {                       # Budget always run current mtd
     OLDLANG=$LANG
     LANG="en_US.UTF-8"
     monthname=$(date +"%B")
-    echo "DEBUG: $monthname"
     LANG=$OLDLANG
 
     if [ -z $1 ]
@@ -126,7 +157,7 @@ function lBudget () {                       # Budget always run current mtd
     fi
 }
 
-function lUnbudgeted () {
+function unbudget () {
     periodRange=$(_getPeriodBeginEnd mtd)
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
