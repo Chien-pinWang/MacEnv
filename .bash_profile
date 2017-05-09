@@ -20,6 +20,7 @@ source ~/.gitalias      # aliases for git routines
 source ~/.ledger.sh     # aliases for ledger routines
 
 # Aliases to execute commands
+alias setSSID="export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)"
 alias agrep="alias | grep "
 alias v="/usr/local/bin/vim"
 alias vSplit="vi -O"
@@ -45,7 +46,7 @@ alias tree="tree -d | more"
 alias phpweb="php -S 127.0.0.1:8080 &"
 alias w="pushd ~/tmp; w3m -B; popd"
 alias notify="vi ~/bin/OSNotification.sh; crontab -e"
-alias g="$(which googler) -n 5 --lang zh-TW -t y1"
+# alias g="pushd ~/tmp; $(which googler) -n 5 --lang zh-TW -t y1; popd"
 # alias blockchain="$(which googler) -n 5 -N blockchain"
 alias blockchain="vi ~/prj/blockchain/blockchain.txt +:tabedit +':W3m https://www.google.com.tw/search?q=blockchain&tbm=nws'"
 alias cal="task calendar"
@@ -101,6 +102,8 @@ alias checkoff="tCheck"
 alias pushback="tPush"
 alias mail="mutt"
 
+alias macStorage="system_profiler SPStorageDataType | head -n 6"
+
 # Bash function helpers
 cd() { builtin cd "$@"; ls; }               # cd then ls;
 trash() { command mv "$@" ~/.Trash ; }      # move to ~/.Trash folder
@@ -133,6 +136,27 @@ function getBuf () {
         done < ~/tmp/wip.buf
     else
         echo -e "\033[31;107mThere is no work-in-progress.\033[39;49m"
+    fi
+}
+
+function rmBuf () {
+    if [ -z $1 ]
+    then
+        echo "Usage: rmBuf [ID]"
+        return 1
+    else
+        lineno=1
+        while read line
+        do
+            if [ "$lineno" != "$1" ]
+            then
+                echo "$line" >> ~/tmp/wip.buf.tmp
+            else
+                echo "Buffer [$line] is removed."
+            fi
+            lineno=$(bc <<< "$lineno+1")
+        done < ~/tmp/wip.buf
+        mv ~/tmp/wip.buf.tmp ~/tmp/wip.buf
     fi
 }
 
@@ -177,8 +201,21 @@ function wiki () {
 }
 
 function journal () {
-    jrnl < ~/prj/MacBookPro/.jrnl/template.txt
-    jrnl -1 --edit
+    j="$1"
+    case "$j" in
+    "goofy")
+        template="goofy_template.txt"
+        ;;
+    "blockchain")
+        template="blockchain_template.txt"
+        ;;
+    *)
+        template="default_template.txt"
+        j=""
+        ;;
+    esac
+    jrnl $j < ~/prj/MacBookPro/.jrnl/"$template"
+    jrnl $1 -1 --edit
 }
 
 function text2voice () {
@@ -255,7 +292,7 @@ then
 else
     curl -s http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$goodTime".jpg > ~/tmp/cloudmap.jpg
     sips -Z 640 ~/tmp/cloudmap.jpg > /dev/null
-    open -W ~/tmp/cloudmap.jpg 
+    imgmore ~/tmp/cloudmap.jpg
     rm ~/tmp/cloudmap.jpg
 fi
 
@@ -284,10 +321,16 @@ then
 else
     curl -s http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$goodTime".png > ~/tmp/rainmap.png
     sips -Z 800 ~/tmp/rainmap.png > /dev/null
-    open -W ~/tmp/rainmap.png
+    imgmore ~/tmp/rainmap.png
     rm ~/tmp/rainmap.png
 fi
 
+}
+
+function g () {
+    pushd ~/tmp
+    $(which googler) -n 5 --lang zh-TW -t y1 "$@"
+    popd
 }
 
 jMem

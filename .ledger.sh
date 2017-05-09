@@ -164,6 +164,21 @@ function unbudget () {
     ledger -f "$LEDGER" register tag\(unbudgeted\) -b "$periodB" -e "$periodE"
 }
 
+function payable () {
+    ledger -f "$LEDGER" register -U Liabilities:Payable:Personal
+}
+
+function receivable () {
+    ledger -f "$LEDGER" register -U Assets:Receivable:Personal
+}
+
+function payee () {
+    echo "Pay History to $@ in the Past 90 Days:"
+    periodB=$(date -v-90d +"%Y-%m-%d")
+    periodE=$(date -v+1d +"%Y-%m-%d")
+    ledger -f "$LEDGER" register -R ^Expenses and not Expenses:Cash and payee\("$@"\) -b "$periodB" -e "$periodE"
+}
+
 # The script is an adopted version from https://www.sundialdreams.com/report-scripts-for-ledger-cli-with-gnuplot/
 # Here are what I changed:
 #   0. At the LEDGER_TERM ine, use 'x11' instead of 'qt'
