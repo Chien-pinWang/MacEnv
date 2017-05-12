@@ -1,9 +1,39 @@
 
-LEDGERPATH='~/prj/MacBookPro/ledger'
-LEDGER=$LEDGERPATH"/Chien-pinWang.ledger"
-ACCOUNTS=$LEDGERPATH"/accounts.dat"
+export LEDGERPATH=~/prj/MacBookPro/ledger
+export LEDGER=$LEDGERPATH/Chien-pinWang.ledger
+export ACCOUNTS=$LEDGERPATH/accounts.dat
 
 alias trx="vTab $LEDGER $ACCOUNTS ~/.ledger.sh ~/prj/MacBookPro/ledger.wiki"
+
+# checkLedgerChange checks if the ledger file has been changed. Once a change
+# is detected, several real-time status reports, such as the cash report, are
+# updated accordingly. I can check them on the go at mobile phone.
+# This function should be invoked and executed at the background.
+function checkLedgerChange () {
+    # m1=$(md5 -q ~/prj/MacBookPro/ledger/Chien-pinWang.ledger)
+    m1=$(md5 -q "$LEDGER")
+
+    while true
+    do
+        sleep 60
+        # m2=$(/sbin/md5 -q ~/prj/MacBookPro/ledger/Chien-pinWang.ledger)
+        m2=$(/sbin/md5 -q "$LEDGER")
+        if [ "$m1" != "$m2" ]
+        then
+            periodE=$(date -v+1d +"%Y-%m-%d")
+
+            # cash > /prj/MacBookPro/ledger/reports/cash.txt
+            # tscb > ~/prj/MacBookPro/ledger/reports/tscb.txt
+            # scsb > ~/prj/MacBookPro/ledger/reports/scsb.txt
+            cash > "$LEDGERPATH"/reports/cash.txt
+            tscb > "$LEDGERPATH"/reports/tscb.txt
+            scsb > "$LEDGERPATH"/reports/scsb.txt
+            budget > "$LEDGERPATH"/reports/budget.txt
+            
+            m1="$m2"
+        fi
+    done
+}
 
 # balancesheet displays the balance of Assets and Liabilities accounts at
 # a given date, default to today. The cost of commodities (-B) is used in the
@@ -115,6 +145,11 @@ function tscb () {
     ledger -f "$LEDGER" register "Liabilities:Card:TSCB Visa" -U
 }
 
+# spent shows the balance and history of spendings during a period of time.
+# When none of the arguments is present, spent shows all accounts month-to-
+# date records.
+#   Command Syntax:
+#       spent [period] [account]
 function spent () {
     if [ -z "$1" ]
     then
@@ -123,12 +158,21 @@ function spent () {
         period="$1"
     fi
 
+    if [ -z "$2" ]
+    then
+        account=""
+    else
+        account=":$2"
+    fi
+
     periodRange=$(_getPeriodBeginEnd "$period")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$LEDGER" balance -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) --depth 2 -b "$periodB" -e "$periodE"
+    # ledger -f "$LEDGER" balance -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) --depth 2 -b "$periodB" -e "$periodE"
+    ledger -f "$LEDGER" balance -R ^Expenses"$account" and not Expenses:Cash --depth 2 -b "$periodB" -e "$periodE"
     read -p "Press any key to continue..." -n 1
-    ledger -f "$LEDGER" register -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) -b "$periodB" -e "$periodE"
+    # ledger -f "$LEDGER" register -R Expenses and not \(Expenses:Cash or ^Budget:Expenses\) -b "$periodB" -e "$periodE"
+    ledger -f "$LEDGER" register -R ^Expenses"$account" and not Expenses:Cash -b "$periodB" -e "$periodE"
 }
 
 function debt () {
@@ -223,3 +267,5 @@ function lTag () {
     periodE=${periodRange:11}
     ledger -f "$LEDGER" register tag\("$2"\) -b "$periodB" -e "$periodE"
 }
+
+checkLedgerChange &

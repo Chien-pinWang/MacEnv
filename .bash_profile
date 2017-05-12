@@ -1,4 +1,7 @@
 
+# Set command line editing to vi-style
+set -o vi
+
 # Setting environment variables
 export PS1="[\h:\w]$ "
 export CLICOLOR="true"
@@ -242,7 +245,7 @@ function stock () {
         stocks="^twii,5434.tw,2330.tw,3008.tw"
         ;;
     "us")
-        stocks="^ixic,aapl,goog,fb,amzn,msft,cr"
+        stocks="^ixic,aapl,goog,fb,amzn,msft,cr,nvda"
         ;;
     "index")
         stocks="^ixic,^vix,^twii"

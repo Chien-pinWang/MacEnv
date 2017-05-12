@@ -20,8 +20,8 @@ alias @word='googler -n 5 definition'
 # 104
 alias @104='googler -n 5 -w 104.com.tw'
 
-# 880vs
-alias @xxx='googler -n 5 -w 880vs.com'
+# 880vs, 69story
+alias @xxx='googler -n 5 -w 880vs.com -w 69story.com'
 
 # pchome
 alias @ec='googler -n 5 -w 24h.pchome.com.tw'
