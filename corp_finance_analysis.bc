@@ -1,0 +1,36 @@
+
+define debt_ratio(total_debt, total_asset) {
+    return (total_debt/total_asset)
+}
+
+define equity_ratio(equity, total_asset) {
+    return (equity/total_asset)
+}
+
+define debt_to_equity_ratio(total_debt, equity) {
+    return (total_debt/equity)
+}
+
+define current_ratio(current_asset, total_asset) {
+    return (current_asset/total_asset)
+}
+
+define fixed_ratio(fixed_asset, total_asset) {
+    return (fixed_asset/total_asset)
+}
+
+define long_debt_ratio(long_debt, total_asset) {
+    return (long_debt/total_asset)
+}
+
+define current_to_debt_ratio(current_asset, total_debt) {
+    return (current_asset/total_debt)
+}
+
+define current_debt_ratio(current_debt, total_debt) {
+    return (current_debt/total_debt)
+}
+
+define fixed_asset_to_equity_ratio(fixed_asset, equity) {
+    return (fixed_asset/equity)
+}

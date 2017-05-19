@@ -248,7 +248,7 @@ function stock () {
         stocks="^ixic,aapl,goog,fb,amzn,msft,cr,nvda"
         ;;
     "index")
-        stocks="^ixic,^vix,^twii"
+        stocks="^dji,^ixic,^vix,^twii"
         ;;
     "commod")
         stocks="^hui,gc=f,cl=f"
@@ -294,7 +294,8 @@ then
     echo "The sattlelite image for cloudmap is not available!"
 else
     curl -s http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$goodTime".jpg > ~/tmp/cloudmap.jpg
-    sips -Z 640 ~/tmp/cloudmap.jpg > /dev/null
+    # sips -Z 640 ~/tmp/cloudmap.jpg > /dev/null
+    magick ~/tmp/cloudmap.jpg -scale 640x640 ~/tmp/cloudmap.jpg
     imgmore ~/tmp/cloudmap.jpg
     rm ~/tmp/cloudmap.jpg
 fi
@@ -323,9 +324,11 @@ then
     echo "The sattlelite image for rainmap is not available!"
 else
     curl -s http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$goodTime".png > ~/tmp/rainmap.png
-    sips -Z 800 ~/tmp/rainmap.png > /dev/null
-    imgmore ~/tmp/rainmap.png
-    rm ~/tmp/rainmap.png
+    magick ~/tmp/rainmap.png -crop 520x387+1750+1216 ~/tmp/rainmap-c.png
+    magick ~/tmp/rainmap.png -scale 25% ~/tmp/rainmap-s.png
+    # sips -Z 800 ~/tmp/rainmap.png > /dev/null
+    imgmore ~/tmp/rainmap-*.png
+    rm ~/tmp/rainmap*.png
 fi
 
 }
@@ -338,3 +341,5 @@ function g () {
 
 jMem
 getBuf
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
