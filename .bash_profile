@@ -242,7 +242,7 @@ function stock () {
     market="$1"
     case "$market" in
     "tw")
-        stocks="^twii,5434.tw,2330.tw,3008.tw"
+        stocks="^twii,5434.tw,2330.tw,3008.tw,2049.tw"
         ;;
     "us")
         stocks="^ixic,aapl,goog,fb,amzn,msft,cr,nvda"
