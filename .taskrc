@@ -31,7 +31,9 @@ include /usr/local/Cellar/task/2.5.1/share/doc/task/rc/solarized-dark-256.theme
 include ~/prj/MacBookPro/.task/holidays.zh-TW.rc
 
 # dateformat=Y-m-d H:N:S
-dateformat.annotation=Y-m-d
+# dateformat.annotation=Y-m-d
+dateformat=m/d
+dateformat.annotation=m/d
 calendar.holidays=full
 
 uda.reviewed.type=date
@@ -48,7 +50,7 @@ report.ls.columns=id,start.active,depends.indicator,project,tags,recur.indicator
 report.mylist.filter=status:pending
 report.mylist.sort=urgency-,start-,due+,project+
 report.mylist.columns=id,project,description.count,due.remaining,due,recur.indicator,scheduled.countdown,until.remaining,urgency
-report.mylist.labels=ID,Project,Description,Due,Due Date,R,Sch,Until,Urg
+report.mylist.labels=ID,Project,Description,Due,Due,R,Sch,Until,Urg
 
 # Custom Report: mynext
 report.mynext.filter=status:pending limit:page -ACTIVE
@@ -60,11 +62,11 @@ report.mynext.labels=ID,Project,Description,Due,Active,Age,D,P,Tags,R,Sch,Until,
 report.mybill.filter=project:Finance -PARENT +MONTH -COMPLETE
 report.mybill.sort=due+
 report.mybill.columns=id,project,description.count,due.remaining,due,recur.indicator,scheduled.countdown,until.remaining,urgency
-report.mybill.labels=ID,Project,Description,Due,Due Date,R,Sch,Until,Urg
+report.mybill.labels=ID,Project,Description,Due,Due,R,Sch,Until,Urg
 
 # Custom Report: weekload
 report.weekload.filter=scheduled.before:today+7d +PENDING -PARENT -ACTIVE
 report.weekload.sort=scheduled+,due+,urgency-
 report.weekload.columns=id,scheduled,due,description.count,project,urgency
-report.weekload.labels=ID,Scheduled,Due Date,Description,Project,Urg
+report.weekload.labels=ID,Scheduled,Due,Description,Project,Urg
 

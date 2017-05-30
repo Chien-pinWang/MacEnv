@@ -212,6 +212,9 @@ function journal () {
     "blockchain")
         template="blockchain_template.txt"
         ;;
+    "here")
+        template="default_template.txt"
+        ;;
     *)
         template="default_template.txt"
         j=""

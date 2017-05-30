@@ -27,7 +27,7 @@ nmap <leader>uc :8sp ~/prj/MacBookPro/.jrnl/unicode.txt<CR>
 " Status line lightline configurations
 " Available schemes: wombat, solarized, powerline, jellybeans, Tomorrow, Tomorrow_Night, Tomorrow_Night_Blue, Tomorrow_Night_Eighties, PowerColor, seoul256, landscape, one, Dracula, darcula, Molokai, 16color, default (=powerline)
 let g:lightline = {
-    \ 'colorscheme': 'seoul256',
+    \ 'colorscheme': 'jellybeans',
     \ }
 
 " Ledger's vim Support 'vim-ledger' Configurations
