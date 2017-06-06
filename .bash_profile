@@ -16,11 +16,11 @@ export PHPRC=/usr/local/etc/php/7.1/php.ini
 export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)
 
 # Source other settings
-source ~/.googler       # aliases for command line google search
-source ~/.taskwarrior   # aliases for task routines
-source ~/.jrnl          # aliases for jrnl routines
-source ~/.gitalias      # aliases for git routines
-source ~/.ledger.sh     # aliases for ledger routines
+source ~/.googler           # aliases for command line google search
+source ~/.taskwarrior.sh    # aliases for task routines
+source ~/.jrnl              # aliases for jrnl routines
+source ~/.gitalias          # aliases for git routines
+source ~/.ledger.sh         # aliases for ledger routines
 
 # Aliases to execute commands
 alias setSSID="export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)"
@@ -97,7 +97,7 @@ alias bill="tBill"
 alias tasks="tActive"
 alias next="task mynext"
 alias later="task schedule.after:today+1y mylist"
-alias weekload="task weekload"
+alias weekload="task rc.dateformat:'a m/d' weekload"
 alias review="tReview"
 alias due="tWeek"
 alias overdue="tOverdue"

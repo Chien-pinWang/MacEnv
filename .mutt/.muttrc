@@ -16,6 +16,8 @@ set move=no
 set imap_keepalive=900
 set mbox="imaps://imap.gmail.com:993/[Gmail]/All Mail"
 set trash="imaps://imap.gmail.com:993/[Gmail]/Trash"
+set sort=reverse-date-received
+set pager_context=5
 
 source "~/.mutt/mutt-colors-solarized-dark-256.muttrc"
 source "~/.mutt/aliases
@@ -26,6 +28,8 @@ alternative_order text/plain text/enriched text/html
 bind editor <space> noop
 bind index <space> next-page
 bind index - previous-page
+bind pager j next-line
+bind pager k previous-line
 macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive"
 macro index,pager d "<save-message>=[Gmail]/Trash<enter><enter>" "Trash"
 macro index gi "<change-folder>=INBOX<enter>" "Go to Inbox"

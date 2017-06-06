@@ -52,6 +52,12 @@ report.mylist.sort=urgency-,start-,due+,project+
 report.mylist.columns=id,project,description.count,due.remaining,due,recur.indicator,scheduled.countdown,until.remaining,urgency
 report.mylist.labels=ID,Project,Description,Due,Due,R,Sch,Until,Urg
 
+# Custom Report: mylist_narrow
+report.mylist_narrow.filter=status:pending
+report.mylist_narrow.sort=urgency-,start-,due+,project+
+report.mylist_narrow.columns=id,project,description,due
+report.mylist_narrow.labels=ID,Project,Description,Due
+
 # Custom Report: mynext
 report.mynext.filter=status:pending limit:page -ACTIVE
 report.mynext.sort=urgency-
@@ -66,7 +72,13 @@ report.mybill.labels=ID,Project,Description,Due,Due,R,Sch,Until,Urg
 
 # Custom Report: weekload
 report.weekload.filter=scheduled.before:today+7d +PENDING -PARENT -ACTIVE
-report.weekload.sort=scheduled+,due+,urgency-
+report.weekload.sort=due+,due+,urgency-
 report.weekload.columns=id,scheduled,due,description.count,project,urgency
-report.weekload.labels=ID,Scheduled,Due,Description,Project,Urg
+report.weekload.labels=ID,Sched,Due,Description,Project,Urg
+
+# Custom Report: weekload_narrow
+report.weekload_narrow.filter=scheduled.before:today+7d +PENDING -PARENT -ACTIVE
+report.weekload_narrow.sort=due+,due+,urgency-
+report.weekload_narrow.columns=id,scheduled,due,description.count
+report.weekload_narrow.labels=ID,Sched,Due,Description
 

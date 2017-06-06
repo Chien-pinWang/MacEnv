@@ -1,5 +1,5 @@
 
-alias tActive='echo -e "\033[31;107mActive Tasks:\033[39;49m"; task +ACTIVE mylist'
+alias tActive='echo -e "\033[31;107mActive Tasks:\033[39;49m"; task rc.dateformat:"a m/d" +ACTIVE mylist'
 alias tReview='echo -e "\033[31;107mTASKS SCHEDULED TODAY:\033[39;49m"; task schedule.before:now -ACTIVE mylist'
 alias tToday='echo "TASKS DUE TODAY..."; task +TODAY mylist'
 alias tWeek='echo "TASKS DUE THIS WEEK..."; task +WEEK mylist'
@@ -9,8 +9,35 @@ alias tBill='echo "BILLS TO PAY THIS MONTH..."; task mybill'
 alias tSummary='task burndown; task ghistory; task projects'
 alias tJob='tDepends 89445668-6919-436e-b16f-1f3c897d7fd5'
 
+export TASKPATH=~/prj/MacBookPro/.task
+export TASK=$TASKPATH/pending.data
+
+# checkTaskChange checks if the task file has been changed. Once a change
+# is detected, several real-time todo reports, such as the tasks report, are
+# updated accordingly. I can check them on the go at mobile phone.
+# This function should be invoked and executed at the background.
+function checkTaskChange () {
+    m1=$(/sbin/md5 -q "$TASK")
+
+    while true
+    do
+        sleep 60
+        m2=$(/sbin/md5 -q "$TASK")
+        if [ "$m1" != "$m2" ]
+        then
+
+            echo "Currently Active:" > $TASKPATH/active.txt
+            task rc.detection:off rc.defaultwidth:38 rc.verbose=label +ACTIVE mylist_narrow >> $TASKPATH/active.txt
+            echo "" >> $TASKPATH/active.txt
+            echo "7-Day Look Ahead:" >> $TASKPATH/active.txt
+            task rc.detection:off rc.defaultwidth:38 rc.verbose=label weekload_narrow >> $TASKPATH/active.txt
+
+            m1="$m2"
+        fi
+    done
+}
+
 function _getTaskInfo () {
-    echo "Debug: $@"
     arr=("$@")
     for elem in "${arr[@]}"
     do 
@@ -295,3 +322,5 @@ function tHalt () {
         exit 1
     fi
 }
+
+checkTaskChange &

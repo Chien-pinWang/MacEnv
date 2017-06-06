@@ -11,20 +11,16 @@ alias trx="vTab $LEDGER $ACCOUNTS ~/.ledger.sh ~/prj/MacBookPro/ledger.wiki"
 # This function should be invoked and executed at the background.
 function checkLedgerChange () {
     # m1=$(md5 -q ~/prj/MacBookPro/ledger/Chien-pinWang.ledger)
-    m1=$(md5 -q "$LEDGER")
+    m1=$(/sbin/md5 -q "$LEDGER")
 
     while true
     do
         sleep 60
-        # m2=$(/sbin/md5 -q ~/prj/MacBookPro/ledger/Chien-pinWang.ledger)
         m2=$(/sbin/md5 -q "$LEDGER")
         if [ "$m1" != "$m2" ]
         then
             periodE=$(date -v+1d +"%Y-%m-%d")
 
-            # cash > /prj/MacBookPro/ledger/reports/cash.txt
-            # tscb > ~/prj/MacBookPro/ledger/reports/tscb.txt
-            # scsb > ~/prj/MacBookPro/ledger/reports/scsb.txt
             cash > "$LEDGERPATH"/reports/cash.txt
             tscb > "$LEDGERPATH"/reports/tscb.txt
             scsb > "$LEDGERPATH"/reports/scsb.txt
@@ -135,14 +131,14 @@ function scsb () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$LEDGER" register "Liabilities:Card:SCSB One Card" -U
+    ledger -f "$LEDGER" register "Liabilities:Card:SCSB One Card" -U --no-pager
 }
 
 function tscb () {
     periodRange=$(_getPeriodBeginEnd "$1")
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
-    ledger -f "$LEDGER" register "Liabilities:Card:TSCB Visa" -U
+    ledger -f "$LEDGER" register "Liabilities:Card:TSCB Visa" -U --no-pager
 }
 
 # spent shows the balance and history of spendings during a period of time.
