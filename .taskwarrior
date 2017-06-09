@@ -1,5 +1,5 @@
 
-alias tActive='echo -e "\033[31;107mActive Tasks:\033[39;49m"; task rc.dateformat:"a m/d" +ACTIVE mylist'
+alias tActive='echo -e "\033[31;107mACTIVE TASKS:\033[39;49m"; task rc.dateformat:"a m/d" +ACTIVE mylist'
 alias tReview='echo -e "\033[31;107mTASKS SCHEDULED TODAY:\033[39;49m"; task schedule.before:now -ACTIVE mylist'
 alias tToday='echo "TASKS DUE TODAY..."; task +TODAY mylist'
 alias tWeek='echo "TASKS DUE THIS WEEK..."; task +WEEK mylist'

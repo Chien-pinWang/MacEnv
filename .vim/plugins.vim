@@ -63,6 +63,8 @@ let g:vimwiki_folding='list'
 " let g:vimwiki_folding='syntax'
 map >> <Plug>VimwikiIncreaseLvlSingleItem
 map << <Plug>VimwikiDecreaseLvlSingleItem
+let g:vimwiki_hl_headers=1
+let g:vimwiki_hl_cb_checked=2
 
 " w3m.vim Browse Web Page in vim
 " let g:w3m#command='/usr/local/bin/w3m'

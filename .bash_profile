@@ -97,7 +97,7 @@ alias bill="tBill"
 alias tasks="tActive"
 alias next="task mynext"
 alias later="task schedule.after:today+1y mylist"
-alias weekload="task rc.dateformat:'a m/d' weekload"
+alias weekload="echo -e '\033[31;107mUPCOMING IN A WEEK:\033[39;49m'; task rc.dateformat:'a m/d' weekload"
 alias review="tReview"
 alias due="tWeek"
 alias overdue="tOverdue"
@@ -258,6 +258,10 @@ function stock () {
         ;;
     "currency")
         stocks="usdtwd=x,usdcny=x,usdjpy=x,usdeur=x"
+        ;;
+    "crypto")
+        echo "Bit Coin: \$$(curl -s https://coinmarketcap-nexuist.rhcloud.com/api/btc | jq '.price.usd')"
+        echo "Ether: \$$(curl -s https://coinmarketcap-nexuist.rhcloud.com/api/eth | jq '.price.usd')"
         ;;
     *)
         stocks="^ixic,^vix,^twii,aapl,goog,fb,usdtwd=x"

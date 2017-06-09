@@ -205,11 +205,11 @@ function unbudget () {
 }
 
 function payable () {
-    ledger -f "$LEDGER" register -U Liabilities:Payable:Personal
+    ledger -f "$LEDGER" register -U Liabilities:Payable:Personal --no-pager
 }
 
 function receivable () {
-    ledger -f "$LEDGER" register -U Assets:Receivable:Personal
+    ledger -f "$LEDGER" register -U Assets:Receivable:Personal --no-pager
 }
 
 function payee () {
