@@ -132,6 +132,7 @@ function scsb () {
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
     ledger -f "$LEDGER" register "Liabilities:Card:SCSB One Card" -U --no-pager
+    ledger -f "$LEDGER" balance "Liabilities:Card:SCSB One Card" -e "$periodE"
 }
 
 function tscb () {
@@ -139,6 +140,7 @@ function tscb () {
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
     ledger -f "$LEDGER" register "Liabilities:Card:TSCB Visa" -U --no-pager
+    ledger -f "$LEDGER" balance "Liabilities:Card:TSCB Visa" -e "$periodE"
 }
 
 # spent shows the balance and history of spendings during a period of time.
