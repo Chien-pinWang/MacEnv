@@ -171,7 +171,7 @@ function today () {
     then
         curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?1n | head -n 18
         echo -e "\033[31;107mCash Balance:\033[39;49m"
-        ledger -f $LEDGER balance -R Expenses:Cash -e $(date -v+1d "+%Y-%m-%d")
+        ledger -f $LEDGER balance -R Expenses:Cash "Assets:Bank:SCSB Saving" -e $(date -v+1d "+%Y-%m-%d")
         echo ""
         echo -e "\033[31;107mUS Stocks:\033[39;49m"
         stock us
