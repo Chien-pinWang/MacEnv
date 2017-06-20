@@ -15,7 +15,7 @@ alias @wiki='googler -n 5 -w en.wikipedia.org'
 alias @imdb='googler -n 5 -w imdb.com'
 
 # free dictionary
-alias @word='googler -n 5 definition'
+alias @word='googler -n 5 -w www.merriam-webster.com'
 
 # 104
 alias @104='googler -n 5 -w 104.com.tw'

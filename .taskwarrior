@@ -27,10 +27,10 @@ function checkTaskChange () {
         then
 
             echo "Currently Active:" > $TASKPATH/active.txt
-            task rc.detection:off rc.defaultwidth:38 rc.verbose=label +ACTIVE mylist_narrow >> $TASKPATH/active.txt
+            task rc.detection:off rc.defaultwidth:38 rc.verbose=label rc.dateformat=a +ACTIVE mylist_narrow >> $TASKPATH/active.txt
             echo "" >> $TASKPATH/active.txt
             echo "7-Day Look Ahead:" >> $TASKPATH/active.txt
-            task rc.detection:off rc.defaultwidth:38 rc.verbose=label weekload_narrow >> $TASKPATH/active.txt
+            task rc.detection:off rc.defaultwidth:38 rc.verbose=label rc.dateformat=a weekload_narrow >> $TASKPATH/active.txt
 
             m1="$m2"
         fi

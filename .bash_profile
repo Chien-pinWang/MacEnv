@@ -26,6 +26,7 @@ source ~/.ledger.sh         # aliases for ledger routines
 alias setSSID="export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)"
 alias agrep="alias | grep "
 alias v="/usr/local/bin/vim"
+alias d="/usr/local/bin/dict"
 alias vSplit="vi -O"
 alias vStack="vi -o"
 alias vTab="vi -p"
