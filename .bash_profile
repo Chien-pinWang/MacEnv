@@ -26,7 +26,7 @@ source ~/.ledger.sh         # aliases for ledger routines
 alias setSSID="export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)"
 alias agrep="alias | grep "
 alias v="/usr/local/bin/vim"
-alias d="/usr/local/bin/dict"
+alias def="/usr/local/bin/dict"
 alias vSplit="vi -O"
 alias vStack="vi -o"
 alias vTab="vi -p"
@@ -261,7 +261,7 @@ function stock () {
         stocks="usdtwd=x,usdcny=x,usdjpy=x,usdeur=x"
         ;;
     "crypto")
-        echo "Bit Coin: \$$(curl -s https://coinmarketcap-nexuist.rhcloud.com/api/btc | jq '.price.usd')"
+        echo "Bitcoin: \$$(curl -s https://coinmarketcap-nexuist.rhcloud.com/api/btc | jq '.price.usd')"
         echo "Ether: \$$(curl -s https://coinmarketcap-nexuist.rhcloud.com/api/eth | jq '.price.usd')"
         ;;
     *)
@@ -307,6 +307,11 @@ else
     imgmore ~/tmp/cloudmap.jpg
     rm ~/tmp/cloudmap.jpg
 fi
+
+# Get cloud map with high/low pressure lines from this static url
+curl -s http://www.cwb.gov.tw/V7/forecast/fcst/Data/SFCcombo.jpg > ~/tmp/cloudmap_pressure.jpg
+imgmore ~/tmp/cloudmap_pressure.jpg
+rm ~/tmp/cloudmap_pressure.jpg
 
 }
 
