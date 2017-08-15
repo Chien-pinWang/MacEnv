@@ -23,6 +23,10 @@ source ~/.gitalias          # aliases for git routines
 source ~/.ledger.sh         # aliases for ledger routines
 
 # Aliases to execute commands
+alias swim="curl -s http://taipeidt.com/tc/iwlink.php | w3m -T text/html -dump"
+alias apple="w3m http://www.appledaily.com.tw"
+alias udn="w3m https://udn.com/news/index"
+alias buoys="curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/C6AH2.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46694A.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46708A.html | w3m -T text/html -dump | head -n 37;"
 alias setSSID="export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)"
 alias agrep="alias | grep "
 alias v="/usr/local/bin/vim"
@@ -70,6 +74,8 @@ alias httpdconf="more /usr/local/etc/apache2/2.4/httpd.conf"
 # alias httpdvhosts="ll /etc/apache2/extra/httpd-vhosts.conf"
 alias httpdvhosts="more /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf"
 alias httpdrestart="sudo brew services restart httpd24"
+alias httpdstart="sudo brew services start httpd24"
+alias httpdstop="sudo brew services stop httpd24"
 alias httpdlog="ls -al /usr/local/var/log/apache2/"
 alias phpconf="more /usr/local/etc/php/7.1/php.ini"
 # alias mysqlstop="sudo launchctl unload -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist"

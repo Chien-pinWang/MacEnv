@@ -12,6 +12,7 @@ Plug 'itchyny/calendar.vim'
 Plug 'vim-scripts/ag.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'yuratomo/w3m.vim'
+Plug 'vimoutliner/vimoutliner'
 call plug#end()
 
 " File System Explorer 'NERDTree' Configurations

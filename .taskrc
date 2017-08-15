@@ -49,7 +49,7 @@ report.ls.columns=id,start.active,depends.indicator,project,tags,recur.indicator
 # Custom Report: mylist
 report.mylist.filter=status:pending
 report.mylist.sort=urgency-,start-,due+,project+
-report.mylist.columns=id,project,description.count,due.remaining,due,recur.indicator,scheduled.countdown,until.remaining,urgency
+report.mylist.columns=id,project,description,due.remaining,due,recur.indicator,scheduled.countdown,until.remaining,urgency
 report.mylist.labels=ID,Project,Description,Due,Due,R,Sch,Until,Urg
 
 # Custom Report: mylist_narrow
