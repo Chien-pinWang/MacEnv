@@ -3,10 +3,7 @@
 # email: Wang.ChienPin@gmail.com
 #
 
-alias googleResource='alias | grep "^alias @"'
-
-# verywed.com
-alias @vw='googler -n 5 -w verywed.com'
+alias @googlers='alias | grep "^alias @"'
 
 # wikipedia
 alias @wiki='googler -n 5 -w en.wikipedia.org'
@@ -14,14 +11,17 @@ alias @wiki='googler -n 5 -w en.wikipedia.org'
 # imdb
 alias @imdb='googler -n 5 -w imdb.com'
 
-# free dictionary
-alias @word='googler -n 5 -w www.merriam-webster.com'
-
 # 104
 alias @104='googler -n 5 -w 104.com.tw'
 
-# 880vs, 69story
+# Erotic novels
 alias @xxx='googler -n 5 -w 880vs.com -w 69story.com'
 
-# pchome
-alias @ec='googler -n 5 -w 24h.pchome.com.tw'
+# XXX Movies
+alias @xxxM='googler -n 5 -w tokyo-porn-tube.com -w pornhub.com -w javbuz.com -w jav789.com -w javhihi.com -w jav911.com -w redtube.com'
+
+# EC
+alias @ec='googler -n 5 -w 24h.pchome.com.tw -w momoshop.com.tw -w lativ.com.tw'
+
+# news search
+alias @news='googler -n 5 -w appledaily.com.tw -w udn.com -w ltn.com.tw -w cointelegraph.com'
