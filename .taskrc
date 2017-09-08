@@ -36,6 +36,9 @@ dateformat=m/d
 dateformat.annotation=m/d
 calendar.holidays=full
 
+urgency.user.project.Job.coefficient=5.0
+urgency.user.project.Finance.coefficient=4.0
+
 uda.reviewed.type=date
 uda.reviewed.label=Reviewed
 report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
