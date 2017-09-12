@@ -27,6 +27,8 @@ alias swim="curl -s http://taipeidt.com/tc/iwlink.php | w3m -T text/html -dump"
 alias apple="w3m http://www.appledaily.com.tw"
 alias udn="w3m https://udn.com/news/index"
 alias news="newsbeuter"
+alias sdp="open ~/prj/SDP/Personal\ SDP.gsheet"
+alias finance="open ~/prj/SDP/Personal\ Finance.gsheet"
 alias buoys="curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/C6AH2.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46694A.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46708A.html | w3m -T text/html -dump | head -n 37;"
 alias setSSID="export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)"
 alias agrep="alias | grep "
@@ -125,51 +127,6 @@ function v? () {
     do
         echo -e "$line"
     done < ~/.vim/vHint.txt
-}
-
-function putBuf () {
-    echo "$@" >> ~/tmp/wip.buf
-}
-
-function getBuf () {
-    if [ -f ~/tmp/wip.buf ]
-    then
-        echo -e "\033[31;107mTHERE ARE WORK-IN-PROGRESS...\033[39;49m"
-        # cat ~/tmp/wip.buf
-        lineno=1
-        while read line
-        do
-            area=$(cut -d ' ' -f 1 <<< "$line")
-            if [ "$area" != "HOME" -o "$SSID" != "VW4Fstaff" ]
-            then
-                echo "$lineno $line"
-                lineno=$(bc <<< "$lineno+1")
-            fi
-        done < ~/tmp/wip.buf
-    else
-        echo -e "\033[31;107mThere is no work-in-progress.\033[39;49m"
-    fi
-}
-
-function rmBuf () {
-    if [ -z $1 ]
-    then
-        echo "Usage: rmBuf [ID]"
-        return 1
-    else
-        lineno=1
-        while read line
-        do
-            if [ "$lineno" != "$1" ]
-            then
-                echo "$line" >> ~/tmp/wip.buf.tmp
-            else
-                echo "Buffer [$line] is removed."
-            fi
-            lineno=$(bc <<< "$lineno+1")
-        done < ~/tmp/wip.buf
-        mv ~/tmp/wip.buf.tmp ~/tmp/wip.buf
-    fi
 }
 
 function today () {
@@ -359,8 +316,5 @@ function g () {
     $(which googler) -n 5 --lang zh-TW -t y1 "$@"
     popd
 }
-
-jMem
-getBuf
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
