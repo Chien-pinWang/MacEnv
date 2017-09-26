@@ -80,6 +80,16 @@ function tCheck() {                   #Complete task
     fi
 }
 
+function boost () {                  # Add the "next" tag to boost urgency
+    if [ -z "$1" ]
+    then
+        echo "Usage: boost <ID> to increase task urgency by +next"
+        return 1
+    else
+        task "$1" modify +next
+    fi
+}
+
 function tPush() {                   #Push 1 Day
     if [ -z "$1" ]
     then
@@ -305,21 +315,23 @@ function newtask () {
     task add "$projectclause" "$tasktags" "$taskname" "$dueclause" "$scheduleclause"
 }
 
-function tStart () {
-    if [ -z $1 ]
+function start () {                      # Start a task
+    if [ -z "$1" ]
     then
-        echo "Usage: tStart <taskID>"
+        echo "Usage: start <ID> to start a task"
         exit 1
+    else
+        task "$1" start
     fi
-
-
 }
 
-function tHalt () {
-    if [ -z $1 ]
+function stop () {                       # Stop a task
+    if [ -z "$1" ]
     then
-        echo "Usage: tHalt <taskID>"
+        echo "Usage: stop <taskID> to stop a task"
         exit 1
+    else
+        task "$1" stop
     fi
 }
 

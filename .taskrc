@@ -38,6 +38,11 @@ calendar.holidays=full
 
 urgency.user.project.Job.coefficient=5.0
 urgency.user.project.Finance.coefficient=4.0
+urgency.user.tag.SD1.coefficient=3.0
+urgency.user.tag.SD2.coefficient=2.5
+urgency.user.tag.SD3.coefficient=2.0
+urgency.user.tag.SD4.coefficient=1.5
+urgency.user.tag.SD5.coefficient=1.0
 
 uda.reviewed.type=date
 uda.reviewed.label=Reviewed

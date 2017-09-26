@@ -23,11 +23,12 @@ source ~/.gitalias          # aliases for git routines
 source ~/.ledger.sh         # aliases for ledger routines
 
 # Aliases to execute commands
+alias webex="open https://cisco.webex.com/join/yunko"
 alias swim="curl -s http://taipeidt.com/tc/iwlink.php | w3m -T text/html -dump"
 alias apple="w3m http://www.appledaily.com.tw"
 alias udn="w3m https://udn.com/news/index"
 alias news="newsbeuter -r"
-alias sdp="open ~/prj/SDP/Personal\ SDP.gsheet"
+alias sdp="open ~/prj/SDP/Personal\ SDP\ 2017.gsheet"
 alias finance="open ~/prj/SDP/Personal\ Finance.gsheet"
 alias buoys="curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/C6AH2.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46694A.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46708A.html | w3m -T text/html -dump | head -n 37;"
 alias setSSID="export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)"
