@@ -63,7 +63,7 @@ alias notify="vi ~/bin/OSNotification.sh; crontab -e"
 # alias blockchain="$(which googler) -n 5 -N blockchain"
 alias blockchain="vi ~/prj/blockchain/blockchain.txt +:tabedit +':W3m https://www.google.com.tw/search?q=blockchain&tbm=nws'"
 alias cal="task calendar"
-alias weather='curl -sH "Accept-Language: zh" wttr.in/Taipei?2n | head -n 28; w3m -dump -no-cookie http://cwb.gov.tw/V7/observe/24real/Data/46692.htm | head -n 10'
+# alias weather='curl -sH "Accept-Language: zh" wttr.in/Taipei?2n | head -n 28; w3m -dump -no-cookie http://cwb.gov.tw/V7/observe/24real/Data/46692.htm | head -n 10'
 # alias truecrypt="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text"
 # alias pwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --password=SY42567F4 --mount ~/Dropbox/TrueCryptVolume /Volumes/TrueCrypt"
 # alias xpwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --dismount /Volumes/TrueCrypt"
@@ -316,6 +316,20 @@ function g () {
     pushd ~/tmp
     $(which googler) -n 5 --lang zh-TW -t y1 "$@"
     popd
+}
+
+function weather () {
+
+echo -e "\033[31;107mCurrent Weather:\033[39;49m"
+w3m -dump -no-cookie http://cwb.gov.tw/V7/observe/24real/Data/46692.htm | head -n 10
+echo
+
+echo -e "\033[31;107m7-Day Forecast:\033[39;49m"
+w3m -T text/html -dump -no-cookie http://www.cwb.gov.tw/V7/forecast/taiwan/inc/city/Taipei_City.htm
+
+echo -e "\033[31;107mWeather Summary:\033[39;49m"
+curl -s http://www.cwb.gov.tw/V7/forecast/taiwan/Data/W50_63.txt | textutil -stdin -stdout -format html -inputencoding utf-8 -convert txt
+
 }
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

@@ -79,7 +79,7 @@ function cash () {
     periodE=$(date -v+1d +"%Y-%m-%d")
 
     echo "CASH BALANCE"
-    ledger -f "$LEDGER" balance -R "SCSB Saving" Expenses:Cash -e $periodE
+    ledger -f "$LEDGER" balance -R "SCSB Saving" "BOT Saving" Expenses:Cash -e $periodE
 }
 
 # _getPeriodBeginEnd returns a pair of space seperated dates representing the
