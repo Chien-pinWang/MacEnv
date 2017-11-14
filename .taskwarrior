@@ -58,6 +58,16 @@ function t?() {
         done < ~/prj/MacBookPro/.task/tHint.txt
 }
 
+function qa () {
+    if [ -z "$1" ]
+    then
+        echo "Usage: qa <Task Description> to quickly add a task that due today and started immediately"
+        return 1
+    else
+        task add project:Personal "$1" due:today schedule:today start:now
+    fi
+}
+
 function tCheck() {                   #Complete task
     if [ -z "$1" ]
     then
@@ -259,7 +269,7 @@ function tDepends () {
             # Breaks comma-delimmited list $taskDepends to array $UUIDs
             # Set 'Internal Field Seperator (IFS)' to comma
             IFS=','
-            read -r -a UUIDs <<< "$taskDepends"
+            read -r -a UUIDs <<<"$taskDepends"
             level=$((level+1))
             for UUID in "${UUIDs[@]}"
             do
