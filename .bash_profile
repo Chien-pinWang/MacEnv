@@ -23,11 +23,13 @@ source ~/.gitalias          # aliases for git routines
 source ~/.ledger.sh         # aliases for ledger routines
 
 # Aliases to execute commands
+alias cmds="clear; more -e ~/cmds"
 alias webex="open https://cisco.webex.com/join/yunko"
 alias swim="curl -s http://taipeidt.com/tc/iwlink.php | w3m -T text/html -dump"
 alias apple="w3m http://www.appledaily.com.tw"
 alias udn="w3m https://udn.com/news/index"
-alias news="newsbeuter -r"
+alias liberty="w3m http://www.ltn.com.tw"
+alias news="newsboat -r"
 alias sdp="open ~/prj/SDP/Personal\ SDP\ 2017.gsheet"
 alias finance="open ~/prj/SDP/Personal\ Finance.gsheet"
 alias buoys="curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/C6AH2.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46694A.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46708A.html | w3m -T text/html -dump | head -n 37;"
@@ -334,7 +336,11 @@ read -n 1 -s -r -p "Press any key to continue..."
 clear
 echo -e "\033[31;107mWeather Summary:\033[39;49m"
 curl -s http://www.cwb.gov.tw/V7/forecast/taiwan/Data/W50_63.txt | textutil -stdin -stdout -format html -inputencoding utf-8 -convert txt
+read -n 1 -s -r -p "Press any key to continue..."
 
+clear
+echo -e "\033[31;107mAir Quality:\033[39;49m"
+w3m -dump -no-cookie http://aqicn.org/city/taiwan/datong/| head -n 89 | tail -n 40
 }
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
