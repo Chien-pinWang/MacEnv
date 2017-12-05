@@ -172,27 +172,6 @@ function wiki () {
     fi
 }
 
-function journal () {
-    j="$1"
-    case "$j" in
-    "goofy")
-        template="goofy_template.txt"
-        ;;
-    "blockchain")
-        template="blockchain_template.txt"
-        ;;
-    "here")
-        template="default_template.txt"
-        ;;
-    *)
-        template="default_template.txt"
-        j=""
-        ;;
-    esac
-    jrnl $j < ~/prj/MacBookPro/.jrnl/"$template"
-    jrnl $1 -1 --edit
-}
-
 function text2voice () {
     textfile="$1"
     if [ -z $2 ]

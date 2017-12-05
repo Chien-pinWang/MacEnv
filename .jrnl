@@ -1,12 +1,10 @@
 
-alias jNew="jrnl"
-alias jLast="jrnl -1"
-alias jLast5="jrnl -5"
-alias jToday="jrnl -on today"
-alias jYesterday="jrnl -on yesterday"
-alias jStar="jrnl -starred"
-alias jAll="jrnl -from 2017-03-03 --short"
-# alias jMem="jrnl @memory --short -n 10"
+alias Last1="jrnl -1"
+alias Last5="jrnl -5 --short"
+alias Today="jrnl -on today"
+alias Yesterday="jrnl -on yesterday --short"
+alias Starred="jrnl -starred --short"
+alias All="jrnl -from 2017-03-03 --short"
 
 function j?() {
     while read line
@@ -15,8 +13,29 @@ function j?() {
     done < ~/prj/MacBookPro/.jrnl/jHint.txt
 }
 
-function jSearch () {
-    jrnl -from 2017-01-01 | ag "$1"
+function journal () {
+    j="$1"
+    case "$j" in
+    "goofy")
+        template="goofy_template.txt"
+        ;;
+    "blockchain")
+        template="blockchain_template.txt"
+        ;;
+    "here")
+        template="default_template.txt"
+        ;;
+    *)
+        template="default_template.txt"
+        j=""
+        ;;
+    esac
+    jrnl $j < ~/prj/MacBookPro/.jrnl/"$template"
+    jrnl $1 -1 --edit
+}
+
+function Search () {
+    jrnl -from 2017-01-01 | ag "$1" -A 3 -B 3
 }
 
 function jMem () {

@@ -2,6 +2,8 @@
 export LEDGERPATH=~/prj/MacBookPro/ledger
 export LEDGER=$LEDGERPATH/Chien-pinWang.ledger
 export ACCOUNTS=$LEDGERPATH/accounts.dat
+export LEDGERYEAR=$(date "+%Y")
+export LEDGERMONTH=$(date "+%m")
 
 alias trx="vTab $LEDGER $ACCOUNTS ~/.ledger.sh ~/prj/MacBookPro/ledger.wiki"
 
@@ -180,7 +182,7 @@ function debt () {
     ledger -f "$LEDGER" balance ^Liabilities -b 2017-03-01 -e "$periodE"
 }
 
-function budget () {                       # Budget always run current mtd
+function oldbudget () {                       # Budget always run current mtd
     periodRange=$(_getPeriodBeginEnd mtd)
     periodB=${periodRange:0:10}
     periodE=${periodRange:11}
@@ -196,6 +198,32 @@ function budget () {                       # Budget always run current mtd
         ledger -f "$LEDGER" balance ^Budget:Expenses -b "$periodB" -e "$periodE"
     else
         ledger -f "$LEDGER" register Budget:Expenses:"$1" -b "$periodB" -e "$periodE"
+    fi
+}
+
+function budget () {
+    MONTHS=(NA January February March April May June July August September October November December)
+    MONTHDAYS=(0 31 29 31 30 31 30 31 31 30 31 30 31)
+
+    if [ -z ${LEDGERMONTH+x} ]
+    then
+        LEDGERMONTH=$(date "+%m")
+    fi
+    if [ -z ${LEDGERYEAR+x} ]
+    then
+        LEDGERYEAR=$(date "+%Y")
+    fi
+
+    monthname=${MONTHS[$LEDGERMONTH]}
+    enddate=${MONTHDAYS[$LEDGERMONTH]}
+
+    if [ -z $1 ]
+    then
+        ledger -f "$LEDGER" register "expr" "payee =~ /$monthname Expenses Budget/" --no-pager
+        # ledger -f "$LEDGER" balance ^Budget:Expenses -b "$periodB" -e "$periodE"
+        ledger -f "$LEDGER" balance ^Budget:Expenses -b "$LEDGERYEAR-$LEDGERMONTH-01" -e "$LEDGERYEAR-$LEDGERMONTH-$enddate"
+    else
+        ledger -f "$LEDGER" register Budget:Expenses:"$1" -b "$LEDGERYEAR-$LEDGERMONTH-01" -e "$LEDGERYEAR-$LEDGERMONTH-$enddate"
     fi
 }
 
