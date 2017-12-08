@@ -1,13 +1,20 @@
 
-alias tActive='echo -e "\033[31;107mACTIVE TASKS:\033[39;49m"; task rc.dateformat:"a m/d" +ACTIVE mylist'
-alias tReview='echo -e "\033[31;107mTASKS SCHEDULED TODAY:\033[39;49m"; task schedule.before:now -ACTIVE mylist'
 alias tToday='echo "TASKS DUE TODAY..."; task +TODAY mylist'
-alias tWeek='echo "TASKS DUE THIS WEEK..."; task +WEEK mylist'
-alias tOverdue='echo "TASKS OVERDUE..."; task +OVERDUE -TODAY mylist'
-# alias tBill='echo "BILLS TO PAY THIS MONTH..."; task rc.report.all.sort:due+ project:Finance -PARENT +MONTH -COMPLETED all'
-alias tBill='echo "BILLS TO PAY THIS MONTH..."; task mybill'
 alias tSummary='task burndown; task ghistory; task projects'
 alias tJob='tDepends 89445668-6919-436e-b16f-1f3c897d7fd5'
+
+alias tasks="echo -e '\033[31;107mACTIVE TASKS:\033[39;49m'; task rc.dateformat:'a m/d' +ACTIVE mylist"
+alias review="echo -e '\033[31;107mTASKS SCHEDULED TODAY:\033[39;49m'; task schedule.before:now -ACTIVE mylist"
+alias weekload="echo -e '\033[31;107mUPCOMING IN A WEEK:\033[39;49m'; task rc.dateformat:'a m/d' weekload"
+alias next="echo -e '\033[31;107mNEXT TASKS:\033[39;49m'; task mynext"
+alias later="echo -e '\033[31;107mCOMING LATER:\033[39;49m'; task schedule.after:today+1y mylist" 
+alias inbox="echo -e '\033[31;107mTASK INBOX:\033[39;49m'; task due: schedule: start: project: mylist"
+alias waiting="echo -e '\033[31;107mWAITING TASKS:\033[39;49m'; task waiting"
+alias due="echo -e '\033[31;107mTASKS DUE THIS WEEK...\033[39;49m'; task +WEEK mylist"
+alias overdue="echo -e '\033[31;107mTASKS OVERDUE...\033[39;49m'; task +OVERDUE -TODAY mylist"
+alias bill="echo -e '\033[31;107mBILLS TO PAY THIS MONTH...\033[39;49m'; task mybill"
+alias t="task ls"
+alias cal="task calendar"
 
 export TASKPATH=~/prj/MacBookPro/.task
 export TASK=$TASKPATH/pending.data
@@ -61,17 +68,18 @@ function t?() {
 function qa () {
     if [ -z "$1" ]
     then
-        echo "Usage: qa <Task Description> to quickly add a task that due today and started immediately"
+        echo "Usage: qa <Task Description> to quickly add a task"
         return 1
     else
-        task add project:Personal "$1" due:today schedule:today start:now
+        task add "$1"
+        inbox
     fi
 }
 
-function tCheck() {                   #Complete task
+function checkoff () {                   #Complete task
     if [ -z "$1" ]
     then
-        echo "Usage: tCheck <ID> to mark task <ID> as completed"
+        echo "Usage: checkoff <ID> to mark task <ID> as completed"
     else
         for tID in $@
         do
@@ -86,7 +94,7 @@ function tCheck() {                   #Complete task
                 echo "Task <$taskDescription> is not affected."
             fi
         done
-        tActive
+        tasks
     fi
 }
 
@@ -97,13 +105,14 @@ function boost () {                  # Add the "next" tag to boost urgency
         return 1
     else
         task "$1" modify +next
+        tasks
     fi
 }
 
-function tPush() {                   #Push 1 Day
+function pushoff () {                   #Push 1 Day
     if [ -z "$1" ]
     then
-        echo "Usage: tPush <ID> <days> to push task <ID> to <days> days from today"
+        echo "Usage: pushoff <ID> <days> to re-schedule task <ID> to <days> days from today"
         return 1
     else 
         tID="$1"
@@ -116,7 +125,7 @@ function tPush() {                   #Push 1 Day
         pushDays="$2"
     fi
 
-    echo "Push this task to $pushDays from today:"
+    echo "Re-schedule this task to $pushDays from today:"
     taskDescription=$(task _get "$tID".description)
     taskScheduled=$(task _get "$tID".scheduled)
     echo "Task $taskDescription originally scheduled for $taskScheduled"
@@ -124,7 +133,7 @@ function tPush() {                   #Push 1 Day
     echo ""
     if [ "$confirm" == "" ] || [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]
     then
-        task "$tID" modify schedule:today+"$pushDays"d
+        task "$tID" modify schedule:today+"$pushDays"d start:
         taskScheduled=$(task _get "$tID".scheduled)
         echo "Task $taskDescription now scheduled for $taskScheduled"
     else

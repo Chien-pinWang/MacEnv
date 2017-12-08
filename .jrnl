@@ -4,7 +4,13 @@ alias Last5="jrnl -5 --short"
 alias Today="jrnl -on today"
 alias Yesterday="jrnl -on yesterday --short"
 alias Starred="jrnl -starred --short"
+alias Tags="jrnl --tags | more"
 alias All="jrnl -from 2017-03-03 --short"
+
+alias bash="jrnl @bash --short"
+alias ethereum="jrnl @ethereum --short"
+alias iota="jrnl @iota --short"
+alias headache="jrnl @headache --short"
 
 function j?() {
     while read line
