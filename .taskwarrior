@@ -35,9 +35,14 @@ function checkTaskChange () {
 
             echo "Currently Active:" > $TASKPATH/active.txt
             task rc.detection:off rc.defaultwidth:38 rc.verbose=label rc.dateformat=a +ACTIVE mylist_narrow >> $TASKPATH/active.txt
+
             echo "" >> $TASKPATH/active.txt
             echo "7-Day Look Ahead:" >> $TASKPATH/active.txt
             task rc.detection:off rc.defaultwidth:38 rc.verbose=label rc.dateformat=a weekload_narrow >> $TASKPATH/active.txt
+
+            echo "" >> $TASKPATH/active.txt
+            echo "Inbox:" >> $TASKPATH/active.txt
+            task rc.detection:off rc.defaultwidth:38 rc.verbose=label rc.dateformat=a due: project: schedule: start: mylist >> $TASKPATH/active.txt
 
             m1="$m2"
         fi
@@ -98,6 +103,26 @@ function checkoff () {                   #Complete task
     fi
 }
 
+function project () {
+    if [ -z "$1" ]
+    then
+        echo "Usage: project <Name> to show tasks in this project"
+        return 1
+    else
+        task project:"$1" mylist
+    fi
+}
+
+function tag () {
+    if [ -z "$1" ]
+    then
+        echo "Usage: tag <Name> to show tasks with this tag"
+        return 1
+    else
+        task tag:"$1" mylist
+    fi
+}
+
 function boost () {                  # Add the "next" tag to boost urgency
     if [ -z "$1" ]
     then
@@ -107,6 +132,28 @@ function boost () {                  # Add the "next" tag to boost urgency
         task "$1" modify +next
         tasks
     fi
+}
+
+function annotate () {
+    if [ -z "$1" ] || [ -z "$2" ]
+    then
+        echo "Usage: annotate <ID> <annotation> to add note to task <ID>"
+        return 1
+    fi
+
+    task "$1" annotate "$2"
+    task "$1" mylist
+}
+
+function denotate () {
+    if [ -z "$1" ] || [ -z "$2" ]
+    then
+        echo "Usage: denotate <ID> <denotation> to remove note from task <ID>"
+        return 1
+    fi
+
+    task "$1" denotate "$2"
+    task "$1" mylist
 }
 
 function pushoff () {                   #Push 1 Day
