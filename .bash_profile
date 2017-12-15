@@ -27,6 +27,7 @@ alias cmds="clear; more -e ~/cmds"
 alias webex="open https://cisco.webex.com/join/yunko"
 alias swim="curl -s http://taipeidt.com/tc/iwlink.php | w3m -T text/html -dump"
 alias inspire='sed -n "$((23226+RANDOM%8013)) p" ~/doc/和合本聖經.txt | awk "{print \$3 \$4 \$5}"'
+alias wawawa="youtube-dl -q --no-mtime --extract-audio --audio-format mp3 --audio-quality 0 -o '%(title)s.%(ext)s'"
 alias apple="w3m http://www.appledaily.com.tw"
 alias udn="w3m https://udn.com/news/index"
 alias liberty="w3m http://www.ltn.com.tw"

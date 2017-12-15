@@ -119,7 +119,7 @@ function tag () {
         echo "Usage: tag <Name> to show tasks with this tag"
         return 1
     else
-        task tag:"$1" mylist
+        task +"$1" mylist
     fi
 }
 
@@ -388,6 +388,7 @@ function start () {                      # Start a task
         exit 1
     else
         task "$1" start
+        tasks
     fi
 }
 
@@ -398,6 +399,7 @@ function stop () {                       # Stop a task
         exit 1
     else
         task "$1" stop
+        review
     fi
 }
 

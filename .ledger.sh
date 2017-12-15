@@ -249,6 +249,13 @@ function payee () {
     ledger -f "$LEDGER" register -R ^Expenses and not Expenses:Cash and payee\("$@"\) -b "$periodB" -e "$periodE"
 }
 
+function l?() {
+    while read line
+        do
+            echo -e "$line"
+        done < ~/prj/MacBookPro/ledger/lHint.txt
+}
+
 # The script is an adopted version from https://www.sundialdreams.com/report-scripts-for-ledger-cli-with-gnuplot/
 # Here are what I changed:
 #   0. At the LEDGER_TERM ine, use 'x11' instead of 'qt'
