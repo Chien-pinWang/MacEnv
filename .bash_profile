@@ -31,6 +31,7 @@ alias wawawa="youtube-dl -q --no-mtime --extract-audio --audio-format mp3 --audi
 alias apple="w3m http://www.appledaily.com.tw"
 alias udn="w3m https://udn.com/news/index"
 alias liberty="w3m http://www.ltn.com.tw"
+alias industries="w3m https://money.udn.com/rank/pv/1001/5591/1"
 alias news="newsboat -r"
 alias sdp="open ~/prj/SDP/Personal\ SDP\ 2017.gsheet; open ~/prj/SDP/Personal\ SDP\ 2018.gsheet"
 alias finance="open ~/prj/SDP/Personal\ Finance.gsheet"
@@ -277,7 +278,8 @@ else
     magick ~/tmp/rainmap.png -crop 520x387+1750+1216 ~/tmp/rainmap-c.png
     magick ~/tmp/rainmap.png -scale 25% ~/tmp/rainmap-s.png
     # sips -Z 800 ~/tmp/rainmap.png > /dev/null
-    imgmore ~/tmp/rainmap-*.png
+    imgmore ~/tmp/rainmap-s.png
+    imgmore ~/tmp/rainmap-c.png
     rm ~/tmp/rainmap*.png
 fi
 
@@ -285,7 +287,7 @@ fi
 
 function g () {
     pushd ~/tmp
-    $(which googler) -n 5 --lang zh-TW -t y1 "$@"
+    $(which googler) -n 5 --lang zh-TW "$@"
     popd
 }
 
