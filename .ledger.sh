@@ -15,7 +15,12 @@ function checkLedgerChange () {
     # m1=$(md5 -q ~/prj/MacBookPro/ledger/Chien-pinWang.ledger)
     m1=$(/sbin/md5 -q "$LEDGER")
 
-    while true
+    # To prevent running multiple instances of the checkLedgerChange
+    # processes when open multiple terminals, check if the sleep process is
+    # already running. Run the while loop if not
+    psCount=$(ps | grep "sleep 60" | wc -l)
+
+    while [ $psCount -eq 1 ]
     do
         sleep 60
         m2=$(/sbin/md5 -q "$LEDGER")

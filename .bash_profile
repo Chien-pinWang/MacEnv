@@ -26,6 +26,7 @@ source ~/.ledger.sh         # aliases for ledger routines
 alias cmds="clear; more -e ~/cmds"
 alias webex="open https://cisco.webex.com/join/yunko"
 alias swim="curl -s http://taipeidt.com/tc/iwlink.php | w3m -T text/html -dump"
+alias iotaseed="cat /dev/random |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1 | qrencode -o ~/Desktop/IOTASeed.png; imgmore ~/Desktop/IOTASeed.png"
 alias inspire='sed -n "$((23226+RANDOM%8013)) p" ~/doc/和合本聖經.txt | awk "{print \$3 \$4 \$5}"'
 alias wawawa="youtube-dl -q --no-mtime --extract-audio --audio-format mp3 --audio-quality 0 -o '%(title)s.%(ext)s'"
 alias apple="w3m http://www.appledaily.com.tw"
@@ -33,7 +34,7 @@ alias udn="w3m https://udn.com/news/index"
 alias liberty="w3m http://www.ltn.com.tw"
 alias industries="w3m https://money.udn.com/rank/pv/1001/5591/1"
 alias news="newsboat -r"
-alias sdp="open ~/prj/SDP/Personal\ SDP\ 2017.gsheet; open ~/prj/SDP/Personal\ SDP\ 2018.gsheet"
+alias sdp="open ~/prj/SDP/Personal\ SDP\ 2018.gsheet"
 alias finance="open ~/prj/SDP/Personal\ Finance.gsheet"
 alias buoys="curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/C6AH2.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46694A.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46708A.html | w3m -T text/html -dump | head -n 37;"
 alias setSSID="export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)"
@@ -289,6 +290,22 @@ function g () {
     pushd ~/tmp
     $(which googler) -n 5 --lang zh-TW "$@"
     popd
+}
+
+function sam () {
+    grep "撒母耳記上 $1:" ~/doc/和合本聖經.txt | awk '{print $3" "$4"//"$5}' | more
+}
+
+function countdown () {                 # Countdown timer, $1 in seconds
+    date1=$((`date +%s` + $1))
+    while [ "$date1" -ge `date +%s` ]
+    do
+        echo -ne "Timer: $(date -ju -f %s $(($date1 - `date +%s` )) +%H:%M:%S)\r";
+        sleep 0.1
+    done
+    echo
+    echo -e "\033[31;107mTIME IS UP!\033[39;49m";
+    echo "Time is up" | say -v Alex
 }
 
 function weather () {

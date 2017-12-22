@@ -26,7 +26,12 @@ export TASK=$TASKPATH/pending.data
 function checkTaskChange () {
     m1=$(/sbin/md5 -q "$TASK")
 
-    while true
+    # To prevent running multiple instances of the checkTaskChange
+    # processes when open multiple terminals, check if the sleep process is
+    # already running. Run the while loop if not
+    psCount=$(ps | grep "sleep 60" | wc -l)
+
+    while [ $psCount -eq 1 ]
     do
         sleep 60
         m2=$(/sbin/md5 -q "$TASK")
