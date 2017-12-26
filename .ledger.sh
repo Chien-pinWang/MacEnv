@@ -20,7 +20,7 @@ function checkLedgerChange () {
     # already running. Run the while loop if not
     psCount=$(ps | grep "sleep 60" | wc -l)
 
-    while [ $psCount -eq 1 ]
+    while [ $psCount -lt 3 ]
     do
         sleep 60
         m2=$(/sbin/md5 -q "$LEDGER")

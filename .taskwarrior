@@ -10,7 +10,7 @@ alias next="echo -e '\033[31;107mNEXT TASKS:\033[39;49m'; task mynext"
 alias later="echo -e '\033[31;107mCOMING LATER:\033[39;49m'; task schedule.after:today+1y mylist" 
 alias inbox="echo -e '\033[31;107mTASK INBOX:\033[39;49m'; task due: schedule: start: project: mylist"
 alias waiting="echo -e '\033[31;107mWAITING TASKS:\033[39;49m'; task waiting"
-alias due="echo -e '\033[31;107mTASKS DUE THIS WEEK...\033[39;49m'; task +WEEK mylist"
+alias due="echo -e '\033[31;107mTASKS DUE THIS WEEK...\033[39;49m'; task due.before:today+7d due.after:today rc.report.mylist.sort=due+,urgency- mylist"
 alias overdue="echo -e '\033[31;107mTASKS OVERDUE...\033[39;49m'; task +OVERDUE -TODAY mylist"
 alias bill="echo -e '\033[31;107mBILLS TO PAY THIS MONTH...\033[39;49m'; task mybill"
 alias t="task ls"
@@ -31,7 +31,7 @@ function checkTaskChange () {
     # already running. Run the while loop if not
     psCount=$(ps | grep "sleep 60" | wc -l)
 
-    while [ $psCount -eq 1 ]
+    while [ $psCount -lt 3 ]
     do
         sleep 60
         m2=$(/sbin/md5 -q "$TASK")
@@ -164,7 +164,7 @@ function denotate () {
 function pushoff () {                   #Push 1 Day
     if [ -z "$1" ]
     then
-        echo "Usage: pushoff <ID> <days> to re-schedule task <ID> to <days> days from today"
+        echo "Usage: pushoff <ID> <days> to re-schedule task <ID> <days> days forward."
         return 1
     else 
         tID="$1"
@@ -177,17 +177,22 @@ function pushoff () {                   #Push 1 Day
         pushDays="$2"
     fi
 
-    echo "Re-schedule this task to $pushDays from today:"
     taskDescription=$(task _get "$tID".description)
     taskScheduled=$(task _get "$tID".scheduled)
-    echo "Task $taskDescription originally scheduled for $taskScheduled"
+    taskScheduled=${taskScheduled:0:10}
+    taskScheduling=$(date -j -f "%Y-%m-%d" -v+${pushDays}d $taskScheduled +"%Y-%m-%d")
+    taskDue=$(task _get "$tID".due)
+    taskDue=${taskDue:0:10}
+    echo "Task $tID <$taskDescription> due $taskDue"
+    echo "originally scheduled for $taskScheduled be rescheduled to $taskScheduling"
     read -p "Is this correct (Y/n)? " -n 1 confirm
     echo ""
     if [ "$confirm" == "" ] || [ "$confirm" == "y" ] || [ "$confirm" == "Y" ]
     then
-        task "$tID" modify schedule:today+"$pushDays"d start:
+        task "$tID" modify schedule:"$taskScheduling" start:
         taskScheduled=$(task _get "$tID".scheduled)
-        echo "Task $taskDescription now scheduled for $taskScheduled"
+        taskScheduled=${taskScheduled:0:10}
+        echo "Task <$taskDescription> now scheduled for $taskScheduled"
     else
         echo "Task <$taskDescription> is not affected."
     fi
