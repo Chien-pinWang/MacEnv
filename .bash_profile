@@ -18,7 +18,7 @@ export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)
 # Source other settings
 source ~/.googler           # aliases for command line google search
 source ~/.taskwarrior.sh    # aliases for task routines
-source ~/.jrnl              # aliases for jrnl routines
+source ~/.jrnl.sh           # aliases for jrnl routines
 source ~/.gitalias          # aliases for git routines
 source ~/.ledger.sh         # aliases for ledger routines
 

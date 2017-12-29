@@ -12,15 +12,25 @@ alias ethereum="jrnl @ethereum --short"
 alias iota="jrnl @iota --short"
 alias headache="jrnl @headache --short"
 
+export JRNLPATH="~/prj/MacBookPro/.jrnl"
+
 function j?() {
     while read line
     do
         echo -e "$line"
     done < ~/prj/MacBookPro/.jrnl/jHint.txt
+    # done < $JRNLPATH/jHint.txt
 }
 
 function journal () {
-    j="$1"
+    if [ -z "$1" ]                      # Journal title
+    then
+        t="[Journal Title]"
+    else
+        t="$1"
+    fi
+    j="$2"                              # Going to which journal
+    
     case "$j" in
     "goofy")
         template="goofy_template.txt"
@@ -36,8 +46,12 @@ function journal () {
         j=""
         ;;
     esac
-    jrnl $j < ~/prj/MacBookPro/.jrnl/"$template"
-    jrnl $1 -1 --edit
+
+    echo "$t" | cat - ~/prj/MacBookPro/.jrnl/$template > ~/prj/MacBookPro/.jrnl/temp_journal.txt
+
+    jrnl $j < ~/prj/MacBookPro/.jrnl/temp_journal.txt
+    jrnl $j -1 --edit
+    rm ~/prj/MacBookPro/.jrnl/temp_journal.txt
 }
 
 function Search () {
