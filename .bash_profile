@@ -308,6 +308,17 @@ function countdown () {                 # Countdown timer, $1 in seconds
     echo "Time is up" | say -v Alex
 }
 
+function stopwatch () {
+    date1=`date +%s`
+    while true
+    do
+        # echo -ne "$(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)\r"
+        echo -ne "Elapsed Time: $(date -ju -f %s $((`date +%s` - $date1)) +%H:%M:%S)\r"
+        sleep 0.1
+    done
+    echo
+}
+
 function weather () {
 
 clear
