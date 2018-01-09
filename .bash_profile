@@ -297,7 +297,13 @@ function sam () {
 }
 
 function countdown () {                 # Countdown timer, $1 in seconds
-    date1=$((`date +%s` + $1))
+    if [ -z "$1" ]
+    then
+        countTime=60
+    else
+        countTime=$1
+    fi
+    date1=$((`date +%s` + $countTime))
     while [ "$date1" -ge `date +%s` ]
     do
         echo -ne "Timer: $(date -ju -f %s $(($date1 - `date +%s` )) +%H:%M:%S)\r";
