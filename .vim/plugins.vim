@@ -14,6 +14,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'yuratomo/w3m.vim'
 Plug 'vimoutliner/vimoutliner'
 Plug 'johngrib/vim-game-code-break'
+Plug 'gabrielelana/vim-markdown'
 call plug#end()
 
 " File System Explorer 'NERDTree' Configurations
