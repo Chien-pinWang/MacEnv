@@ -185,37 +185,40 @@ function stock () {
     market="$1"
     case "$market" in
     "tw")
-        stocks="^twii,5434.tw,2330.tw,3008.tw,2049.tw"
+        stocks="^TWII 5434.TW 2330.TW 3008.TW 2049.TW"
         ;;
     "us")
-        stocks="^ixic,aapl,goog,fb,amzn,msft,cr,nvda"
+        stocks="^DJI ^IXIC AAPL GOOG FB AMZN MSFT NVDA CR"
         ;;
     "index")
-        stocks="^dji,^ixic,^vix,^twii"
+        stocks="^DJI ^IXIC ^VIX ^TWII ^BSESN"
         ;;
     "commod")
-        stocks="^hui,gc=f,cl=f"
+        stocks="^HUI GC=F CL=F"
         ;;
     "currency")
-        stocks="usdtwd=x,usdcny=x,usdjpy=x,usdeur=x"
+        stocks="USDTWD=X USDCNY=X USDJPY=X USDEUR=X"
         ;;
     "crypto")
-        echo "Bitcoin: \$$(curl -s https://coinmarketcap-nexuist.rhcloud.com/api/btc | jq '.price.usd')"
-        echo "Ether: \$$(curl -s https://coinmarketcap-nexuist.rhcloud.com/api/eth | jq '.price.usd')"
+        # echo "Bitcoin: \$$(curl -s https://coinmarketcap-nexuist.rhcloud.com/api/btc | jq '.price.usd')"
+        # echo "Ether: \$$(curl -s https://coinmarketcap-nexuist.rhcloud.com/api/eth | jq '.price.usd')"
+        stocks="BTCUSD=X ETHUSD=X"
         ;;
     *)
-        stocks="^ixic,^vix,^twii,aapl,goog,fb,usdtwd=x"
+        stocks="^DJI ^TWII AAPL GOOG FB 5434.TW 2330.TW USDTWD=X"
         ;;
     esac
 
-    url="http://download.finance.yahoo.com/d/quotes.csv?s=$stocks&f=nl1c1p2xm3m4"
-    curl -s "${url}" > ~/tmp/stockquote.txt
+    ~/bin/ticker.sh $stocks
 
-    echo "                         Quote    Price    Delta  Delta %    50 MA   200 MA"
-    echo "============================== ======== ======== ======== ======== ========"
-    csvfix printf -fmt "%30s %8s %8s %8s %8s %8s" -f 1,2,3,4,6,7 ~/tmp/stockquote.txt
+#    url="http://download.finance.yahoo.com/d/quotes.csv?s=$stocks&f=nl1c1p2xm3m4"
+#    curl -s "${url}" > ~/tmp/stockquote.txt
+
+#    echo "                         Quote    Price    Delta  Delta %    50 MA   200 MA"
+#    echo "============================== ======== ======== ======== ======== ========"
+#    csvfix printf -fmt "%30s %8s %8s %8s %8s %8s" -f 1,2,3,4,6,7 ~/tmp/stockquote.txt
     
-    rm ~/tmp/stockquote.txt
+#    rm ~/tmp/stockquote.txt
 
 }
 
