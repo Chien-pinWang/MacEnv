@@ -1,28 +1,32 @@
 
+scale=10
+pi=4*a(1)
+
 scale=2
 
 define sin(x) {
-    return s(x)
+    /* pass x in as degree, not radian */
+    return s(x*pi/180)
 }
 
 define cos(x) {
-    return c(x)
+    return c(x*pi/180)
 }
 
 define tan(x) {
-    return s(x)/c(x)
+    return s(x*pi/180)/c(x*pi/180)
 }
 
 define cot(x) {
-    return 1/tan(x)
+    return 1/tan(x*pi/180)
 }
 
 define sec(x) {
-    return 1/c(x)
+    return 1/c(x*pi/180)
 }
 
 define csc(x) {
-    return 1/s(x)
+    return 1/s(x*pi/180)
 }
 
 define log(x, b) {
