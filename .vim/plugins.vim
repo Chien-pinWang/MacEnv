@@ -13,8 +13,8 @@ Plug 'vim-scripts/ag.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'yuratomo/w3m.vim'
 Plug 'vimoutliner/vimoutliner'
-Plug 'johngrib/vim-game-code-break'
-Plug 'gabrielelana/vim-markdown'
+Plug 'plasticboy/vim-markdown'
+" Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 " File System Explorer 'NERDTree' Configurations
@@ -73,3 +73,7 @@ let g:vimwiki_hl_cb_checked=2
 " let g:w3m#command='/usr/local/bin/w3m'
 let g:w3m#external_browser='open'
 " let g:w3m#homepage="local ~/.w3m/bookmark.html"
+
+" vim-markdown settings
+let g:vim_markdown_folding_level=3
+set conceallevel=2

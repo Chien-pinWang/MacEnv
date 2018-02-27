@@ -116,7 +116,7 @@ alias macStorage="system_profiler SPStorageDataType | head -n 6"
 # Bash function helpers
 cd() { builtin cd "$@"; ls; }               # cd then ls;
 trash() { command mv "$@" ~/.Trash ; }      # move to ~/.Trash folder
-ff() { /usr/bin/find . -name "$@" ; }       # find files match name in arg 1
+ff() { /usr/bin/find . -name "*$@*" ; }     # find files match name in arg 1
 function v? () {
     while read line
     do
@@ -332,18 +332,18 @@ function weather () {
 
 clear
 echo -e "\033[31;107mCurrent Weather:\033[39;49m"
-w3m -dump -no-cookie http://cwb.gov.tw/V7/observe/24real/Data/46692.htm | head -n 20
+w3m -dump -no-cookie https://www.cwb.gov.tw/V7/observe/24real/Data/46692.htm | head -n 20
 echo
 read -n 1 -s -r -p "Press any key to continue..."
 
 clear
 echo -e "\033[31;107m7-Day Forecast:\033[39;49m"
-w3m -T text/html -dump -no-cookie http://www.cwb.gov.tw/V7/forecast/taiwan/inc/city/Taipei_City.htm
+w3m -T text/html -dump -no-cookie https://www.cwb.gov.tw/V7/forecast/taiwan/inc/city/Taipei_City.htm
 read -n 1 -s -r -p "Press any key to continue..."
 
 clear
 echo -e "\033[31;107mWeather Summary:\033[39;49m"
-curl -s http://www.cwb.gov.tw/V7/forecast/taiwan/Data/W50_63.txt | textutil -stdin -stdout -format html -inputencoding utf-8 -convert txt
+curl -s https://www.cwb.gov.tw/V7/forecast/taiwan/Data/W50_63.txt | textutil -stdin -stdout -format html -inputencoding utf-8 -convert txt
 read -n 1 -s -r -p "Press any key to continue..."
 
 clear

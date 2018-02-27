@@ -122,10 +122,18 @@ endif
 " set foldlevel=1
 set foldcolumn=1
 
+" Set line number displays
+set number relativenumber
+augroup numbertoggle
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+    autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Enable syntax highlighting
+" Enable shttps://github.com/andmarti1424/sc-im.gityntax highlighting
 syntax enable 
 
 " Enable 256 colors palette in Gnome Terminal
