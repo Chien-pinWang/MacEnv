@@ -48,6 +48,7 @@ map <C-a> :LedgerAlign<CR>
 
 " Snippet Engine 'ultisnips' Configurations
 let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
@@ -76,4 +77,8 @@ let g:w3m#external_browser='open'
 
 " vim-markdown settings
 let g:vim_markdown_folding_level=3
+let g:vim_markdown_new_list_item_indent=2
+let g:vim_markdown_autowrite=1
+let g:vim_markdown_follow_anchor=1
 set conceallevel=2
+

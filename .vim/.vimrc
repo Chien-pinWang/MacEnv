@@ -424,3 +424,4 @@ endfunction
 "endif
 
 source ~/.vim/plugins.vim
+source ~/.vim/snippets/mapping.vim

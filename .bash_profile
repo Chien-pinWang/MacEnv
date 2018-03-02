@@ -21,6 +21,7 @@ source ~/.taskwarrior.sh    # aliases for task routines
 source ~/.jrnl.sh           # aliases for jrnl routines
 source ~/.gitalias          # aliases for git routines
 source ~/.ledger.sh         # aliases for ledger routines
+source ~/.tmux_init.sh      # aliases for tmux operations
 
 # Aliases to execute commands
 alias cmds="clear; more -e ~/cmds"
@@ -116,12 +117,25 @@ alias macStorage="system_profiler SPStorageDataType | head -n 6"
 # Bash function helpers
 cd() { builtin cd "$@"; ls; }               # cd then ls;
 trash() { command mv "$@" ~/.Trash ; }      # move to ~/.Trash folder
-ff() { /usr/bin/find . -name "*$@*" ; }     # find files match name in arg 1
+ff() { /usr/bin/find . -type d \( -path ./Library -o -path ./.npm -o -path ./.cache \) -prune -o -name "*$@*" ; }     # find files match name in arg 1
+pushd() { command pushd "$@" > /dev/null; }
+popd() { command popd "$@" > /dev/null; }
 function v? () {
     while read line
     do
         echo -e "$line"
     done < ~/.vim/vHint.txt
+}
+man() {
+    env \
+    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+    LESS_TERMCAP_md=$(printf "\e[1;31m") \
+    LESS_TERMCAP_me=$(printf "\e[0m") \
+    LESS_TERMCAP_se=$(printf "\e[0m") \
+    LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+    LESS_TERMCAP_ue=$(printf "\e[0m") \
+    LESS_TERMCAP_us=$(printf "\e[1;32m") \
+    man "$@"
 }
 
 function today () {
@@ -230,8 +244,8 @@ goodTime=""
 for min in 00 10 20 30 40 50
 do
     checkMapTime="$mapTime$min"
-    header=$(curl -sI http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$checkMapTime".jpg)
-    if [ ${header:9:3} == "200" ]
+    header=$(curl -sI https://www.cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$checkMapTime".jpg)
+    if [ ${header:7:3} == "200" ]
     then
         goodTime=$checkMapTime
     else
@@ -243,7 +257,7 @@ if [ -z $goodTime ]
 then
     echo "The sattlelite image for cloudmap is not available!"
 else
-    curl -s http://cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$goodTime".jpg > ~/tmp/cloudmap.jpg
+    curl -s https://www.cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$goodTime".jpg > ~/tmp/cloudmap.jpg
     # sips -Z 640 ~/tmp/cloudmap.jpg > /dev/null
     magick ~/tmp/cloudmap.jpg -scale 640x640 ~/tmp/cloudmap.jpg
     imgmore ~/tmp/cloudmap.jpg
@@ -251,7 +265,7 @@ else
 fi
 
 # Get cloud map with high/low pressure lines from this static url
-curl -s http://www.cwb.gov.tw/V7/forecast/fcst/Data/SFCcombo.jpg > ~/tmp/cloudmap_pressure.jpg
+curl -s https://www.cwb.gov.tw/V7/forecast/fcst/Data/SFCcombo.jpg > ~/tmp/cloudmap_pressure.jpg
 imgmore ~/tmp/cloudmap_pressure.jpg
 rm ~/tmp/cloudmap_pressure.jpg
 
@@ -265,8 +279,8 @@ goodTime=""
 for min in 00 10 20 30 40 50
 do
     checkMapTime="$mapTime$min"
-    header=$(curl -sI http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$checkMapTime".png)
-    if [ ${header:9:3} == "200" ]
+    header=$(curl -sI https://www.cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$checkMapTime".png)
+    if [ ${header:7:3} == "200" ]
     then
         goodTime=$checkMapTime
     else
@@ -274,11 +288,12 @@ do
     fi
 done
 
+
 if [ -z $goodTime ]
 then
     echo "The sattlelite image for rainmap is not available!"
 else
-    curl -s http://cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$goodTime".png > ~/tmp/rainmap.png
+    curl -s https://www.cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$goodTime".png > ~/tmp/rainmap.png
     magick ~/tmp/rainmap.png -crop 520x387+1750+1216 ~/tmp/rainmap-c.png
     magick ~/tmp/rainmap.png -scale 25% ~/tmp/rainmap-s.png
     # sips -Z 800 ~/tmp/rainmap.png > /dev/null
