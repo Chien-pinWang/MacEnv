@@ -126,6 +126,8 @@ function v? () {
         echo -e "$line"
     done < ~/.vim/vHint.txt
 }
+
+# Coloring man pages
 man() {
     env \
     LESS_TERMCAP_mb=$(printf "\e[1;31m") \

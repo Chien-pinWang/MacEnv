@@ -30,7 +30,7 @@ nmap <leader>uc :8sp ~/prj/MacBookPro/.jrnl/unicode.txt<CR>
 " Status line lightline configurations
 " Available schemes: wombat, solarized, powerline, jellybeans, Tomorrow, Tomorrow_Night, Tomorrow_Night_Blue, Tomorrow_Night_Eighties, PowerColor, seoul256, landscape, one, Dracula, darcula, Molokai, 16color, default (=powerline)
 let g:lightline = {
-    \ 'colorscheme': 'jellybeans',
+    \ 'colorscheme': 'Tomorrow_Night_Blue',
     \ }
 
 " Ledger's vim Support 'vim-ledger' Configurations
@@ -43,7 +43,7 @@ let g:ledger_default_commodity = 'NTD'
 let g:ledger_commodity_before = 1
 let g:ledger_commodity_sep = ' '
 let g:ledger_winpos = 'B'
-map <C-a> :LedgerAlign<CR>
+map <C-l> :LedgerAlign<CR>
 " map <C-s> :call ledger#transaction_state_toggle(line('.'), ' *?!')
 
 " Snippet Engine 'ultisnips' Configurations
