@@ -423,5 +423,11 @@ endfunction
 "   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
 
+" Update contents of another tmux pane's when a jrnl entry is saved
+autocmd BufWritePost jrnl*.txt :silent !tmux select-pane -t 1 \; send-keys 'jrnl -8 --short' C-m \; select-pane -t 0 \;
+
+" Update contents of another tmux pane's when a ledger is saved
+autocmd BufWritePost Chien-pinWang.ledger :silent !tmux select-pane -t 1 \; send-keys 'cash' C-m \; select-pane -t 0 \;
+
 source ~/.vim/plugins.vim
 " source ~/.vim/snippets/mapping.vim

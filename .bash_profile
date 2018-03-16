@@ -31,6 +31,7 @@ alias iotaseed="cat /dev/random |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1
 alias inspire='sed -n "$((23226+RANDOM%8013)) p" ~/doc/和合本聖經.txt | awk "{print \$3 \$4 \$5}"'
 alias wawawa="youtube-dl -q --no-mtime --extract-audio --audio-format mp3 --audio-quality 0 -o '%(title)s.%(ext)s'"
 alias apple="pushd ~/tmp; w3m http://www.appledaily.com.tw; popd"
+alias cnn="pushd ~/tmp; w3m http://m.cnn.com; popd"
 alias udn="pushd ~/tmp; w3m https://udn.com/news/index; popd"
 alias liberty="pushd ~/tmp; w3m http://www.ltn.com.tw; popd"
 alias industries="pushd ~/tmp; w3m https://money.udn.com/money/cate/5591; popd"
