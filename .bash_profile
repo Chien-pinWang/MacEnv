@@ -217,9 +217,10 @@ function stock () {
         stocks="USDTWD=X USDCNY=X USDJPY=X USDEUR=X"
         ;;
     "crypto")
-        # echo "Bitcoin: \$$(curl -s https://coinmarketcap-nexuist.rhcloud.com/api/btc | jq '.price.usd')"
-        # echo "Ether: \$$(curl -s https://coinmarketcap-nexuist.rhcloud.com/api/eth | jq '.price.usd')"
         stocks="BTCUSD=X ETHUSD=X"
+        ;;
+    "fund")
+        stocks="TW000T3615Y9.TW"
         ;;
     *)
         stocks="^DJI ^TWII AAPL GOOG FB 5434.TW 2330.TW USDTWD=X"
