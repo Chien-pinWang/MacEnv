@@ -16,63 +16,28 @@ export PHPRC=/usr/local/etc/php/7.1/php.ini
 export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)
 
 # Source other settings
-source ~/.googler           # aliases for command line google search
-source ~/.taskwarrior.sh    # aliases for task routines
-source ~/.jrnl.sh           # aliases for jrnl routines
-source ~/.gitalias          # aliases for git routines
-source ~/.ledger.sh         # aliases for ledger routines
-source ~/.tmux_init.sh      # aliases for tmux operations
+if [ -f ~/.bashrc ]; then
+    source ~/.bashrc;
+fi
+if [ -f ~/.googler ]; then
+    source ~/.googler;         # aliases for command line google search
+fi
+if [ -f ~/.taskwarrior.sh ]; then
+    source ~/.taskwarrior.sh;  # aliases for task routines
+fi
+if [ -f ~/.jrnl.sh ]; then
+    source ~/.jrnl.sh;         # aliases for jrnl routines
+fi
+if [ -f ~/.gitalias ]; then
+    source ~/.gitalias         # aliases for git routines
+fi
+if [ -f ~/.ledger.sh ]; then
+    source ~/.ledger.sh;       # aliases for ledger routines
+fi
+if [ -f ~/.tmux_init.sh ]; then
+    source ~/.tmux_init.sh;    # aliases for tmux operations
+fi
 
-# Aliases to execute commands
-alias cmds="clear; more -e ~/cmds"
-alias webex="open https://cisco.webex.com/join/yunko"
-alias swim="curl -s http://taipeidt.com/tc/iwlink.php | w3m -T text/html -dump"
-alias iotaseed="cat /dev/random |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1 | qrencode -o ~/Desktop/IOTASeed.png; imgmore ~/Desktop/IOTASeed.png"
-alias inspire='sed -n "$((23226+RANDOM%8013)) p" ~/doc/和合本聖經.txt | awk "{print \$3 \$4 \$5}"'
-alias wawawa="youtube-dl -q --no-mtime --extract-audio --audio-format mp3 --audio-quality 0 -o '%(title)s.%(ext)s'"
-alias apple="pushd ~/tmp; w3m http://www.appledaily.com.tw; popd"
-alias cnn="pushd ~/tmp; w3m http://m.cnn.com; popd"
-alias udn="pushd ~/tmp; w3m https://udn.com/news/index; popd"
-alias liberty="pushd ~/tmp; w3m http://www.ltn.com.tw; popd"
-alias industries="pushd ~/tmp; w3m https://money.udn.com/money/cate/5591; popd"
-alias news="newsboat -r"
-alias sdp="open ~/prj/SDP/Personal\ SDP\ 2018.gsheet"
-alias finance="open ~/prj/SDP/Personal\ Finance.gsheet"
-alias buoys="curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/C6AH2.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46694A.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46708A.html | w3m -T text/html -dump | head -n 37;"
-alias setSSID="export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)"
-alias agrep="alias | grep "
-alias v="/usr/local/bin/vim"
-alias def="clear; /usr/local/bin/dict"
-alias vSplit="vi -O"
-alias vStack="vi -o"
-alias vTab="vi -p"
-alias cp="cp -iv"
-alias mv="mv -iv"
-alias ls="ls -FGhp"
-alias ll="ls -FGlhp"
-alias less="less -FSRXc"
-alias cls="clear"
-alias src="source ~/.bash_profile"
-alias now="date +'%T'"
-alias psg="ps aux | grep --color=auto"
-# alias path="echo -e ${PATH//:/\\n}"
-# alias calc="bc -q"
-alias calc="~/bin/calc.sh"
-alias sheet="sc"
-alias slide="mdp"
-alias waves="php ~/bin/Buoy/index.php"
-alias cron="crontab -e"
-alias tree="tree -d | more"
-alias phpweb="php -S 127.0.0.1:8080 &"
-alias w="pushd ~/tmp; w3m -B; popd"
-alias notify="vi ~/bin/OSNotification.sh; crontab -e"
-# alias g="pushd ~/tmp; $(which googler) -n 5 --lang zh-TW; popd"
-# alias blockchain="$(which googler) -n 5 -N blockchain"
-alias blockchain="vi ~/prj/blockchain/blockchain.txt +:tabedit +':W3m https://www.google.com.tw/search?q=blockchain&tbm=nws'"
-# alias weather='curl -sH "Accept-Language: zh" wttr.in/Taipei?2n | head -n 28; w3m -dump -no-cookie http://cwb.gov.tw/V7/observe/24real/Data/46692.htm | head -n 10'
-# alias truecrypt="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text"
-# alias pwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --password=SY42567F4 --mount ~/Dropbox/TrueCryptVolume /Volumes/TrueCrypt"
-# alias xpwd="/Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt --text --dismount /Volumes/TrueCrypt"
 
 # Aliases for PHP programming
 alias class="grep -n -w --color=auto -e 'class' -e 'protected' -e 'public' -e 'const ' -e 'namespace' -e 'use'"
@@ -101,45 +66,11 @@ alias mysqldata="ls -al /usr/local/var/mysql"
 alias Rconf="more $R_HOME/etc/Renviron"
 alias Rinit="more ~/.Rprofile"
 
-# Aliases to move around file systems
-alias 2bin="cd ~/bin"
-alias 2prj='cd $PRJ'     # Type "PRJ=<path/to/prj/root>" at command line to reset active project
-alias tmp="pushd ~/tmp"
-alias ..="cd .."
-alias ...="cd ../.."
-alias ~="cd ~"
-
 # Real quick shortcut to frequently used items
 alias budget="budget"
 alias mail="mutt"
 
 alias macStorage="system_profiler SPStorageDataType | head -n 6"
-
-# Bash function helpers
-cd() { builtin cd "$@"; ls; }               # cd then ls;
-trash() { command mv "$@" ~/.Trash ; }      # move to ~/.Trash folder
-ff() { /usr/bin/find . -type d \( -path ./Library -o -path ./.npm -o -path ./.cache \) -prune -o -name "*$@*" ; }     # find files match name in arg 1
-pushd() { command pushd "$@" > /dev/null; }
-popd() { command popd "$@" > /dev/null; }
-function v? () {
-    while read line
-    do
-        echo -e "$line"
-    done < ~/.vim/vHint.txt
-}
-
-# Coloring man pages
-man() {
-    env \
-    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-    LESS_TERMCAP_md=$(printf "\e[1;31m") \
-    LESS_TERMCAP_me=$(printf "\e[0m") \
-    LESS_TERMCAP_se=$(printf "\e[0m") \
-    LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-    LESS_TERMCAP_ue=$(printf "\e[0m") \
-    LESS_TERMCAP_us=$(printf "\e[1;32m") \
-    man "$@"
-}
 
 function today () {
     datestring=$(date +'\033[31;107m%A, %B%e日, %Y年, %p%l:%M:%S\033[39;49m')
@@ -160,7 +91,7 @@ function today () {
         read -p "Press any key to continue..." -n 1
         echo ""
         echo -e "\033[31;107mMemorables:\033[39;49m"
-        jToday --short
+        Today --short
         echo ""
         echo -e "\033[31;107mSpent Today:\033[39;49m"
         ledger -f $LEDGER register -b today -e tomorrow -R ^Expenses and not Expenses:Cash
