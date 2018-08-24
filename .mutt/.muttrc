@@ -1,7 +1,7 @@
 set from="Wang.ChienPin@gmail.com"
 set realname="Chien-pin Wang"
 set imap_user="Wang.ChienPin@gmail.com"
-set imap_pass="enzfrwtxaachjsjy"
+set imap_pass="ypkefmjoctbalwfg"
 set folder="imaps://imap.gmail.com:993"
 set spoolfile="+INBOX"
 set record="+[Gmail]/Sent Mail"
@@ -10,7 +10,7 @@ set header_cache=~/.mutt/cache/headers
 set message_cachedir=~/.mutt/cache/bodies
 set certificate_file=~/.mutt/certificates
 set smtp_url="smtp://Wang.ChienPin@gmail.com@smtp.gmail.com:587/"
-set smtp_pass="enzfrwtxaachjsjy"
+set smtp_pass="ypkefmjoctbalwfg"
 set smtp_authenticators="gssapi:login"
 set move=no
 set imap_keepalive=900
@@ -18,6 +18,7 @@ set mbox="imaps://imap.gmail.com:993/[Gmail]/All Mail"
 set trash="imaps://imap.gmail.com:993/[Gmail]/Trash"
 set sort=reverse-date-received
 set pager_context=5
+set editor="vim"
 
 source "~/.mutt/mutt-colors-solarized-dark-256.muttrc"
 source "~/.mutt/aliases

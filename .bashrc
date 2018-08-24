@@ -28,11 +28,10 @@ alias udn="pushd ~/tmp; w3m https://udn.com/news/index; popd"
 alias liberty="pushd ~/tmp; w3m http://www.ltn.com.tw; popd"
 alias industries="pushd ~/tmp; w3m https://money.udn.com/money/cate/5591; popd"
 alias news="newsboat -r"
-alias buoys="curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/C6AH2.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46694A.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s http://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46708A.html | w3m -T text/html -dump | head -n 37;"
+alias buoys="curl -s https://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/C6AH2.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s https://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46694A.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s https://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46708A.html | w3m -T text/html -dump | head -n 37;" 
 alias waves="php ~/bin/Buoy/index.php"
 alias blockchain="vi ~/prj/blockchain/blockchain.txt +:tabedit +':W3m https://www.google.com.tw/search?q=blockchain&tbm=nws'"
-alias 坦柏頓科技="open 'https://fund.cnyes.com/chart/chartstudy.aspx?code=B15%2C086&mobile=true&country=fund&market=B&divwidth=150%25&divheight=700'"
-alias 大華全球金融="open 'https://fund.cnyes.com/chart/chartstudy.aspx?code=B18%2C004&mobile=true&country=fund&market=B&divwidth=150%25&divheight=700'"
+alias fundCharts="open 'https://fund.cnyes.com/chart/chartstudy.aspx?code=B15%2C086&mobile=true&country=fund&market=B&divwidth=150%25&divheight=700' 'https://fund.cnyes.com/chart/chartstudy.aspx?code=B18%2C004&mobile=true&country=fund&market=B&divwidth=150%25&divheight=700'"
 
 # Shortcuts to start vim
 alias v="/usr/local/bin/vim"

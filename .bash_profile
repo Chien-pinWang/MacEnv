@@ -8,10 +8,10 @@ export CLICOLOR="true"
 export LSCOLORS="gxfxcxdxbxegedabagaced"
 export PATH=$HOME/bin:$PATH
 export EDITOR=/usr/local/bin/vim
-export PRJ=~/bin
-export R_HOME=$(R RHOME)
 export BC_ENV_ARGS="-l $HOME/.bcrc"
 export BROWSER=w3m
+export PRJ=~/bin
+export R_HOME=$(R RHOME)
 export PHPRC=/usr/local/etc/php/7.1/php.ini
 export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)
 
@@ -80,7 +80,7 @@ function today () {
     then
         curl -sH "Accept-Language: ${LANG%_*}" wttr.in/"${1:-Taipei}"?1n | head -n 18
         echo -e "\033[31;107mCash Balance:\033[39;49m"
-        ledger -f $LEDGER balance -R Expenses:Cash "Assets:Bank:SCSB Saving" -e $(date -v+1d "+%Y-%m-%d")
+        ledger -f $LEDGER balance -R Expenses:Cash "Assets:Bank:SCSB Saving" "BOT Saving" -e $(date -v+1d "+%Y-%m-%d")
         echo ""
         echo -e "\033[31;107mUS Stocks:\033[39;49m"
         stock us
@@ -194,13 +194,14 @@ then
 else
     curl -s https://www.cwb.gov.tw/V7/observe/satellite/Data/s1p/s1p-"$goodTime".jpg > ~/tmp/cloudmap.jpg
     # sips -Z 640 ~/tmp/cloudmap.jpg > /dev/null
-    magick ~/tmp/cloudmap.jpg -scale 640x640 ~/tmp/cloudmap.jpg
+    magick ~/tmp/cloudmap.jpg -scale 1024x1024 ~/tmp/cloudmap.jpg
     imgmore ~/tmp/cloudmap.jpg
     rm ~/tmp/cloudmap.jpg
 fi
 
 # Get cloud map with high/low pressure lines from this static url
 curl -s https://www.cwb.gov.tw/V7/forecast/fcst/Data/SFCcombo.jpg > ~/tmp/cloudmap_pressure.jpg
+magick ~/tmp/cloudmap_pressure.jpg -scale 125% ~/tmp/cloudmap_pressure.jpg
 imgmore ~/tmp/cloudmap_pressure.jpg
 rm ~/tmp/cloudmap_pressure.jpg
 
@@ -229,7 +230,7 @@ then
     echo "The sattlelite image for rainmap is not available!"
 else
     curl -s https://www.cwb.gov.tw/V7/observe/radar/Data/HD_Radar/CV1_3600_"$goodTime".png > ~/tmp/rainmap.png
-    magick ~/tmp/rainmap.png -crop 520x387+1750+1216 ~/tmp/rainmap-c.png
+    magick ~/tmp/rainmap.png -crop 520x387+1750+1216 -scale 150% ~/tmp/rainmap-c.png
     magick ~/tmp/rainmap.png -scale 25% ~/tmp/rainmap-s.png
     # sips -Z 800 ~/tmp/rainmap.png > /dev/null
     imgmore ~/tmp/rainmap-s.png
