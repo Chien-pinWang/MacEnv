@@ -427,7 +427,8 @@ endfunction
 autocmd BufWritePost default.txt :silent !tmux select-pane -t 2 \; send-keys "jrnl --tags | awk '{print \$1}' | paste -s -d ' ' -" C-m \; select-pane -t 0 \;
 
 " Update contents of another tmux pane's when a ledger is saved
-autocmd BufWritePost Chien-pinWang.ledger :silent !tmux select-pane -t 1 \; send-keys 'cash' C-m \; select-pane -t 0 \;
+" autocmd BufWritePost Chien-pinWang.ledger :silent !tmux select-pane -t 1 \; send-keys "while true; do cash; read -n 1 -p 'Press any key to continue...'; done" C-m \; select-pane -t 0 \;
+autocmd BufWritePost Chien-pinWang.ledger :silent !tmux select-pane -t 1 \; send-keys C-m \; select-pane -t 2 \; send-keys C-m\; select-pane -t 0 \;
 
 source ~/.vim/plugins.vim
 " source ~/.vim/snippets/mapping.vim
