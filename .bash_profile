@@ -69,8 +69,11 @@ alias Rinit="more ~/.Rprofile"
 # Real quick shortcut to frequently used items
 alias budget="budget"
 alias mail="mutt"
+alias wealth="vi scp://pi@180.176.111.91/wealthGuard.conf"
+alias RPi="ssh pi@180.176.111.91"
+alias moneyline="open 'https://www.youtube.com/results?sp=CAISBAgCEAE%253D&search_query=%E9%8C%A2%E7%B7%9A%E7%99%BE%E5%88%86%E7%99%BE'"
 
-alias macStorage="system_profiler SPStorageDataType | head -n 6"
+alias macStorage="system_profiler SPStorageDataType | tail -n 19 | head -n 4"
 
 function today () {
     datestring=$(date +'\033[31;107m%A, %B%e日, %Y年, %p%l:%M:%S\033[39;49m')
@@ -133,7 +136,7 @@ function stock () {
     market="$1"
     case "$market" in
     "tw")
-        stocks="^TWII 5434.TW 2330.TW 3008.TW 2049.TW"
+        stocks="^TWII 2059.TW 2888.TW 3481.TW 4906.TW 5264.TW 5434.TW 6206.TW 6277.TW 8114.TW"
         ;;
     "us")
         stocks="^DJI ^IXIC AAPL GOOG FB AMZN MSFT NVDA CR"
