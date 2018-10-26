@@ -142,7 +142,7 @@ function stock () {
         stocks="^DJI ^IXIC AAPL GOOG FB AMZN MSFT NVDA CR"
         ;;
     "index")
-        stocks="^DJI ^IXIC ^VIX ^TWII ^BSESN"
+        stocks="^DJI ^IXIC ^SOX ^VIX BZ=F ^TNX DX-Y.NYB ^TWII ^BSESN"
         ;;
     "commod")
         stocks="^HUI GC=F CL=F"

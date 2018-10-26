@@ -17,6 +17,7 @@ alias calc="~/bin/calc.sh"
 alias sheet="sc"
 alias slide="mdp"
 alias phpweb="php -S 127.0.0.1:8080 &"
+alias Xmas="tDepends 76"
 
 # Scrapping information from the Internet
 alias w="pushd ~/tmp; w3m -B; popd"
