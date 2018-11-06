@@ -161,7 +161,7 @@ function stock () {
         ;;
     esac
 
-    ~/bin/ticker.sh $stocks
+    ~/bin/ticker.sh "${stocks}"
 
 #    url="http://download.finance.yahoo.com/d/quotes.csv?s=$stocks&f=nl1c1p2xm3m4"
 #    curl -s "${url}" > ~/tmp/stockquote.txt
