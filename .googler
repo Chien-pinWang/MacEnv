@@ -27,4 +27,4 @@ alias @ec='googler -n 5 -w 24h.pchome.com.tw -w momoshop.com.tw -w lativ.com.tw'
 alias @news='googler -n 5 -w appledaily.com.tw -w udn.com -w ltn.com.tw -w cointelegraph.com'
 
 # Stock related news
-alias @stock='googler -n 5 -t m6 -w https://news.cnyes.com -w https://money.udn.com -w https://www.businesstoday.com.tw'
+alias @stock='googler -n 5 -t d7 -w https://news.cnyes.com -w https://money.udn.com -w https://ctee.com.tw'
