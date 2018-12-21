@@ -62,8 +62,8 @@ let g:calendar_cyclic_view=1
 let g:calendar_google_calendar=1
 
 " vimwiki Wiki Document
-let g:vimwiki_folding='list'
-" let g:vimwiki_folding='expr'
+" let g:vimwiki_folding='list'
+let g:vimwiki_folding='expr'
 " let g:vimwiki_folding='syntax'
 map >> <Plug>VimwikiIncreaseLvlSingleItem
 map << <Plug>VimwikiDecreaseLvlSingleItem
