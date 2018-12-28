@@ -291,13 +291,10 @@ echo
 read -n 1 -s -r -p "Press any key to continue..."
 
 clear
-echo -e "\033[31;107m7-Day Forecast:\033[39;49m"
-w3m -T text/html -dump -no-cookie https://www.cwb.gov.tw/V7/forecast/taiwan/inc/city/Taipei_City.htm
-read -n 1 -s -r -p "Press any key to continue..."
-
-clear
 echo -e "\033[31;107mWeather Summary:\033[39;49m"
 curl -s https://www.cwb.gov.tw/V7/forecast/taiwan/Data/W50_63.txt | textutil -stdin -stdout -format html -inputencoding utf-8 -convert txt
+echo -e "\033[31;107m7-Day Forecast:\033[39;49m"
+w3m -T text/html -dump -no-cookie https://www.cwb.gov.tw/V7/forecast/taiwan/inc/city/Taipei_City.htm
 read -n 1 -s -r -p "Press any key to continue..."
 
 clear
