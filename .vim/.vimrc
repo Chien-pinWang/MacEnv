@@ -365,6 +365,11 @@ set clipboard=unnamed
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Calculator within vim through python3
+" type :Calc <formula> to invoke
+:command! -nargs=+ TC :py3 print ("Tax:",<args>*0.003); print ("Charge:",<args>*0.001425*0.6)
+:py3 from math import *
+
 function! CmdLine(str)
     exe "menu Foo.Bar :" . a:str
     emenu Foo.Bar

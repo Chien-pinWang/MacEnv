@@ -18,6 +18,7 @@ alias sheet="sc"
 alias slide="mdp"
 alias phpweb="php -S 127.0.0.1:8080 &"
 alias Xmas="tDepends d5d9467b"
+alias Church="task project:Church +Fellowship or +Service or +Deacon all rc.report.all.sort=due+"
 
 # Scrapping information from the Internet
 alias w="pushd ~/tmp; w3m -B; popd"
