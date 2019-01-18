@@ -4,6 +4,7 @@
 #
 
 alias @googlers='alias | grep "^alias @"'
+alias @googler='googler -n 8 -t y1'
 
 # wikipedia
 alias @wiki='googler -n 5 -w en.wikipedia.org'

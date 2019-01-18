@@ -22,7 +22,7 @@ alias Church="task project:Church +Fellowship or +Service or +Deacon all rc.repo
 
 # Scrapping information from the Internet
 alias w="pushd ~/tmp; w3m -B; popd"
-alias swim="curl -s http://taipeidt.com/tc/iwlink.php | w3m -T text/html -dump"
+alias swim="curl -s http://www.dtsc-wdyg.com.tw/web/ajax/check_po.jsp | jq -r '.Z1_1' | sed 's/[<b>\/]//g'"
 alias wawawa="youtube-dl -q --no-mtime --extract-audio --audio-format mp3 --audio-quality 0 -o '%(title)s.%(ext)s'"
 alias apple="pushd ~/tmp; w3m http://www.appledaily.com.tw; popd"
 alias cnn="pushd ~/tmp; w3m http://m.cnn.com; popd"

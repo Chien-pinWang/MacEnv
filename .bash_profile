@@ -69,7 +69,7 @@ alias Rinit="more ~/.Rprofile"
 # Real quick shortcut to frequently used items
 alias budget="budget"
 alias mail="mutt"
-alias wealth="vi scp://pi@180.176.111.91/wealthGuard.conf"
+alias wealth="w3m https://www.wealth.com.tw"
 alias RPi="ssh pi@180.176.111.91"
 alias moneyline="open 'https://www.youtube.com/results?sp=CAISBAgCEAE%253D&search_query=%E9%8C%A2%E7%B7%9A%E7%99%BE%E5%88%86%E7%99%BE'"
 
