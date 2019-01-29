@@ -121,6 +121,7 @@ endif
 " Add a bit extra margin to the left
 " set foldlevel=1
 set foldcolumn=1
+set foldmethod=syntax
 
 " Set line number displays
 set number relativenumber
