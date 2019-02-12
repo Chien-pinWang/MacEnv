@@ -37,6 +37,9 @@ fi
 if [ -f ~/.tmux_init.sh ]; then
     source ~/.tmux_init.sh;    # aliases for tmux operations
 fi
+if [ -f ~/.biblerc ]; then
+    source ~/.biblerc;         # aliases for bible study
+fi
 
 
 # Aliases for PHP programming

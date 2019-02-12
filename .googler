@@ -3,6 +3,8 @@
 # email: Wang.ChienPin@gmail.com
 #
 
+export GOOGLER_COLORS=bjdxxy
+
 alias @googlers='alias | grep "^alias @"'
 alias @googler='googler -n 8 -t y1'
 

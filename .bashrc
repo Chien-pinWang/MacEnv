@@ -46,7 +46,6 @@ alias notify="vi ~/bin/OSNotification.sh; crontab -e"
 
 # Misc. shortcuts
 alias iotaseed="cat /dev/random |LC_ALL=C tr -dc 'A-Z9' | fold -w 81 | head -n 1 | qrencode -o ~/Desktop/IOTASeed.png; imgmore ~/Desktop/IOTASeed.png"
-alias inspire='sed -n "$((23226+RANDOM%8013)) p" ~/doc/和合本聖經.txt | awk "{print \$3 \$4 \$5}"'
 alias sdp="open ~/prj/SDP/Personal\ SDP\ 2018.gsheet"
 alias finance="open ~/prj/SDP/Personal\ Finance.gsheet"
 alias setSSID="export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)"
