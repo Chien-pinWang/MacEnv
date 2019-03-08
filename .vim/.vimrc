@@ -366,9 +366,14 @@ set clipboard=unnamed
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Calculator within vim through python3
-" type :Calc <formula> to invoke
+" 計算股票交易所需繳納稅款和手續費
+" type :TC <交易金額> to invoke
 :command! -nargs=+ TC :py3 print ("Tax:",<args>*0.003); print ("Charge:",<args>*0.001425*0.6)
+:py3 from math import *
+
+" vim command line calculator
+" type :Calc <formula> to invoke
+:command! -nargs=+ Calc :py3 print(<args>)
 :py3 from math import *
 
 function! CmdLine(str)
