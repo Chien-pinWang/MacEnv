@@ -93,3 +93,5 @@ function v? () {
     done < ~/.vim/vHint.txt
 }
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
