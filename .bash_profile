@@ -6,7 +6,7 @@ set -o vi
 export PS1="[\h:\w]$ "
 export CLICOLOR="true"
 export LSCOLORS="gxfxcxdxbxegedabagaced"
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin:/usr/local/opt/gnu-getopt/bin:$PATH
 export EDITOR=/usr/local/bin/vim
 export BC_ENV_ARGS="-l $HOME/.bcrc"
 export BROWSER=w3m
@@ -14,6 +14,7 @@ export PRJ=~/bin
 export R_HOME=$(R RHOME)
 export PHPRC=/usr/local/etc/php/7.1/php.ini
 export SSID=$(networksetup -getairportnetwork en0 | cut -c 24-)
+export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
 
 # Source other settings
 if [ -f ~/.bashrc ]; then
