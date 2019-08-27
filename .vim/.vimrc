@@ -262,6 +262,8 @@ endtry
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+" Set tabstop to 2 if file type is shell script
+autocmd Filetype sh setlocal tabstop=2 shiftwidth=2
 
 """"""""""""""""""""""""""""""
 " => Status line
