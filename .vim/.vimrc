@@ -348,6 +348,8 @@ map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
 
+" Disable spell checking on East Asian languages
+set spelllang+=cjk
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc
