@@ -20,6 +20,7 @@ alias slide="mdp"
 alias phpweb="php -S 127.0.0.1:8080 &"
 alias Xmas="tDepends d5d9467b"
 alias Church="task project:Church +Fellowship or +Service or +Deacon all rc.report.all.sort=due+"
+function inventory() { grep -A 100 $(date "+%Y-%m-%d") ~/ownCloud/Data/wealth/logs/inventory.log; }
 
 # Scrapping information from the Internet
 alias w="pushd ~/tmp; w3m -B; popd"
