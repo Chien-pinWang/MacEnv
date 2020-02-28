@@ -372,10 +372,13 @@ set clipboard=unnamed
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 計算股票交易所需繳納稅款和手續費
-" type :TC <交易金額> to invoke
-:command! -nargs=+ TC :py3 print ("Tax:",<args>*0.003); print ("Charge:",<args>*0.001425*0.6)
-:py3 from math import *
+" ledger macros
+" @s: ����
+" @f: Family Mart
+" @c: Carrefour
+let @s="a	datte	�kb�kb�kb�kb�kbe		*	春天酒店Parking				NTD 100.0a"
+let @f="a	date		*	Family MartConv. Store			NTD 21.0a"
+let @c="a	date			CarrefourGroceries			NTD 530.0aTSCB"
 
 " vim command line calculator
 " type :Calc <formula> to invoke

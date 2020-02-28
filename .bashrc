@@ -20,7 +20,19 @@ alias slide="mdp"
 alias phpweb="php -S 127.0.0.1:8080 &"
 alias Xmas="tDepends d5d9467b"
 alias Church="task project:Church +Fellowship or +Service or +Deacon all rc.report.all.sort=due+"
-function inventory() { grep -A 100 $(date "+%Y-%m-%d") ~/ownCloud/Data/wealth/logs/inventory.log; }
+function inventory() { 
+  local diff=0
+  local log=~/ownCloud/Data/wealth/logs/inventory.log
+  while true; do
+    inventory=$(grep -A 100 $(date -v -${diff}d "+%F") $log)
+    if [[ -z $inventory ]]; then
+      diff=$((diff+1))
+    else
+      break
+    fi
+  done
+  echo "$inventory"
+}
 
 # Scrapping information from the Internet
 alias w="pushd ~/tmp; w3m -B; popd"
@@ -32,7 +44,7 @@ alias udn="pushd ~/tmp; w3m +120 https://udn.com/news/index; popd"
 alias liberty="pushd ~/tmp; w3m +234 https://www.ltn.com.tw; popd"
 alias economic="pushd ~/tmp; w3m +125 https://money.udn.com/money/index; popd"
 alias industry="pushd ~/tmp; w3m https://m.ctee.com.tw/; popd"
-alias cnyes="pushd ~/tmp; w3m https://www.cnyes.com/; popd"
+alias cnyes="pushd ~/tmp; w3m +63 https://www.cnyes.com/; popd"
 alias news="newsboat -r"
 alias buoys="curl -s https://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/C6AH2.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s https://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46694A.html | w3m -T text/html -dump | head -n 37; read -n 1 -s -r -p 'Press any key to continue...'; echo; curl -s https://www.cwb.gov.tw/V7/marine/sea_condition/cht/tables/46708A.html | w3m -T text/html -dump | head -n 37;" 
 alias waves="php ~/bin/Buoy/index.php"
