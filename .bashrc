@@ -34,6 +34,34 @@ function inventory() {
   echo "$inventory"
 }
 
+function winners() { 
+  local diff=0
+  local log=~/ownCloud/Data/wealth/logs/winners.log
+  while true; do
+    winners=$(grep -A 100 $(date -v -${diff}d "+%F") $log)
+    if [[ -z $winners ]]; then
+      diff=$((diff+1))
+    else
+      break
+    fi
+  done
+  echo "$winners"
+}
+
+function losers() { 
+  local diff=0
+  local log=~/ownCloud/Data/wealth/logs/losers.log
+  while true; do
+    losers=$(grep -A 100 $(date -v -${diff}d "+%F") $log)
+    if [[ -z $losers ]]; then
+      diff=$((diff+1))
+    else
+      break
+    fi
+  done
+  echo "$losers"
+}
+
 # Scrapping information from the Internet
 alias w="pushd ~/tmp; w3m -B; popd"
 alias swim="curl -s http://www.dtsc-wdyg.com.tw/web/ajax/check_po.jsp | jq -r '.Z1_1' | sed 's/[<b>\/]//g'"
