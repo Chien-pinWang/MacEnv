@@ -46,6 +46,7 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+scriptencoding utf-8
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -373,13 +374,14 @@ set clipboard=unnamed
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ledger macros
-" @s: ����
+" @s: 春天酒店
 " @f: Family Mart
 " @c: Carrefour
-let @s="a	datte	�kb�kb�kb�kb�kbe		*	春天酒店Parking				NTD 100.0a"
-let @f="a	date		*	Family MartConv. Store			NTD 21.0a"
+" @m: 民權自助餐
+let @s="a	datte	kbkbkbkbkbe		*	æ¥å¤©éåºParking				NTD 100.0a"
+let @f="a	date		*	Family MartConv. Store				NTD 21.0akwwwwwdw"
 let @c="a	date			CarrefourGroceries			NTD 530.0aTSCB"
-
+let @m="adate		*	�����Restaurant				NTD 110.0a"
 " vim command line calculator
 " type :Calc <formula> to invoke
 :command! -nargs=+ Calc :py3 print(<args>)
