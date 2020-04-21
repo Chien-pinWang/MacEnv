@@ -50,7 +50,7 @@ alias mySnippets="vi ~/.vim_runtime/snippets/_.snippets"
 
 # Aliases to manage various servers on this machine
 # alias httpdconf="ll /etc/apache2/httpd.conf"
-alias httpdconf="more /usr/local/etc/apache2/2.4/httpd.conf"
+alias httpdconf="more /usr/local/etc/httpd/httpd.conf"
 # alias httpdvhosts="ll /etc/apache2/extra/httpd-vhosts.conf"
 alias httpdvhosts="more /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf"
 alias httpdrestart="sudo brew services restart httpd24"
