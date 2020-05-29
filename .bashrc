@@ -22,7 +22,7 @@ alias Xmas="tDepends d5d9467b"
 alias Church="task project:Church +Fellowship or +Service or +Deacon all rc.report.all.sort=due+"
 function inventory() { 
   local diff=0
-  local log=~/ownCloud/Data/wealth/logs/inventory.log
+  local log=~/ownCloud/Data/wealth1/logs/inventory.log
   while true; do
     inventory=$(grep -A 100 $(date -v -${diff}d "+%F") $log)
     if [[ -z $inventory ]]; then
