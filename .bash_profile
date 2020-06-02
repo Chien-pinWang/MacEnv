@@ -78,6 +78,10 @@ alias wealth="w3m https://www.wealth.com.tw"
 alias moneyline="open 'https://www.youtube.com/results?sp=CAISBAgCEAE%253D&search_query=%E9%8C%A2%E7%B7%9A%E7%99%BE%E5%88%86%E7%99%BE'"
 
 alias macStorage="system_profiler SPStorageDataType | tail -n 19 | head -n 4"
+function WOG () {
+  cat ~/bible | fzf --height="100%" --reverse --preview="echo {1}" --preview-window=down:40% --bind 'ctrl-f:preview-down,ctrl-b:preview-up'
+        # --preview="grep -B 5 -A 25 '{1} {2}'" \
+}
 
 function today () {
     datestring=$(date +'\033[31;107m%A, %B%e日, %Y年, %p%l:%M:%S\033[39;49m')

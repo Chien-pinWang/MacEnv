@@ -4,7 +4,7 @@ alias ls="ls -FGhp"
 alias ll="ls -FGlhp"
 alias cp="cp -iv"
 alias mv="mv -iv"
-alias less="less -FSRXc"
+alias less="less -SRXc"
 alias cls="clear"
 alias psg="ps aux | grep --color=auto"
 alias now="date +'%T'"
@@ -64,7 +64,7 @@ function losers() {
 
 # Scrapping information from the Internet
 alias w="pushd ~/tmp; w3m -B; popd"
-alias swim="curl -s http://www.dtsc-wdyg.com.tw/web/ajax/check_po.jsp | jq -r '.Z1_1' | sed 's/[<b>\/]//g'"
+alias swim="echo 目前 $(w3m -dump https://dtsc-wdyg.com.tw/ | grep -A 1 '游泳池' | tail -n +2 | head -n 1) 人"
 alias wawawa="youtube-dl -q --no-mtime --extract-audio --audio-format mp3 --audio-quality 0 -o '%(title)s.%(ext)s'"
 alias apple="pushd ~/tmp; w3m http://www.appledaily.com.tw; popd"
 alias cnn="pushd ~/tmp; w3m http://m.cnn.com; popd"
