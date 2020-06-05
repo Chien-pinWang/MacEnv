@@ -447,7 +447,7 @@ endfunction
 "endif
 
 " Update contents of another tmux pane's when a ledger is saved
-autocmd BufWritePost Chien-pinWang.ledger :silent !tmux select-pane -t 2 \; send-keys C-m \; select-pane -t 3 \; send-keys C-m\; select-pane -t 1 \;
+autocmd BufWritePost Chien-pinWang.ledger :silent !tmux select-pane -t 1 \; send-keys C-m \; select-pane -t 2 \; send-keys C-m\; select-pane -t 0 \;
 
 " jrnl entries as markdown
 augroup vimrc
