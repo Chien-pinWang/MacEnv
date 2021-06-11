@@ -449,10 +449,11 @@ endfunction
 " Update contents of another tmux pane's when a ledger is saved
 autocmd BufWritePost Chien-pinWang.ledger :silent !tmux select-pane -t 1 \; send-keys C-m \; select-pane -t 2 \; send-keys C-m\; select-pane -t 0 \;
 
-" jrnl entries as markdown
+" jrnl entries as vimwiki
 augroup vimrc
     autocmd!
-    autocmd BufRead *jrnl*\.txt setlocal filetype=markdown sidescrolloff=0 spell complete+=kspell
+    " autocmd BufRead *jrnl*\.txt setlocal filetype=vimwiki sidescrolloff=0 spell complete+=kspell
+    autocmd BufRead *.jrnl setlocal filetype=vimwiki sidescrolloff=0 spell complete+=kspell
 augroup END
 
 source ~/.vim/plugins.vim
