@@ -453,8 +453,11 @@ autocmd BufWritePost Chien-pinWang.ledger :silent !tmux select-pane -t 1 \; send
 augroup vimrc
     autocmd!
     " autocmd BufRead *jrnl*\.txt setlocal filetype=vimwiki sidescrolloff=0 spell complete+=kspell
-    autocmd BufRead *.jrnl setlocal filetype=vimwiki sidescrolloff=0 spell complete+=kspell
+    " autocmd BufRead *.jrnl setlocal filetype=vimwiki sidescrolloff=0 spell complete+=kspell
+    autocmd BufRead *.jrnl setlocal sidescrolloff=0 spell complete+=kspell
 augroup END
+
+let g:vimwiki_ext2syntax = {'.jrnl': 'markdown'}
 
 source ~/.vim/plugins.vim
 " source ~/.vim/snippets/mapping.vim
